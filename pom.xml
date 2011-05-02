@@ -1,0 +1,105 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<inceptionYear>2011 the Jenkins TestLink Plug-in team</inceptionYear>
+	
+	<groupId>br.eti.kinoshita</groupId>
+	<artifactId>jenkins-testlink-plugin-the-definitive-guide</artifactId>
+	<name>Jenkins TestLink Plug-in: The Definitive Guide</name>
+	<version>0.1</version>
+	<packaging>pom</packaging>
+	<description>enkins TestLink Plug-in: The Definitive Guide DocBook project</description>
+
+	<url>http://wiki.jenkins-ci.org/display/JENKINS/TestLink+Plugin</url>
+
+	<organization>
+		<name>Jenkins</name>
+		<url>http://www.jenkins-ci.org</url>
+	</organization>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
+
+	<issueManagement>
+		<system>JIRA</system>
+		<url>http://issues.jenkins-ci.org/browse/JENKINS/component/15754</url>
+	</issueManagement>
+
+	<ciManagement>
+		<system>Jenkins</system>
+		<url>http://ci.jenkins-ci.org/view/Plugins/job/plugins_testlink</url>
+	</ciManagement>
+
+	<developers>
+		<developer>
+			<id>kinow</id>
+			<name>Bruno P. Kinoshita</name>
+			<email>brunodepaulak@yahoo.com.br</email>
+			<timezone>-3</timezone>
+			<roles>
+				<role>Developer Author</role>
+			</roles>
+		</developer>
+	</developers>
+
+	<scm>
+		<connection>scm:git:git://github.com/kinow/jenkins-testlink-plugin-the-definitive-guide.git</connection>
+		<developerConnection>scm:git:git@github.com:kinow/jenkins-testlink-plugin-the-definitive-guide.git</developerConnection>
+		<url>http://github.com/kinow/jenkins-testlink-plugin-the-definitive-guide</url>
+	</scm>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>com.agilejava.docbkx</groupId>
+				<artifactId>docbkx-maven-plugin</artifactId>
+				<version>2.0.11</version>
+				<executions>
+					<execution>
+						<id>book-output</id>
+						<phase>generate-sources</phase>
+						<goals>
+							<goal>generate-pdf</goal>
+							<goal>generate-html</goal>
+							<!-- goal>generate-manpages</goal -->
+							<goal>generate-eclipse</goal>
+						</goals>
+						<configuration>
+							<draftMode>no</draftMode>
+						</configuration>
+					</execution>
+				</executions>
+				<configuration>
+					<sourceDirectory>${basedir}/src/main/book/</sourceDirectory>
+					<includes>book.xml</includes>
+					<generatedSourceDirectory>${project.build.directory}/book/generated</generatedSourceDirectory>
+					<xincludeSupported>true</xincludeSupported>
+					<highlightSource>1</highlightSource>
+					<paperType>A4</paperType>
+					<fop1Extensions>1</fop1Extensions>
+					<foCustomization>src/main/book/stylesheets/fo/docbook.xsl</foCustomization>
+					<targetDirectory>${project.build.directory}/book/</targetDirectory>
+				</configuration>
+				<dependencies>
+					<dependency>
+						<groupId>net.sf.docbook</groupId>
+						<artifactId>docbook-xml</artifactId>
+						<version>5.0</version>
+						<type>pom</type>
+						<scope>runtime</scope>
+					</dependency>
+					<dependency>
+						<groupId>net.sf.offo</groupId>
+						<artifactId>fop-hyph</artifactId>
+						<version>1.2</version>
+						<type>jar</type>
+						<scope>runtime</scope>
+					</dependency>
+				</dependencies>
+			</plugin>
+		</plugins>
+	</build>
+
+</project>
