@@ -6,7 +6,34 @@
          xmlns:ns4="http://www.w3.org/1998/Math/MathML"
          xmlns:ns3="http://www.w3.org/1999/xhtml"
          xmlns:db="http://docbook.org/ns/docbook">
-	<title>Jenkins and TestLink Integration</title>
+	<title>An Introduction to TestLink</title>
 	
-	<para>Let the show start...</para>
+	<para>TestLink is an open source test management tool written in PHP. 
+	In order to install TestLink you will need a Apache or similar http server 
+	with PHP 5 and a database. The databases currently supported by TestLink 
+	out of the box are MySQL, Postgre SQL and MS SQL, although there are 
+	users that managed to use Oracle too.</para>
+	
+	<para>In TestLink you have, among other features, Test Plans, Requirement 
+	management, Baselines, Custom Fields, Test Suite with Test Cases and 
+	Reporting. For external access, there is a XML-RPC API available 
+	(it is not enabled by default). Other two nice features in TestLink are the 
+	versioning of the some entities, like Test Case and Requirements, 
+	and the ability to import and export your testing data in different formats.</para>
+	
+	<para>There are bindings for the TestLink XML-RPC API available for other 
+	languages such as Ruby and Java. The Jenkins and TestLink integration is 
+	done using the Java API (http://testlinkjavaapi.sourceforge.net).</para>
+	
+	<para>At the moment that this guide is being written the latest stable 
+	version of TestLink is 1.9.2, however versions 1.9.3 and 2.0 are already 
+	planned and scheduled. While Jenkins version is not a compatibility for 
+	this integration, the same cannot be said about TestLink. This guide is 
+	intended for Testlink 1.9.2. In case there are other versions available at 
+	the moment that you are reading this guide, you may find issues during your 
+	Job execution. There is a compatibility table available in the plug-in Wiki.</para>
+	
+	<para>TestLink is licensed under the GPL License and its code is hosted 
+	at gitorious (http://www.gitorious.org/testlink-ga/testlink-code).</para>
+	
 </preface>

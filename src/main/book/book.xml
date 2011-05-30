@@ -8,10 +8,8 @@
 
   <xi:include href="bookinfo.xml" />
 
-  <xi:include href="ch00.xml" />
-
   <xi:include href="ch01.xml" />
-  
+
   <xi:include href="ch02.xml" />
   
   <xi:include href="ch03.xml" />
@@ -25,6 +23,8 @@
   <xi:include href="ch07.xml" />
   
   <xi:include href="ch08.xml" />
+  
+  <xi:include href="ch09.xml" />
   
   <xi:include href="bibliography.xml" />
 

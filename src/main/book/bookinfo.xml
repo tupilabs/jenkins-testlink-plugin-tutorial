@@ -1,26 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bookinfo version="5.0" xmlns="http://docbook.org/ns/docbook"
-         xmlns:xlink="http://www.w3.org/1999/xlink"
-         xmlns:xi="http://www.w3.org/2001/XInclude"
-         xmlns:ns5="http://www.w3.org/2000/svg"
-         xmlns:ns4="http://www.w3.org/1998/Math/MathML"
-         xmlns:ns3="http://www.w3.org/1999/xhtml"
-         xmlns:db="http://docbook.org/ns/docbook">
+<info version="5.0" xmlns="http://docbook.org/ns/docbook"
+	xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xi="http://www.w3.org/2001/XInclude"
+	xmlns:ns5="http://www.w3.org/2000/svg" xmlns:ns4="http://www.w3.org/1998/Math/MathML"
+	xmlns:ns3="http://www.w3.org/1999/xhtml">
 	<!-- All rights reserved. -->
 
-    <edition>1</edition>
+	<edition>1</edition>
 
-    <author>
-      <othername>Bruno P. Kinoshita</othername>
+	<author>
+		<personname>Bruno P. Kinoshita</personname>
+		<affiliation>
+				<address><email>brunodepaulak@yahoo.com.br</email></address>
+		</affiliation>
+	</author>
+	
+	<copyright>
+		<year>2011</year>
+		<holder role="mailto:brunodepaulak@yahoo.com.br">Bruno P. Kinoshita</holder>
+	</copyright>
+	
+	<!--Markup for downstream formats; not necessary to add at the manuscript 
+		phase -->
+	<mediaobject role="cover">
+		<imageobject remap="lrg" role="front-large">
+			<imagedata fileref="covers/cover.jpg" format="JPG" />
+		</imageobject>
+	</mediaobject>
 
-      <email>brunodepaulak@yahoo.com.br</email>
-    </author>
+	<xi:include href="abstract.xml" />
 
-<!--Markup for downstream formats; not necessary to add at the manuscript phase-->
-<mediaobject id="coverd1e4" role="cover">
-  <imageobject remap="lrg" role="front-large">
-    <imagedata fileref="covers/cover.jpg" format="JPG"/>
-  </imageobject>
-</mediaobject>
-
-</bookinfo>
+</info>

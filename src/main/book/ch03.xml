@@ -6,7 +6,18 @@
          xmlns:ns4="http://www.w3.org/1998/Math/MathML"
          xmlns:ns3="http://www.w3.org/1999/xhtml"
          xmlns:db="http://docbook.org/ns/docbook">
-	<title>TestLink Configuration</title>
+	<title>Jenkins and TestLink Integration</title>
 	
-	<para>Let the show start...</para>
+	<para>It is important to explain how is the dynamic of the integration 
+	between Jenkins and TestLink. First let's review some important facts  
+	of both tools.</para>
+	
+	<para>Jenkins is extremely easy to use and can handle executing multiple 
+	jobs, scheduling jobs as well as distributed executions (or everything 
+	together: multiple jobs scheduled in a distributed environment).</para>
+	
+	<para></para>
+	
+	<para>Jenkins TestLink Plug-in is licensed under the MIT License.</para>
+	
 </preface>
