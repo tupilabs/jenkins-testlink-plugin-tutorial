@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<preface version="5.0" xmlns="http://docbook.org/ns/docbook"
+<chapter version="5.0" xmlns="http://docbook.org/ns/docbook"
          xmlns:xlink="http://www.w3.org/1999/xlink"
          xmlns:xi="http://www.w3.org/2001/XInclude"
          xmlns:ns5="http://www.w3.org/2000/svg"
@@ -8,5 +8,86 @@
          xmlns:db="http://docbook.org/ns/docbook">
 	<title>Jenkins Configuration</title>
 	
+	<section>
+	
+		<title>Installing Jenkins</title>
+		
+		<para>Download jenkins.war from http://www.jenkins-ci.org to a folder 
+		of your preference. Now go to the command line and execute java -jar 
+		jenkins.war (if you need change the port, use --httpPort=9999).</para>
+		
+		<para>Jenkins creates a default workspace for you in ~/.jenkins  
+		or uses the folder specified in HUDSON_HOME environment variable.</para>
+	
+		<para>Go to http://localhost:8080 to check if your installation is 
+		working. We will call the page loaded when you open http://localhost:8080 
+		as main screen throughout this guide.</para>
+	
+	</section>
+	
+	<section>
+		
+		<title>Installing and configuring Jenkins TestLink Plug-in</title>
+		
+		<para>The plug-ins in Jenkins are distributed from a central update 
+		site. Select the option Manage Jenkins in the left menu and look 
+		for the Manage Plugins option. Clicking on Available will bring you 
+		the list of plug-ins ready to be installed in your Jenkins.</para>
+		
+		<para>Just check the checkbox besides the plug-in name on the list 
+		and click on Install to install the plug-in. Jenkins will download and 
+		install the plug-in automatically for you, however you will have to 
+		restart for the plug-in to be enabled.</para>
+		
+		<para>After you have already restarted your Jenkins, go to Manage 
+		Jenkins again, Configure System option and look for the TestLink 
+		section. Fill the TestLink configuration form with a name for your 
+		TestLink installation, the URL of the XML-RPC API and your devKey.</para>
+		
+		<para>By default the TestLink XML-RPC API can be found at 
+		http://&lt;host>:&lt;port>/lib/api/xmlrpc.php. The devKey can 
+		be obtained by entering TestLink, clicking on My Settings (top menu) 
+		and generating a new devKey, if there is none yet. If you 
+		cannot see the API interface section in My Settings page, then it is 
+		very likely that you didn't enable it in Installing TestLink chapter. 
+		Go back to chapter 2 to review your work.</para>
+		
+	</section>
+	
+	<section>
+	
+		<title>Creating a job in Jenkins</title>
+		
+		<para>In order to create a new job all that you need to do is just click 
+		on New Job and give it a name. Choose the option to create a free-style 
+		project.</para>
+		
+		<para>For the sake of simplicity, we will point the job workspace to 
+		our Java project folder. In a real-world project it is more likely 
+		that you will have your test project stored in some kind of SCM, like 
+		SVN or git. To change the default workspace location, look for 
+		Advanced Project Options and expand its options by clicking on 
+		"Advanced...". Then mark Use custom workspace and fill the input text 
+		with the location of the test project. If you didn't download the 
+		sample test project used in this guide, you can find it in 
+		https://github.com/kinow/using-tap-with-java/sample-test-project.tar.gz.</para>
+	
+		<para>Click on Add build step button to expand its options and then 
+		click on Invoke TestLink. It will show a new form with options to 
+		integrate your Jenkins job with TestLink. Fill this form with the 
+		following information that we created in chapter 2.</para>
+		
+		<para>TestLink version: select the version that you created, 
+		Test Project name: My first project, Test Plan name: my first plan, 
+		Build name: My first build (or any other name that you want), 
+		Custom fields: Java class, leave Single test command in blank, 
+		Iterative test command: mvn -e -X test 
+		-Dtest=$TESTLINK_TESTCASE_JAVA_CLASS, 
+		TestLink automated tests key custom field: Java class and 
+		TestNG XML report files pattern: target/**/testng-results.xml. 
+		Click on save to persist your job to your disk (it is saved as XML).</para>
+	
+	</section>
+	
 	<para>Let the show start...</para>
-</preface>
+</chapter>

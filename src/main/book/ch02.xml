@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<preface version="5.0" xmlns="http://docbook.org/ns/docbook"
+<chapter version="5.0" xmlns="http://docbook.org/ns/docbook"
          xmlns:xlink="http://www.w3.org/1999/xlink"
          xmlns:xi="http://www.w3.org/2001/XInclude"
          xmlns:ns5="http://www.w3.org/2000/svg"
@@ -12,7 +12,8 @@
 	In order to install TestLink you will need a Apache or similar http server 
 	with PHP 5 and a database. The databases currently supported by TestLink 
 	out of the box are MySQL, Postgre SQL and MS SQL, although there are 
-	users that managed to use Oracle too.</para>
+	users that managed to use Oracle too. You can download it from 
+	http://www.teamst.org.</para>
 	
 	<para>In TestLink you have, among other features, Test Plans, Requirement 
 	management, Baselines, Custom Fields, Test Suite with Test Cases and 
@@ -36,4 +37,4 @@
 	<para>TestLink is licensed under the GPL License and its code is hosted 
 	at gitorious (http://www.gitorious.org/testlink-ga/testlink-code).</para>
 	
-</preface>
+</chapter>
