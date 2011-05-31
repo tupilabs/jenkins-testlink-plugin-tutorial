@@ -81,6 +81,16 @@
 					<fop1Extensions>1</fop1Extensions>
 					<foCustomization>src/main/book/stylesheets/fo/docbook.xsl</foCustomization>
 					<targetDirectory>${project.build.directory}/book/</targetDirectory>
+					<postProcess>
+						<copy todir="${basedir}/target/book/media">
+							<fileset dir="${basedir}/src/main/book/media/">
+								<include name="**/*.css" />
+								<include name="**/*.png" />
+								<include name="**/*.gif" />
+								<include name="**/*.jpg" />
+							</fileset>
+						</copy>
+					</postProcess>
 				</configuration>
 				<dependencies>
 					<dependency>

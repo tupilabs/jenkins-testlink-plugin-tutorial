@@ -14,16 +14,28 @@
 		</affiliation>
 	</author>
 	
+	<author>
+		<personname>César Fernandes de Almeida</personname>
+		<affiliation>
+				<address><email>cesar.fa@gmail.com</email></address>
+		</affiliation>
+	</author>
+	
 	<copyright>
 		<year>2011</year>
 		<holder role="mailto:brunodepaulak@yahoo.com.br">Bruno P. Kinoshita</holder>
+	</copyright>
+	
+	<copyright>
+		<year>2011</year>
+		<holder role="mailto:cesar.fa@gmail.com">César Fernandes de Almeida</holder>
 	</copyright>
 	
 	<!--Markup for downstream formats; not necessary to add at the manuscript 
 		phase -->
 	<mediaobject role="cover">
 		<imageobject remap="lrg" role="front-large">
-			<imagedata fileref="covers/cover.jpg" format="JPG" />
+			<imagedata fileref="media/cover.jpg" format="JPG" />
 		</imageobject>
 	</mediaobject>
 
