@@ -10,47 +10,93 @@
 	
 	<section>
 	
-		<title>Installing Jenkins</title>
+		<title>Installing <application>Jenkins</application></title>
 		
-		<para>Download jenkins.war from http://www.jenkins-ci.org to a folder 
-		of your preference. Now go to the command line and execute java -jar 
-		jenkins.war (if you need change the port, use --httpPort=9999).</para>
+		<para>Download <emphasis>jenkins.war</emphasis> from 
+		<link xlink:href="http://www.jenkins-ci.org">http://www.jenkins-ci.org</link> to a folder 
+		of your preference. Now go to the command line and execute 
+		<programlisting><![CDATA[java -jar jenkins.war]]></programlisting> 
+		(if you need change the port, use <emphasis>--httpPort=9999</emphasis>).</para>
 		
-		<para>Jenkins creates a default workspace for you in ~/.jenkins  
-		or uses the folder specified in HUDSON_HOME environment variable.</para>
+		<para><application>Jenkins</application> creates a default workspace for you in 
+		<emphasis>~/.jenkins</emphasis> 
+		or uses the folder specified in <emphasis>JENKINS_HOME</emphasis> environment variable.</para>
 	
-		<para>Go to http://localhost:8080 to check if your installation is 
-		working. We will call the page loaded when you open http://localhost:8080 
-		as main screen throughout this guide.</para>
+		<para>
+			<mediaobject id="jenkins_001_02">
+				<imageobject role="html">
+					<imagedata align="center" fileref="media/jenkins_001.png" width="800px" format="PNG" />
+				</imageobject>
+			</mediaobject>
+		</para>
+	
+		<para>Go to <link xlink:href="http://localhost:8080">http://localhost:8080</link> 
+		to check if your installation is working. We will call the page loaded 
+		when you open <link xlink:href="http://localhost:8080">http://localhost:8080</link> 
+		main screen throughout this guide.</para>
 	
 	</section>
 	
 	<section>
 		
-		<title>Installing and configuring Jenkins TestLink Plug-in</title>
+		<title>Installing and configuring <application>Jenkins TestLink Plug-in</application></title>
 		
-		<para>The plug-ins in Jenkins are distributed from a central update 
-		site. Select the option Manage Jenkins in the left menu and look 
-		for the Manage Plugins option. Clicking on Available will bring you 
-		the list of plug-ins ready to be installed in your Jenkins.</para>
+		<para>The plug-ins in <application>Jenkins</application> are distributed from a central update 
+		site. Select the option <emphasis>Manage Jenkins</emphasis> in the left menu and look 
+		for the <emphasis>Manage Plugins</emphasis> option. Clicking on 
+		<emphasis>Available</emphasis> will bring you 
+		the list of plug-ins ready to be installed in your 
+		<application>Jenkins</application>.</para>
 		
 		<para>Just check the checkbox besides the plug-in name on the list 
-		and click on Install to install the plug-in. Jenkins will download and 
-		install the plug-in automatically for you, however you will have to 
+		and click on <emphasis>Install</emphasis> to install the plug-in. 
+		<application>Jenkins</application> will download and install the 
+		plug-in automatically for you, however you will have to 
 		restart for the plug-in to be enabled.</para>
 		
-		<para>After you have already restarted your Jenkins, go to Manage 
-		Jenkins again, Configure System option and look for the TestLink 
-		section. Fill the TestLink configuration form with a name for your 
-		TestLink installation, the URL of the XML-RPC API and your devKey.</para>
+		<para>
+			<mediaobject id="jenkins_002">
+				<imageobject role="html">
+					<imagedata align="center" fileref="media/jenkins_002.png" width="800px" format="PNG" />
+				</imageobject>
+			</mediaobject>
+		</para>
 		
-		<para>By default the TestLink XML-RPC API can be found at 
-		http://&lt;host>:&lt;port>/lib/api/xmlrpc.php. The devKey can 
-		be obtained by entering TestLink, clicking on My Settings (top menu) 
-		and generating a new devKey, if there is none yet. If you 
-		cannot see the API interface section in My Settings page, then it is 
-		very likely that you didn't enable it in Installing TestLink chapter. 
-		Go back to chapter 2 to review your work.</para>
+		<para>
+			<mediaobject id="jenkins_003">
+				<imageobject role="html">
+					<imagedata align="center" fileref="media/jenkins_003.png" width="800px" format="PNG" />
+				</imageobject>
+			</mediaobject>
+		</para>
+		
+		<para>After you have already restarted your <application>Jenkins</application>, 
+		go to <emphasis>Manage Jenkins</emphasis> again, <emphasis>Configure System</emphasis> 
+		option and look for the <application>TestLink</application> 
+		section. Fill the <application>TestLink</application> configuration form 
+		with a name for your <application>TestLink</application> installation, 
+		the <acronym>URL</acronym> of the <acronym>XML-RPC API</acronym> and your 
+		<emphasis>devKey</emphasis>.</para>
+		
+		<para>
+			<mediaobject id="jenkins_004">
+				<imageobject role="html">
+					<imagedata align="center" fileref="media/jenkins_004.png" width="800px" format="PNG" />
+				</imageobject>
+			</mediaobject>
+		</para>
+		
+		<para>By default the <application>TestLink</application> 
+		<acronym>XML-RPC API</acronym> can be found at 
+		<emphasis>http://&lt;host>:&lt;port>/lib/api/xmlrpc.php</emphasis>. 
+		The <emphasis>devKey</emphasis> can	be obtained by entering 
+		<application>TestLink</application>, clicking on 
+		<emphasis>My Settings</emphasis> (top menu) 
+		and generating a new <emphasis>devKey</emphasis>, if there is none yet. 
+		If you cannot see the <acronym>API</acronym> interface section in 
+		<emphasis>My Settings</emphasis> page, then it is 
+		very likely that you didn't enable it yet. 
+		Go back to <xref linkend="chapter.4">chapter 4</xref> to review your work.</para>
 		
 	</section>
 	
@@ -59,35 +105,204 @@
 		<title>Creating a job in Jenkins</title>
 		
 		<para>In order to create a new job all that you need to do is just click 
-		on New Job and give it a name. Choose the option to create a free-style 
+		on <emphasis>New Job</emphasis> and give it a name. Choose the option to create a free-style 
 		project.</para>
+		
+		<para>
+			<mediaobject id="jenkins_005">
+				<imageobject role="html">
+					<imagedata align="center" fileref="media/jenkins_005.png" width="800px" format="PNG" />
+				</imageobject>
+			</mediaobject>
+		</para>
 		
 		<para>For the sake of simplicity, we will point the job workspace to 
 		our Java project folder. In a real-world project it is more likely 
-		that you will have your test project stored in some kind of SCM, like 
-		SVN or git. To change the default workspace location, look for 
-		Advanced Project Options and expand its options by clicking on 
-		"Advanced...". Then mark Use custom workspace and fill the input text 
+		that you will have your test project stored in some kind of 
+		<acronym>SCM</acronym>, like <application>SVN</application> or 
+		<application>git</application>. To change the default workspace location, 
+		look for <emphasis>Advanced Project Options</emphasis> and expand its 
+		options by clicking on <emphasis>Advanced...</emphasis>. Then mark 
+		<emphasis>Use custom workspace</emphasis> and fill the input text 
 		with the location of the test project. If you didn't download the 
 		sample test project used in this guide, you can find it in 
-		https://github.com/kinow/using-tap-with-java/sample-test-project.tar.gz.</para>
+		<link xlink:href="https://github.com/kinow/jenkins-testlink-plugin-the-definitive-guide/sample-test-project.tar.gz">
+		https://github.com/kinow/jenkins-testlink-plugin-the-definitive-guide/sample-test-project.tar.gz</link>.</para>
 	
-		<para>Click on Add build step button to expand its options and then 
-		click on Invoke TestLink. It will show a new form with options to 
-		integrate your Jenkins job with TestLink. Fill this form with the 
-		following information that we created in chapter 2.</para>
+		<para>
+			<mediaobject id="jenkins_006">
+				<imageobject role="html">
+					<imagedata align="center" fileref="media/jenkins_006.png" width="800px" format="PNG" />
+				</imageobject>
+			</mediaobject>
+		</para>
+	
+		<para>Click on <emphasis>Add build step</emphasis> button to expand 
+		its options and then click on <emphasis>Invoke TestLink</emphasis>. 
+		It will show a new form with options to integrate your 
+		<application>Jenkins</application> job with <application>TestLink</application>. 
+		Fill this form with the following information that we created in 
+		<xref linkend="chapter.4">chapter 4</xref>.</para>
 		
-		<para>TestLink version: select the version that you created, 
-		Test Project name: My first project, Test Plan name: my first plan, 
-		Build name: My first build (or any other name that you want), 
-		Custom fields: Java class, leave Single test command in blank, 
-		Iterative test command: mvn -e -X test 
-		-Dtest=$TESTLINK_TESTCASE_JAVA_CLASS, 
-		TestLink automated tests key custom field: Java class and 
-		TestNG XML report files pattern: target/**/testng-results.xml. 
-		Click on save to persist your job to your disk (it is saved as XML).</para>
+		<para>Configure your job as follows:</para>
+		
+		<para>
+			<itemizedlist>
+				<listitem>
+					<para><application>TestLink</application> version: select the version 
+			that you created in the global configuration.</para>
+				</listitem>
+				<listitem>
+					<para>Test Project name: My first project</para>
+				</listitem>
+				<listitem>
+					<para>Test Plan name: My first plan</para>
+				</listitem>
+				<listitem>
+					<para>Build name: My first build (or any other name that you want)</para>
+				</listitem>
+				<listitem>
+					<para>Custom fields: Java class</para>
+				</listitem>
+				<listitem>
+					<para>Single test command: leave it blank</para>
+				</listitem>
+				<listitem>
+					<para>Iterative test command: mvn -e -X test -Dtest=$TESTLINK_TESTCASE_JAVA_CLASS</para>
+				</listitem>
+				<listitem>
+					<para>TestLink automated tests key custom field: Java class</para>
+				</listitem>
+				<listitem>
+					<para>TestNG XML report files pattern: target/**/testng-results.xml</para>
+				</listitem>
+			</itemizedlist>
+		</para>
+		
+		<para>
+			<mediaobject id="jenkins_007_01">
+				<imageobject role="html">
+					<imagedata align="center" fileref="media/jenkins_007.png" width="800px" format="PNG" />
+				</imageobject>
+			</mediaobject>
+		</para>
+		
+		<para>Click on <emphasis>Save</emphasis> to persist your job to your disk (it is saved as XML).</para>
 	
 	</section>
 	
-	<para>Let the show start...</para>
+	<section>
+	
+		<title>Explaining the Job configuration parameters</title>
+		
+		<para>
+			<mediaobject id="jenkins_007_02">
+				<imageobject role="html">
+					<imagedata align="center" fileref="media/jenkins_007.png" width="800px" format="PNG" />
+				</imageobject>
+			</mediaobject>
+		</para>
+		
+		<section>
+		
+			<title>TestLink version</title>
+			
+			<para>This is the name of your <application>TestLink</application> 
+			installation in Jenkins global configuration.</para>
+			
+		</section>
+		
+		<section>
+		
+			<title>Test Project name</title>
+			
+			<para>This is the name of your <emphasis>Test Project</emphasis> 
+			in <application>TestLink</application>.</para>
+			
+		</section>
+		
+		<section>
+		
+			<title>Test Plan name</title>
+			
+			<para>This is the name of your <emphasis>Test Plan</emphasis> 
+			in <application>TestLink</application>.</para>
+			
+		</section>
+		
+		<section>
+		
+			<title>Build name</title>
+			
+			<para>This is the name of your <emphasis>Build</emphasis> 
+			in <application>TestLink</application>. You can use environment 
+			variables in this field following the pattern ${VARIABLE_NAME}.</para>
+			
+		</section>
+		
+		<section>
+		
+			<title>Custom fields</title>
+			
+			<para>This is a comma separated list of <emphasis>Custom Fields</emphasis> 
+			in <application>TestLink</application>.</para>
+			
+		</section>
+		
+		<section>
+		
+			<title>Single test command</title>
+			
+			<para>This command is executed once on the slave node of Jenkins (master 
+			if your Jenkins is not distributed). This field can be used 
+			to execute test suites, for example. You can use 
+			environment variables in this field.</para>
+			
+		</section>
+		
+		<section>
+		
+			<title>Iterative test command</title>
+			
+			<para>This command is executed for each automated test case 
+			within your Test Plan in <application>TestLink</application>. 
+			You can use environment variables in this field.</para>
+			
+		</section>
+		
+		<section>
+		
+			<title>TestLink automated tests key custom field</title>
+			
+			<para>This is the name of the custom field that the plug-in will 
+			use to match a <emphasis>Test Result</emphasis> with an automated test case from 
+			<application>TestLink</application>. The way that this field is 
+			used when the plug-in is scanning the test results depends on the 
+			<emphasis>Test Strategy</emphasis>.</para>
+			
+		</section>
+		
+		<section>
+		
+			<title><application>JUnit</application>, <application>TestNG</application> and 
+			<acronym>TAP</acronym> report files patterns.</title>
+			
+			<para>The plug-in uses these patterns to find test results of your 
+			tests execution (single test command or iterative). You can use multiple 
+			patterns at once, but it may lead to inconsistencies in 
+			your test results in <application>TestLink</application>.</para>
+			
+		</section>
+		
+		<section>
+		
+			<title>Transactional execution?</title>
+			
+			<para>If this option is marked and any test fails, all remaining 
+			tests will be marked as Blocked in TestLink.</para>
+			
+		</section>
+		
+	</section>
+	
 </chapter>
