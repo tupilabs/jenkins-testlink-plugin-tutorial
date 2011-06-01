@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<chapter lang="es" version="5.0" xmlns="http://docbook.org/ns/docbook"
+         xmlns:xlink="http://www.w3.org/1999/xlink"
+         xmlns:xi="http://www.w3.org/2001/XInclude"
+         xmlns:ns5="http://www.w3.org/2000/svg"
+         xmlns:ns4="http://www.w3.org/1998/Math/MathML"
+         xmlns:ns3="http://www.w3.org/1999/xhtml"
+         xmlns:db="http://docbook.org/ns/docbook">
+	<title>An Introduction to Jenkins</title>
+	
+	<para>Jenkins (née Hudson) is a continuous integration server written in 
+	Java. It can be downloaded from http://www.jenkins-ci.org as an executable 
+	war. It means that you can execute it as java -jar jenkins.war. Jenkins 
+	comes with an embedded Winstone but you also have the option to deploy the 
+	war to an application server like Tomcat or JBoss. Jenkins does not use 
+	any </para>
+	
+	<mediaobject id="jenkins_logo">
+		<imageobject role="html">
+			<imagedata fileref="media/jenkins_logo.png" format="PNG" />
+		</imageobject>
+	</mediaobject>
+	
+	<para>With Jenkins you can create, monitor and schedule Jobs. There are  
+	plug-ins available for almost anything that you may think about, from 
+	different SCM (git, mercury, SVN, CVS) to integrating your builds with 
+	Selenium, Gerrit, TestLink and other tools.</para>
+	
+	<para>Here is a summarized list of Jenkins features that is available in 
+	Jenkins Wiki:</para>
+	
+	<itemizedlist>
+		<listitem>
+			<para>Easy installation</para>
+		</listitem>
+		<listitem>
+			<para>Easy configuration</para>
+		</listitem>
+		<listitem>
+			<para>Change set support</para>
+		</listitem>
+		<listitem>
+			<para>Permanent links</para>
+		</listitem>
+		<listitem>
+			<para>RSS/E-mail/IM Integration</para>
+		</listitem>
+		<listitem>
+			<para>After-the-fact-tagging</para>
+		</listitem>
+		<listitem>
+			<para>JUnit/TestNG test reporting</para>
+		</listitem>
+		<listitem>
+			<para>Distributed builds</para>
+		</listitem>
+		<listitem>
+			<para>File fingerprinting</para>
+		</listitem>
+		<listitem>
+			<para>Plugin Support</para>
+		</listitem>
+	</itemizedlist>
+	
+	<para>For this guide you will need to download the latest and greatest 
+	Jenkins. At the moment that this guide is being written the current version 
+	of the latest and greatest Jenkins is 1.413, however it is very unlikely 
+	that there may have an issue between Jenkins versions, the development team 
+	has been doing a great job in compatibility between versions.</para>
+	
+	<para>Jenkins is licensed under MIT License and its code is hosted at 
+	github (http://github.com/jenkinsci)</para>
+	
+</chapter>

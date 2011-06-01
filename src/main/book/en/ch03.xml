@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<chapter version="5.0" xmlns="http://docbook.org/ns/docbook"
+         xmlns:xlink="http://www.w3.org/1999/xlink"
+         xmlns:xi="http://www.w3.org/2001/XInclude"
+         xmlns:ns5="http://www.w3.org/2000/svg"
+         xmlns:ns4="http://www.w3.org/1998/Math/MathML"
+         xmlns:ns3="http://www.w3.org/1999/xhtml"
+         xmlns:db="http://docbook.org/ns/docbook">
+	<title>Jenkins and TestLink Integration</title>
+	
+	<para>It is important to explain how is the dynamic of the integration 
+	between Jenkins and TestLink. First let's review some important facts  
+	of both tools.</para>
+	
+	<para>Jenkins is extremely easy to use and can handle executing multiple 
+	jobs, scheduling jobs as well as distributed executions (or everything 
+	together: multiple jobs scheduled in a distributed environment).</para>
+	
+	<para>TestLink is very powerful to manage tests, be it automated or 
+	manual. It also permits you to organize your tests in a nice hierarchical 
+	structure. However, also for its programming language and architecture, 
+	TestLink is not very suitable for running or scheduling taks in 
+	background.</para>
+	
+	<para>There are different ways to automate your tests in TestLink. 
+	You could store your tests in SVN and trigger the execution from a button 
+	in TestLink, however you would have to either implement some mechanism 
+	in TestLink to monitor this execution or go to a different system to see 
+	what is going on. Or you could write your tests in PHP and put them 
+	together with your TestLink installation, but it is not an easy task 
+	execute some tasks in different processes or threads in PHP. For these 
+	reasons, the integration that we bring to you in this guide uses simpler 
+	approach. Your automated and manual tests are managed in TestLink, while 
+	Jenkins is responsible for executing your automated tests. Jenkins is 
+	also responsible for updating your test execution status back in TestLink as 
+	well as uploading any attachments defined by you. This integration is 
+	achieved with Jenkins TestLink Plugin.</para>
+	
+	<para>We will see how to configure our envinronment for this integration 
+	throughout the next chapters. While it is good to have a good written 
+	explanation on how this integration works, probably it is a lot easier 
+	to understand how it works with a hands-on. The rest of this guide 
+	explain how to configure Jenkins and TestLink to run automated tests from 
+	a sample test project. This test project is a Java project that uses Maven 
+	and TestNG, you can download it from 
+	https://github.com/kinow/using-tap-with-java/sample-test-project.tar.gz</para>
+	
+	<para>Jenkins TestLink Plug-in is licensed under the MIT License and its 
+	code is stored in github (http://github.com/jenkinsci/testlink-plugin).</para>
+	
+</chapter>
