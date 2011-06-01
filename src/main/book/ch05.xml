@@ -126,8 +126,8 @@
 		<emphasis>Use custom workspace</emphasis> and fill the input text 
 		with the location of the test project. If you didn't download the 
 		sample test project used in this guide, you can find it in 
-		<link xlink:href="https://github.com/kinow/jenkins-testlink-plugin-the-definitive-guide/sample-test-project.tar.gz">
-		https://github.com/kinow/jenkins-testlink-plugin-the-definitive-guide/sample-test-project.tar.gz</link>.</para>
+		<link xlink:href="https://github.com/kinow/jenkins-testlink-plugin-the-definitive-guide/blob/master/sample-test-project.tar.gz?raw=true">
+		https://github.com/kinow/jenkins-testlink-plugin-the-definitive-guide/blob/master/sample-test-project.tar.gz?raw=true</link>.</para>
 	
 		<para>
 			<mediaobject id="jenkins_006">
