@@ -141,7 +141,7 @@
 		its options and then click on <emphasis>Invoke TestLink</emphasis>. 
 		It will show a new form with options to integrate your 
 		<application>Jenkins</application> job with <application>TestLink</application>. 
-		Fill this form with the following information that we created in 
+		Fill this form with the following information created in 
 		<xref linkend="chapter.4">chapter 4</xref>.</para>
 		
 		<para>Configure your job as follows:</para>
@@ -299,9 +299,71 @@
 			<title>Transactional execution?</title>
 			
 			<para>If this option is marked and any test fails, all remaining 
-			tests will be marked as Blocked in TestLink.</para>
+			tests will be marked as <emphasis>Blocked</emphasis> in <application>TestLink</application>.</para>
 			
 		</section>
+		
+		<section>
+		
+			<title>Environment variables</title>
+			
+			<para>The plug-in retrieves all the information from <application>TestLink</application> for your 
+			Test Project, Test Plan, Build and automated Test Cases. You can use any 
+			of this information to execute your tests. <application>Jenkins</application> 
+			itself provides the <emphasis>Environment Variables</emphasis>, plus 
+			<emphasis>Build Environment Variables</emphasis> (such as 
+			<emphasis>BUILD_ID</emphasis>, which holds the date time of your 
+			job). The plug-in injects the information retrieved from 
+			<application>TestLink</application> as environment variables. </para>
+			
+			<para>This way you can use the value of the <emphasis>Java class</emphasis> 
+			custom field value that you created in <xref linkend="chapter.4">chapter 4</xref> 
+			in your iterative test command.</para>
+			
+			<para>
+				<programlisting><![CDATA[mvn -e -X test -Dtest=$TESTLINK_TESTCASE_JAVA_CLASS]]></programlisting>
+			</para>
+			
+			<para>As you can see, our test command uses the <emphasis>Java class</emphasis> 
+			custom field value to specify the name of the test to 
+			<application>Maven</application> (<application>Maven Surefire Plug-in, actually</application>). 
+			Below you will find a list with the information that the plug-in 
+			makes available for your job configuration. As custom fields names 
+			may vary, the strategy used is capitalize the custom field name, 
+			replace spaces with <emphasis>_</emphasis> and append it to 
+			<emphasis>TESTLINK_TESTCASE_</emphasis>, which represents 
+			information of a Test Case in <application>TestLink</application>.</para>
+			
+			<para>
+				<db:itemizedlist>
+					<db:listitem>
+						<db:para>TESTLINK_TESTCASE_ID</db:para>
+					</db:listitem>
+					<db:listitem>
+						<db:para>TESTLINK_TESTCASE_NAME</db:para>
+					</db:listitem>
+					<db:listitem>
+						<db:para>TESTLINK_TESTCASE_TESTPROJECTID</db:para>
+					</db:listitem>
+					<db:listitem>
+						<db:para>TESTLINK_TESTCASE_AUTHOR</db:para>
+					</db:listitem>
+					<db:listitem>
+						<db:para>TESTLINK_TESTCASE_SUMMARY</db:para>
+					</db:listitem>
+					<db:listitem>
+						<db:para>TESTLINK_BUILD_NAME</db:para>
+					</db:listitem>
+					<db:listitem>
+						<db:para>TESTLINK_TESTPLAN_NAME</db:para>
+					</db:listitem>
+					<db:listitem>
+						<db:para>TESTLINK_TESTCASE_$CUSTOM_FIELD_NAME</db:para>
+					</db:listitem>
+				</db:itemizedlist>
+			</para>
+			
+		</section>    
 		
 	</section>
 	

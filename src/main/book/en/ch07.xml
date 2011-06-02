@@ -6,7 +6,60 @@
          xmlns:ns4="http://www.w3.org/1998/Math/MathML"
          xmlns:ns3="http://www.w3.org/1999/xhtml"
          xmlns:db="http://docbook.org/ns/docbook">
-	<title>Strategies used to seek for Test Results</title>
+	<title>Strategies for finding Test Results</title>
 	
-	<para>Let the show start...</para>
+	<para>After your automated tests are executed the plug-in has to look for 
+	<emphasis>Test Results</emphasis>. This way it will know whether an 
+	automated test was executed correctly or not and then update the test status 
+	in <application>TestLink</application>.</para>
+	
+	<para><application>Jenkins TestLink Plug-in</application> currently has 
+	three strategies for finding Test Results: <emphasis>TAP</emphasis>, 
+	<emphasis>TestNG</emphasis> and <emphasis>JUnit</emphasis>. All these three 
+	strategies uses a key custom field to associate a test result with an 
+	automated test case.</para>
+	
+	<section>
+	
+		<title><application>JUnit</application></title>
+
+		<para>For <application>JUnit</application>, the plug-in uses the name 
+		of the test suite. If the test suite name is the same as the value of 
+		the key custom field of a test case, then the plug-in checks if failures or 
+		errors attributes of the testsuite are greater than 0 (zero). 
+		If so, the test case is updated with the status failed. 
+		Otherwise it is updated with passed.</para>
+	
+	</section>
+	
+	<section>
+	
+		<title><application>TestNG</application></title>
+
+		<para>For <application>TestNG</application>, the plug-in uses the 
+		class name of the test as key. Usually a <application>TestNG</application> 
+		<acronym>XML</acronym> report contains a suite with many tests. 
+		The plug-in looks for the name of the classes of the tests. If a 
+		<application>TestNG</application> class name is the same as the value 
+		of the key custom field of a test case, then the plug-in checks the 
+		status of the methods of the class. If a class contains a method that 
+		failed, then the test case is updated with the status failed. 
+		Otherwise it is updated with passed.</para>
+	
+	</section>
+	
+	<section>
+	
+		<title><acronym>TAP</acronym></title>
+
+		<para>For <acronym>TAP</acronym>, the plug-in uses the <acronym>TAP</acronym> 
+		file name as key. If the <acronym>TAP</acronym> file name is the same 
+		as the value of the key custom field of a test case, 
+		then the plug-in checks whether the <acronym>TAP</acronym> file 
+		contains errors (not ok). If so, the test case is updated in 
+		<application>TestLink</application> with the status failed. 
+		Otherwise it is updated with passed.</para>
+	
+	</section>
+	
 </chapter>

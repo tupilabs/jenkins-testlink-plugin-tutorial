@@ -6,7 +6,33 @@
          xmlns:ns4="http://www.w3.org/1998/Math/MathML"
          xmlns:ns3="http://www.w3.org/1999/xhtml"
          xmlns:db="http://docbook.org/ns/docbook">
-	<title>Advantages of using Jenkins TestLink Plug-in</title>
+	<title>Advantages of using <application>Jenkins TestLink Plug-in</application></title>
 	
-	<para>Let the show start...</para>
+	<para>The plug-in is not intended to be a test automation 
+	solution, though it helps you to automate your tests. It is not intended to 
+	manage your automated tests either. The purpose of the plug-in is 
+	integrate <application>Jenkins</application>, a continuous integration server, 
+	and <application>TestLink</application>, a test management tool.</para>
+	
+	<para>There are three clear advantages in using this approach. First, 
+	if you are already using <application>Jenkins</application> as continuous 
+	integration server and <application>TestLink</application> as test 
+	management tool, then you won't have another tool to worry about. Simply 
+	install the plug-in and then DevOps will keep working in <application>Jenkins</application>, 
+	testers will keep working in <application>Jenkins</application> and your boss 
+	will be more than happy to know that he won't need to buy another tool, 
+	or train the whole team to learn how to use a new one.</para>
+	
+	<para>Second, it is language independent. You can run tests in 
+	<acronym>PHP</acronym>, Perl, Python, Java o even C. The only limitation 
+	here is that you have to be able to output your test results either in 
+	<application>JUnit</application>, <application>TestNG</application> or 
+	<acronym>TAP</acronym>.</para>
+	
+	<para>Lastly, it is free. The team of the plug-in are contributors of 
+	<application>TestLink</application>, maintainers of the 
+	<application>TestLink Java API</application>, and keep trying to fix 
+	the issues in <link xlink:href="http://issues.jenkins-ci.org"><application>Jenkins</application>' 
+	<application>JIRA</application></link> as fast as they can.</para>
+	
 </chapter>
