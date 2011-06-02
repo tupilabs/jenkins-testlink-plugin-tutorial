@@ -72,17 +72,17 @@
 					</execution>
 				</executions>
 				<configuration>
-					<sourceDirectory>${basedir}/src/main/book/</sourceDirectory>
+					<sourceDirectory>${basedir}/src/main/book/en/</sourceDirectory>
 					<includes>book.xml</includes>
-					<generatedSourceDirectory>${project.build.directory}/book/generated</generatedSourceDirectory>
+					<generatedSourceDirectory>${project.build.directory}/book/generated/en</generatedSourceDirectory>
 					<xincludeSupported>true</xincludeSupported>
 					<highlightSource>1</highlightSource>
 					<paperType>A4</paperType>
 					<fop1Extensions>1</fop1Extensions>
 					<foCustomization>src/main/book/stylesheets/fo/docbook.xsl</foCustomization>
-					<targetDirectory>${project.build.directory}/book/</targetDirectory>
+					<targetDirectory>${project.build.directory}/book/en/</targetDirectory>
 					<postProcess>
-						<copy todir="${basedir}/target/book/media">
+						<copy todir="${basedir}/target/book/en/media">
 							<fileset dir="${basedir}/src/main/book/media/">
 								<include name="**/*.css" />
 								<include name="**/*.png" />
@@ -111,5 +111,116 @@
 			</plugin>
 		</plugins>
 	</build>
+
+	<profiles>
+		<profile>
+			<id>fr</id>
+			<build>
+				<plugins>
+					<plugin>
+						<groupId>com.agilejava.docbkx</groupId>
+						<artifactId>docbkx-maven-plugin</artifactId>
+						<version>2.0.11</version>
+						
+						<configuration>
+							<sourceDirectory>${basedir}/src/main/book/fr/</sourceDirectory>
+							<includes>book.xml</includes>
+							<generatedSourceDirectory>${project.build.directory}/book/fr/generated</generatedSourceDirectory>
+							<xincludeSupported>true</xincludeSupported>
+							<highlightSource>1</highlightSource>
+							<paperType>A4</paperType>
+							<fop1Extensions>1</fop1Extensions>
+							<foCustomization>src/main/book/stylesheets/fo/docbook.xsl</foCustomization>
+							<targetDirectory>${project.build.directory}/book/fr/</targetDirectory>
+							<postProcess>
+								<copy todir="${basedir}/target/book/fr/media">
+									<fileset dir="${basedir}/src/main/book/media/">
+										<include name="**/*.css" />
+										<include name="**/*.png" />
+										<include name="**/*.gif" />
+										<include name="**/*.jpg" />
+									</fileset>
+								</copy>
+							</postProcess>
+						</configuration>
+						
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
+
+		<profile>
+			<id>es</id>
+			<build>
+				<plugins>
+					<plugin>
+						<groupId>com.agilejava.docbkx</groupId>
+						<artifactId>docbkx-maven-plugin</artifactId>
+						<version>2.0.11</version>
+						
+						<configuration>
+							<sourceDirectory>${basedir}/src/main/book/es/</sourceDirectory>
+							<includes>book.xml</includes>
+							<generatedSourceDirectory>${project.build.directory}/book/generated/es</generatedSourceDirectory>
+							<xincludeSupported>true</xincludeSupported>
+							<highlightSource>1</highlightSource>
+							<paperType>A4</paperType>
+							<fop1Extensions>1</fop1Extensions>
+							<foCustomization>src/main/book/stylesheets/fo/docbook.xsl</foCustomization>
+							<targetDirectory>${project.build.directory}/book/es/</targetDirectory>
+							<postProcess>
+								<copy todir="${basedir}/target/book/es/media">
+									<fileset dir="${basedir}/src/main/book/media/">
+										<include name="**/*.css" />
+										<include name="**/*.png" />
+										<include name="**/*.gif" />
+										<include name="**/*.jpg" />
+									</fileset>
+								</copy>
+							</postProcess>
+						</configuration>
+						
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
+
+		<profile>
+			<id>pt-br</id>
+			<build>
+				<plugins>
+					<plugin>
+						<groupId>com.agilejava.docbkx</groupId>
+						<artifactId>docbkx-maven-plugin</artifactId>
+						<version>2.0.11</version>
+						
+						<configuration>
+							<sourceDirectory>${basedir}/src/main/book/pt-br/</sourceDirectory>
+							<includes>book.xml</includes>
+							<generatedSourceDirectory>${project.build.directory}/book/generated/pt-br</generatedSourceDirectory>
+							<xincludeSupported>true</xincludeSupported>
+							<highlightSource>1</highlightSource>
+							<paperType>A4</paperType>
+							<fop1Extensions>1</fop1Extensions>
+							<foCustomization>src/main/book/stylesheets/fo/docbook.xsl</foCustomization>
+							<targetDirectory>${project.build.directory}/book/pt-br/</targetDirectory>
+							<postProcess>
+								<copy todir="${basedir}/target/book/pt-br/media">
+									<fileset dir="${basedir}/src/main/book/media/">
+										<include name="**/*.css" />
+										<include name="**/*.png" />
+										<include name="**/*.gif" />
+										<include name="**/*.jpg" />
+									</fileset>
+								</copy>
+							</postProcess>
+						</configuration>
+						
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
+	
+	</profiles>
 
 </project>

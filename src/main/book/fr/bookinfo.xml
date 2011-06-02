@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<info lang="fr" version="5.0" xmlns="http://docbook.org/ns/docbook"
+	xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xi="http://www.w3.org/2001/XInclude"
+	xmlns:ns5="http://www.w3.org/2000/svg" xmlns:ns4="http://www.w3.org/1998/Math/MathML"
+	xmlns:ns3="http://www.w3.org/1999/xhtml">
+	<!-- All rights reserved. -->
+
+	<edition>1</edition>
+
+	<author>
+		<personname>Bruno P. Kinoshita</personname>
+		<affiliation>
+				<address><email>brunodepaulak@yahoo.com.br</email></address>
+		</affiliation>
+	</author>
+	
+	<author>
+		<personname>César Fernandes de Almeida</personname>
+		<affiliation>
+				<address><email>cesar.fa@gmail.com</email></address>
+		</affiliation>
+	</author>
+	
+	<!--Markup for downstream formats; not necessary to add at the manuscript 
+		phase -->
+	<mediaobject role="cover">
+		<imageobject remap="lrg" role="front-large">
+			<imagedata fileref="media/cover.jpg" format="JPG" />
+		</imageobject>
+	</mediaobject>
+
+	<xi:include href="abstract.xml" />
+
+</info>
