@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<chapter lang="es" version="5.0" xmlns="http://docbook.org/ns/docbook"
+         xmlns:xlink="http://www.w3.org/1999/xlink"
+         xmlns:xi="http://www.w3.org/2001/XInclude"
+         xmlns:ns5="http://www.w3.org/2000/svg"
+         xmlns:ns4="http://www.w3.org/1998/Math/MathML"
+         xmlns:ns3="http://www.w3.org/1999/xhtml"
+         xmlns:db="http://docbook.org/ns/docbook">
+	<title>An Introduction to <application>Jenkins</application></title>
+	
+	<para><application>Jenkins</application> 
+	(née <application>Hudson</application>) is a <emphasis>continuous integration</emphasis> server 
+	written in Java. It can be downloaded from 
+	<link xlink:href="http://www.jenkins-ci.org">http://www.jenkins-ci.org</link> 
+	as an executable war. It means that you can run it with 
+	<programlisting><![CDATA[java -jar jenkins.war]]></programlisting>. 
+	<application>Jenkins</application> comes with an embedded 
+	<application>Winstone</application> but you also have the option to deploy the 
+	war to an application server like <application>Tomcat</application> or 
+	<application>JBoss</application>. <application>Jenkins</application> does not use 
+	any database to store is configuration. Everything is saved to 
+	<acronym>XML</acronym> files using <application>XStream</application>.</para>
+	
+	<para>
+		<mediaobject id="jenkins_logo">
+			<imageobject role="html">
+				<imagedata align="center" fileref="media/jenkins_logo.png" format="PNG" />
+			</imageobject>
+		</mediaobject>
+	</para>
+	
+	<para>With <application>Jenkins</application> you can create, monitor and 
+	schedule <emphasis>Jobs</emphasis>. There are <emphasis>Plug-ins</emphasis> available for almost 
+	anything that you may think about, from different <acronym>SCM</acronym> 
+	(<application>git</application>, <application>mercury</application>, 
+	<application>SVN</application>, <application>CVS</application>) to 
+	integrating your builds with <application>Selenium</application>, 
+	<application>Gerrit</application>, <application>TestLink</application> and 
+	other tools.</para>
+	
+	<para>Here is a summarized list of <application>Jenkins</application> 
+	features that is available in 
+	<link xlink:href="http://wiki.jenkins-ci.org/display/JENKINS/TestLink+Plugin">Jenkins Wiki</link>:</para>
+	
+	<itemizedlist>
+		<listitem>
+			<para>Easy installation</para>
+		</listitem>
+		<listitem>
+			<para>Easy configuration</para>
+		</listitem>
+		<listitem>
+			<para>Change set support</para>
+		</listitem>
+		<listitem>
+			<para>Permanent links</para>
+		</listitem>
+		<listitem>
+			<para>RSS/E-mail/IM Integration</para>
+		</listitem>
+		<listitem>
+			<para>After-the-fact-tagging</para>
+		</listitem>
+		<listitem>
+			<para>JUnit/TestNG test reporting</para>
+		</listitem>
+		<listitem>
+			<para>Distributed builds</para>
+		</listitem>
+		<listitem>
+			<para>File fingerprinting</para>
+		</listitem>
+		<listitem>
+			<para>Plugin Support</para>
+		</listitem>
+	</itemizedlist>
+	
+	<para>For this guide you will need to download the latest and greatest 
+	<application>Jenkins</application>. At the moment that this guide is being written the current version 
+	of the latest and greatest Jenkins is <emphasis>1.413</emphasis>, however it is very unlikely 
+	that what you will learn here won't work with other versions of <application>Jenkins</application>. 
+	The development team has been doing a great job in compatibility between versions.</para>
+	
+	<para>
+		<mediaobject id="jenkins_001_01">
+			<imageobject role="html">
+				<imagedata align="center" fileref="media/jenkins_001.png" width="800px" format="PNG" />
+			</imageobject>
+		</mediaobject>
+	</para>
+	
+	<para><application>Jenkins</application> is licensed under <acronym>MIT</acronym> License 
+	and its code is hosted at <application>github</application> - 
+	<link xlink:href="http://github.com/jenkinsci">http://github.com/jenkinsci</link>.</para>
+	
+</chapter>
