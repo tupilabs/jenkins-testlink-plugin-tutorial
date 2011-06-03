@@ -6,20 +6,18 @@
          xmlns:ns4="http://www.w3.org/1998/Math/MathML"
          xmlns:ns3="http://www.w3.org/1999/xhtml"
          xmlns:db="http://docbook.org/ns/docbook">
-	<title>An Introduction to <application>Jenkins</application></title>
+	<title>Una introducción al <application>Jenkins</application></title>
 	
 	<para><application>Jenkins</application> 
-	(née <application>Hudson</application>) is a <emphasis>continuous integration</emphasis> server 
-	written in Java. It can be downloaded from 
-	<link xlink:href="http://www.jenkins-ci.org">http://www.jenkins-ci.org</link> 
-	as an executable war. It means that you can run it with 
+	(née <application>Hudson</application>) es un servidor de <emphasis>integración continua</emphasis> 
+	escrito en Java. Se puede descargalo de <link xlink:href="http://www.jenkins-ci.org">http://www.jenkins-ci.org</link> 
+	como un war ejecutable. Esto significa que es posible ejecutalo con el comando
 	<programlisting><![CDATA[java -jar jenkins.war]]></programlisting>. 
-	<application>Jenkins</application> comes with an embedded 
-	<application>Winstone</application> but you also have the option to deploy the 
-	war to an application server like <application>Tomcat</application> or 
-	<application>JBoss</application>. <application>Jenkins</application> does not use 
-	any database to store is configuration. Everything is saved to 
-	<acronym>XML</acronym> files using <application>XStream</application>.</para>
+	<application>Jenkins</application> viene con un	<application>Winstone</application> embebido 
+	pero también existe la opción de hacer el deploy en un servidor de aplicaciones como el 
+	<application>Tomcat</application> o el <application>JBoss</application>. <application>Jenkins</application> 
+	no hace la utilización de ni una base de datos para almacenar su configuración. Todo el contenido 
+	es guardado en archivos <acronym>XML</acronym> con la utilización de <application>XStream</application>.</para>
 	
 	<para>
 		<mediaobject id="jenkins_logo">
@@ -29,57 +27,56 @@
 		</mediaobject>
 	</para>
 	
-	<para>With <application>Jenkins</application> you can create, monitor and 
-	schedule <emphasis>Jobs</emphasis>. There are <emphasis>Plug-ins</emphasis> available for almost 
-	anything that you may think about, from different <acronym>SCM</acronym> 
+	<para>Con <application>Jenkins</application> es posible crear, monitorar y programar 
+	<emphasis>Jobs</emphasis>. Existen <emphasis>Plug-ins</emphasis> disponibles para casi 
+	cualquier necesidade que se puede pensar, desde diferentes <acronym>SCM</acronym> 
 	(<application>git</application>, <application>mercury</application>, 
-	<application>SVN</application>, <application>CVS</application>) to 
-	integrating your builds with <application>Selenium</application>, 
-	<application>Gerrit</application>, <application>TestLink</application> and 
-	other tools.</para>
+	<application>SVN</application>, <application>CVS</application>) hasta 
+	la integración de sus builds con <application>Selenium</application>, 
+	<application>Gerrit</application>, <application>TestLink</application> y otras herramientas.</para>
 	
-	<para>Here is a summarized list of <application>Jenkins</application> 
-	features that is available in 
+	<para>Aqui está una lista resumida de las características de <application>Jenkins</application> 
+	que está disponible en 
 	<link xlink:href="http://wiki.jenkins-ci.org/display/JENKINS/TestLink+Plugin">Jenkins Wiki</link>:</para>
 	
 	<itemizedlist>
 		<listitem>
-			<para>Easy installation</para>
+			<para>Instalación sencilla</para>
 		</listitem>
 		<listitem>
-			<para>Easy configuration</para>
+			<para>Fácil configuración</para>
 		</listitem>
 		<listitem>
-			<para>Change set support</para>
+			<para>Change set support ( Contiene conjunto de configuración )</para>
 		</listitem>
 		<listitem>
 			<para>Permanent links</para>
 		</listitem>
 		<listitem>
-			<para>RSS/E-mail/IM Integration</para>
+			<para>RSS/E-mail/Integración IM</para>
 		</listitem>
 		<listitem>
 			<para>After-the-fact-tagging</para>
 		</listitem>
 		<listitem>
-			<para>JUnit/TestNG test reporting</para>
+			<para>Informes de pruebas JUnit/TestNG</para>
 		</listitem>
 		<listitem>
-			<para>Distributed builds</para>
+			<para>Builds distribuidos</para>
 		</listitem>
 		<listitem>
 			<para>File fingerprinting</para>
 		</listitem>
 		<listitem>
-			<para>Plugin Support</para>
+			<para>Suporte a plugins</para>
 		</listitem>
 	</itemizedlist>
 	
-	<para>For this guide you will need to download the latest and greatest 
-	<application>Jenkins</application>. At the moment that this guide is being written the current version 
-	of the latest and greatest Jenkins is <emphasis>1.413</emphasis>, however it is very unlikely 
-	that what you will learn here won't work with other versions of <application>Jenkins</application>. 
-	The development team has been doing a great job in compatibility between versions.</para>
+	<para>Para esta guia es necesario descargar la ultima versión del 
+	<application>Jenkins</application>. En el momento en que esta guia esta siendo produzida la versión corriente del 
+	<application>Jenkins</application> es <emphasis>1.413</emphasis>, no obstante es muy poco probable que lo que apriendas 
+	aqui no vá a funcionar con otras versiones del <application>Jenkins</application>. 
+	El equipo de desarrollo há hecho estupendo trabajo de compatibilidad entre versiones.</para>
 	
 	<para>
 		<mediaobject id="jenkins_001_01">
@@ -89,8 +86,8 @@
 		</mediaobject>
 	</para>
 	
-	<para><application>Jenkins</application> is licensed under <acronym>MIT</acronym> License 
-	and its code is hosted at <application>github</application> - 
+	<para><application>Jenkins</application> está licenciado bajo la licencia  <acronym>MIT</acronym>  
+	y su código se encuentra alojado en  <application>github</application> - 
 	<link xlink:href="http://github.com/jenkinsci">http://github.com/jenkinsci</link>.</para>
 	
 </chapter>
