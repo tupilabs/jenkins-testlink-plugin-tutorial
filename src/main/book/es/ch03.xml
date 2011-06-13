@@ -25,17 +25,17 @@
 	múltiples tareas en segundo plano.</para>
 	
 	<para>Hay diferentes maneras de automatizar las pruebas en el <application>TestLink</application>. 
-	Es posible armacenar las pruebas en el <application>SVN</application> y disparar la ejecución por un botón
-	en el <application>TestLink</application>, de todos modos seria necesario implementar un mecanismo en el 
-	<application>TestLink</application> para monitorar la ejecución o para ir a un sistema diferente para ver
-	lo que está pasando. O es posible escribir las pruebas en <acronym>PHP</acronym> y ponerlas junto al instalación 
-	del  <application>TestLink</application>, pero no es una tarea fácil ejecutar las tareas en diferentes procesos
-	o threads en <acronym>PHP</acronym>. Por todas estas razones, la integración que te traemos en esta guía
-	utiliza un enfoque más sencillo. Pruebas manuales y automatizadas son gerenciadas en el 
-	<application>TestLink</application>, mientras <application>Jenkins</application> es responsable para la ejecución
-	e las pruebas automatizadas. Jenkins también es responsable por la actualización de los status de ejecución de pruebas en
-	el <application>TestLink</application> así como subir los archivos adjuntos definidos. Esta integración se logra con
-	<application>Jenkins TestLink Plugin</application>.</para>
+	Es posible armacenar las pruebas en el <application>SVN</application> y disparar la ejecución 
+	por un botón en el <application>TestLink</application>, de todos modos seria necesario implementar 
+	un mecanismo en el <application>TestLink</application> para monitorar la ejecución o para ir a un 
+	sistema diferente para ver lo que está pasando. O es posible escribir las pruebas en <acronym>PHP</acronym> 
+	y ponerlas junto al instalación del  <application>TestLink</application>, pero no es una tarea fácil 
+	ejecutar las tareas en diferentes procesos o threads en <acronym>PHP</acronym>. Por todas estas razones, 
+	la integración que te traemos en esta guía utiliza un enfoque más sencillo. Pruebas manuales y automatizadas 
+	son gerenciadas en el <application>TestLink</application>, mientras <application>Jenkins</application> es 
+	responsable para la ejecución e las pruebas automatizadas. Jenkins también es responsable por la actualización 
+	de los status de ejecución de pruebas en el <application>TestLink</application> así como subir los archivos 
+	adjuntos definidos. Esta integración se logra con <application>Jenkins TestLink Plugin</application>.</para>
 	
 	<para>Vamos a ver como se configura el ambiente para esta integración en los 
 	próximos capítulos. Mientras es bueno tener una buena explicación de cómo la 

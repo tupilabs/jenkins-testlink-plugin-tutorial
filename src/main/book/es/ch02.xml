@@ -51,10 +51,10 @@
 	</para>
 	
 	<para>En el momento en que se produze esta guia la ultima versión estable del 
-	<application>TestLink</application> es la <emphasis>1.9.2</emphasis>, no obstante las versiones 
-	<emphasis>1.9.3</emphasis> y <emphasis>2.0</emphasis> ya estan planeadas y programadas. 
-	Mientras que la versión del <application>Jenkins</application> no es un problema de compatibilidade para
-	esta integración, lo mismo no se puede decir sobre <application>TestLink</application>. Esta guia es 
+	<application>TestLink</application> es la <emphasis>1.9.2</emphasis>, no obstante las 
+	versiones <emphasis>1.9.3</emphasis> y <emphasis>2.0</emphasis> ya estan planeadas y programadas. 
+	Mientras que la versión del <application>Jenkins</application> no es un problema de compatibilidade 
+	para esta integración, lo mismo no se puede decir sobre <application>TestLink</application>. Esta guia es 
 	destinada para el <application>Testlink</application> <emphasis>1.9.2</emphasis>. 
 	En caso de que haya otras versiones disponibles en el momento de lectura desta guia, es posible que ocurran errores 
 	durante la ejecución del job <application>Jenkins</application>. Hay una tabla comparativa 
