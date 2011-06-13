@@ -6,16 +6,17 @@
          xmlns:ns4="http://www.w3.org/1998/Math/MathML"
          xmlns:ns3="http://www.w3.org/1999/xhtml"
          xmlns:db="http://docbook.org/ns/docbook">
-	<title>An Introduction to <application>TestLink</application></title>
+	<title>Una introducción al <application>TestLink</application></title>
 	
-	<para><application>TestLink</application> is an open source test management tool written in <acronym>PHP</acronym>. 
-	In order to install <application>TestLink</application> you will need a 
-	<application>Apache</application> or similar http server with <acronym>PHP</acronym> 
-	5 and a database. The databases currently supported by <application>TestLink</application> 
-	out of the box are <application>MySQL</application>, <application>Postgre SQL</application> 
-	and <application>MS SQL</application>, although there are 
-	users that managed to use <application>Oracle</application> too. You can 
-	download it from <link xlink:href="http://www.teamst.org">http://www.teamst.org</link>.</para>
+	<para><application>TestLink</application> es un una herramienta de genrencia de pruebas 
+	open source escrita en <acronym>PHP</acronym>. 
+	A fin de instalar el <application>TestLink</application> es necessario un servidor http 
+	<application>Apache</application> o otro similar con <acronym>PHP</acronym> 
+	5.x y una base de datos. Las bases de datos soportadas en la actualidad por el <application>TestLink</application> 
+	son <application>MySQL</application>, <application>Postgre SQL</application> 
+	y <application>MS SQL</application>, pero si bien existen usuarios que logran utilizar
+	<application>Oracle</application> también. Se puede descargar el <application>TestLink</application>
+	del link <link xlink:href="http://www.teamst.org">http://www.teamst.org</link>.</para>
 	
 	<para>
 		<mediaobject id="testlink_logo">
@@ -25,20 +26,18 @@
 		</mediaobject>
 	</para>
 	
-	<para>In <application>TestLink</application> you have, among other features, 
-	<emphasis>Test Plans</emphasis>, <emphasis>Requirement 
-	management</emphasis>, <emphasis>Baselines</emphasis>, <emphasis>Custom Fields</emphasis>, 
-	<emphasis>Test Suite</emphasis> with <emphasis>Test Cases</emphasis> and 
-	<emphasis>Reporting</emphasis>. For external access, there is a 
-	<acronym>XML-RPC API</acronym> available 
-	(it is not enabled by default). Other two nice features in 
-	<application>TestLink</application> are the 
-	versioning of the some entities, like Test Case and Requirements, 
-	and the ability to import and export your testing data in different file formats.</para>
+	<para>En el <application>TestLink</application> existe, entre otras características, 
+	<emphasis>Planos de prueba</emphasis>, <emphasis>Gerenciamento de requisitos</emphasis>, 
+	<emphasis>Baselines</emphasis>, <emphasis>Campos personalizados</emphasis>, 
+	<emphasis>Suite de Pruebas</emphasis> con <emphasis>Casos de Pruebas</emphasis> y 
+	<emphasis>Presentación de Informes</emphasis>. Para accesso externo, hay una 
+	<acronym>API XML-RPC</acronym> disponible (no está activada por defecto). Otras duas 
+	características interesantes en el <application>TestLink</application> son la  el control 
+	de versiones de las entidades, como Casos de Prueba y Requisitos, y la habilidad de importar 
+	o exportar datos de pruebas en diferentes formatos de archivo.</para>
 	
-	<para>There are bindings for the <application>TestLink</application> 
-	<acronym>XML-RPC API</acronym> available for other languages such as 
-	Ruby and Java. The <application>Jenkins</application> and 
+	<para>Existen enlaces para la <acronym>API XML-RPC</acronym> del <application>TestLink</application> 
+	disponibles para otris lenguajes como el Ruby o el Java. The <application>Jenkins</application> and 
 	<application>TestLink</application> integration is 
 	done using <application>TestLink Java API</application> - 
 	<link xlink:href="http://testlinkjavaapi.sourceforge.net">http://testlinkjavaapi.sourceforge.net</link>.</para>
@@ -51,18 +50,18 @@
 		</mediaobject>
 	</para>
 	
-	<para>At the moment that this guide is being written the latest stable 
-	version of <application>TestLink</application> is <emphasis>1.9.2</emphasis>, 
-	however versions <emphasis>1.9.3</emphasis> and <emphasis>2.0</emphasis> are already 
-	planned and scheduled. While the <application>Jenkins</application> version is not a compatibility issue for 
-	this integration, the same cannot be said about <application>TestLink</application>. This guide is 
-	intended for <application>Testlink</application> <emphasis>1.9.2</emphasis>. 
-	In case there are other versions available at the moment that you are reading this guide, 
-	you may find issues during your <application>Jenkins</application> Job execution. There is a compatibility 
-	table available in the <link xlink:href="http://wiki.jenkins-ci.org/display/JENKINS/TestLink+Plugin">plug-in Wiki.</link></para>
+	<para>En el momento en que se produze esta guia la ultima versión estable del 
+	<application>TestLink</application> es la <emphasis>1.9.2</emphasis>, no obstante las 
+	versiones <emphasis>1.9.3</emphasis> y <emphasis>2.0</emphasis> ya estan planeadas y programadas. 
+	Mientras que la versión del <application>Jenkins</application> no es un problema de compatibilidade 
+	para esta integración, lo mismo no se puede decir sobre <application>TestLink</application>. Esta guia es 
+	destinada para el <application>Testlink</application> <emphasis>1.9.2</emphasis>. 
+	En caso de que haya otras versiones disponibles en el momento de lectura desta guia, es posible que ocurran errores 
+	durante la ejecución del job <application>Jenkins</application>. Hay una tabla comparativa 
+	disponible en el link <link xlink:href="http://wiki.jenkins-ci.org/display/JENKINS/TestLink+Plugin">plug-in Wiki.</link></para>
 	
-	<para><application>TestLink</application> is licensed under the 
-	<acronym>GPL</acronym> License and its code is hosted 
-	at gitorious - <link xlink:href="http://www.gitorious.org/testlink-ga/testlink-code">http://www.gitorious.org/testlink-ga/testlink-code</link>.</para>
+	<para><application>TestLink</application> está licenciado bajo la licencia 
+	<acronym>GPL</acronym>  y su código se encuentra alojado en gitorious - 
+	<link xlink:href="http://www.gitorious.org/testlink-ga/testlink-code">http://www.gitorious.org/testlink-ga/testlink-code</link>.</para>
 	
 </chapter>

@@ -6,18 +6,18 @@
          xmlns:ns4="http://www.w3.org/1998/Math/MathML"
          xmlns:ns3="http://www.w3.org/1999/xhtml"
          xmlns:db="http://docbook.org/ns/docbook" id="chapter.4">
-	<title><application>TestLink</application> Configuration</title>
+	<title>Configuración del <application>TestLink</application></title>
 	
 	<section>
 
-		<title>Installing <application>TestLink</application></title>
+		<title>Instalando <application>TestLink</application></title>
 	
-		<para>The first part of the integration configuration is install and 
-		configure <application>TestLink</application>. Start by downloading testlink-1.9.2.tar.gz from 
-		http://www.teamst.org. Descompact it using tar -zxvf testlink-1.9.2.tar.gz. 
-		It will extract <application>TestLink</application>'s files to your current folder. Move this directory 
-		to your http server (e.g.: Apache) root directory and open 
-		<emphasis>http://localhost/testlink-1.9.2</emphasis> from your browser.</para>
+		<para>La primera etapa de la configuración de integración es instalar y configurar el 
+		<application>TestLink</application>. En primer lugar, comenzar por descargar el archivo 
+		testlink-1.9.2.tar.gz en el site http://www.teamst.org. Descompactar utilizando 
+		tar -zxvf testlink-1.9.2.tar.gz. Se extraerán los archivos <application>TestLink</application>
+		para la carpeta actual. Mover este directorio al directorio raíz del servidor HTTP y abrir
+		la URL <emphasis>http://localhost/testlink-1.9.2</emphasis> en el browser.</para>
 		
 		<mediaobject id="testlink_002">
 			<imageobject role="html">
@@ -31,27 +31,28 @@
 			</imageobject>
 		</mediaobject>
 		
-		<!-- Tip: you can use the same commands for Postgre SQL or MS SQL, just 
-		check the vendor's manual to understand what are the equivalent commands 
-		available. -->
+		<!-- Tip: es posible utilizar los mismos comandos para Postgre SQL o MS SQL, 
+		solamente revise el manual del vendedor para entender cuáles son los comandos 
+		equivalentes. -->
 		
-		<para>Now the installation wizard will guide you through the rest of the 
-		installation. You will need a database and two accounts created in MySQL 
-		before moving on. To create a database for <application>TestLink</application> execute the following 
-		command in MySQL prompt.</para>
+		<para>Ahora el asistente de instalación le guiará a través del resto de la 
+		instalación. Es necesário una base de datos y dos contas creadas en MySQL antes de 
+		seguir adelante. Para crear la base de datos para el <application>TestLink</application> 
+		ejecute el comando siguiente en el prompt MySQL.</para>
 		
 		<programlisting><![CDATA[mysql> create database testlink192;]]></programlisting>
 		
-		<para>Now create the user that <application>TestLink</application> will use to access this database.</para>
+		<para>Ahora hay que crear el usuario <application>TestLink</application> que será utilizado 
+		para acceder a la base de datos.</para>
 		
 		<programlisting><![CDATA[mysql> grant all privileges on testlink192.* to 'testlink192' identified by 'testlink192';
 mysql> flush privileges;]]></programlisting>
 		
-		<para>Now follow the instructions in <application>TestLink</application> installation wizard and when 
-		asked use the information you just created in <application>MySQL</application>. For this example we 
-		are assuming you have access to the <application>MySQL</application> server and know what are the admin 
-		account and password.</para>
-		
+		<para>Ahora siga las instrucciones en el asistente de instalación <application>TestLink</application> y cuando  
+		preguntado, utilize la información que acaba de crear en el <application>MySQL</application>. Para este ejemplo
+		es necesario tener acceso al servidor <application>MySQL</application> y también saber los datos de la cuenta 
+		de administrador.</para>
+
 		<para>
 			<mediaobject id="testlink_004">
 				<imageobject role="html">
@@ -76,32 +77,31 @@ mysql> flush privileges;]]></programlisting>
 			</mediaobject>
 		</para>
 		
-		<para>If everything worked out correctly you should be asked to log in 
-		using <emphasis>admin:admin (user:password)</emphasis>.</para>
+		<para>Si todo há funcionado correctamente se le debes pedir para hacer el log in usando
+		<emphasis>admin:admin (user:password)</emphasis></para>
 		
-		<para><application>TestLink</application> contains a configuration file that you 
-		need to change before going to the next section. 
-		In <emphasis>$TESTLINK_HOME/config.inc.php</emphasis>, find 
-		<emphasis>$tlCfg->api->enabled</emphasis> and 
-		set its value to <emphasis>TRUE</emphasis>. Then look for <emphasis>$g_attachments->order_by</emphasis> and set 
-		its value to <emphasis>" ORDER BY id ASC "</emphasis> (leave the blank spaces before 
-		and after the order by clause). The first configuration enables the 
-		<acronym>XML-RPC API</acronym> for external access, and the latter changes the column on 
-		which <application>TestLink</application> orders attachments. The precision of the <emphasis>date_added</emphasis>  
-		column in the <emphasis>attachments table</emphasis> is limited to seconds, so if you insert two attachments at same 
-		time the values returned by your database may be inconsistent.</para>
+		<para><application>TestLink</application> contiene un archivo de configuración que se 
+		necesita modificar antes de seguir a la session siguiente. En 
+		<emphasis>$TESTLINK_HOME/config.inc.php</emphasis>, busque por  
+		<emphasis>$tlCfg->api->enabled</emphasis> y defina su valor para <emphasis>TRUE</emphasis>. 
+		Después busque por <emphasis>$g_attachments->order_by</emphasis> y defina su valor para 
+		<emphasis>" ORDER BY id ASC "</emphasis> (dejar los espacios en blanco antes y después de 
+		la cláusula de ordenación). La primera confirugación habilita la API <acronym>XML-RPC</acronym>
+		para acceso externo, y los últimos cambios de la columna en la que <application>TestLink</application> 
+		ordena los adjuntos. La precisión de la columna <emphasis>date_added</emphasis>  
+		en la tabla <emphasis>attachments</emphasis> se limita a los segundos, así que si agregas mas que dos 
+		archivos adjuntos al mismo tiempo los valores devueltos por la base de datos pueden ser inconsistentes</para>
 	
 	</section>
 	
 	<section>
 		
-		<title>Creating a sample Test Project</title>
+		<title>Creación de un proyecto de pruebas ejemplo</title>
 		
-		<para>When you log in by the first time to <application>TestLink</application> it is showed to you 
-		a form that lets you create your first Test Project. You can have as 
-		many test projects as you want. It is under a test project where you 
-		will create test plans, test cases, requirements, custom fields and 
-		other entities.</para>
+		<para>Al acceder por primera vez al <application>TestLink</application> se muestra un formulario
+		que permite la creación de un primer Proyecto de Pruebas. Es posible tener cuantos proyectos sea necesário.
+		Abajo del Proyecto de Pruebas es donde se va a crear los plans de pruebas, casos de pruebas, requisitos,
+		campos personalizados y otras entidades.</para>
 		
 		<para>
 			<mediaobject id="testlink_007">
@@ -111,12 +111,12 @@ mysql> flush privileges;]]></programlisting>
 			</mediaobject>
 		</para>
 		
-		<para>Create a test project with name <emphasis>My first project</emphasis>, 
-		prefix <emphasis>MFP</emphasis> and make sure the following options are checked: <emphasis>Enable 
-		Requirements feature</emphasis>, <emphasis>Enable Testing Priority</emphasis>, 
+		<para>Crear un proyecto de pruebas con nombre <emphasis>Mi primer proyecto</emphasis>, 
+		con prefijo <emphasis>MFP</emphasis> y asegúrese de que las siguientes opciones están marcadas: 
+		<emphasis>Enable Requirements feature</emphasis>, <emphasis>Enable Testing Priority</emphasis>, 
 		<emphasis>Enable Test Automation (API keys)</emphasis>, <emphasis>Enable Inventory</emphasis>, 
 		<emphasis>Active</emphasis> and <emphasis>Public</emphasis>. 
-		Click on <emphasis>Create</emphasis> to finish.</para>
+		Hacer clic en <emphasis>Create</emphasis> para terminar.</para>
 		
 		<para>
 			<mediaobject id="testlink_008">
@@ -126,8 +126,8 @@ mysql> flush privileges;]]></programlisting>
 			</mediaobject>
 		</para>
 		
-		<para>If the following screen is not displayed 
-		go back and check to see if you did not miss any of the previous steps.</para>
+		<para>Si la pantalla siguiente no es mostrada regrese y verifique si no há sido olvidado 
+		ni una de las etapas anteriores.</para>
 		
 		<para>
 			<mediaobject id="testlink_009">
@@ -141,19 +141,13 @@ mysql> flush privileges;]]></programlisting>
 	
 	<section>
 	
-		<title>Creating and assigning the Custom Field for automation</title>
+		<title>Creación y asignación de los campos personalizados para la automatización</title>
 	
-		<para>Click on the <emphasis>Project</emphasis> item of the top menu to be redirected to 
-		the main screen. Now we will create the custom field used for 
-		automation. This information is used by the plug-in to link an 
-		automated test case from <application>TestLink</application> to a <emphasis>Test Result</emphasis> of your set of tests.</para>
-		
-		<para>Click on <emphasis>Define Custom Fields</emphasis> under the 
-		<emphasis>Test Project</emphasis> options box. Now create a custom 
-		field using the name <emphasis>Java class</emphasis>, label 
-		<emphasis>Java class</emphasis>, available for <emphasis>Test Case</emphasis>, 
-		type <emphasis>string</emphasis>, enable on	<emphasis>Test Spec Design</emphasis> 
-		and display on test execution <emphasis>No</emphasis>.</para>
+		<para>Hacer clic en el ítem <emphasis>Proyécto</emphasis> del menú superior para ser redirigido 
+		a la pantalla principal. Ahora vamos a crear el campo personalizado que se utiliza para la 
+		automatización. Esta automatización es usada por el plug-in que vincula un caso de prueba 
+		automatizado del <application>TestLink</application> a un <emphasis>Resultado de Prueba</emphasis> 
+		de una serie de pruebas.</para>
 		
 		<para>
 			<mediaobject id="testlink_010">
@@ -171,12 +165,12 @@ mysql> flush privileges;]]></programlisting>
 			</mediaobject>
 		</para>
 		
-		<para>Now we only need to assign this custom field to be used in 
-		our test project. Go back to the main screen and click on 
-		<emphasis>Assign Custom Fields</emphasis>, it will take you to a 
-		screen with the list of	available custom fields. Select the Java 
-		class custom field and click on the <emphasis>Assign</emphasis> button.</para>
-		
+		<para>Ahora sólo tenemos que asignar este campo personalizado que se utilizará en
+		nuestro proyecto de prueba. Regrese a la pantalla principal y haga click en 
+		<emphasis>Assign Custom Fields</emphasis>. Esto le llevará a una pantalla con 
+		la lista de los campos personalizados. Seleccione el campo personalizado de clase Java 
+		y haga click en el botón <emphasis>Assign</emphasis></para>
+
 		<para>
 			<mediaobject id="testlink_012">
 				<imageobject role="html">
@@ -189,18 +183,18 @@ mysql> flush privileges;]]></programlisting>
 	
 	<section>
 	
-		<title>Specify your tests</title>
+		<title>Especificar las pruebas</title>
 		
-		<para>For those whom work with tests this part may be really easy. 
-		What we are going to do now is create a test suite and a test case. 
-		In TestLink you always keep your test cases under a test suite.</para>
+		<para>Para aquellos a quienes trabajan con pruebas esta parte deve ser 
+		un proceso sencillo. Lo que vamos a hacer ahora es crear una suite de pruebas 
+		y un caso de prueba. En el TestLink los casos de prueba siempre son mantenidos 
+		abajo de una suite de pruebas.</para>
 		
-		<para>Back to the main screen, in the top menu there is the option 
-		<emphasis>Test Specification</emphasis>. Click on this option. The test specification 
-		screen is quite simple. On the left you have the navigator, with the 
-		settings, filter and the tree of test suites and test cases. Start 
-		clicking on your test project to see the test suite operations 
-		available.</para>
+		<para>De vuelta a la pantalla principal, en el menu superior hay la opción
+		<emphasis>Test Specification</emphasis>. Haga click en la opción. La pantalla de 
+		especificación de la prueba es sencilla. A la izquierda hay el navegador con los ajustes, 
+		filtros y el árbol de suites de pruebas y casos de pruebas. Comienza seleccionando en el 
+		proyecto de pruebas para ver las operaciones disponibles en las suites de pruebas.</para>
 		
 		<para>
 			<mediaobject id="testlink_013">
@@ -210,10 +204,9 @@ mysql> flush privileges;]]></programlisting>
 			</mediaobject>
 		</para>
 		
-		<para>Create a test suite with any name that you want. This field is 
-		not important for our guide. Once created, your test suite will be  
-		displayed in the tree on the left. Now click on the test suite in the 
-		tree to see the test case operations.</para>
+		<para>Crear la suite de pruebas que se desea. Este campo no es importante para nuestra guía. 
+		Una vez creada, la suite de pruebas se muestra en el árbol de la izquierda. Ahora se debe hazer 
+		clic en el conjunto de pruebas en el árbol para ver las operaciones de caso de prueba.</para>
 		
 		<para>
 			<mediaobject id="testlink_014">
@@ -223,11 +216,11 @@ mysql> flush privileges;]]></programlisting>
 			</mediaobject>
 		</para>
 		
-		<para>Create a test case with any title or summary. The important 
-		information on this screen for the automation are the execution type 
-		and the Java class (custom field created in the previous step). In 
-		execution type select <emphasis>Automated</emphasis> and for Java class fill with the 
-		java class name <emphasis>sample.Tests</emphasis>.</para>
+		<para>Se debe crear un caso de prueba con cualquier título o resumen. La información 
+		importante en esta pantalla para la ejecución son los tipos de ejecución y la classe Java
+		(Campo customizado creado en la página anterior). En tipo de ejecución seleccione 
+		<emphasis>Automación</emphasis> y para la clase Java rellenar con el nombre de la clase Java
+		<emphasis>sample.Tests</emphasis>.</para>
 		
 		<para>
 			<mediaobject id="testlink_015">
@@ -263,25 +256,27 @@ mysql> flush privileges;]]></programlisting>
 	
 	</section>
 	
+	
 	<section>
-	
-		<title>The last step: create your test plan and add test cases</title>
-	
-		<para>This is the last step for the <application>TestLink</application> configuration. However 
-		before we start this step, there is an important concept in <application>TestLink</application>, 
-		the <emphasis>Builds</emphasis>. In <application>TestLink</application>, you create a test plan outlining what and how 
-		you are going to test the application under test. Once you have a test 
-		plan you can start to add test cases to your test plan, and then 
-		execute it. A build in <application>TestLink</application> is the execution of a test plan, and 
-		after the test plan was executed you are not allowed to edit the 
-		test cases of this test plan (it wouldn't be right to change the scope 
-		or exit criteria of a test case after it had been executed).</para>
-	
-		<para>Go back to the main screen and click on the <emphasis>Test Plan Management</emphasis> 
-		option available under the Test Plan box on the right of the scren. 
-		Create a test plan with the name <emphasis>My first test plan</emphasis>, any 
-		description and make sure that <emphasis>Active</emphasis> and 
-		<emphasis>Public</emphasis> are checked.</para>
+		
+		<title>La última etapa: crear un plan de pruebas y adicionar casos de prueba</title>
+		
+		<para>Este es el último paso para la condiguración del <application>TestLink</application>. 
+		Sin embargo, antes del comienzo deste paso, hay un importante concepto en el 
+		<application>TestLink</application>, las <emphasis>Builds</emphasis>. En el 
+		<application>TestLink</application>, hay que crear un plan de pruebas delineando 
+		lo que y como se va a probar la aplicación en prueba. Una vez que haya un plan de 
+		pruebas es posible iniciar a adicionar los casos de prueba al plan de pruebas, 
+		y ejecutalos. Una build en el <application>TestLink</application> es la 
+		ejecución del plan de pruebas, y despues de su ejecución no se puede mas editar los casos 
+		de prueba desto plan de pruebas (no seria justo cambiar el ámbito o el criterio de salida 
+		de un caso de prueba después de el haber sido ejecutado) </para>
+		
+		<para>Regrese a la pantalla principal y haga clic en la opción 
+		<emphasis>Test Plan Management</emphasis>, disponible abajo del cuadro 
+		de plan de pruebas a la derecha de la pantalla. Crear un plan de pruebas con nombre 
+		<emphasis>Mi primer plan de pruebas</emphasis>, con cualquier descripción y asegurárse 
+		de que <emphasis>Active</emphasis> y <emphasis>Public</emphasis> are checked.</para>
 		
 		<para>
 			<mediaobject id="testlink_019">
@@ -309,15 +304,16 @@ mysql> flush privileges;]]></programlisting>
 				</imageobject>
 			</mediaobject>
 		</para>
-	
-		<para>You may create a build or not, this step is optional. The plug-in 
-		automatically creates a new build if there is none with the name that 
-		you provided in the <application>Jenkins</application> job configuration page. When you go back 
-		to your test plan you should see more options available in the Test 
-		Plan box and two other boxes: Test Execution and Test Plan contents, 
-		as well as other options available in the top menu.</para>
 		
-		<para>We are done with <application>TestLink</application> for now, the next step is configuring <application>Jenkins</application>.</para>
+		<para>Es necesario crear o no un build. Este paso es opcional. El plug-in automaticamente 
+		crea un nuevo build si ya no hay uno con el mismo nombre que proporcionaste en la pagina 
+		de configuración del <application>Jenkins</application>. Cuando regresar al plan de pruebas 
+		debe ser posible ver mas opciones disponibles en el cuadro del plan de pruebas y otros dos 
+		cuadros: Test Execution and Test Plan contents, así como otras opciones disponibles en el 
+		menú superior</para>
+		
+		<para>Hemos terminado con <application>TestLink</application> por ahora, el próximo paso es 
+		configurar el <application>Jenkins</application></para>
 	
 	</section>
 	
