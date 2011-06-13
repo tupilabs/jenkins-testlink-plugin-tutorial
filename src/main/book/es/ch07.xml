@@ -6,7 +6,60 @@
          xmlns:ns4="http://www.w3.org/1998/Math/MathML"
          xmlns:ns3="http://www.w3.org/1999/xhtml"
          xmlns:db="http://docbook.org/ns/docbook">
-	<title>Strategies used to seek for Test Results</title>
+         
+	<title>Estrategias para buscar los resultados de las pruebas</title>
 	
-	<para>Let the show start...</para>
+	<para>Después que se ejetuan las pruebas automatizadas el plug-in tiene que buscar los
+	<emphasis>Test Results</emphasis>. De esta manera se sabrá si una prueba automatizada há sido 
+	ejecutada correctamente o no y entonces actualizar el status de la prueba en el 
+	<application>TestLink</application>.</para>
+	
+	<para><application>Jenkins TestLink Plug-in</application> actualmente tiene tres estrategias 
+	para encontrar los resultados de pruebas: <emphasis>TAP</emphasis>, 
+	<emphasis>TestNG</emphasis> y <emphasis>JUnit</emphasis>. Todos las tres estrategias utilizan 
+	un campo customizado para asociar un resultado de prueba a un caso de prueba automatizado.</para>
+	
+	
+	<section>
+	
+		<title><application>JUnit</application></title>
+
+		<para>Para el <application>JUnit</application>, el plug-in utiliza el nombre de 
+		una suite de prueba. Si el nombre de la suite de prueba es el mismo que el valor de un 
+		campo llave customizado de un caso de prueba, entonces el plug-in verifica si 
+		atributos de fracasos o errores son mayores que 0 (zero). Si es así, el caso de prueba 
+		es actualizado con el status failed en el <application>TestLink</application>. 
+		De otro modo se actualiza con passed.</para>
+		
+	</section>
+	
+	<section>
+	
+		<title><application>TestNG</application></title>
+
+		<para>Para el <application>TestNG</application>, el plug-in utiliza el nombre de 
+		la clase de las pruebas como llave. En general un informe <acronym>XML</acronym> 
+		del <application>TestNG</application> contiene una suite con muchas pruebas. El plug-in 
+		busca por el nombre de las clases de las pruebas. Si el nombre de una clase 
+		<application>TestNG</application> es lo mismo que el valor de un 
+		campo llave customizado de un caso de prueba, entonces el plug-in verifica la
+		situación de los métodos de la clase. Si la clase contiene un método que há fallado,
+		entonces el caso de prueba es actualizado con la situación failed en el 
+		<application>TestLink</application>. De otro modo se actualiza con passed.</para>
+	
+	</section>
+	
+	<section>
+	
+		<title><acronym>TAP</acronym></title>
+
+		<tap>Para <acronym>TAP</acronym>, el plug-in utiliza el nombre del archivo 
+		<acronym>TAP</acronym> como llave. Si el nombre del archivo <acronym>TAP</acronym> 
+		es lo mismo que el valor del campo customizado llave de un caso de prueba, entonces 
+		el plug-in verifica si el archivo <acronym>TAP</acronym> contiene errores (not ok).
+		Si es así, el caso de prueba es actualizado con status failed en el 
+		<application>TestLink</application>. De otro modo se actualiza con passed. </tap>
+	
+	</section>
+	
 </chapter>

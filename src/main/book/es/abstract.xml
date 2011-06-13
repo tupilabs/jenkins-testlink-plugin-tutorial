@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <abstract lang="es" version="5.0" xmlns="http://docbook.org/ns/docbook">
-	<para>This book is an Open Source project that provides a better understanding 
-	of how integrate Jenkins and TestLink. The name of this book was inspired by  
-	the O'Reilly book series name pattern.</para>
+	<para>Este libro es un proyecto de Software Libre que proporciona un mejor 
+	entendimiento acerca de como integrar Jenkins y Testlink. El nombre deste libro 
+	há sido inspirado por el patrón utilizado en la serie de libros de O'Reilly.</para>
 </abstract>

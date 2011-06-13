@@ -10,17 +10,17 @@
 	
 	<section>
 	
-		<title>Installing <application>Jenkins</application></title>
+		<title>Instalando <application>Jenkins</application></title>
 		
-		<para>Download <emphasis>jenkins.war</emphasis> from 
-		<link xlink:href="http://www.jenkins-ci.org">http://www.jenkins-ci.org</link> to a folder 
-		of your preference. Now go to the command line and execute 
+		<para>Descargue <emphasis>jenkins.war</emphasis> de 
+		<link xlink:href="http://www.jenkins-ci.org">http://www.jenkins-ci.org</link> para una carpeta 
+		de su preferencia. Ahora es necesario ir a la línea de comandos y ejecutar 
 		<programlisting><![CDATA[java -jar jenkins.war]]></programlisting> 
-		(if you need change the port, use <emphasis>--httpPort=9999</emphasis>).</para>
+		(si es necesario cambiar la porta, agregue al comando <emphasis>--httpPort=9999</emphasis>).</para>
 		
-		<para><application>Jenkins</application> creates a default workspace for you in 
-		<emphasis>~/.jenkins</emphasis> 
-		or uses the folder specified in <emphasis>JENKINS_HOME</emphasis> environment variable.</para>
+		<para><application>Jenkins</application> crea un workspace defecto en 
+		<emphasis>~/.jenkins</emphasis> o utiliza la carpeta especificada en la variable de ambiente
+		<emphasis>JENKINS_HOME</emphasis>.</para>
 	
 		<para>
 			<mediaobject id="jenkins_001_02">
@@ -30,29 +30,27 @@
 			</mediaobject>
 		</para>
 	
-		<para>Go to <link xlink:href="http://localhost:8080">http://localhost:8080</link> 
-		to check if your installation is working. We will call the page loaded 
-		when you open <link xlink:href="http://localhost:8080">http://localhost:8080</link> 
-		main screen throughout this guide.</para>
+		<para>Ir a la URL <link xlink:href="http://localhost:8080">http://localhost:8080</link> 
+		para comprobar si la instalación está funcionando. Vamos a llamar a la página cargada 
+		cuando se abra la pantalla principal del link 
+		<link xlink:href="http://localhost:8080">http://localhost:8080</link> por esta guia.</para>
 	
 	</section>
 	
 	<section>
 		
-		<title>Installing and configuring <application>Jenkins TestLink Plug-in</application></title>
+		<title>Instalando y configurando <application>Jenkins TestLink Plug-in</application></title>
 		
-		<para>The plug-ins in <application>Jenkins</application> are distributed from a central update 
-		site. Select the option <emphasis>Manage Jenkins</emphasis> in the left menu and look 
-		for the <emphasis>Manage Plugins</emphasis> option. Clicking on 
-		<emphasis>Available</emphasis> will bring you 
-		the list of plug-ins ready to be installed in your 
-		<application>Jenkins</application>.</para>
+		<para>Los plug-ins en <application>Jenkins</application> se distribuyen por un site de actualización 
+		central. Selecionar la opción <emphasis>Manage Jenkins</emphasis> en el menú de la izquierda y mirar 
+		a la opción <emphasis>Manage Plugins</emphasis>. Al hacer clic en <emphasis>Available</emphasis> ]
+		le traerá la lista de plug-ins listo para ser instalado en su <application>Jenkins</application>.</para>
 		
-		<para>Just check the checkbox besides the plug-in name on the list 
-		and click on <emphasis>Install</emphasis> to install the plug-in. 
-		<application>Jenkins</application> will download and install the 
-		plug-in automatically for you, however you will have to 
-		restart for the plug-in to be enabled.</para>
+		<para>Simplemente marque la casilla de verificación, además del nombre del 
+		complemento en la lista y haga clic en <emphasis>Instalar</emphasis> para 
+		instalar el plug-in. <application>Jenkins</application> se va a descargar 
+		y instalar el plug-in automaticamente, de todos modos tendrá que reiniciar 
+		para que se habilite el plug-in.</para>
 		
 		<para>
 			<mediaobject id="jenkins_002">
@@ -70,13 +68,13 @@
 			</mediaobject>
 		</para>
 		
-		<para>After you have already restarted your <application>Jenkins</application>, 
-		go to <emphasis>Manage Jenkins</emphasis> again, <emphasis>Configure System</emphasis> 
-		option and look for the <application>TestLink</application> 
-		section. Fill the <application>TestLink</application> configuration form 
-		with a name for your <application>TestLink</application> installation, 
-		the <acronym>URL</acronym> of the <acronym>XML-RPC API</acronym> and your 
-		<emphasis>devKey</emphasis>.</para>
+		<para>Una vez que ya han reiniciado el <application>Jenkins</application>, 
+		vaya al <emphasis>Manage Jenkins</emphasis> otra vez, opción 
+		<emphasis>Configure System</emphasis> y busque por la sección 
+		<application>TestLink</application>. Llene la configuración del formulario 
+		<application>TestLink</application> con el nombre de su instalación 
+		<application>TestLink</application>, la <acronym>URL</acronym> de la  
+		<acronym>API XML-RPC</acronym> y su <emphasis>devKey</emphasis>.</para>
 		
 		<para>
 			<mediaobject id="jenkins_004">
@@ -86,28 +84,25 @@
 			</mediaobject>
 		</para>
 		
-		<para>By default the <application>TestLink</application> 
-		<acronym>XML-RPC API</acronym> can be found at 
-		<emphasis>http://&lt;host>:&lt;port>/lib/api/xmlrpc.php</emphasis>. 
-		The <emphasis>devKey</emphasis> can	be obtained by entering 
-		<application>TestLink</application>, clicking on 
-		<emphasis>My Settings</emphasis> (top menu) 
-		and generating a new <emphasis>devKey</emphasis>, if there is none yet. 
-		If you cannot see the <acronym>API</acronym> interface section in 
-		<emphasis>My Settings</emphasis> page, then it is 
-		very likely that you didn't enable it yet. 
-		Go back to <xref linkend="chapter.4">chapter 4</xref> to review your work.</para>
+		<para>Por defecto la <acronym>API XML-RPC</acronym> del <application>TestLink</application> 
+		se encuentra en <emphasis>http://&lt;host>:&lt;port>/lib/api/xmlrpc.php</emphasis>. 
+		El <emphasis>devKey</emphasis> se puede obtener ingresando en  
+		<application>TestLink</application>, accedendo al menu superior <emphasis>My Settings</emphasis>  
+		y generando un nuevo <emphasis>devKey</emphasis>, si todavia no hay uno. 
+		Si no se puede ver la sección de interfaz <acronym>API</acronym> en la página  
+		<emphasis>My Settings</emphasis>, entonces es muy probable que todavia ella no haya sido habilitada. 
+		Regrese al <xref linkend="chapter.4">Capítulo 4</xref> para revisar el trabajo.</para>
 		
 	</section>
 	
 	<section>
 	
-		<title>Creating a job in Jenkins</title>
+		<title>Creación de un job en Jenkins</title>
 		
-		<para>In order to create a new job all that you need to do is just click 
-		on <emphasis>New Job</emphasis> and give it a name. Choose the option to create a free-style 
-		project.</para>
-		
+		<para>Con el fin de crear un nuevo job todo lo que tiene que hacer es hacer 
+		clic en <emphasis>New Job</emphasis> y darle un nombre. Elija la opción de 
+		crear un proyecto de estilo libre.</para>
+			
 		<para>
 			<mediaobject id="jenkins_005">
 				<imageobject role="html">
@@ -116,19 +111,19 @@
 			</mediaobject>
 		</para>
 		
-		<para>For the sake of simplicity, we will point the job workspace to 
-		our Java project folder. In a real-world project it is more likely 
-		that you will have your test project stored in some kind of 
-		<acronym>SCM</acronym>, like <application>SVN</application> or 
-		<application>git</application>. To change the default workspace location, 
-		look for <emphasis>Advanced Project Options</emphasis> and expand its 
-		options by clicking on <emphasis>Advanced...</emphasis>. Then mark 
-		<emphasis>Use custom workspace</emphasis> and fill the input text 
-		with the location of the test project. If you didn't download the 
-		sample test project used in this guide, you can find it in 
+		<para>Por motivo de simplicidade, vamos a especificar el job workspace para 
+		la carpeta de proyectos JAVA. En un proyecto en el mundo real es más probable 
+		que tendrá el proyecto de pruebas almacenado en algún tipo de 
+		<acronym>SCM</acronym>, como <application>SVN</application> o 
+		<application>git</application>. Para cambiar la ubicación defecto 
+		del workspace, busque por <emphasis>Advanced Project Options</emphasis> 
+		y amplie sus opciones haciendo clic en <emphasis>Advanced...</emphasis>.
+		A continuación, marque <emphasis>Use custom workspace</emphasis> y llene 
+		el campo de texto con la ubicación del proyecto de pruebas. Si no es posible descargar 
+		el proyecto de pruebas ejemplar usado en esta guia, es posible encontralo en el link
 		<link xlink:href="https://github.com/kinow/jenkins-testlink-plugin-the-definitive-guide/blob/master/sample-test-project.tar.gz?raw=true">
 		https://github.com/kinow/jenkins-testlink-plugin-the-definitive-guide/blob/master/sample-test-project.tar.gz?raw=true</link>.</para>
-	
+		
 		<para>
 			<mediaobject id="jenkins_006">
 				<imageobject role="html">
@@ -137,20 +132,20 @@
 			</mediaobject>
 		</para>
 	
-		<para>Click on <emphasis>Add build step</emphasis> button to expand 
-		its options and then click on <emphasis>Invoke TestLink</emphasis>. 
-		It will show a new form with options to integrate your 
-		<application>Jenkins</application> job with <application>TestLink</application>. 
-		Fill this form with the following information that we created in 
-		<xref linkend="chapter.4">chapter 4</xref>.</para>
+	
+		<para>Hacer clic en el botón <emphasis>Add build step</emphasis> para expandir sus 
+		opciones y hacer clic en <emphasis>Invoke TestLink</emphasis>. Se mostrará un nuevo 
+		formulario con opciones para integrar el job <application>Jenkins</application> con 
+		el <application>TestLink</application>. Llene el formulario con la información que 
+		hemos creado en el <xref linkend="chapter.4">Capítulo 4</xref>.</para>
 		
-		<para>Configure your job as follows:</para>
+		<para>Configure el job de la siguiente forma:</para>
 		
 		<para>
 			<itemizedlist>
 				<listitem>
-					<para><application>TestLink</application> version: select the version 
-			that you created in the global configuration.</para>
+					<para><application>TestLink</application> version: selecionar la versión creada
+				    en la configuración global.</para>
 				</listitem>
 				<listitem>
 					<para>Test Project name: My first project</para>
@@ -187,13 +182,13 @@
 			</mediaobject>
 		</para>
 		
-		<para>Click on <emphasis>Save</emphasis> to persist your job to your disk (it is saved as XML).</para>
+		<para>Hacer clic en <emphasis>Save</emphasis> para persistir el trabajo en el disco (se guarda como XML).</para>
 	
 	</section>
 	
 	<section>
 	
-		<title>Explaining the Job configuration parameters</title>
+		<title>Explicando los parámetros de cinfiguración del Job</title>
 		
 		<para>
 			<mediaobject id="jenkins_007_02">
@@ -207,26 +202,26 @@
 		
 			<title>TestLink version</title>
 			
-			<para>This is the name of your <application>TestLink</application> 
-			installation in Jenkins global configuration.</para>
-			
+			<para>El nombre de la instalación del <application>TestLink</application>en la 
+			configuración global del <application>Jenkins</application>.</para>
+
 		</section>
 		
 		<section>
 		
 			<title>Test Project name</title>
 			
-			<para>This is the name of your <emphasis>Test Project</emphasis> 
-			in <application>TestLink</application>.</para>
-			
+			<para>El nombre del  <emphasis>Test Project</emphasis> 
+			en el <application>TestLink</application>.</para>
+
 		</section>
 		
 		<section>
 		
 			<title>Test Plan name</title>
 			
-			<para>This is the name of your <emphasis>Test Plan</emphasis> 
-			in <application>TestLink</application>.</para>
+			<para>El nombre del <emphasis>Test Plan</emphasis> 
+			en el <application>TestLink</application>.</para>
 			
 		</section>
 		
@@ -234,9 +229,9 @@
 		
 			<title>Build name</title>
 			
-			<para>This is the name of your <emphasis>Build</emphasis> 
-			in <application>TestLink</application>. You can use environment 
-			variables in this field following the pattern ${VARIABLE_NAME}.</para>
+			<para>El nombre del <emphasis>Build</emphasis> 
+			en el <application>TestLink</application>. Es posible utilizar el variables de 
+			ambiente en este campo con el siguiente patrón ${VARIABLE_NAME}</para>
 			
 		</section>
 		
@@ -244,8 +239,8 @@
 		
 			<title>Custom fields</title>
 			
-			<para>This is a comma separated list of <emphasis>Custom Fields</emphasis> 
-			in <application>TestLink</application>.</para>
+			<para>Esta es una lista de <emphasis>Custom Fields</emphasis> separada por 
+			comas en el <application>TestLink</application></para>
 			
 		</section>
 		
@@ -253,20 +248,19 @@
 		
 			<title>Single test command</title>
 			
-			<para>This command is executed once on the slave node of Jenkins (master 
-			if your Jenkins is not distributed). This field can be used 
-			to execute test suites, for example. You can use 
-			environment variables in this field.</para>
-			
+			<para>Este comando es ejecutado una vez en el nodo esclavo de Jenkins(maestro 
+			si su Jenkins no se distribuye). Este campo puede ser usado para ejecutar suites 
+			de pruebas, por ejemplo. Es posible usar variables de ambiente en este campo.</para>
+						
 		</section>
 		
 		<section>
 		
 			<title>Iterative test command</title>
 			
-			<para>This command is executed for each automated test case 
-			within your Test Plan in <application>TestLink</application>. 
-			You can use environment variables in this field.</para>
+			<para>Este comando se ejecuta para cada caso de prueba automatizado dentro de su 
+			Plan de Pruebas en el <application>TestLink</application>. 
+			Es posible usar variables de ambiente en este campo.</para>
 			
 		</section>
 		
@@ -274,12 +268,12 @@
 		
 			<title>TestLink automated tests key custom field</title>
 			
-			<para>This is the name of the custom field that the plug-in will 
-			use to match a <emphasis>Test Result</emphasis> with an automated test case from 
-			<application>TestLink</application>. The way that this field is 
-			used when the plug-in is scanning the test results depends on the 
-			<emphasis>Test Strategy</emphasis>.</para>
-			
+			<para>Este es el nombre del campo personalizado que el plug-in se utiliza para 
+			coincidir el <emphasis>Test Result</emphasis> con un caso de pruebas automatizado 
+			del <application>TestLink</application>. La forma en que este campo es usado 
+			cuando el plug-in está analizando los resultados de las pruebas depende de la
+			<emphasis>Test Strategy</emphasis></para>
+						
 		</section>
 		
 		<section>
@@ -287,10 +281,10 @@
 			<title><application>JUnit</application>, <application>TestNG</application> and 
 			<acronym>TAP</acronym> report files patterns.</title>
 			
-			<para>The plug-in uses these patterns to find test results of your 
-			tests execution (single test command or iterative). You can use multiple 
-			patterns at once, but it may lead to inconsistencies in 
-			your test results in <application>TestLink</application>.</para>
+			<para>El plug-in utiliza estos patrones para encontrar resultados de pruebas de sus ejecuciones.
+			(comando de unsa sola prueba o iterativos). Es posible utilizar varios patrones a la vez, 
+			pero esto se puede dar lugar a inconsistencias en los resultados de las pruebas en el 
+			<application>TestLink</application>. </para>
 			
 		</section>
 		
@@ -298,10 +292,72 @@
 		
 			<title>Transactional execution?</title>
 			
-			<para>If this option is marked and any test fails, all remaining 
-			tests will be marked as Blocked in TestLink.</para>
+			<para>Si esta opción está marcada y cualquiera de las pruebas no tenga éxito, 
+			el restante de las pruebas seran marcadas como Blocked en el <application>TestLink</application></para>
 			
 		</section>
+
+		
+		<section>
+		
+			<title>Environment variables</title>
+			
+			<para>El plug-in recupera toda la información del <application>TestLink</application> para su 
+			Test Project, Test Plan, Build y Test Cases automatizados. Es posible utilizar cualquiera de 
+			las informaciones para ejecutar las pruebas. <application>Jenkins</application> proporciona 
+			las <emphasis>Environment Variables</emphasis>, más <emphasis>Build Environment Variables</emphasis> 
+			(tales como <emphasis>BUILD_ID</emphasis>, que tiene la fecha y hora del job). 
+			El plug-in inyecta la información recuperada del <application>TestLink</application>
+			como variables de ambiente.</para>
+			
+			<para>De esta manera es posible utilizar el valor del campo personalizado 
+			<emphasis>Java class</emphasis> que há sido creado en el <xref linkend="chapter.4">capítulo 4</xref> 
+			en el comando de prueba iterativo.</para>
+			
+			<para>
+				<programlisting><![CDATA[mvn -e -X test -Dtest=$TESTLINK_TESTCASE_JAVA_CLASS]]></programlisting>
+			</para>
+			
+			<para>Como se puede ver, nuestro comando utilizar el valor del campo personalizado 
+			<emphasis>Java class</emphasis> para especificar el nombre de la prueba para el 
+			<application>Maven</application> (<application>En realidad, Maven Surefire Plug-in</application>)
+			A continuación encontrará una lista con la información que el plug-in 
+			pone a disposición de la configuración de su trabajo. Como nombres de campos 
+			personalizados pueden variar, la estrategia utilizada es capitalizar el nombre del 
+			campo customizado, sustituir los espacios con <emphasis>_</emphasis> y lo añadir a  
+			<emphasis>TESTLINK_TESTCASE_</emphasis>, que representa la información de un Test Case en
+			el <application>TestLink</application>.</para>
+					
+			<para>
+				<db:itemizedlist>
+					<db:listitem>
+						<db:para>TESTLINK_TESTCASE_ID</db:para>
+					</db:listitem>
+					<db:listitem>
+						<db:para>TESTLINK_TESTCASE_NAME</db:para>
+					</db:listitem>
+					<db:listitem>
+						<db:para>TESTLINK_TESTCASE_TESTPROJECTID</db:para>
+					</db:listitem>
+					<db:listitem>
+						<db:para>TESTLINK_TESTCASE_AUTHOR</db:para>
+					</db:listitem>
+					<db:listitem>
+						<db:para>TESTLINK_TESTCASE_SUMMARY</db:para>
+					</db:listitem>
+					<db:listitem>
+						<db:para>TESTLINK_BUILD_NAME</db:para>
+					</db:listitem>
+					<db:listitem>
+						<db:para>TESTLINK_TESTPLAN_NAME</db:para>
+					</db:listitem>
+					<db:listitem>
+						<db:para>TESTLINK_TESTCASE_$CUSTOM_FIELD_NAME</db:para>
+					</db:listitem>
+				</db:itemizedlist>
+			</para>
+			
+		</section>    
 		
 	</section>
 	

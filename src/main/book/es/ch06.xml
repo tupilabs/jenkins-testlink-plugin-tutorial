@@ -6,7 +6,99 @@
          xmlns:ns4="http://www.w3.org/1998/Math/MathML"
          xmlns:ns3="http://www.w3.org/1999/xhtml"
          xmlns:db="http://docbook.org/ns/docbook">
-	<title>Executing Automated Test Cases</title>
 	
-	<para>Let the show start...</para>
+	<title>Ejecutando Casos de Prueba Automatizados</title>
+	
+	<para>Ahora que todo está configurado es tiempo de ejecutar nuestros casos 
+	de prueba automatizados. Vamos a regresar a la pantalla principal en el 
+	<application>Jenkins</application>. Haga clic en el job y dispare su ejecución haciendo 
+	clic en <emphasis>Build Now</emphasis>.</para>
+	
+	
+	<para>
+		<mediaobject id="jenkins_008">
+			<imageobject role="html">
+				<imagedata align="center" fileref="media/jenkins_008.png" width="800px" format="PNG" />
+			</imageobject>
+		</mediaobject>
+	</para>
+	
+	<para>Una vez que su ejecución se ha completado, actualize 
+	la pantalla actual presionando F5 o haciendo clic sobre el nombre del build.
+	La siguiente pantalla debe aparecer, mostrando un gráfico con los resultados de las pruebas.</para>
+		
+	<para>
+		<mediaobject id="jenkins_009">
+			<imageobject role="html">
+				<imagedata align="center" fileref="media/jenkins_009.png" width="800px" format="PNG" />
+			</imageobject>
+		</mediaobject>
+	</para>
+	
+	<para>Es posible encontrar más información sobre las pruebas haciendo clic en
+	<emphasis>Test Results</emphasis> o en el build abajo de <emphasis>Build History</emphasis>.</para>
+	
+	<para>
+		<mediaobject id="jenkins_010">
+			<imageobject role="html">
+				<imagedata align="center" fileref="media/jenkins_010.png" width="800px" format="PNG" />
+			</imageobject>
+		</mediaobject>
+	</para>
+	
+	<para>
+		<mediaobject id="jenkins_011">
+			<imageobject role="html">
+				<imagedata align="center" fileref="media/jenkins_011.png" width="800px" format="PNG" />
+			</imageobject>
+		</mediaobject>
+	</para>
+	
+	
+	<para>Todo parece estar en correcto en <application>Jenkins</application>,
+	ahora vamos a regresar para el <application>TestLink</application> y hacer clic en 
+	la opción <emphasis>Test execution</emphasis> en el menu del topo. El va a traer una pantalla
+	que muestra el resultado de la ejecución de la prueba.</para>
+	
+	<para>
+		<mediaobject id="testlink_022">
+			<imageobject role="html">
+				<imagedata align="center" fileref="media/testlink_022.png" width="800px" format="PNG" />
+			</imageobject>
+		</mediaobject>
+	</para>
+	
+	<para>Se puede ver mas informaciones acerca de la ejecución de sus pruebas 
+	haciendo clic sobre ellas en el árbol. Tenga en cuenta que el plug-in por 
+	defecto se carga el archivo original de resultados de pruebas. En este caso, 
+	como estamos usando <application>TestNG</application>, el se cargó 
+	<emphasis>testng-results.xml</emphasis>. Es útil como se puede ver lo que paso 
+	con las pruebas, tal vez hasta vea el stack trace de una excepción.</para>
+	
+	<para>
+		<mediaobject id="testlink_023">
+			<imageobject role="html">
+				<imagedata align="center" fileref="media/testlink_023.png" width="800px" format="PNG" />
+			</imageobject>
+		</mediaobject>
+	</para>
+	
+	<para>Explore los informes disponibles en el <application>TestLink</application> 
+	para ver los resultados de las pruebas en diferentes perspectivas.</para>
+	
+	<para>
+		<mediaobject id="testlink_024">
+			<imageobject role="html">
+				<imagedata align="center" fileref="media/testlink_024.png" width="800px" format="PNG" />
+			</imageobject>
+		</mediaobject>
+	</para>
+	
+	<para>¿Ha notado que el nombre de la clase Java en nuestro proyecto es sample.Tests?
+	¿Por qué no intentar escribir más métodos dentro de esta clase Java? 
+	Esto puede ayudar en la revisión del trabajo. Utilizando TAP como resultado de pruebas
+	le permite extender los resultados de las pruebas, especificando, por ejemplo, archivos 
+	adjuntos para los resultados de las pruebas, tales como imágenes o archivos de log. 
+	Ver <xref linkend="chapter.9">capítulo 9</xref> para obtener más detalles.</para>
+	
 </chapter>
