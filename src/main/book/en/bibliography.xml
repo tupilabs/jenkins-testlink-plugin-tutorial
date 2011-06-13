@@ -8,5 +8,84 @@
          xmlns:db="http://docbook.org/ns/docbook">
 	<title>Bibliography</title>
 	
-	<para>Let the show start...</para>
+	<biblioentry>
+		<abbrev>JenkinsTestLink</abbrev>
+		<title>Jenkins TestLink Plug-in</title>
+		<author>
+			<orgname>The Jenkins TestLink Plug-in team</orgname>
+			<uri>http://wiki.jenkins-ci.org/display/JENKINS/TestLink+Plugin</uri>	
+		</author>
+		<copyright><year>2011</year><holder>The Jenkins TestLink Plug-in team</holder></copyright>
+	</biblioentry>
+	
+	<biblioentry>
+		<abbrev>JenkinsCI</abbrev>
+		<title>Jenkins-CI</title>
+		<author>
+			<orgname>Jenkins-CI</orgname>
+			<uri>http://www.jenkins-ci.org/</uri>	
+		</author>
+		<copyright><year>2011</year><holder>Jenkins-CI</holder></copyright>
+	</biblioentry>
+	
+	<biblioentry>
+		<abbrev>TestLink</abbrev>
+		<title>TestLink</title>
+		<author>
+			<orgname>TestLink Community</orgname>
+			<uri>http://www.teamst.org/</uri>	
+		</author>
+		<copyright><year>2011</year><holder>TestLink Community</holder></copyright>
+	</biblioentry>
+	
+	<biblioentry>
+		<abbrev>TestNG</abbrev>
+		<title>TestNG</title>
+		<author>
+			<orgname>TestNG</orgname>
+			<uri>http://www.testng.org/</uri>	
+		</author>
+		<copyright><year>2011</year><holder>TestNG</holder></copyright>
+	</biblioentry>
+	
+	<biblioentry>
+		<abbrev>JUnit</abbrev>
+		<title>JUnit</title>
+		<author>
+			<orgname>JUnit</orgname>
+			<uri>http://www.junit.org/</uri>	
+		</author>
+		<copyright><year>2011</year><holder>JUnit</holder></copyright>
+	</biblioentry>
+	
+	<biblioentry>
+		<abbrev>TAP</abbrev>
+		<title>Test Anything Protocol Website</title>
+		<author>
+			<orgname>Test Anything Protocol Community</orgname>
+			<uri>http://testanything.org/</uri>	
+		</author>
+		<copyright><year>2011</year><holder>Test Anything Protocol Community</holder></copyright>
+	</biblioentry>
+	
+	<biblioentry>
+		<abbrev>TAPWikipedia</abbrev>
+		<title>Test Anything Protocol article in Wikipedia</title>
+		<author>
+			<orgname>Wikipedia</orgname>
+			<uri>http://en.wikipedia.org/wiki/Test_Anything_Protocol</uri>	
+		</author>
+		<copyright><year>2011</year><holder>Wikipedia</holder></copyright>
+	</biblioentry>
+	
+	<biblioentry>
+		<abbrev>YAMLorg</abbrev>
+		<title>YAML.org</title>
+		<author>
+			<orgname>YAML.org</orgname>
+			<uri>http://www.yaml.org</uri>
+		</author>
+		<copyright><year>2011</year><holder>YAML.org</holder></copyright>
+	</biblioentry>
+
 </preface>
