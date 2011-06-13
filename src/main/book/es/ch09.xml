@@ -5,8 +5,48 @@
          xmlns:ns5="http://www.w3.org/2000/svg"
          xmlns:ns4="http://www.w3.org/1998/Math/MathML"
          xmlns:ns3="http://www.w3.org/1999/xhtml"
-         xmlns:db="http://docbook.org/ns/docbook">
+         xmlns:db="http://docbook.org/ns/docbook" 
+         id="chapter.5">
 	<title>Appendix</title>
 	
-	<para>Let the show start...</para>
+	<section>
+		
+		<title>Adding attachments to your test results</title>
+		
+		<para>TBD</para>
+		
+	</section>
+	
+	<section>
+	
+		<title>Plug-in Architecture</title>
+	
+		<para>TBD</para>
+	
+	</section>
+	
+	<section>
+	
+		<title>Plug-in execution life cycle diagram sequence</title>
+	
+		<para>TBD</para>
+	
+	</section>
+	
+	<section>
+	
+		<title>Plug-in behaviour in distributed environments</title>
+	
+		<para>TBD</para>
+	
+	</section>
+	
+	<section>
+	
+		<title>How to use the plug-in with SSL or basic authentication?</title>
+	
+		<para>TBD</para>
+	
+	</section>
+	
 </chapter>

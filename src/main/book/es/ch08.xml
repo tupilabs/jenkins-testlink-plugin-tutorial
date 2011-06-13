@@ -6,7 +6,36 @@
          xmlns:ns4="http://www.w3.org/1998/Math/MathML"
          xmlns:ns3="http://www.w3.org/1999/xhtml"
          xmlns:db="http://docbook.org/ns/docbook">
-	<title>Advantages of using Jenkins TestLink Plug-in</title>
+         
+	<title>Ventajas del uso de <application>Jenkins TestLink Plug-in</application></title>
 	
-	<para>Let the show start...</para>
+	<para>El plug-in no está destinado a ser una solución de automatización de pruebas, 
+	a pesar de que el ayuda a automatizar sus pruebas. También no hay la intención de 
+	que gerencie las pruebas. El propósito del plug-in es integrar <application>Jenkins</application>, 
+	el servidor de integración contínua, y <application>TestLink</application>, una herramienta 
+	de gerenciamento de pruebas.</para>
+	
+	<para>Hay tres claras ventajas en la utilización de este infoque. En primer lugar, si ya 
+	están utilizando <application>Jenkins</application> como servidor de integración continua 
+	y <application>TestLink</application> como herramienta de gerenciamento de pruebas, entonces 
+	no será necesario preocuparse con otra herramienta. Basta instalar el plug-in y luego DevOps 
+	seguiran trabajando en el <application>Jenkins</application>, probadores seguiran trabajando en el 
+	<application>Testlink</application> y su jefe quedará mas que feliz de saber que 
+	no hay la necessidad de otra herramienta, o entrene todo el equipo para aprender a utilizar
+	una nueva herramienta.</para>
+	
+	<para>En segundo lugar, es independiente del lenguaje. Se puede ejecutar las pruebas en 
+	<acronym>PHP</acronym>, Perl, Python, Java o incluso C. La única limitación aqui es que 
+	es necesario poder dar salida a las pruebas en <application>JUnit</application>, <application>TestNG</application> o 
+	<acronym>TAP</acronym>.</para>
+	
+	<para>Por último, es gratis. El equipo del plug-in son contrubuidores del 
+	<application>TestLink</application>, </para>
+	
+	<para>Lastly, it is free. The team of the plug-in are contributors of 
+	<application>TestLink</application>, mantenedores del 
+	<application>TestLink Java API</application>, y seguen tratando de arreglar los problemas en 
+	<link xlink:href="http://issues.jenkins-ci.org"><application>Jenkins</application>' 
+	<application>JIRA</application></link> lo mas rápido que sea posible.</para>
+	
 </chapter>

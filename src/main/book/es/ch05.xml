@@ -296,6 +296,68 @@
 			el restante de las pruebas seran marcadas como Blocked en el <application>TestLink</application></para>
 			
 		</section>
+
+		
+		<section>
+		
+			<title>Environment variables</title>
+			
+			<para>El plug-in recupera toda la información del <application>TestLink</application> para su 
+			Test Project, Test Plan, Build y Test Cases automatizados. Es posible utilizar cualquiera de 
+			las informaciones para ejecutar las pruebas. <application>Jenkins</application> proporciona 
+			las <emphasis>Environment Variables</emphasis>, más <emphasis>Build Environment Variables</emphasis> 
+			(tales como <emphasis>BUILD_ID</emphasis>, que tiene la fecha y hora del job). 
+			El plug-in inyecta la información recuperada del <application>TestLink</application>
+			como variables de ambiente.</para>
+			
+			<para>De esta manera es posible utilizar el valor del campo personalizado 
+			<emphasis>Java class</emphasis> que há sido creado en el <xref linkend="chapter.4">capítulo 4</xref> 
+			en el comando de prueba iterativo.</para>
+			
+			<para>
+				<programlisting><![CDATA[mvn -e -X test -Dtest=$TESTLINK_TESTCASE_JAVA_CLASS]]></programlisting>
+			</para>
+			
+			<para>Como se puede ver, nuestro comando utilizar el valor del campo personalizado 
+			<emphasis>Java class</emphasis> para especificar el nombre de la prueba para el 
+			<application>Maven</application> (<application>En realidad, Maven Surefire Plug-in</application>)
+			A continuación encontrará una lista con la información que el plug-in 
+			pone a disposición de la configuración de su trabajo. Como nombres de campos 
+			personalizados pueden variar, la estrategia utilizada es capitalizar el nombre del 
+			campo customizado, sustituir los espacios con <emphasis>_</emphasis> y lo añadir a  
+			<emphasis>TESTLINK_TESTCASE_</emphasis>, que representa la información de un Test Case en
+			el <application>TestLink</application>.</para>
+					
+			<para>
+				<db:itemizedlist>
+					<db:listitem>
+						<db:para>TESTLINK_TESTCASE_ID</db:para>
+					</db:listitem>
+					<db:listitem>
+						<db:para>TESTLINK_TESTCASE_NAME</db:para>
+					</db:listitem>
+					<db:listitem>
+						<db:para>TESTLINK_TESTCASE_TESTPROJECTID</db:para>
+					</db:listitem>
+					<db:listitem>
+						<db:para>TESTLINK_TESTCASE_AUTHOR</db:para>
+					</db:listitem>
+					<db:listitem>
+						<db:para>TESTLINK_TESTCASE_SUMMARY</db:para>
+					</db:listitem>
+					<db:listitem>
+						<db:para>TESTLINK_BUILD_NAME</db:para>
+					</db:listitem>
+					<db:listitem>
+						<db:para>TESTLINK_TESTPLAN_NAME</db:para>
+					</db:listitem>
+					<db:listitem>
+						<db:para>TESTLINK_TESTCASE_$CUSTOM_FIELD_NAME</db:para>
+					</db:listitem>
+				</db:itemizedlist>
+			</para>
+			
+		</section>    
 		
 	</section>
 	

@@ -19,7 +19,7 @@
 	integration server and <application>TestLink</application> as test 
 	management tool, then you won't have another tool to worry about. Simply 
 	install the plug-in and then DevOps will keep working in <application>Jenkins</application>, 
-	testers will keep working in <application>Jenkins</application> and your boss 
+	testers will keep working in <application>TestLink</application> and your boss 
 	will be more than happy to know that he won't need to buy another tool, 
 	or train the whole team to learn how to use a new one.</para>
 	
