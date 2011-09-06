@@ -21,13 +21,13 @@
 		
 		<mediaobject id="testlink_002">
 			<imageobject role="html">
-				<imagedata align="center" fileref="media/testlink_002.png" width="800px" format="PNG" />
+				<imagedata align="center" fileref="../media/testlink_002.png" contentwidth="800px" format="PNG" />
 			</imageobject>
 		</mediaobject>
 		
 		<mediaobject id="testlink_003">
 			<imageobject role="html">
-				<imagedata align="center" fileref="media/testlink_003.png" width="800px" format="PNG" />
+				<imagedata align="center" fileref="../media/testlink_003.png" contentwidth="800px" format="PNG" />
 			</imageobject>
 		</mediaobject>
 		
@@ -55,7 +55,7 @@ mysql> flush privileges;]]></programlisting>
 		<para>
 			<mediaobject id="testlink_004">
 				<imageobject role="html">
-					<imagedata align="center" fileref="media/testlink_004.png" width="800px" format="PNG" />
+					<imagedata align="center" fileref="../media/testlink_004.png" contentwidth="800px" format="PNG" />
 				</imageobject>
 			</mediaobject>
 		</para>
@@ -63,7 +63,7 @@ mysql> flush privileges;]]></programlisting>
 		<para>
 			<mediaobject id="testlink_005">
 				<imageobject role="html">
-					<imagedata align="center" fileref="media/testlink_005.png" width="800px" format="PNG" />
+					<imagedata align="center" fileref="../media/testlink_005.png" contentwidth="800px" format="PNG" />
 				</imageobject>
 			</mediaobject>
 		</para>
@@ -71,7 +71,7 @@ mysql> flush privileges;]]></programlisting>
 		<para>
 			<mediaobject id="testlink_006">
 				<imageobject role="html">
-					<imagedata align="center" fileref="media/testlink_006.png" width="800px" format="PNG" />
+					<imagedata align="center" fileref="../media/testlink_006.png" contentwidth="800px" format="PNG" />
 				</imageobject>
 			</mediaobject>
 		</para>
@@ -106,7 +106,7 @@ mysql> flush privileges;]]></programlisting>
 		<para>
 			<mediaobject id="testlink_007">
 				<imageobject role="html">
-					<imagedata align="center" fileref="media/testlink_007.png" width="800px" format="PNG" />
+					<imagedata align="center" fileref="../media/testlink_007.png" contentwidth="800px" format="PNG" />
 				</imageobject>
 			</mediaobject>
 		</para>
@@ -121,7 +121,7 @@ mysql> flush privileges;]]></programlisting>
 		<para>
 			<mediaobject id="testlink_008">
 				<imageobject role="html">
-					<imagedata align="center" fileref="media/testlink_008.png" width="800px" format="PNG" />
+					<imagedata align="center" fileref="../media/testlink_008.png" contentwidth="800px" format="PNG" />
 				</imageobject>
 			</mediaobject>
 		</para>
@@ -132,7 +132,7 @@ mysql> flush privileges;]]></programlisting>
 		<para>
 			<mediaobject id="testlink_009">
 				<imageobject role="html">
-					<imagedata align="center" fileref="media/testlink_009.png" width="800px" format="PNG" />
+					<imagedata align="center" fileref="../media/testlink_009.png" contentwidth="800px" format="PNG" />
 				</imageobject>
 			</mediaobject>
 		</para>
@@ -158,7 +158,7 @@ mysql> flush privileges;]]></programlisting>
 		<para>
 			<mediaobject id="testlink_010">
 				<imageobject role="html">
-					<imagedata align="center" fileref="media/testlink_010.png" width="800px" format="PNG" />
+					<imagedata align="center" fileref="../media/testlink_010.png" contentwidth="800px" format="PNG" />
 				</imageobject>
 			</mediaobject>
 		</para>
@@ -166,7 +166,7 @@ mysql> flush privileges;]]></programlisting>
 		<para>
 			<mediaobject id="testlink_011">
 				<imageobject role="html">
-					<imagedata align="center" fileref="media/testlink_011.png" width="800px" format="PNG" />
+					<imagedata align="center" fileref="../media/testlink_011.png" contentwidth="800px" format="PNG" />
 				</imageobject>
 			</mediaobject>
 		</para>
@@ -180,7 +180,7 @@ mysql> flush privileges;]]></programlisting>
 		<para>
 			<mediaobject id="testlink_012">
 				<imageobject role="html">
-					<imagedata align="center" fileref="media/testlink_012.png" width="800px" format="PNG" />
+					<imagedata align="center" fileref="../media/testlink_012.png" contentwidth="800px" format="PNG" />
 				</imageobject>
 			</mediaobject>
 		</para>
@@ -205,7 +205,7 @@ mysql> flush privileges;]]></programlisting>
 		<para>
 			<mediaobject id="testlink_013">
 				<imageobject role="html">
-					<imagedata align="center" fileref="media/testlink_013.png" width="800px" format="PNG" />
+					<imagedata align="center" fileref="../media/testlink_013.png" contentwidth="800px" format="PNG" />
 				</imageobject>
 			</mediaobject>
 		</para>
@@ -218,7 +218,7 @@ mysql> flush privileges;]]></programlisting>
 		<para>
 			<mediaobject id="testlink_014">
 				<imageobject role="html">
-					<imagedata align="center" fileref="media/testlink_014.png" width="800px" format="PNG" />
+					<imagedata align="center" fileref="../media/testlink_014.png" contentwidth="800px" format="PNG" />
 				</imageobject>
 			</mediaobject>
 		</para>
@@ -232,7 +232,7 @@ mysql> flush privileges;]]></programlisting>
 		<para>
 			<mediaobject id="testlink_015">
 				<imageobject role="html">
-					<imagedata align="center" fileref="media/testlink_015.png" width="800px" format="PNG" />
+					<imagedata align="center" fileref="../media/testlink_015.png" contentwidth="800px" format="PNG" />
 				</imageobject>
 			</mediaobject>
 		</para>
@@ -240,7 +240,7 @@ mysql> flush privileges;]]></programlisting>
 		<para>
 			<mediaobject id="testlink_016">
 				<imageobject role="html">
-					<imagedata align="center" fileref="media/testlink_016.png" width="800px" format="PNG" />
+					<imagedata align="center" fileref="../media/testlink_016.png" contentwidth="800px" format="PNG" />
 				</imageobject>
 			</mediaobject>
 		</para>
@@ -248,7 +248,7 @@ mysql> flush privileges;]]></programlisting>
 		<para>
 			<mediaobject id="testlink_017">
 				<imageobject role="html">
-					<imagedata align="center" fileref="media/testlink_017.png" width="800px" format="PNG" />
+					<imagedata align="center" fileref="../media/testlink_017.png" contentwidth="800px" format="PNG" />
 				</imageobject>
 			</mediaobject>
 		</para>
@@ -256,7 +256,7 @@ mysql> flush privileges;]]></programlisting>
 		<para>
 			<mediaobject id="testlink_018">
 				<imageobject role="html">
-					<imagedata align="center" fileref="media/testlink_018.png" width="800px" format="PNG" />
+					<imagedata align="center" fileref="../media/testlink_018.png" contentwidth="800px" format="PNG" />
 				</imageobject>
 			</mediaobject>
 		</para>
@@ -286,7 +286,7 @@ mysql> flush privileges;]]></programlisting>
 		<para>
 			<mediaobject id="testlink_019">
 				<imageobject role="html">
-					<imagedata align="center" fileref="media/testlink_019.png" width="800px" format="PNG" />
+					<imagedata align="center" fileref="../media/testlink_019.png" contentwidth="800px" format="PNG" />
 				</imageobject>
 			</mediaobject>
 		</para>
@@ -294,7 +294,7 @@ mysql> flush privileges;]]></programlisting>
 		<para>
 			<mediaobject id="testlink_020">
 				<imageobject role="html">
-					<imagedata align="center" fileref="media/testlink_020.png" width="800px" format="PNG" />
+					<imagedata align="center" fileref="../media/testlink_020.png" contentwidth="800px" format="PNG" />
 				</imageobject>
 			</mediaobject>
 		</para>
@@ -305,7 +305,7 @@ mysql> flush privileges;]]></programlisting>
 		<para>
 			<mediaobject id="testlink_021">
 				<imageobject role="html">
-					<imagedata align="center" fileref="media/testlink_021.png" width="800px" format="PNG" />
+					<imagedata align="center" fileref="../media/testlink_021.png" contentwidth="800px" format="PNG" />
 				</imageobject>
 			</mediaobject>
 		</para>

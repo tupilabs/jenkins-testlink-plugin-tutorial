@@ -47,8 +47,8 @@
 	a sample test project. This test project is a Java project that uses 
 	<application>Maven</application> and <application>TestNG</application>, you 
 	can download it from 
-	<link xlink:href="https://github.com/kinow/jenkins-testlink-plugin-the-definitive-guide/blob/master/sample-test-project.tar.gz?raw=true">
-	https://github.com/kinow/jenkins-testlink-plugin-the-definitive-guide/blob/master/sample-test-project.tar.gz?raw=true</link>.</para>
+	<ulink url="https://github.com/kinow/jenkins-testlink-plugin-the-definitive-guide/blob/master/sample-test-project.tar.gz?raw=true">
+	https://github.com/kinow/jenkins-testlink-plugin-the-definitive-guide/blob/master/sample-test-project.tar.gz?raw=true</ulink>.</para>
 	
 	<para><application>Jenkins TestLink Plug-in</application> is licensed under the 
 	<acronym>MIT</acronym> License and its 

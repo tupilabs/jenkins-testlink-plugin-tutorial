@@ -1,11 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<chapter version="5.0" xmlns="http://docbook.org/ns/docbook"
-         xmlns:xlink="http://www.w3.org/1999/xlink"
-         xmlns:xi="http://www.w3.org/2001/XInclude"
-         xmlns:ns5="http://www.w3.org/2000/svg"
-         xmlns:ns4="http://www.w3.org/1998/Math/MathML"
-         xmlns:ns3="http://www.w3.org/1999/xhtml"
-         xmlns:db="http://docbook.org/ns/docbook">
+<chapter id="chapter.6">
 	
 	<title>Executing Automated Test Cases</title>
 	
@@ -17,7 +11,7 @@
 	<para>
 		<mediaobject id="jenkins_008">
 			<imageobject role="html">
-				<imagedata align="center" fileref="media/jenkins_008.png" width="800px" format="PNG" />
+				<imagedata align="center" fileref="../media/jenkins_008.png" width="100%" contentdept="100%" format="PNG" />
 			</imageobject>
 		</mediaobject>
 	</para>
@@ -29,7 +23,7 @@
 	<para>
 		<mediaobject id="jenkins_009">
 			<imageobject role="html">
-				<imagedata align="center" fileref="media/jenkins_009.png" width="800px" format="PNG" />
+				<imagedata align="center" fileref="../media/jenkins_009.png" width="100%" contentdept="100%" format="PNG" />
 			</imageobject>
 		</mediaobject>
 	</para>
@@ -41,7 +35,7 @@
 	<para>
 		<mediaobject id="jenkins_010">
 			<imageobject role="html">
-				<imagedata align="center" fileref="media/jenkins_010.png" width="800px" format="PNG" />
+				<imagedata align="center" fileref="../media/jenkins_010.png" width="100%" contentdept="100%" format="PNG" />
 			</imageobject>
 		</mediaobject>
 	</para>
@@ -49,7 +43,7 @@
 	<para>
 		<mediaobject id="jenkins_011">
 			<imageobject role="html">
-				<imagedata align="center" fileref="media/jenkins_011.png" width="800px" format="PNG" />
+				<imagedata align="center" fileref="../media/jenkins_011.png" width="100%" contentdept="100%" format="PNG" />
 			</imageobject>
 		</mediaobject>
 	</para>
@@ -62,7 +56,7 @@
 	<para>
 		<mediaobject id="testlink_022">
 			<imageobject role="html">
-				<imagedata align="center" fileref="media/testlink_022.png" width="800px" format="PNG" />
+				<imagedata align="center" fileref="../media/testlink_022.png" width="100%" contentdept="100%" format="PNG" />
 			</imageobject>
 		</mediaobject>
 	</para>
@@ -77,7 +71,7 @@
 	<para>
 		<mediaobject id="testlink_023">
 			<imageobject role="html">
-				<imagedata align="center" fileref="media/testlink_023.png" width="800px" format="PNG" />
+				<imagedata align="center" fileref="../media/testlink_023.png" width="100%" contentdept="100%" format="PNG" />
 			</imageobject>
 		</mediaobject>
 	</para>
@@ -88,7 +82,7 @@
 	<para>
 		<mediaobject id="testlink_024">
 			<imageobject role="html">
-				<imagedata align="center" fileref="media/testlink_024.png" width="800px" format="PNG" />
+				<imagedata align="center" fileref="../media/testlink_024.png" width="100%" contentdept="100%" format="PNG" />
 			</imageobject>
 		</mediaobject>
 	</para>
@@ -98,6 +92,6 @@
 	class? It may help you to review your work. Using TAP as test result 
 	you are able to extend your test results by specifying, for instance, 
 	attachments for your test results, such as images or log files. See 
-	<xref linkend="chapter.9">chapter 9</xref> for more details.</para>
+	<xref linkend="chapter.9" /> for more details.</para>
 	
 </chapter>

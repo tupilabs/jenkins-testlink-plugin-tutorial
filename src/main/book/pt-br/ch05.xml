@@ -13,7 +13,7 @@
 		<title>Installing <application>Jenkins</application></title>
 		
 		<para>Download <emphasis>jenkins.war</emphasis> from 
-		<link xlink:href="http://www.jenkins-ci.org">http://www.jenkins-ci.org</link> to a folder 
+		<ulink url="http://www.jenkins-ci.org">http://www.jenkins-ci.org</ulink> to a folder 
 		of your preference. Now go to the command line and execute 
 		<programlisting><![CDATA[java -jar jenkins.war]]></programlisting> 
 		(if you need change the port, use <emphasis>--httpPort=9999</emphasis>).</para>
@@ -25,14 +25,14 @@
 		<para>
 			<mediaobject id="jenkins_001_02">
 				<imageobject role="html">
-					<imagedata align="center" fileref="media/jenkins_001.png" width="800px" format="PNG" />
+					<imagedata align="center" fileref="../media/jenkins_001.png" contentwidth="800px" format="PNG" />
 				</imageobject>
 			</mediaobject>
 		</para>
 	
-		<para>Go to <link xlink:href="http://localhost:8080">http://localhost:8080</link> 
+		<para>Go to <ulink url="http://localhost:8080">http://localhost:8080</ulink> 
 		to check if your installation is working. We will call the page loaded 
-		when you open <link xlink:href="http://localhost:8080">http://localhost:8080</link> 
+		when you open <ulink url="http://localhost:8080">http://localhost:8080</ulink> 
 		main screen throughout this guide.</para>
 	
 	</section>
@@ -57,7 +57,7 @@
 		<para>
 			<mediaobject id="jenkins_002">
 				<imageobject role="html">
-					<imagedata align="center" fileref="media/jenkins_002.png" width="800px" format="PNG" />
+					<imagedata align="center" fileref="../media/jenkins_002.png" contentwidth="800px" format="PNG" />
 				</imageobject>
 			</mediaobject>
 		</para>
@@ -65,7 +65,7 @@
 		<para>
 			<mediaobject id="jenkins_003">
 				<imageobject role="html">
-					<imagedata align="center" fileref="media/jenkins_003.png" width="800px" format="PNG" />
+					<imagedata align="center" fileref="../media/jenkins_003.png" contentwidth="800px" format="PNG" />
 				</imageobject>
 			</mediaobject>
 		</para>
@@ -81,7 +81,7 @@
 		<para>
 			<mediaobject id="jenkins_004">
 				<imageobject role="html">
-					<imagedata align="center" fileref="media/jenkins_004.png" width="800px" format="PNG" />
+					<imagedata align="center" fileref="../media/jenkins_004.png" contentwidth="800px" format="PNG" />
 				</imageobject>
 			</mediaobject>
 		</para>
@@ -111,7 +111,7 @@
 		<para>
 			<mediaobject id="jenkins_005">
 				<imageobject role="html">
-					<imagedata align="center" fileref="media/jenkins_005.png" width="800px" format="PNG" />
+					<imagedata align="center" fileref="../media/jenkins_005.png" contentwidth="800px" format="PNG" />
 				</imageobject>
 			</mediaobject>
 		</para>
@@ -126,13 +126,13 @@
 		<emphasis>Use custom workspace</emphasis> and fill the input text 
 		with the location of the test project. If you didn't download the 
 		sample test project used in this guide, you can find it in 
-		<link xlink:href="https://github.com/kinow/jenkins-testlink-plugin-the-definitive-guide/blob/master/sample-test-project.tar.gz?raw=true">
-		https://github.com/kinow/jenkins-testlink-plugin-the-definitive-guide/blob/master/sample-test-project.tar.gz?raw=true</link>.</para>
+		<ulink url="https://github.com/kinow/jenkins-testlink-plugin-the-definitive-guide/blob/master/sample-test-project.tar.gz?raw=true">
+		https://github.com/kinow/jenkins-testlink-plugin-the-definitive-guide/blob/master/sample-test-project.tar.gz?raw=true</ulink>.</para>
 	
 		<para>
 			<mediaobject id="jenkins_006">
 				<imageobject role="html">
-					<imagedata align="center" fileref="media/jenkins_006.png" width="800px" format="PNG" />
+					<imagedata align="center" fileref="../media/jenkins_006.png" contentwidth="800px" format="PNG" />
 				</imageobject>
 			</mediaobject>
 		</para>
@@ -182,7 +182,7 @@
 		<para>
 			<mediaobject id="jenkins_007_01">
 				<imageobject role="html">
-					<imagedata align="center" fileref="media/jenkins_007.png" width="800px" format="PNG" />
+					<imagedata align="center" fileref="../media/jenkins_007.png" contentwidth="800px" format="PNG" />
 				</imageobject>
 			</mediaobject>
 		</para>
@@ -198,7 +198,7 @@
 		<para>
 			<mediaobject id="jenkins_007_02">
 				<imageobject role="html">
-					<imagedata align="center" fileref="media/jenkins_007.png" width="800px" format="PNG" />
+					<imagedata align="center" fileref="../media/jenkins_007.png" contentwidth="800px" format="PNG" />
 				</imageobject>
 			</mediaobject>
 		</para>

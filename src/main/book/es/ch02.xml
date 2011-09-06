@@ -16,12 +16,12 @@
 	son <application>MySQL</application>, <application>Postgre SQL</application> 
 	y <application>MS SQL</application>, pero si bien existen usuarios que logran utilizar
 	<application>Oracle</application> también. Se puede descargar el <application>TestLink</application>
-	del link <link xlink:href="http://www.teamst.org">http://www.teamst.org</link>.</para>
+	del link <ulink url="http://www.teamst.org">http://www.teamst.org</ulink>.</para>
 	
 	<para>
 		<mediaobject id="testlink_logo">
 			<imageobject role="html">
-				<imagedata align="center" fileref="media/testlink_logo.png" format="PNG" />
+				<imagedata align="center" fileref="../media/testlink_logo.png" format="PNG" />
 			</imageobject>
 		</mediaobject>
 	</para>
@@ -40,12 +40,12 @@
 	disponibles para otris lenguajes como el Ruby o el Java. The <application>Jenkins</application> and 
 	<application>TestLink</application> integration is 
 	done using <application>TestLink Java API</application> - 
-	<link xlink:href="http://testlinkjavaapi.sourceforge.net">http://testlinkjavaapi.sourceforge.net</link>.</para>
+	<ulink url="http://testlinkjavaapi.sourceforge.net">http://testlinkjavaapi.sourceforge.net</ulink>.</para>
 	
 	<para>
 		<mediaobject id="testlink_001_01">
 			<imageobject role="html">
-				<imagedata align="center" fileref="media/testlink_001.png" width="800px" format="PNG" />
+				<imagedata align="center" fileref="../media/testlink_001.png" contentwidth="800px" format="PNG" />
 			</imageobject>
 		</mediaobject>
 	</para>
@@ -58,10 +58,10 @@
 	destinada para el <application>Testlink</application> <emphasis>1.9.2</emphasis>. 
 	En caso de que haya otras versiones disponibles en el momento de lectura desta guia, es posible que ocurran errores 
 	durante la ejecución del job <application>Jenkins</application>. Hay una tabla comparativa 
-	disponible en el link <link xlink:href="http://wiki.jenkins-ci.org/display/JENKINS/TestLink+Plugin">plug-in Wiki.</link></para>
+	disponible en el link <ulink url="http://wiki.jenkins-ci.org/display/JENKINS/TestLink+Plugin">plug-in Wiki.</ulink></para>
 	
 	<para><application>TestLink</application> está licenciado bajo la licencia 
 	<acronym>GPL</acronym>  y su código se encuentra alojado en gitorious - 
-	<link xlink:href="http://www.gitorious.org/testlink-ga/testlink-code">http://www.gitorious.org/testlink-ga/testlink-code</link>.</para>
+	<ulink url="http://www.gitorious.org/testlink-ga/testlink-code">http://www.gitorious.org/testlink-ga/testlink-code</ulink>.</para>
 	
 </chapter>

@@ -44,8 +44,8 @@
 	y  <application>TestLink</application> para ejecutar pruebas automatizadas de un 
 	proyecto de pruebas modelo. Este es un proyecto JAVA que utiliza 
 	<application>Maven</application> y <application>TestNG</application>. Se puede descargalo de
-	<link xlink:href="https://github.com/kinow/jenkins-testlink-plugin-the-definitive-guide/blob/master/sample-test-project.tar.gz?raw=true">
-	https://github.com/kinow/jenkins-testlink-plugin-the-definitive-guide/blob/master/sample-test-project.tar.gz?raw=true</link>.</para>
+	<ulink url="https://github.com/kinow/jenkins-testlink-plugin-the-definitive-guide/blob/master/sample-test-project.tar.gz?raw=true">
+	https://github.com/kinow/jenkins-testlink-plugin-the-definitive-guide/blob/master/sample-test-project.tar.gz?raw=true</ulink>.</para>
 	
 	<para><application>Jenkins TestLink Plug-in</application> está licenciado bajo la licencia
 	<acronym>MIT</acronym> License y su código se encuentra alojado en github - 

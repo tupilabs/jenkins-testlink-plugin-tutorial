@@ -1,11 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<chapter version="5.0" xmlns="http://docbook.org/ns/docbook"
-         xmlns:xlink="http://www.w3.org/1999/xlink"
-         xmlns:xi="http://www.w3.org/2001/XInclude"
-         xmlns:ns5="http://www.w3.org/2000/svg"
-         xmlns:ns4="http://www.w3.org/1998/Math/MathML"
-         xmlns:ns3="http://www.w3.org/1999/xhtml"
-         xmlns:db="http://docbook.org/ns/docbook">
+<?xml version="1.0" encoding="UTF-8"?> 
+<chapter id="chapter.5">
+
 	<title>Jenkins Configuration</title>
 	
 	<section>
@@ -13,7 +8,7 @@
 		<title>Installing <application>Jenkins</application></title>
 		
 		<para>Download <emphasis>jenkins.war</emphasis> from 
-		<link xlink:href="http://www.jenkins-ci.org">http://www.jenkins-ci.org</link> to a folder 
+		<ulink url="http://www.jenkins-ci.org">http://www.jenkins-ci.org</ulink> to a folder 
 		of your preference. Now go to the command line and execute 
 		<programlisting><![CDATA[java -jar jenkins.war]]></programlisting> 
 		(if you need change the port, use <emphasis>--httpPort=9999</emphasis>).</para>
@@ -25,14 +20,14 @@
 		<para>
 			<mediaobject id="jenkins_001_02">
 				<imageobject role="html">
-					<imagedata align="center" fileref="media/jenkins_001.png" width="800px" format="PNG" />
+					<imagedata align="center" fileref="../media/jenkins_001.png" width="100%" contentdept="100%" format="PNG" />
 				</imageobject>
 			</mediaobject>
 		</para>
 	
-		<para>Go to <link xlink:href="http://localhost:8080">http://localhost:8080</link> 
+		<para>Go to <ulink url="http://localhost:8080">http://localhost:8080</ulink> 
 		to check if your installation is working. We will call the page loaded 
-		when you open <link xlink:href="http://localhost:8080">http://localhost:8080</link> 
+		when you open <ulink url="http://localhost:8080">http://localhost:8080</ulink> 
 		main screen throughout this guide.</para>
 	
 	</section>
@@ -57,7 +52,7 @@
 		<para>
 			<mediaobject id="jenkins_002">
 				<imageobject role="html">
-					<imagedata align="center" fileref="media/jenkins_002.png" width="800px" format="PNG" />
+					<imagedata align="center" fileref="../media/jenkins_002.png" width="100%" contentdept="100%" format="PNG" />
 				</imageobject>
 			</mediaobject>
 		</para>
@@ -65,7 +60,7 @@
 		<para>
 			<mediaobject id="jenkins_003">
 				<imageobject role="html">
-					<imagedata align="center" fileref="media/jenkins_003.png" width="800px" format="PNG" />
+					<imagedata align="center" fileref="../media/jenkins_003.png" width="100%" contentdept="100%" format="PNG" />
 				</imageobject>
 			</mediaobject>
 		</para>
@@ -81,7 +76,7 @@
 		<para>
 			<mediaobject id="jenkins_004">
 				<imageobject role="html">
-					<imagedata align="center" fileref="media/jenkins_004.png" width="800px" format="PNG" />
+					<imagedata align="center" fileref="../media/jenkins_004.png" width="100%" contentdept="100%" format="PNG" />
 				</imageobject>
 			</mediaobject>
 		</para>
@@ -96,7 +91,7 @@
 		If you cannot see the <acronym>API</acronym> interface section in 
 		<emphasis>My Settings</emphasis> page, then it is 
 		very likely that you didn't enable it yet. 
-		Go back to <xref linkend="chapter.4">chapter 4</xref> to review your work.</para>
+		Go back to <xref linkend="chapter.4" /> to review your work.</para>
 		
 	</section>
 	
@@ -111,7 +106,7 @@
 		<para>
 			<mediaobject id="jenkins_005">
 				<imageobject role="html">
-					<imagedata align="center" fileref="media/jenkins_005.png" width="800px" format="PNG" />
+					<imagedata align="center" fileref="../media/jenkins_005.png" width="100%" contentdept="100%" format="PNG" />
 				</imageobject>
 			</mediaobject>
 		</para>
@@ -126,13 +121,13 @@
 		<emphasis>Use custom workspace</emphasis> and fill the input text 
 		with the location of the test project. If you didn't download the 
 		sample test project used in this guide, you can find it in 
-		<link xlink:href="https://github.com/kinow/jenkins-testlink-plugin-the-definitive-guide/blob/master/sample-test-project.tar.gz?raw=true">
-		https://github.com/kinow/jenkins-testlink-plugin-the-definitive-guide/blob/master/sample-test-project.tar.gz?raw=true</link>.</para>
+		<ulink url="https://github.com/kinow/jenkins-testlink-plugin-the-definitive-guide/blob/master/sample-test-project.tar.gz?raw=true">
+		https://github.com/kinow/jenkins-testlink-plugin-the-definitive-guide/blob/master/sample-test-project.tar.gz?raw=true</ulink>.</para>
 	
 		<para>
 			<mediaobject id="jenkins_006">
 				<imageobject role="html">
-					<imagedata align="center" fileref="media/jenkins_006.png" width="800px" format="PNG" />
+					<imagedata align="center" fileref="../media/jenkins_006.png" width="100%" contentdept="100%" format="PNG" />
 				</imageobject>
 			</mediaobject>
 		</para>
@@ -142,7 +137,7 @@
 		It will show a new form with options to integrate your 
 		<application>Jenkins</application> job with <application>TestLink</application>. 
 		Fill this form with the following information created in 
-		<xref linkend="chapter.4">chapter 4</xref>.</para>
+		<xref linkend="chapter.4" />.</para>
 		
 		<para>Configure your job as follows:</para>
 		
@@ -182,7 +177,7 @@
 		<para>
 			<mediaobject id="jenkins_007_01">
 				<imageobject role="html">
-					<imagedata align="center" fileref="media/jenkins_007.png" width="800px" format="PNG" />
+					<imagedata align="center" fileref="../media/jenkins_007.png" width="100%" contentdept="100%" format="PNG" />
 				</imageobject>
 			</mediaobject>
 		</para>
@@ -198,7 +193,7 @@
 		<para>
 			<mediaobject id="jenkins_007_02">
 				<imageobject role="html">
-					<imagedata align="center" fileref="media/jenkins_007.png" width="800px" format="PNG" />
+					<imagedata align="center" fileref="../media/jenkins_007.png" width="100%" contentdept="100%" format="PNG" />
 				</imageobject>
 			</mediaobject>
 		</para>
@@ -317,7 +312,7 @@
 			<application>TestLink</application> as environment variables. </para>
 			
 			<para>This way you can use the value of the <emphasis>Java class</emphasis> 
-			custom field value that you created in <xref linkend="chapter.4">chapter 4</xref> 
+			custom field value that you created in <xref linkend="chapter.4" /> 
 			in your iterative test command.</para>
 			
 			<para>
@@ -335,32 +330,32 @@
 			information of a Test Case in <application>TestLink</application>.</para>
 			
 			<para>
-				<db:itemizedlist>
-					<db:listitem>
-						<db:para>TESTLINK_TESTCASE_ID</db:para>
-					</db:listitem>
-					<db:listitem>
-						<db:para>TESTLINK_TESTCASE_NAME</db:para>
-					</db:listitem>
-					<db:listitem>
-						<db:para>TESTLINK_TESTCASE_TESTPROJECTID</db:para>
-					</db:listitem>
-					<db:listitem>
-						<db:para>TESTLINK_TESTCASE_AUTHOR</db:para>
-					</db:listitem>
-					<db:listitem>
-						<db:para>TESTLINK_TESTCASE_SUMMARY</db:para>
-					</db:listitem>
-					<db:listitem>
-						<db:para>TESTLINK_BUILD_NAME</db:para>
-					</db:listitem>
-					<db:listitem>
-						<db:para>TESTLINK_TESTPLAN_NAME</db:para>
-					</db:listitem>
-					<db:listitem>
-						<db:para>TESTLINK_TESTCASE_$CUSTOM_FIELD_NAME</db:para>
-					</db:listitem>
-				</db:itemizedlist>
+				<itemizedlist>
+					<listitem>
+						<para>TESTLINK_TESTCASE_ID</para>
+					</listitem>
+					<listitem>
+						<para>TESTLINK_TESTCASE_NAME</para>
+					</listitem>
+					<listitem>
+						<para>TESTLINK_TESTCASE_TESTPROJECTID</para>
+					</listitem>
+					<listitem>
+						<para>TESTLINK_TESTCASE_AUTHOR</para>
+					</listitem>
+					<listitem>
+						<para>TESTLINK_TESTCASE_SUMMARY</para>
+					</listitem>
+					<listitem>
+						<para>TESTLINK_BUILD_NAME</para>
+					</listitem>
+					<listitem>
+						<para>TESTLINK_TESTPLAN_NAME</para>
+					</listitem>
+					<listitem>
+						<para>TESTLINK_TESTCASE_$CUSTOM_FIELD_NAME</para>
+					</listitem>
+				</itemizedlist>
 			</para>
 			
 		</section>    

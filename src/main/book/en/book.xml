@@ -1,31 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<book version="5.0" xmlns="http://docbook.org/ns/docbook"
-      xmlns:xlink="http://www.w3.org/1999/xlink"
-      xmlns:xi="http://www.w3.org/2001/XInclude">
-  <info>
-    <title>Jenkins TestLink Plug-in: The Definitive Guide</title>
-  </info>
+<!DOCTYPE book PUBLIC "-//OASIS//DTD DocBook XML V4.2//EN"
+"http://www.oasis-open.org/docbook/xml/4.2/docbookx.dtd" [
+<!ENTITY bookinfo SYSTEM "bookinfo.xml">
+<!ENTITY ch01 SYSTEM "ch01.xml">
+<!ENTITY ch02 SYSTEM "ch02.xml">
+<!ENTITY ch03 SYSTEM "ch03.xml">
+<!ENTITY ch04 SYSTEM "ch04.xml">
+<!ENTITY ch05 SYSTEM "ch05.xml">
+<!ENTITY ch06 SYSTEM "ch06.xml">
+<!ENTITY ch07 SYSTEM "ch07.xml">
+<!ENTITY ch08 SYSTEM "ch08.xml">
+<!ENTITY ch09 SYSTEM "ch09.xml">
+<!ENTITY bibliography SYSTEM "bibliography.xml">
+]>
+<book>
 
-  <xi:include href="bookinfo.xml" />
+	<title>Jenkins TestLink Plug-in: The Definitive Guide</title>
 
-  <xi:include href="ch01.xml" />
+	&bookinfo;
 
-  <xi:include href="ch02.xml" />
-  
-  <xi:include href="ch03.xml" />
-  
-  <xi:include href="ch04.xml" />
-  
-  <xi:include href="ch05.xml" />
-  
-  <xi:include href="ch06.xml" />
-  
-  <xi:include href="ch07.xml" />
-  
-  <xi:include href="ch08.xml" />
-  
-  <xi:include href="ch09.xml" />
-  
-  <xi:include href="bibliography.xml" />
+	&ch01;
+
+	&ch02;
+
+	&ch03;
+
+	&ch04;
+
+	&ch05;
+
+	&ch06;
+
+	&ch07;
+
+	&ch08;
+
+	&ch09;
+
+	&bibliography;
 
 </book>

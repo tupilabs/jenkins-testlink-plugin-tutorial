@@ -18,7 +18,7 @@
 	<para>
 		<mediaobject id="jenkins_008">
 			<imageobject role="html">
-				<imagedata align="center" fileref="media/jenkins_008.png" width="800px" format="PNG" />
+				<imagedata align="center" fileref="../media/jenkins_008.png" contentwidth="800px" format="PNG" />
 			</imageobject>
 		</mediaobject>
 	</para>
@@ -30,7 +30,7 @@
 	<para>
 		<mediaobject id="jenkins_009">
 			<imageobject role="html">
-				<imagedata align="center" fileref="media/jenkins_009.png" width="800px" format="PNG" />
+				<imagedata align="center" fileref="../media/jenkins_009.png" contentwidth="800px" format="PNG" />
 			</imageobject>
 		</mediaobject>
 	</para>
@@ -41,7 +41,7 @@
 	<para>
 		<mediaobject id="jenkins_010">
 			<imageobject role="html">
-				<imagedata align="center" fileref="media/jenkins_010.png" width="800px" format="PNG" />
+				<imagedata align="center" fileref="../media/jenkins_010.png" contentwidth="800px" format="PNG" />
 			</imageobject>
 		</mediaobject>
 	</para>
@@ -49,7 +49,7 @@
 	<para>
 		<mediaobject id="jenkins_011">
 			<imageobject role="html">
-				<imagedata align="center" fileref="media/jenkins_011.png" width="800px" format="PNG" />
+				<imagedata align="center" fileref="../media/jenkins_011.png" contentwidth="800px" format="PNG" />
 			</imageobject>
 		</mediaobject>
 	</para>
@@ -63,7 +63,7 @@
 	<para>
 		<mediaobject id="testlink_022">
 			<imageobject role="html">
-				<imagedata align="center" fileref="media/testlink_022.png" width="800px" format="PNG" />
+				<imagedata align="center" fileref="../media/testlink_022.png" contentwidth="800px" format="PNG" />
 			</imageobject>
 		</mediaobject>
 	</para>
@@ -78,7 +78,7 @@
 	<para>
 		<mediaobject id="testlink_023">
 			<imageobject role="html">
-				<imagedata align="center" fileref="media/testlink_023.png" width="800px" format="PNG" />
+				<imagedata align="center" fileref="../media/testlink_023.png" contentwidth="800px" format="PNG" />
 			</imageobject>
 		</mediaobject>
 	</para>
@@ -89,7 +89,7 @@
 	<para>
 		<mediaobject id="testlink_024">
 			<imageobject role="html">
-				<imagedata align="center" fileref="media/testlink_024.png" width="800px" format="PNG" />
+				<imagedata align="center" fileref="../media/testlink_024.png" contentwidth="800px" format="PNG" />
 			</imageobject>
 		</mediaobject>
 	</para>

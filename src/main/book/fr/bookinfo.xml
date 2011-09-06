@@ -25,7 +25,7 @@
 		phase -->
 	<mediaobject role="cover">
 		<imageobject remap="lrg" role="front-large">
-			<imagedata fileref="media/cover.jpg" format="JPG" />
+			<imagedata fileref="../media/cover.jpg" format="JPG" />
 		</imageobject>
 	</mediaobject>
 

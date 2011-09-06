@@ -56,9 +56,9 @@
       </varlistentry>
     </variablelist>
 
-  </refsect1><refsect1 role="tcg"><title>Related Information in <link xlink:href="http://www.sagehill.net/docbookxsl/">DocBook XSL: The Complete Guide</link></title>
+  </refsect1><refsect1 role="tcg"><title>Related Information in <ulink url="http://www.sagehill.net/docbookxsl/">DocBook XSL: The Complete Guide</ulink></title>
     
-<para><link role="tcg" xlink:href="BGcolor.html">Background color</link></para>
+<para><link role="tcg" xlink:href="BGcolor.html">Background color</ulink></para>
 
   </refsect1></refentry>
 
@@ -92,9 +92,9 @@
       </varlistentry>
     </variablelist>
 
-  </refsect1><refsect1 role="tcg"><title>Related Information in <link xlink:href="http://www.sagehill.net/docbookxsl/">DocBook XSL: The Complete Guide</link></title>
+  </refsect1><refsect1 role="tcg"><title>Related Information in <ulink url="http://www.sagehill.net/docbookxsl/">DocBook XSL: The Complete Guide</ulink></title>
     
-<para><link role="tcg" xlink:href="BGtableColor.html#CellBGColor">Cell background color</link></para>
+<para><link role="tcg" xlink:href="BGtableColor.html#CellBGColor">Cell background color</ulink></para>
 
   </refsect1></refentry>
 
@@ -135,10 +135,10 @@
       <parameter>sidebar.title.properties</parameter> (attribute-set)
     </para>
 
-  </refsect1><refsect1 role="tcg"><title>Related Information in <link xlink:href="http://www.sagehill.net/docbookxsl/">DocBook XSL: The Complete Guide</link></title>
+  </refsect1><refsect1 role="tcg"><title>Related Information in <ulink url="http://www.sagehill.net/docbookxsl/">DocBook XSL: The Complete Guide</ulink></title>
     
 <para><link role="tcg" xlink:href="SideFloats.html#SidebarFloats">A sidebar as
-        side float</link></para>
+        side float</ulink></para>
 
   </refsect1></refentry>
 
@@ -222,10 +222,10 @@
     
 <para><parameter>glossary.as.blocks</parameter></para>
 
-  </refsect1><refsect1 role="tcg"><title>Related Information in <link xlink:href="http://www.sagehill.net/docbookxsl/">DocBook XSL: The Complete Guide</link></title>
+  </refsect1><refsect1 role="tcg"><title>Related Information in <ulink url="http://www.sagehill.net/docbookxsl/">DocBook XSL: The Complete Guide</ulink></title>
     
 <para><link role="tcg" xlink:href="Glossaries.html#GlossaryFormatPrint">Glossary
-        formatting in print</link></para>
+        formatting in print</ulink></para>
 
   </refsect1></refentry>
 
@@ -267,17 +267,17 @@
     
 <para><parameter>glosslist.as.blocks</parameter> </para>
 
-  </refsect1><refsect1 role="tcg"><title>Related Information in <link xlink:href="http://www.sagehill.net/docbookxsl/">DocBook XSL: The Complete Guide</link></title>
+  </refsect1><refsect1 role="tcg"><title>Related Information in <ulink url="http://www.sagehill.net/docbookxsl/">DocBook XSL: The Complete Guide</ulink></title>
     
 <para><link role="tcg" xlink:href="Glossaries.html#GlossaryFormatPrint">Glossary
-        formatting in print</link></para>
+        formatting in print</ulink></para>
 
   </refsect1></refentry>
 
 <refentry xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="dbfo_glossterm-width">
 <refnamediv>
 <refname>dbfo_glossterm-width</refname>
-<refpurpose>Specifies the glossterm width for a glossary or
+<refpurpose>Specifies the glossterm contentwidth for a glossary or
     glosslist</refpurpose>
 </refnamediv>
 <refsynopsisdiv>
@@ -289,7 +289,7 @@
     
 <para>Use the <tag class="xmlpi">dbfo glossterm-width</tag> PI as a child of a
       <tag>glossary</tag> or <tag>glosslist</tag> to specify the
-      width for output of <tag>glossterm</tag> instances in the
+      contentwidth for output of <tag>glossterm</tag> instances in the
       output.</para>
 
   </refsect1><refsect1><title>Parameters</title>
@@ -298,7 +298,7 @@
       <varlistentry><term>glossterm-width="<replaceable>width</replaceable>"</term>
         <listitem>
           
-<para>Specifies the glossterm width (including units)</para>
+<para>Specifies the glossterm contentwidth (including units)</para>
 
         </listitem>
       </varlistentry>
@@ -310,10 +310,10 @@
       <parameter>glossterm.separation</parameter>
     </para>
 
-  </refsect1><refsect1 role="tcg"><title>Related Information in <link xlink:href="http://www.sagehill.net/docbookxsl/">DocBook XSL: The Complete Guide</link></title>
+  </refsect1><refsect1 role="tcg"><title>Related Information in <ulink url="http://www.sagehill.net/docbookxsl/">DocBook XSL: The Complete Guide</ulink></title>
     
 <para><link role="tcg" xlink:href="Glossaries.html#GlossaryFormatPrint">Glossary
-        formatting in print</link></para>
+        formatting in print</ulink></para>
 
   </refsect1></refentry>
 
@@ -366,16 +366,16 @@
     
 <para>formal.object.properties</para>
 
-  </refsect1><refsect1 role="tcg"><title>Related Information in <link xlink:href="http://www.sagehill.net/docbookxsl/">DocBook XSL: The Complete Guide</link></title>
+  </refsect1><refsect1 role="tcg"><title>Related Information in <ulink url="http://www.sagehill.net/docbookxsl/">DocBook XSL: The Complete Guide</ulink></title>
     
-<para><link role="tcg" xlink:href="PageBreaking.html#KeepTogetherPI">Keep-together processing instruction</link></para>
+<para><link role="tcg" xlink:href="PageBreaking.html#KeepTogetherPI">Keep-together processing instruction</ulink></para>
 
   </refsect1></refentry>
 
 <refentry xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="dbfo_label-width">
 <refnamediv>
 <refname>dbfo_label-width</refname>
-<refpurpose>Specifies the label width for a qandaset, itemizedlist, orderedlist
+<refpurpose>Specifies the label contentwidth for a qandaset, itemizedlist, orderedlist
   or calloutlist</refpurpose>
 </refnamediv>
 <refsynopsisdiv>
@@ -387,7 +387,7 @@
     
 <para>Use the <tag class="xmlpi">dbfo label-width</tag> PI as a child of a
       <tag>qandaset</tag>, <tag>itemizedlist</tag>, <tag>orderedlist</tag>, 
-      or <tag>calloutlist</tag> to specify the width of labels.</para>
+      or <tag>calloutlist</tag> to specify the contentwidth of labels.</para>
 
   </refsect1><refsect1><title>Parameters</title>
     
@@ -395,15 +395,15 @@
       <varlistentry><term>label-width="<replaceable>width</replaceable>"</term>
         <listitem>
           
-<para>Specifies the label width (including units)</para>
+<para>Specifies the label contentwidth (including units)</para>
 
         </listitem>
       </varlistentry>
     </variablelist>
 
-  </refsect1><refsect1 role="tcg"><title>Related Information in <link xlink:href="http://www.sagehill.net/docbookxsl/">DocBook XSL: The Complete Guide</link></title>
+  </refsect1><refsect1 role="tcg"><title>Related Information in <ulink url="http://www.sagehill.net/docbookxsl/">DocBook XSL: The Complete Guide</ulink></title>
     
-<para><link role="tcg" xlink:href="QandAformat.html">Q and A formatting</link></para>
+<para><link role="tcg" xlink:href="QandAformat.html">Q and A formatting</ulink></para>
 
   </refsect1></refentry>
 
@@ -441,9 +441,9 @@
     
 <para><parameter>linenumbering.everyNth</parameter></para>
 
-  </refsect1><refsect1 role="tcg"><title>Related Information in <link xlink:href="http://www.sagehill.net/docbookxsl/">DocBook XSL: The Complete Guide</link></title>
+  </refsect1><refsect1 role="tcg"><title>Related Information in <ulink url="http://www.sagehill.net/docbookxsl/">DocBook XSL: The Complete Guide</ulink></title>
     
-<para><link role="tcg" xlink:href="AnnotateListing.html#LineNumbering">Line numbering</link></para>
+<para><link role="tcg" xlink:href="AnnotateListing.html#LineNumbering">Line numbering</ulink></para>
 
   </refsect1></refentry>
 
@@ -480,16 +480,16 @@
     
 <para><parameter>linenumbering.separator</parameter></para>
 
-  </refsect1><refsect1 role="tcg"><title>Related Information in <link xlink:href="http://www.sagehill.net/docbookxsl/">DocBook XSL: The Complete Guide</link></title>
+  </refsect1><refsect1 role="tcg"><title>Related Information in <ulink url="http://www.sagehill.net/docbookxsl/">DocBook XSL: The Complete Guide</ulink></title>
     
-<para><link role="tcg" xlink:href="AnnotateListing.html#LineNumbering">Line numbering</link></para>
+<para><link role="tcg" xlink:href="AnnotateListing.html#LineNumbering">Line numbering</ulink></para>
 
   </refsect1></refentry>
 
 <refentry xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="dbfo_linenumbering.width">
 <refnamediv>
 <refname>dbfo_linenumbering.width</refname>
-<refpurpose>Specifies width for line numbers in verbatims</refpurpose>
+<refpurpose>Specifies contentwidth for line numbers in verbatims</refpurpose>
 </refnamediv>
 <refsynopsisdiv>
 
@@ -501,7 +501,7 @@
 <para>Use the <tag class="xmlpi">dbfo linenumbering.width</tag> PI as a child
       of a “verbatim” element – <tag>programlisting</tag>,
       <tag>screen</tag>, <tag>synopsis</tag> — to specify
-      the width set aside for line numbers.</para>
+      the contentwidth set aside for line numbers.</para>
 
   </refsect1><refsect1><title>Parameters</title>
     
@@ -509,7 +509,7 @@
       <varlistentry><term>linenumbering.width="<replaceable>width</replaceable>"</term>
         <listitem>
           
-<para>Specifies the width (inluding units)</para>
+<para>Specifies the contentwidth (inluding units)</para>
 
         </listitem>
       </varlistentry>
@@ -519,9 +519,9 @@
     
 <para><parameter>linenumbering.width</parameter></para>
 
-  </refsect1><refsect1 role="tcg"><title>Related Information in <link xlink:href="http://www.sagehill.net/docbookxsl/">DocBook XSL: The Complete Guide</link></title>
+  </refsect1><refsect1 role="tcg"><title>Related Information in <ulink url="http://www.sagehill.net/docbookxsl/">DocBook XSL: The Complete Guide</ulink></title>
     
-<para><link role="tcg" xlink:href="AnnotateListing.html#LineNumbering">Line numbering</link></para>
+<para><link role="tcg" xlink:href="AnnotateListing.html#LineNumbering">Line numbering</ulink></para>
 
   </refsect1></refentry>
 
@@ -584,16 +584,16 @@
       </listitem>
     </itemizedlist>
 
-  </refsect1><refsect1 role="tcg"><title>Related Information in <link xlink:href="http://www.sagehill.net/docbookxsl/">DocBook XSL: The Complete Guide</link></title>
+  </refsect1><refsect1 role="tcg"><title>Related Information in <ulink url="http://www.sagehill.net/docbookxsl/">DocBook XSL: The Complete Guide</ulink></title>
     
-<para><link role="tcg" xlink:href="Variablelists.html#ListIndents">Variable list formatting in print</link></para>
+<para><link role="tcg" xlink:href="Variablelists.html#ListIndents">Variable list formatting in print</ulink></para>
 
   </refsect1></refentry>
 
 <refentry xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="dbfo_list-width">
 <refnamediv>
 <refname>dbfo_list-width</refname>
-<refpurpose>Specifies the width of a horizontal simplelist</refpurpose>
+<refpurpose>Specifies the contentwidth of a horizontal simplelist</refpurpose>
 </refnamediv>
 <refsynopsisdiv>
 
@@ -604,7 +604,7 @@
     
 <para>Use the <tag class="xmlpi">dbfo list-width</tag> PI as a child of a
       <tag>simplelist</tag> whose <tag class="attribute">class</tag>
-      value is <literal>horizontal</literal>, to specify the width
+      value is <literal>horizontal</literal>, to specify the contentwidth
       of the <tag>simplelist</tag>.</para>
 
   </refsect1><refsect1><title>Parameters</title>
@@ -613,7 +613,7 @@
       <varlistentry><term>list-width="<replaceable>width</replaceable>"</term>
         <listitem>
           
-<para>Specifies the <tag>simplelist</tag> width (including units)</para>
+<para>Specifies the <tag>simplelist</tag> contentwidth (including units)</para>
 
         </listitem>
       </varlistentry>
@@ -655,7 +655,7 @@
 <refentry xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="dbfo_pgwide">
 <refnamediv>
 <refname>dbfo_pgwide</refname>
-<refpurpose>Specifies if an <tag>equation</tag> or <tag>example</tag> goes across full page width</refpurpose>
+<refpurpose>Specifies if an <tag>equation</tag> or <tag>example</tag> goes across full page contentwidth</refpurpose>
 </refnamediv>
 <refsynopsisdiv>
 
@@ -666,7 +666,7 @@
     
 <para>Use the <tag class="xmlpi">dbfo pgwide</tag> PI as a child of an
       <tag>equation</tag> or <tag>example</tag> to specify that the
-      content should rendered across the full width of the page.</para>
+      content should rendered across the full contentwidth of the page.</para>
 
   </refsect1><refsect1><title>Parameters</title>
     
@@ -683,7 +683,7 @@
         <listitem>
           
 <para>If <code>1</code> (or any non-zero value), the
-            content is rendered across the full width of the page</para>
+            content is rendered across the full contentwidth of the page</para>
 
         </listitem>
       </varlistentry>
@@ -698,7 +698,7 @@
 <refentry xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="dbfo_rotated-width">
 <refnamediv>
 <refname>dbfo_rotated-width</refname>
-<refpurpose>Specifies the width for a CALS table <tag>entry</tag> or
+<refpurpose>Specifies the contentwidth for a CALS table <tag>entry</tag> or
     <tag>row</tag></refpurpose>
 </refnamediv>
 <refsynopsisdiv>
@@ -710,8 +710,8 @@
     
 <para>Use the <tag class="xmlpi">dbfo rotated-width</tag> PI as a child of 
       <tag>entry</tag> or <tag>row</tag> instance in a CALS table to specify the
-      width of that the <tag>entry</tag> or <tag>row</tag>; or
-      use it higher up in table to cause the width to be inherited
+      contentwidth of that the <tag>entry</tag> or <tag>row</tag>; or
+      use it higher up in table to cause the contentwidth to be inherited
       recursively down.</para>
 
   </refsect1><refsect1><title>Parameters</title>
@@ -720,7 +720,7 @@
       <varlistentry><term>rotated-width="<replaceable>width</replaceable>"</term>
         <listitem>
           
-<para>Specifies the width of a row or cell (including units)</para>
+<para>Specifies the contentwidth of a row or cell (including units)</para>
 
         </listitem>
       </varlistentry>
@@ -731,7 +731,7 @@
 <refentry xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="dbfo_sidebar-width">
 <refnamediv>
 <refname>dbfo_sidebar-width</refname>
-<refpurpose>Specifies the width of a sidebar</refpurpose>
+<refpurpose>Specifies the contentwidth of a sidebar</refpurpose>
 </refnamediv>
 <refsynopsisdiv>
 
@@ -741,7 +741,7 @@
 <refsect1><title>Description</title>
     
 <para>Use the <tag class="xmlpi">dbfo sidebar-width</tag> PI as a child of a
-      <tag>sidebar</tag> to specify the width of the sidebar.</para>
+      <tag>sidebar</tag> to specify the contentwidth of the sidebar.</para>
 
   </refsect1><refsect1><title>Parameters</title>
     
@@ -749,7 +749,7 @@
       <varlistentry><term>sidebar-width="<replaceable>width</replaceable>"</term>
         <listitem>
           
-<para>Specifies the <tag>sidebar</tag> width (including units)</para>
+<para>Specifies the <tag>sidebar</tag> contentwidth (including units)</para>
 
         </listitem>
       </varlistentry>
@@ -763,10 +763,10 @@
       <parameter>sidebar.title.properties</parameter>
     </para>
 
-  </refsect1><refsect1 role="tcg"><title>Related Information in <link xlink:href="http://www.sagehill.net/docbookxsl/">DocBook XSL: The Complete Guide</link></title>
+  </refsect1><refsect1 role="tcg"><title>Related Information in <ulink url="http://www.sagehill.net/docbookxsl/">DocBook XSL: The Complete Guide</ulink></title>
     
 <para><link role="tcg" xlink:href="SideFloats.html#SidebarFloats">A sidebar as
-        side float</link></para>
+        side float</ulink></para>
 
   </refsect1></refentry>
 
@@ -803,16 +803,16 @@
       </varlistentry>
     </variablelist>
 
-  </refsect1><refsect1 role="tcg"><title>Related Information in <link xlink:href="http://www.sagehill.net/docbookxsl/">DocBook XSL: The Complete Guide</link></title>
+  </refsect1><refsect1 role="tcg"><title>Related Information in <ulink url="http://www.sagehill.net/docbookxsl/">DocBook XSL: The Complete Guide</ulink></title>
     
-<para><link role="tcg" xlink:href="Orderedlists.html#ListStartNum">List starting number</link></para>
+<para><link role="tcg" xlink:href="Orderedlists.html#ListStartNum">List starting number</ulink></para>
 
   </refsect1></refentry>
 
 <refentry xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="dbfo_table-width">
 <refnamediv>
 <refname>dbfo_table-width</refname>
-<refpurpose>Specifies the width for a CALS table or for revhistory
+<refpurpose>Specifies the contentwidth for a CALS table or for revhistory
     output</refpurpose>
 </refnamediv>
 <refsynopsisdiv>
@@ -826,7 +826,7 @@
       sibling of a CALS <tag>table</tag>, or as a child of an
       <tag>informaltable</tag>, <tag>entrytbl</tag>, or
       <tag>revhistory</tag> instance (which is rendered as a table
-      in output) to specify the width of the table in output.</para>
+      in output) to specify the contentwidth of the table in output.</para>
 
   </refsect1><refsect1><title>Parameters</title>
     
@@ -834,22 +834,22 @@
       <varlistentry><term>table-width="<replaceable>width</replaceable>"</term>
         <listitem>
           
-<para>Specifies the table width (including units or as a percentage)</para>
+<para>Specifies the table contentwidth (including units or as a percentage)</para>
 
         </listitem>
       </varlistentry>
     </variablelist>
 
-  </refsect1><refsect1 role="tcg"><title>Related Information in <link xlink:href="http://www.sagehill.net/docbookxsl/">DocBook XSL: The Complete Guide</link></title>
+  </refsect1><refsect1 role="tcg"><title>Related Information in <ulink url="http://www.sagehill.net/docbookxsl/">DocBook XSL: The Complete Guide</ulink></title>
     
-<para><link role="tcg" xlink:href="Tables.html#TableWidth">Table width</link></para>
+<para><link role="tcg" xlink:href="Tables.html#TableWidth">Table contentwidth</ulink></para>
 
   </refsect1></refentry>
 
 <refentry xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="dbfo_term-width">
 <refnamediv>
 <refname>dbfo_term-width</refname>
-<refpurpose>Specifies the term width for a variablelist</refpurpose>
+<refpurpose>Specifies the term contentwidth for a variablelist</refpurpose>
 </refnamediv>
 <refsynopsisdiv>
 
@@ -859,7 +859,7 @@
 <refsect1><title>Description</title>
     
 <para>Use the <tag class="xmlpi">dbfo term-width</tag> PI as a child of a
-      <tag>variablelist</tag> to specify the width for
+      <tag>variablelist</tag> to specify the contentwidth for
       <tag>term</tag> output.</para>
 
   </refsect1><refsect1><title>Parameters</title>
@@ -868,15 +868,15 @@
       <varlistentry><term>term-width="<replaceable>width</replaceable>"</term>
         <listitem>
           
-<para>Specifies the term width (including units)</para>
+<para>Specifies the term contentwidth (including units)</para>
 
         </listitem>
       </varlistentry>
     </variablelist>
 
-  </refsect1><refsect1 role="tcg"><title>Related Information in <link xlink:href="http://www.sagehill.net/docbookxsl/">DocBook XSL: The Complete Guide</link></title>
+  </refsect1><refsect1 role="tcg"><title>Related Information in <ulink url="http://www.sagehill.net/docbookxsl/">DocBook XSL: The Complete Guide</ulink></title>
     
-<para><link role="tcg" xlink:href="Variablelists.html#ListIndents">Variable list formatting in print</link></para>
+<para><link role="tcg" xlink:href="Variablelists.html#ListIndents">Variable list formatting in print</ulink></para>
 
   </refsect1></refentry>
 
@@ -916,10 +916,10 @@
       </varlistentry>
     </variablelist>
 
-  </refsect1><refsect1 role="tcg"><title>Related Information in <link xlink:href="http://www.sagehill.net/docbookxsl/">DocBook XSL: The Complete Guide</link></title>
+  </refsect1><refsect1 role="tcg"><title>Related Information in <ulink url="http://www.sagehill.net/docbookxsl/">DocBook XSL: The Complete Guide</ulink></title>
     
-<para><link role="tcg" xlink:href="QandAtoc.html">Q and A list of questions</link>,
-      <link role="tcg" xlink:href="QandAformat.html">Q and A formatting</link></para>
+<para><link role="tcg" xlink:href="QandAtoc.html">Q and A list of questions</ulink>,
+      <link role="tcg" xlink:href="QandAformat.html">Q and A formatting</ulink></para>
 
   </refsect1></refentry>
 
@@ -960,9 +960,9 @@
       </varlistentry>
     </variablelist>
 
-  </refsect1><refsect1 role="tcg"><title>Related Information in <link xlink:href="http://www.sagehill.net/docbookxsl/">DocBook XSL: The Complete Guide</link></title>
+  </refsect1><refsect1 role="tcg"><title>Related Information in <ulink url="http://www.sagehill.net/docbookxsl/">DocBook XSL: The Complete Guide</ulink></title>
     
-<para><link role="tcg" xlink:href="PageBreaking.html#SoftPageBreaks">Soft page breaks</link></para>
+<para><link role="tcg" xlink:href="PageBreaking.html#SoftPageBreaks">Soft page breaks</ulink></para>
 
   </refsect1></refentry>
 
@@ -993,9 +993,9 @@
       </varlistentry>
     </variablelist>
 
-  </refsect1><refsect1 role="tcg"><title>Related Information in <link xlink:href="http://www.sagehill.net/docbookxsl/">DocBook XSL: The Complete Guide</link></title>
+  </refsect1><refsect1 role="tcg"><title>Related Information in <ulink url="http://www.sagehill.net/docbookxsl/">DocBook XSL: The Complete Guide</ulink></title>
     
-<para><link role="tcg" xlink:href="RowHeight.html">Row height</link></para>
+<para><link role="tcg" xlink:href="RowHeight.html">Row height</ulink></para>
 
   </refsect1></refentry>
 </reference>

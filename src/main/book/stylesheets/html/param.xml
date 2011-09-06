@@ -1082,12 +1082,12 @@ want mixed Latin-alphabet words sorted.</para>
 <itemizedlist>
 <listitem>
 <para>For a whitepaper describing the extensions, see:
-<link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.innodata-isogen.com/knowledge_center/white_papers/back_of_book_for_xsl_fo.pdf">http://www.innodata-isogen.com/knowledge_center/white_papers/back_of_book_for_xsl_fo.pdf</link>.
+<link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.innodata-isogen.com/knowledge_center/white_papers/back_of_book_for_xsl_fo.pdf">http://www.innodata-isogen.com/knowledge_center/white_papers/back_of_book_for_xsl_fo.pdf</ulink>.
 </para>
 </listitem>
 <listitem>
 <para>To download the extension library, see
-<link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.innodata-isogen.com/knowledge_center/tools_downloads/i18nsupport">http://www.innodata-isogen.com/knowledge_center/tools_downloads/i18nsupport</link>.
+<link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.innodata-isogen.com/knowledge_center/tools_downloads/i18nsupport">http://www.innodata-isogen.com/knowledge_center/tools_downloads/i18nsupport</ulink>.
 </para>
 </listitem>
 </itemizedlist>
@@ -1552,7 +1552,7 @@ verbatim environment. The default value is a single white space.
 </refmeta>
 <refnamediv>
 <refname>linenumbering.width</refname>
-<refpurpose>Indicates the width of line numbers</refpurpose>
+<refpurpose>Indicates the contentwidth of line numbers</refpurpose>
 </refnamediv>
 
 <refsynopsisdiv>
@@ -1588,7 +1588,7 @@ justified in a field "width" characters wide.
 
 <refsection><info><title>Description</title></info>
 
-<para>The table columns extension function adjusts the widths of table
+<para>The table columns extension function adjusts the contentwidths of table
 columns in the HTML result to more accurately reflect the specifications
 in the CALS table.
 </para>
@@ -1618,14 +1618,14 @@ in the CALS table.
         either Saxon or Xalan as your XSLT processor (it doesn&#8217;t
         work with xsltproc), along with either the DocBook Saxon
         extensions or DocBook Xalan extensions (for more
-        information about those extensions, see <link xmlns:xlink="http://www.w3.org/1999/xlink" role="tcg" xlink:href="InstallingAProcessor.html#SaxonExtensions">DocBook Saxon Extensions</link> and <link xmlns:xlink="http://www.w3.org/1999/xlink" role="tcg" xlink:href="InstallingAProcessor.html#XalanExtensions">DocBook Xalan Extensions</link>), and you must set both
+        information about those extensions, see <link xmlns:xlink="http://www.w3.org/1999/xlink" role="tcg" xlink:href="InstallingAProcessor.html#SaxonExtensions">DocBook Saxon Extensions</ulink> and <link xmlns:xlink="http://www.w3.org/1999/xlink" role="tcg" xlink:href="InstallingAProcessor.html#XalanExtensions">DocBook Xalan Extensions</ulink>), and you must set both
         the <parameter>use.extensions</parameter> and
         <parameter>textinsert.extension</parameter> parameters to
         <literal>1</literal>.</para>
       <para>As an alternative to using the textinsert element,
         consider using an Xinclude element with the
         <literal>parse="text"</literal> attribute and value
-        specified, as detailed in <link xmlns:xlink="http://www.w3.org/1999/xlink" role="tcg" xlink:href="ExternalCode.html#XIncludeCode">Using XInclude for text inclusions</link>.</para>
+        specified, as detailed in <link xmlns:xlink="http://www.w3.org/1999/xlink" role="tcg" xlink:href="ExternalCode.html#XIncludeCode">Using XInclude for text inclusions</ulink>.</para>
     </note>
   </refsection>
   <refsection><info><title>See Also</title></info>
@@ -1637,9 +1637,9 @@ in the CALS table.
   <refsection><info><title>More information</title></info>
     <para>For how-to documentation on inserting contents of
       external code files and other text files into output, see
-      <link xmlns:xlink="http://www.w3.org/1999/xlink" role="tcg" xlink:href="ExternalCode.html">External code files</link>.</para>
+      <link xmlns:xlink="http://www.w3.org/1999/xlink" role="tcg" xlink:href="ExternalCode.html">External code files</ulink>.</para>
     <para>For guidelines on inserting contents of
-      HTML files into output, see <link xmlns:xlink="http://www.w3.org/1999/xlink" role="tcg" xlink:href="InsertExtHtml.html">Inserting external HTML code</link>.</para>
+      HTML files into output, see <link xmlns:xlink="http://www.w3.org/1999/xlink" role="tcg" xlink:href="InsertExtHtml.html">Inserting external HTML code</ulink>.</para>
   </refsection>
 </refentry>
 
@@ -2589,7 +2589,7 @@ XSLT processor.</para>
 
 <refsection><info><title>Description</title></info>
 
-<para>If non-zero, and if the <link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.exslt.org/">EXSLT</link>
+<para>If non-zero, and if the <link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.exslt.org/">EXSLT</ulink>
 extensions are supported by your processor, the resulting HTML will be
 <quote>cleaned up</quote>. This improves the chances that the
 resulting HTML will be valid. It may also improve the formatting of
@@ -3604,7 +3604,7 @@ auto-generated id value, and <parameter>html.ext</parameter> value.
 <para>The value of
 <parameter>html.head.legalnotice.link.types</parameter> is a
 space-separated list of link types, as described in <link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.w3.org/TR/html401/types.html#type-links">Section 6.12
-of the HTML 4.01 specification</link>. If the value of the
+of the HTML 4.01 specification</ulink>. If the value of the
 <parameter>generate.legalnotice.link</parameter> parameter is
 non-zero, then the stylesheet generates (in the
 <literal>head</literal> section of the HTML source) either a single
@@ -3646,7 +3646,7 @@ For example:
   information, not copyright information. However, the default value
   is &#8220;<literal>copyright</literal>&#8221; for pragmatic reasons: because
   that&#8217;s among the set of &#8220;recognized link types&#8221; listed in <link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.w3.org/TR/html401/types.html#type-links">Section
-  6.12 of the HTML 4.01 specification</link>, and because certain
+  6.12 of the HTML 4.01 specification</ulink>, and because certain
   browsers and browser extensions are preconfigured to recognize that
   value.</para>
 </refsection>
@@ -3942,7 +3942,7 @@ suppressed in output.</para>
 </refmeta>
 <refnamediv>
 <refname>default.table.width</refname>
-<refpurpose>The default width of tables</refpurpose>
+<refpurpose>The default contentwidth of tables</refpurpose>
 </refnamediv>
 <refsynopsisdiv>
 <programlisting xml:id="default.table.width.frag">
@@ -3952,7 +3952,7 @@ suppressed in output.</para>
 <refsection><info><title>Description</title></info>
 <para>If non-zero, this value will be used for the
 <literal>width</literal> attribute on <tag>table</tag>s that do not specify an
-alternate width (with the <tag class="xmlpi">dbhtml table-width</tag> or 
+alternate contentwidth (with the <tag class="xmlpi">dbhtml table-width</tag> or 
 <tag class="xmlpi">dbfo table-width</tag> processing instruction).</para>
 </refsection>
 </refentry>
@@ -3964,7 +3964,7 @@ alternate width (with the <tag class="xmlpi">dbhtml table-width</tag> or
 </refmeta>
 <refnamediv>
 <refname>nominal.table.width</refname>
-<refpurpose>The (absolute) nominal width of tables</refpurpose>
+<refpurpose>The (absolute) nominal contentwidth of tables</refpurpose>
 </refnamediv>
 
 <refsynopsisdiv>
@@ -3975,9 +3975,9 @@ alternate width (with the <tag class="xmlpi">dbhtml table-width</tag> or
 
 <refsection><info><title>Description</title></info>
 
-<para>In order to convert CALS column widths into HTML column widths, it
-is sometimes necessary to have an absolute table width to use for conversion
-of mixed absolute and relative widths. This value must be an absolute
+<para>In order to convert CALS column contentwidths into HTML column contentwidths, it
+is sometimes necessary to have an absolute table contentwidth to use for conversion
+of mixed absolute and relative contentwidths. This value must be an absolute
 length (not a percentage).</para>
 
 </refsection>
@@ -4065,7 +4065,7 @@ length (not a percentage).</para>
 
 <para>If non-zero, specifies the thickness of borders on table
 cells. The units are points. See <link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.w3.org/TR/CSS21/box.html#border-width-properties">
-CSS</link></para>
+CSS</ulink></para>
 
 <note>
   <para>To control properties of cell borders in HTML output, you must also turn on the 
@@ -4095,7 +4095,7 @@ CSS</link></para>
 <refsection><info><title>Description</title></info>
 
 <para>Set the color of table cell borders. If non-zero, the value is used
-for the border coloration. See <link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.w3.org/TR/CSS21/syndata.html#value-def-color">CSS</link>. A
+for the border coloration. See <link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.w3.org/TR/CSS21/syndata.html#value-def-color">CSS</ulink>. A
 <literal>color</literal> is either a keyword or a numerical RGB specification.
 Keywords are aqua, black, blue, fuchsia, gray, green, lime, maroon,
 navy, olive, orange, purple, red, silver, teal, white, and
@@ -5571,7 +5571,7 @@ tables.</para>
 <refsection><info><title>Description</title></info>
 
 <para>If non-zero, <tag>variablelist</tag>s will be formatted as
-tables. A processing instruction exists to specify a particular width for the 
+tables. A processing instruction exists to specify a particular contentwidth for the 
 column containing the <tag>term</tag>s:   
 <tag class="xmlpi">dbhtml term-width=".25in"</tag></para>
 
@@ -5700,7 +5700,7 @@ after each <tag>term</tag>).</para>
 
 <para>In order to use ISO690 style to the full extent you might need
 to use additional markup described on <link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://wiki.docbook.org/topic/ISO690Bibliography">the
-following WiKi page</link>.</para>
+following WiKi page</ulink>.</para>
 
 </refsection>
 </refentry>
@@ -6446,7 +6446,7 @@ CSS instead.</para>
 <para>Properties that specify the style of shaded verbatim listings. The
 parameters specified (the border and background color) are added to
 the styling of the xsl-fo output. A border might be specified as "thin
-black solid" for example. See <link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.w3.org/TR/2004/WD-xsl11-20041216/#border">xsl-fo</link></para>
+black solid" for example. See <link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.w3.org/TR/2004/WD-xsl11-20041216/#border">xsl-fo</ulink></para>
 
 </refsection>
 </refentry>
@@ -6578,7 +6578,7 @@ output.</para>
 <refsection><info><title>More information</title></info>
   <para>For how-to documentation on embedding TeX equations and
     generating output from them, see
-    <link xmlns:xlink="http://www.w3.org/1999/xlink" role="tcg" xlink:href="TexMath.html">DBTeXMath</link>.</para>
+    <link xmlns:xlink="http://www.w3.org/1999/xlink" role="tcg" xlink:href="TexMath.html">DBTeXMath</ulink>.</para>
 </refsection>
 </refentry>
 
@@ -6645,7 +6645,7 @@ you should set this parameter to 0.</para>
 <para>When lengths are converted to pixels, this value is used to
 determine the size of a pixel. The default value is taken from the
 <link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.w3.org/TR/2004/WD-xsl11-20041216/">XSL
-Recommendation</link>.
+Recommendation</ulink>.
 </para>
 
 </refsection>
@@ -6958,7 +6958,7 @@ downloaded separately (see below).</para>
 <para>In order to use this extension, you must</para> 
 
 <listitem><para>add <filename>xslthl-2.x.x.jar</filename> to your Java classpath. The latest version is available
-from <link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://sourceforge.net/projects/xslthl">the XSLT syntax highlighting project</link> 
+from <link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://sourceforge.net/projects/xslthl">the XSLT syntax highlighting project</ulink> 
 at SourceForge.</para>
 </listitem>
 <listitem>
@@ -7209,7 +7209,7 @@ div.annotation-popup { position: absolute;
                        margin: 2px;
                        border-style: solid;
                        border-width: 1px;
-                       width: 200px;
+                       contentwidth: 200px;
 		       background-color: white;
                      }
 
@@ -7396,7 +7396,7 @@ and the <tag class="attribute">format</tag> attribute is
 </refmeta>
 <refnamediv>
 <refname>default.image.width</refname>
-<refpurpose>The default width of images</refpurpose>
+<refpurpose>The default contentwidth of images</refpurpose>
 </refnamediv>
 
 <refsynopsisdiv>
@@ -7421,7 +7421,7 @@ and the <tag class="attribute">format</tag> attribute is
 </refmeta>
 <refnamediv>
 <refname>nominal.image.width</refname>
-<refpurpose>The nominal image width</refpurpose>
+<refpurpose>The nominal image contentwidth</refpurpose>
 </refnamediv>
 
 <refsynopsisdiv>
@@ -7432,17 +7432,17 @@ and the <tag class="attribute">format</tag> attribute is
 
 <refsection><info><title>Description</title></info>
 
-<para>Graphic widths expressed as a percentage are problematic. In the
-following discussion, we speak of width and contentwidth, but
+<para>Graphic contentwidths expressed as a percentage are problematic. In the
+following discussion, we speak of contentwidth and contentwidth, but
 the same issues apply to depth and contentdepth.</para>
 
-<para>A width of 50% means "half of the available space for the image."
+<para>A contentwidth of 50% means "half of the available space for the image."
 That's fine. But note that in HTML, this is a dynamic property and
 the image size will vary if the browser window is resized.</para>
 
-<para>A contentwidth of 50% means "half of the actual image width".
+<para>A contentwidth of 50% means "half of the actual image contentwidth".
 But what does that mean if the stylesheets cannot assess the image's
-actual size? Treating this as a width of 50% is one possibility, but
+actual size? Treating this as a contentwidth of 50% is one possibility, but
 it produces behavior (dynamic scaling) that seems entirely out of
 character with the meaning.</para>
 
@@ -7804,8 +7804,8 @@ this parameter.
 </para>
 <para>This parameter specifies the media type that should be used by the
 chunking stylesheet. This should be one from those defined in
-<link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.ietf.org/rfc/rfc2045.txt">[RFC2045]</link>  and
- <link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.ietf.org/rfc/rfc2046.txt">[RFC2046]</link> </para>
+<link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.ietf.org/rfc/rfc2045.txt">[RFC2045]</ulink>  and
+ <link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.ietf.org/rfc/rfc2046.txt">[RFC2046]</ulink> </para>
 <note>
 <para>This parameter is documented here, but the declaration is actually
 in the <filename>chunker.xsl</filename> stylesheet module.</para>
@@ -7917,7 +7917,7 @@ If you want to suppress entity references for characters with direct representat
 <parameter>chunker.output.encoding</parameter>, set the parameter value to <literal>native</literal>. 
 </para>
 
-<para> For more information, see <link xmlns:xlink="http://www.w3.org/1999/xlink" role="tcg" xlink:href="OutputEncoding.html#SaxonCharacter">Saxon output character representation</link>.</para>
+<para> For more information, see <link xmlns:xlink="http://www.w3.org/1999/xlink" role="tcg" xlink:href="OutputEncoding.html#SaxonCharacter">Saxon output character representation</ulink>.</para>
 
 <note>
 <para>This parameter is documented here, but the declaration is actually
@@ -8451,7 +8451,7 @@ If false (zero), then only the words 'Next' and 'Previous'
 <partintro xml:id="partintro">
 <para>The following parameters can be used for attribute-based
 profiling of your document. For more information about profiling, see 
-<link xmlns:xlink="http://www.w3.org/1999/xlink" role="tcg" xlink:href="Profiling.html">Profiling (conditional text)</link>.</para>
+<link xmlns:xlink="http://www.w3.org/1999/xlink" role="tcg" xlink:href="Profiling.html">Profiling (conditional text)</ulink>.</para>
 </partintro>
 <refentry version="5.0" xml:id="profile.arch">
 <refmeta>
@@ -9057,7 +9057,7 @@ ones (<filename>docbook.xsl</filename>,
 <refsection><info><title>Description</title></info>
 
 <para>HTML Help Compiler is not UTF-8 aware, so you should always use an
-appropriate single-byte encoding here. Use one from <link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="ftp://ftp.isi.edu/in-notes/iana/assignments/character-sets">iana</link>, the  registered charset values.</para>
+appropriate single-byte encoding here. Use one from <link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="ftp://ftp.isi.edu/in-notes/iana/assignments/character-sets">iana</ulink>, the  registered charset values.</para>
 
 </refsection>
 </refentry>
@@ -9540,7 +9540,7 @@ behaviour). Files with binary TOC can't be merged.</para>
 
 <refsection><info><title>Description</title></info>
 
-<para>This parameter specifies the width of the navigation pane (containing TOC and
+<para>This parameter specifies the contentwidth of the navigation pane (containing TOC and
 other navigation tabs) in pixels.</para>
 
 </refsection>
@@ -10173,7 +10173,7 @@ window. E.g.</para>
 <refsection><info><title>Description</title></info>
 
 <para>If non-zero, the index is created using the HHK file (instead of using <tag role="html">object</tag>
-elements in the HTML files). For more information, see <link xmlns:xlink="http://www.w3.org/1999/xlink" role="tcg" xlink:href="HtmlHelp.html#HHGenIndex">Generating an index</link>.</para>
+elements in the HTML files). For more information, see <link xmlns:xlink="http://www.w3.org/1999/xlink" role="tcg" xlink:href="HtmlHelp.html#HHGenIndex">Generating an index</ulink>.</para>
 </refsection>
 </refentry>
 
@@ -10454,7 +10454,7 @@ resulting text will be something like this:</para>
 <refsection><info><title>Description</title></info>
 
 <para>If non-zero, ensure that the values for all <tag class="attribute">lang</tag> attributes in HTML output are RFC
-compliant<footnote><para>Section 8.1.1, <link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.w3.org/TR/REC-html40/struct/dirlang.html#h-8.1.1">Language Codes</link>, in the HTML 4.0 Recommendation states that:
+compliant<footnote><para>Section 8.1.1, <link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.w3.org/TR/REC-html40/struct/dirlang.html#h-8.1.1">Language Codes</ulink>, in the HTML 4.0 Recommendation states that:
 
 <blockquote><para>[RFC1766] defines and explains the language codes
 that must be used in HTML documents.</para>
@@ -10464,7 +10464,7 @@ empty series of subcodes:
 <literallayout class="monospaced">language-code = primary-code ( "-" subcode )*</literallayout>
 </para>
 <para>And in RFC 1766, <link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.ietf.org/rfc/rfc1766.txt">Tags for the Identification
-of Languages</link>, the EBNF for "language tag" is given as:
+of Languages</ulink>, the EBNF for "language tag" is given as:
 
 <literallayout class="monospaced">Language-Tag = Primary-tag *( "-" Subtag )
 Primary-tag = 1*8ALPHA

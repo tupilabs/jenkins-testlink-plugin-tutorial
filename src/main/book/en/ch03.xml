@@ -1,11 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<chapter version="5.0" xmlns="http://docbook.org/ns/docbook"
-         xmlns:xlink="http://www.w3.org/1999/xlink"
-         xmlns:xi="http://www.w3.org/2001/XInclude"
-         xmlns:ns5="http://www.w3.org/2000/svg"
-         xmlns:ns4="http://www.w3.org/1998/Math/MathML"
-         xmlns:ns3="http://www.w3.org/1999/xhtml"
-         xmlns:db="http://docbook.org/ns/docbook">
+<chapter id="chapter.3">
 	<title><application>Jenkins</application> and <application>TestLink</application> Integration</title>
 	
 	<para>It is important to explain how is the dynamic behind the integration 
@@ -47,11 +41,11 @@
 	a sample test project. This test project is a Java project that uses 
 	<application>Maven</application> and <application>TestNG</application>, you 
 	can download it from 
-	<link xlink:href="https://github.com/kinow/jenkins-testlink-plugin-the-definitive-guide/blob/master/sample-test-project.tar.gz?raw=true">
-	https://github.com/kinow/jenkins-testlink-plugin-the-definitive-guide/blob/master/sample-test-project.tar.gz?raw=true</link>.</para>
+	<ulink url="https://github.com/kinow/jenkins-testlink-plugin-the-definitive-guide/blob/master/sample-test-project.tar.gz?raw=true">
+	https://github.com/kinow/jenkins-testlink-plugin-the-definitive-guide/blob/master/sample-test-project.tar.gz?raw=true</ulink>.</para>
 	
 	<para><application>Jenkins TestLink Plug-in</application> is licensed under the 
 	<acronym>MIT</acronym> License and its 
-	code is stored in github - <db:link xlink:href="http://github.com/jenkinsci/testlink-plugin">http://github.com/jenkinsci/testlink-plugin</db:link>.</para>
+	code is stored in github - <ulink url="http://github.com/jenkinsci/testlink-plugin">http://github.com/jenkinsci/testlink-plugin</ulink>.</para>
 	
 </chapter>

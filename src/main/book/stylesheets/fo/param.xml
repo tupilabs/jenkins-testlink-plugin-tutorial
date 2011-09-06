@@ -937,12 +937,12 @@ want mixed Latin-alphabet words sorted.</para>
 <itemizedlist>
 <listitem>
 <para>For a whitepaper describing the extensions, see:
-<link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.innodata-isogen.com/knowledge_center/white_papers/back_of_book_for_xsl_fo.pdf">http://www.innodata-isogen.com/knowledge_center/white_papers/back_of_book_for_xsl_fo.pdf</link>.
+<link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.innodata-isogen.com/knowledge_center/white_papers/back_of_book_for_xsl_fo.pdf">http://www.innodata-isogen.com/knowledge_center/white_papers/back_of_book_for_xsl_fo.pdf</ulink>.
 </para>
 </listitem>
 <listitem>
 <para>To download the extension library, see
-<link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.innodata-isogen.com/knowledge_center/tools_downloads/i18nsupport">http://www.innodata-isogen.com/knowledge_center/tools_downloads/i18nsupport</link>.
+<link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.innodata-isogen.com/knowledge_center/tools_downloads/i18nsupport">http://www.innodata-isogen.com/knowledge_center/tools_downloads/i18nsupport</ulink>.
 </para>
 </listitem>
 </itemizedlist>
@@ -1591,7 +1591,7 @@ level sections, but not in fourth level sections.
 <refsection><info><title>Description</title></info>
 
 <para>If non-zero,
-<link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.arbortext.com/">Arbortext</link>
+<link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.arbortext.com/">Arbortext</ulink>
 extensions will be used.
 </para>
 <para>This parameter can also affect which graphics file formats
@@ -1619,7 +1619,7 @@ are supported</para>
 <refsection><info><title>Description</title></info>
 
 <para>If non-zero,
-<link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.antennahouse.com/">XSL Formatter</link>
+<link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.antennahouse.com/">XSL Formatter</ulink>
 extensions will be used. XSL Formatter extensions consists of PDF bookmarks,
 document information and better index processing.</para>
 
@@ -1646,7 +1646,7 @@ are supported</para>
 <refsection><info><title>Description</title></info>
 
 <para>If non-zero, extensions intended for
-<link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://xml.apache.org/fop/">FOP</link>
+<link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://xml.apache.org/fop/">FOP</ulink>
 version 0.20.5 and earlier will be used.
 At present, this consists of PDF bookmarks.
 </para>
@@ -1678,7 +1678,7 @@ instead.
 <refsection><info><title>Description</title></info>
 
 <para>If non-zero, extensions for 
-<link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://xml.apache.org/fop/">FOP</link>
+<link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://xml.apache.org/fop/">FOP</ulink>
 version 0.90 and later will be used.
 </para>
 
@@ -1708,7 +1708,7 @@ should still be used for FOP version 0.20.5 and earlier.
 <refsection><info><title>Description</title></info>
 
 <para>If non-zero,
-<link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.tei-c.org.uk/Software/passivetex/">PassiveTeX</link>
+<link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.tei-c.org.uk/Software/passivetex/">PassiveTeX</ulink>
 extensions will be used. At present, this consists of PDF bookmarks
 and sorted index terms.
 </para>
@@ -1855,7 +1855,7 @@ you should set this parameter to 0.</para>
 <refsection><info><title>Description</title></info>
 
 <para>If non-zero,
-<link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.renderx.com/">XEP</link>
+<link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.renderx.com/">XEP</ulink>
 extensions will be used. XEP extensions consists of PDF bookmarks,
 document information and better index processing.
 </para>
@@ -1951,7 +1951,7 @@ verbatim environment. The default value is a single white space.
 </refmeta>
 <refnamediv>
 <refname>linenumbering.width</refname>
-<refpurpose>Indicates the width of line numbers</refpurpose>
+<refpurpose>Indicates the contentwidth of line numbers</refpurpose>
 </refnamediv>
 
 <refsynopsisdiv>
@@ -1987,7 +1987,7 @@ justified in a field "width" characters wide.
 
 <refsection><info><title>Description</title></info>
 
-<para>The table columns extension function adjusts the widths of table
+<para>The table columns extension function adjusts the contentwidths of table
 columns in the HTML result to more accurately reflect the specifications
 in the CALS table.
 </para>
@@ -2017,14 +2017,14 @@ in the CALS table.
         either Saxon or Xalan as your XSLT processor (it doesn&#8217;t
         work with xsltproc), along with either the DocBook Saxon
         extensions or DocBook Xalan extensions (for more
-        information about those extensions, see <link xmlns:xlink="http://www.w3.org/1999/xlink" role="tcg" xlink:href="InstallingAProcessor.html#SaxonExtensions">DocBook Saxon Extensions</link> and <link xmlns:xlink="http://www.w3.org/1999/xlink" role="tcg" xlink:href="InstallingAProcessor.html#XalanExtensions">DocBook Xalan Extensions</link>), and you must set both
+        information about those extensions, see <link xmlns:xlink="http://www.w3.org/1999/xlink" role="tcg" xlink:href="InstallingAProcessor.html#SaxonExtensions">DocBook Saxon Extensions</ulink> and <link xmlns:xlink="http://www.w3.org/1999/xlink" role="tcg" xlink:href="InstallingAProcessor.html#XalanExtensions">DocBook Xalan Extensions</ulink>), and you must set both
         the <parameter>use.extensions</parameter> and
         <parameter>textinsert.extension</parameter> parameters to
         <literal>1</literal>.</para>
       <para>As an alternative to using the textinsert element,
         consider using an Xinclude element with the
         <literal>parse="text"</literal> attribute and value
-        specified, as detailed in <link xmlns:xlink="http://www.w3.org/1999/xlink" role="tcg" xlink:href="ExternalCode.html#XIncludeCode">Using XInclude for text inclusions</link>.</para>
+        specified, as detailed in <link xmlns:xlink="http://www.w3.org/1999/xlink" role="tcg" xlink:href="ExternalCode.html#XIncludeCode">Using XInclude for text inclusions</ulink>.</para>
     </note>
   </refsection>
   <refsection><info><title>See Also</title></info>
@@ -2036,9 +2036,9 @@ in the CALS table.
   <refsection><info><title>More information</title></info>
     <para>For how-to documentation on inserting contents of
       external code files and other text files into output, see
-      <link xmlns:xlink="http://www.w3.org/1999/xlink" role="tcg" xlink:href="ExternalCode.html">External code files</link>.</para>
+      <link xmlns:xlink="http://www.w3.org/1999/xlink" role="tcg" xlink:href="ExternalCode.html">External code files</ulink>.</para>
     <para>For guidelines on inserting contents of
-      HTML files into output, see <link xmlns:xlink="http://www.w3.org/1999/xlink" role="tcg" xlink:href="InsertExtHtml.html">Inserting external HTML code</link>.</para>
+      HTML files into output, see <link xmlns:xlink="http://www.w3.org/1999/xlink" role="tcg" xlink:href="InsertExtHtml.html">Inserting external HTML code</ulink>.</para>
   </refsection>
 </refentry>
 
@@ -2970,7 +2970,7 @@ suppressed in output.</para>
 </refmeta>
 <refnamediv>
 <refname>default.table.width</refname>
-<refpurpose>The default width of tables</refpurpose>
+<refpurpose>The default contentwidth of tables</refpurpose>
 </refnamediv>
 <refsynopsisdiv>
 <programlisting xml:id="default.table.width.frag">
@@ -2980,7 +2980,7 @@ suppressed in output.</para>
 <refsection><info><title>Description</title></info>
 <para>If non-zero, this value will be used for the
 <literal>width</literal> attribute on <tag>table</tag>s that do not specify an
-alternate width (with the <tag class="xmlpi">dbhtml table-width</tag> or 
+alternate contentwidth (with the <tag class="xmlpi">dbhtml table-width</tag> or 
 <tag class="xmlpi">dbfo table-width</tag> processing instruction).</para>
 </refsection>
 </refentry>
@@ -2992,7 +2992,7 @@ alternate width (with the <tag class="xmlpi">dbhtml table-width</tag> or
 </refmeta>
 <refnamediv>
 <refname>nominal.table.width</refname>
-<refpurpose>The (absolute) nominal width of tables</refpurpose>
+<refpurpose>The (absolute) nominal contentwidth of tables</refpurpose>
 </refnamediv>
 
 <refsynopsisdiv>
@@ -3003,9 +3003,9 @@ alternate width (with the <tag class="xmlpi">dbhtml table-width</tag> or
 
 <refsection><info><title>Description</title></info>
 
-<para>In order to convert CALS column widths into HTML column widths, it
-is sometimes necessary to have an absolute table width to use for conversion
-of mixed absolute and relative widths. This value must be an absolute
+<para>In order to convert CALS column contentwidths into HTML column contentwidths, it
+is sometimes necessary to have an absolute table contentwidth to use for conversion
+of mixed absolute and relative contentwidths. This value must be an absolute
 length (not a percentage).</para>
 
 </refsection>
@@ -3235,7 +3235,7 @@ the <tag class="attribute">frame</tag> attribute on the table element.
 
 <para>If non-zero, specifies the thickness of borders on table
 cells. The units are points. See <link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.w3.org/TR/CSS21/box.html#border-width-properties">
-CSS</link></para>
+CSS</ulink></para>
 
 <note>
   <para>To control properties of cell borders in HTML output, you must also turn on the 
@@ -3303,7 +3303,7 @@ CSS</link></para>
 <refsection><info><title>Description</title></info>
 
 <para>Set the color of table cell borders. If non-zero, the value is used
-for the border coloration. See <link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.w3.org/TR/CSS21/syndata.html#value-def-color">CSS</link>. A
+for the border coloration. See <link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.w3.org/TR/CSS21/syndata.html#value-def-color">CSS</ulink>. A
 <literal>color</literal> is either a keyword or a numerical RGB specification.
 Keywords are aqua, black, blue, fuchsia, gray, green, lime, maroon,
 navy, olive, orange, purple, red, silver, teal, white, and
@@ -4338,7 +4338,7 @@ in the <literal>l:context name="xref"</literal>.
 </refmeta>
 <refnamediv>
   <refname>itemizedlist.label.width</refname>
-<refpurpose>The default width of the label (bullet) in an itemized list.</refpurpose>
+<refpurpose>The default contentwidth of the label (bullet) in an itemized list.</refpurpose>
 </refnamediv>
 
 <refsynopsisdiv>
@@ -4348,7 +4348,7 @@ in the <literal>l:context name="xref"</literal>.
 </refsynopsisdiv>
 
 <refsection><info><title>Description</title></info>
-<para>Specifies the default width of the label (usually a bullet or other
+<para>Specifies the default contentwidth of the label (usually a bullet or other
 symbol) in an itemized list. You can override the default value on any
 particular list with the &#8220;dbfo&#8221; processing instruction using the
 &#8220;label-width&#8221; pseudoattribute.</para>
@@ -4472,7 +4472,7 @@ particular list with the &#8220;dbfo&#8221; processing instruction using the
 </refmeta>
 <refnamediv>
 <refname>orderedlist.label.width</refname>
-<refpurpose>The default width of the label (number) in an ordered list.</refpurpose>
+<refpurpose>The default contentwidth of the label (number) in an ordered list.</refpurpose>
 </refnamediv>
 
 <refsynopsisdiv>
@@ -4482,7 +4482,7 @@ particular list with the &#8220;dbfo&#8221; processing instruction using the
 </refsynopsisdiv>
 
 <refsection><info><title>Description</title></info>
-<para>Specifies the default width of the label (usually a number or
+<para>Specifies the default contentwidth of the label (usually a number or
 sequence of numbers) in an ordered list. You can override the default
 value on any particular list with the &#8220;dbfo&#8221; processing instruction
 using the &#8220;label-width&#8221; pseudoattribute.</para>
@@ -4522,7 +4522,7 @@ set a maximum character count.  Any terms longer than the maximum
 would line wrap.  The default value is 24.
 </para>
 <para>
-The character counts are converted to physical widths
+The character counts are converted to physical contentwidths
 by multiplying by 0.50em. There will be some variability
 in how many actual characters fit in the space
 since some characters are wider than others.
@@ -4841,7 +4841,7 @@ the TOC.</para>
 
 <para>In order to use ISO690 style to the full extent you might need
 to use additional markup described on <link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://wiki.docbook.org/topic/ISO690Bibliography">the
-following WiKi page</link>.</para>
+following WiKi page</ulink>.</para>
 
 </refsection>
 </refentry>
@@ -5533,7 +5533,7 @@ Use this attribute-set to set font properties, for example.</para>
 
 <refsection><info><title>Description</title></info>
 
-<para>This parameter specifies the width reserved for glossary terms when
+<para>This parameter specifies the contentwidth reserved for glossary terms when
 a list presentation is used.</para>
 
 </refsection>
@@ -6082,7 +6082,7 @@ CSS instead.</para>
 <para>Properties that specify the style of shaded verbatim listings. The
 parameters specified (the border and background color) are added to
 the styling of the xsl-fo output. A border might be specified as "thin
-black solid" for example. See <link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.w3.org/TR/2004/WD-xsl11-20041216/#border">xsl-fo</link></para>
+black solid" for example. See <link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.w3.org/TR/2004/WD-xsl11-20041216/#border">xsl-fo</ulink></para>
 
 </refsection>
 </refentry>
@@ -6795,7 +6795,7 @@ downloaded separately (see below).</para>
 <para>In order to use this extension, you must</para> 
 
 <listitem><para>add <filename>xslthl-2.x.x.jar</filename> to your Java classpath. The latest version is available
-from <link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://sourceforge.net/projects/xslthl">the XSLT syntax highlighting project</link> 
+from <link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://sourceforge.net/projects/xslthl">the XSLT syntax highlighting project</ulink> 
 at SourceForge.</para>
 </listitem>
 <listitem>
@@ -7024,7 +7024,7 @@ and need to use <literal>wrapper</literal>.
 
 <refsection><info><title>Description</title></info>
 
-<para>Specifies with em units the width of a single character
+<para>Specifies with em units the contentwidth of a single character
 of the monospace font. The default value is <literal>0.6em</literal>.</para>
 
 <para>This parameter is only used when a <tag>screen</tag>
@@ -7032,9 +7032,9 @@ or <tag>programlisting</tag> element has a
 <tag class="attribute">width</tag> attribute, which is
 expressed as a plain integer to indicate the maximum character count
 of each line.
-To convert this character count to an actual maximum width
-measurement, the width of the font characters must be provided.
-Different monospace fonts have different character width,
+To convert this character count to an actual maximum contentwidth
+measurement, the contentwidth of the font characters must be provided.
+Different monospace fonts have different character contentwidth,
 so this parameter should be adjusted to fit the 
 monospace font being used.
 </para>
@@ -7139,7 +7139,7 @@ and the <tag class="attribute">format</tag> attribute is
 </refmeta>
 <refnamediv>
 <refname>default.image.width</refname>
-<refpurpose>The default width of images</refpurpose>
+<refpurpose>The default contentwidth of images</refpurpose>
 </refnamediv>
 
 <refsynopsisdiv>
@@ -7693,7 +7693,7 @@ landscape orientation, it is vertical.
 </refmeta>
 <refnamediv>
 <refname>page.width</refname>
-<refpurpose>The width of the physical page</refpurpose>
+<refpurpose>The contentwidth of the physical page</refpurpose>
 </refnamediv>
 
 <refsynopsisdiv>
@@ -7711,7 +7711,7 @@ landscape orientation, it is vertical.
 
 <refsection><info><title>Description</title></info>
 
-<para>The page width is generally calculated from the
+<para>The page contentwidth is generally calculated from the
 <parameter>paper.type</parameter> and 
 <parameter>page.orientation</parameter> parameters.</para>
 
@@ -7774,7 +7774,7 @@ landscape orientation, it is vertical.
 
 <refsection><info><title>Description</title></info>
 
-<para>The portrait page width is the length of the short
+<para>The portrait page contentwidth is the length of the short
 edge of the physical page.
 </para>
 
@@ -8464,7 +8464,7 @@ are printed.
 <refsection><info><title>Description</title></info>
 
 <para>If an unqualified dimension is encountered (for example, in a
-graphic width), the <parameter>default.units</parameter> will be used for the
+graphic contentwidth), the <parameter>default.units</parameter> will be used for the
 units. Unqualified dimensions are not allowed in XSL Formatting Objects.
 </para>
 
@@ -8785,7 +8785,7 @@ on how their <literal>status</literal> attribute is set.
 </refmeta>
 <refnamediv>
 <refname>header.column.widths</refname>
-<refpurpose>Specify relative widths of header areas</refpurpose>
+<refpurpose>Specify relative contentwidths of header areas</refpurpose>
 </refnamediv>
 
 <refsynopsisdiv><programlisting xml:id="header.column.widths.frag">
@@ -8806,19 +8806,19 @@ by white space. The first number represents the relative
 width of the inside header for
 double-sided output.  The second number is the relative
 width of the center header.  The third number is the
-relative width of the outside header for
+relative contentwidth of the outside header for
 double-sided output.
 </para>
 <para>For single-sided output, the first number is the
-relative width of left header for left-to-right
+relative contentwidth of left header for left-to-right
 text direction, or the right header for right-to-left
 text direction.  
 The third number is the
-relative width of right header for left-to-right
+relative contentwidth of right header for left-to-right
 text direction, or the left header for right-to-left
 text direction.</para>
 
-<para>The numbers are used to specify the column widths
+<para>The numbers are used to specify the column contentwidths
 for the table that makes up the header area.
 In the FO output, this looks like:
 </para>
@@ -8830,9 +8830,9 @@ In the FO output, this looks like:
 
 <para>
 The <literal>proportional-column-width()</literal>
-function computes a column width by dividing its
+function computes a column contentwidth by dividing its
 argument by the total of the arguments for all the columns, and
-then multiplying the result by the width of the whole table
+then multiplying the result by the contentwidth of the whole table
 (assuming all the column specs use the function).
 Its argument can be any positive integer or floating point number.
 Zero is an acceptable value, although some FO processors
@@ -8841,14 +8841,14 @@ be more satisfactory.
 </para>
 
 <para>For example, the value "1 2 1" means the center
-header should have twice the width of the other areas.
+header should have twice the contentwidth of the other areas.
 A value of "0 0 1" means the entire header area
 is reserved for the right (or outside) header text.
 Note that to keep the center area centered on
 the page, the left and right values must be
 the same. A specification like "1 2 3" means the
 center area is no longer centered on the page
-since the right area is three times the width of the left area.
+since the right area is three times the contentwidth of the left area.
 </para>
 
 </refsection>
@@ -8861,7 +8861,7 @@ since the right area is three times the width of the left area.
 </refmeta>
 <refnamediv>
 <refname>footer.column.widths</refname>
-<refpurpose>Specify relative widths of footer areas</refpurpose>
+<refpurpose>Specify relative contentwidths of footer areas</refpurpose>
 </refnamediv>
 
 <refsynopsisdiv><programlisting xml:id="footer.column.widths.frag">
@@ -8882,19 +8882,19 @@ by white space. The first number represents the relative
 width of the inside footer for
 double-sided output.  The second number is the relative
 width of the center footer.  The third number is the
-relative width of the outside footer for
+relative contentwidth of the outside footer for
 double-sided output.
 </para>
 <para>For single-sided output, the first number is the
-relative width of left footer for left-to-right
+relative contentwidth of left footer for left-to-right
 text direction, or the right footer for right-to-left
 text direction.  
 The third number is the
-relative width of right footer for left-to-right
+relative contentwidth of right footer for left-to-right
 text direction, or the left footer for right-to-left
 text direction.</para>
 
-<para>The numbers are used to specify the column widths
+<para>The numbers are used to specify the column contentwidths
 for the table that makes up the footer area.
 In the FO output, this looks like:
 </para>
@@ -8906,9 +8906,9 @@ In the FO output, this looks like:
 
 <para>
 The <literal>proportional-column-width()</literal>
-function computes a column width by dividing its
+function computes a column contentwidth by dividing its
 argument by the total of the arguments for all the columns, and
-then multiplying the result by the width of the whole table
+then multiplying the result by the contentwidth of the whole table
 (assuming all the column specs use the function).
 Its argument can be any positive integer or floating point number.
 Zero is an acceptable value, although some FO processors
@@ -8917,14 +8917,14 @@ be more satisfactory.
 </para>
 
 <para>For example, the value "1 2 1" means the center
-footer should have twice the width of the other areas.
+footer should have twice the contentwidth of the other areas.
 A value of "0 0 1" means the entire footer area
 is reserved for the right (or outside) footer text.
 Note that to keep the center area centered on
 the page, the left and right values must be
 the same. A specification like "1 2 3" means the
 center area is no longer centered on the page
-since the right area is three times the width of the left area.
+since the right area is three times the contentwidth of the left area.
 </para>
 
 </refsection>
@@ -9662,7 +9662,7 @@ options for side floats as well.
 </refmeta>
 <refnamediv>
 <refname>sidebar.float.width</refname>
-<refpurpose>Set the default width for sidebars</refpurpose>
+<refpurpose>Set the default contentwidth for sidebars</refpurpose>
 </refnamediv>
 
 <refsynopsisdiv>
@@ -9673,8 +9673,8 @@ options for side floats as well.
 
 <refsection><info><title>Description</title></info>
 
-<para>Sets the default width for sidebars when used as a side float.
-The width determines the degree to which the sidebar block intrudes into
+<para>Sets the default contentwidth for sidebars when used as a side float.
+The contentwidth determines the degree to which the sidebar block intrudes into
 the text area.
 </para>
 <para>If <parameter>sidebar.float.type</parameter> is
@@ -9844,7 +9844,7 @@ options for side floats as well.
 </refmeta>
 <refnamediv>
 <refname>margin.note.width</refname>
-<refpurpose>Set the default width for margin notes</refpurpose>
+<refpurpose>Set the default contentwidth for margin notes</refpurpose>
 </refnamediv>
 
 <refsynopsisdiv>
@@ -9855,8 +9855,8 @@ options for side floats as well.
 
 <refsection><info><title>Description</title></info>
 
-<para>Sets the default width for margin notes when used as a side
-float.  The width determines the degree to which the margin note block
+<para>Sets the default contentwidth for margin notes when used as a side
+float.  The contentwidth determines the degree to which the margin note block
 intrudes into the text area.
 </para>
 <para>If <parameter>margin.note.float.type</parameter> is
@@ -11089,7 +11089,7 @@ one possibility.
 <partintro xml:id="profiling_partintro">
 <para>The following parameters can be used for attribute-based
 profiling of your document. For more information about profiling, see 
-<link xmlns:xlink="http://www.w3.org/1999/xlink" role="tcg" xlink:href="Profiling.html">Profiling (conditional text)</link>.</para>
+<link xmlns:xlink="http://www.w3.org/1999/xlink" role="tcg" xlink:href="Profiling.html">Profiling (conditional text)</ulink>.</para>
 </partintro>
 <refentry version="5.0" xml:id="profile.arch">
 <refmeta>
@@ -11798,7 +11798,7 @@ resulting text will be something like this:</para>
 <refsection><info><title>Description</title></info>
 
 <para>If non-zero, ensure that the values for all <tag class="attribute">lang</tag> attributes in HTML output are RFC
-compliant<footnote><para>Section 8.1.1, <link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.w3.org/TR/REC-html40/struct/dirlang.html#h-8.1.1">Language Codes</link>, in the HTML 4.0 Recommendation states that:
+compliant<footnote><para>Section 8.1.1, <link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.w3.org/TR/REC-html40/struct/dirlang.html#h-8.1.1">Language Codes</ulink>, in the HTML 4.0 Recommendation states that:
 
 <blockquote><para>[RFC1766] defines and explains the language codes
 that must be used in HTML documents.</para>
@@ -11808,7 +11808,7 @@ empty series of subcodes:
 <literallayout class="monospaced">language-code = primary-code ( "-" subcode )*</literallayout>
 </para>
 <para>And in RFC 1766, <link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.ietf.org/rfc/rfc1766.txt">Tags for the Identification
-of Languages</link>, the EBNF for "language tag" is given as:
+of Languages</ulink>, the EBNF for "language tag" is given as:
 
 <literallayout class="monospaced">Language-Tag = Primary-tag *( "-" Subtag )
 Primary-tag = 1*8ALPHA

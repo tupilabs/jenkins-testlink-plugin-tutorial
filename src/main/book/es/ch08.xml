@@ -35,7 +35,7 @@
 	<para>Lastly, it is free. The team of the plug-in are contributors of 
 	<application>TestLink</application>, mantenedores del 
 	<application>TestLink Java API</application>, y seguen tratando de arreglar los problemas en 
-	<link xlink:href="http://issues.jenkins-ci.org"><application>Jenkins</application>' 
-	<application>JIRA</application></link> lo mas rápido que sea posible.</para>
+	<ulink url="http://issues.jenkins-ci.org"><application>Jenkins</application>' 
+	<application>JIRA</application></ulink> lo mas rápido que sea posible.</para>
 	
 </chapter>

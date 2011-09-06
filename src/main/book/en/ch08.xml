@@ -1,11 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<chapter version="5.0" xmlns="http://docbook.org/ns/docbook"
-         xmlns:xlink="http://www.w3.org/1999/xlink"
-         xmlns:xi="http://www.w3.org/2001/XInclude"
-         xmlns:ns5="http://www.w3.org/2000/svg"
-         xmlns:ns4="http://www.w3.org/1998/Math/MathML"
-         xmlns:ns3="http://www.w3.org/1999/xhtml"
-         xmlns:db="http://docbook.org/ns/docbook">
+<chapter id="chapter.8">
 	<title>Advantages of using <application>Jenkins TestLink Plug-in</application></title>
 	
 	<para>The plug-in is not intended to be a test automation 
@@ -32,7 +26,7 @@
 	<para>Lastly, it is free. The team of the plug-in are contributors of 
 	<application>TestLink</application>, maintainers of the 
 	<application>TestLink Java API</application>, and keep trying to fix 
-	the issues in <link xlink:href="http://issues.jenkins-ci.org"><application>Jenkins</application>' 
-	<application>JIRA</application></link> as fast as they can.</para>
+	the issues in <ulink url="http://issues.jenkins-ci.org"><application>Jenkins</application>' 
+	<application>JIRA</application></ulink> as fast as they can.</para>
 	
 </chapter>

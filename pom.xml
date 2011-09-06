@@ -5,11 +5,11 @@
 	<inceptionYear>2011 the Jenkins TestLink Plug-in team</inceptionYear>
 	
 	<groupId>br.eti.kinoshita</groupId>
-	<artifactId>jenkins-testlink-plugin-the-definitive-guide</artifactId>
-	<name>Jenkins TestLink Plug-in: The Definitive Guide</name>
+	<artifactId>jenkins-testlink-plugin-tutorial</artifactId>
+	<name>Jenkins TestLink Plug-in Tutorial</name>
 	<version>0.1</version>
 	<packaging>pom</packaging>
-	<description>enkins TestLink Plug-in: The Definitive Guide DocBook project</description>
+	<description>enkins TestLink Plug-in Tutorial DocBook project</description>
 
 	<url>http://wiki.jenkins-ci.org/display/JENKINS/TestLink+Plugin</url>
 
@@ -45,9 +45,9 @@
 	</developers>
 
 	<scm>
-		<connection>scm:git:git://github.com/kinow/jenkins-testlink-plugin-the-definitive-guide.git</connection>
+		<connection>scm:git:git://github.com/kinow/jenkins-testlink-plugin-tutorial.git</connection>
 		<developerConnection>scm:git:git@github.com:kinow/jenkins-testlink-plugin-the-definitive-guide.git</developerConnection>
-		<url>http://github.com/kinow/jenkins-testlink-plugin-the-definitive-guide</url>
+		<url>http://github.com/kinow/jenkins-testlink-plugin-tutorial</url>
 	</scm>
 
 	<build>
@@ -77,12 +77,12 @@
 					<generatedSourceDirectory>${project.build.directory}/book/generated/en</generatedSourceDirectory>
 					<xincludeSupported>true</xincludeSupported>
 					<highlightSource>1</highlightSource>
-					<paperType>A4</paperType>
+					<!-- paperType>A4</paperType -->
 					<fop1Extensions>1</fop1Extensions>
 					<foCustomization>src/main/book/stylesheets/fo/docbook.xsl</foCustomization>
 					<targetDirectory>${project.build.directory}/book/en/</targetDirectory>
 					<postProcess>
-						<copy todir="${basedir}/target/book/en/media">
+						<copy todir="${basedir}/target/book/media">
 							<fileset dir="${basedir}/src/main/book/media/">
 								<include name="**/*.css" />
 								<include name="**/*.png" />
@@ -94,9 +94,9 @@
 				</configuration>
 				<dependencies>
 					<dependency>
-						<groupId>net.sf.docbook</groupId>
+						<groupId>org.docbook</groupId>
 						<artifactId>docbook-xml</artifactId>
-						<version>5.0</version>
+						<version>4.4</version>
 						<type>pom</type>
 						<scope>runtime</scope>
 					</dependency>

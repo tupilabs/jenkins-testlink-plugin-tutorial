@@ -24,8 +24,8 @@
 <refentry xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="template.calc.column.width">
 <refnamediv>
 <refname>calc.column.width</refname>
-<refpurpose>Calculate an XSL FO table column width specification from a
-CALS table column width specification.</refpurpose>
+<refpurpose>Calculate an XSL FO table column contentwidth specification from a
+CALS table column contentwidth specification.</refpurpose>
 </refnamediv>
 <refsynopsisdiv>
 <synopsis>&lt;xsl:template name="calc.column.width"&gt;
@@ -35,7 +35,7 @@ CALS table column width specification.</refpurpose>
 </refsynopsisdiv>
 <refsect1><title>Description</title>
 
-<para>CALS expresses table column widths in the following basic
+<para>CALS expresses table column contentwidths in the following basic
 forms:</para>
 
 
@@ -120,7 +120,7 @@ proportional-column-width() function.</para>
 <varlistentry><term>colwidth</term>
 <listitem>
 
-<para>The CALS column width specification.</para>
+<para>The CALS column contentwidth specification.</para>
 
 </listitem>
 </varlistentry>
@@ -128,7 +128,7 @@ proportional-column-width() function.</para>
 
 </refsect1><refsect1><title>Returns</title>
 
-<para>The XSL column width specification.</para>
+<para>The XSL column contentwidth specification.</para>
 
 </refsect1></refentry>
 </reference>

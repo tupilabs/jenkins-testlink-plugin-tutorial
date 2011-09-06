@@ -15,12 +15,12 @@
 	out of the box are <application>MySQL</application>, <application>Postgre SQL</application> 
 	and <application>MS SQL</application>, although there are 
 	users that managed to use <application>Oracle</application> too. You can 
-	download it from <link xlink:href="http://www.teamst.org">http://www.teamst.org</link>.</para>
+	download it from <ulink url="http://www.teamst.org">http://www.teamst.org</ulink>.</para>
 	
 	<para>
 		<mediaobject id="testlink_logo">
 			<imageobject role="html">
-				<imagedata align="center" fileref="media/testlink_logo.png" format="PNG" />
+				<imagedata align="center" fileref="../media/testlink_logo.png" format="PNG" />
 			</imageobject>
 		</mediaobject>
 	</para>
@@ -41,12 +41,12 @@
 	Ruby and Java. The <application>Jenkins</application> and 
 	<application>TestLink</application> integration is 
 	done using <application>TestLink Java API</application> - 
-	<link xlink:href="http://testlinkjavaapi.sourceforge.net">http://testlinkjavaapi.sourceforge.net</link>.</para>
+	<ulink url="http://testlinkjavaapi.sourceforge.net">http://testlinkjavaapi.sourceforge.net</ulink>.</para>
 	
 	<para>
 		<mediaobject id="testlink_001_01">
 			<imageobject role="html">
-				<imagedata align="center" fileref="media/testlink_001.png" width="800px" format="PNG" />
+				<imagedata align="center" fileref="../media/testlink_001.png" contentwidth="800px" format="PNG" />
 			</imageobject>
 		</mediaobject>
 	</para>
@@ -59,10 +59,10 @@
 	intended for <application>Testlink</application> <emphasis>1.9.2</emphasis>. 
 	In case there are other versions available at the moment that you are reading this guide, 
 	you may find issues during your <application>Jenkins</application> Job execution. There is a compatibility 
-	table available in the <link xlink:href="http://wiki.jenkins-ci.org/display/JENKINS/TestLink+Plugin">plug-in Wiki.</link></para>
+	table available in the <ulink url="http://wiki.jenkins-ci.org/display/JENKINS/TestLink+Plugin">plug-in Wiki.</ulink></para>
 	
 	<para><application>TestLink</application> is licensed under the 
 	<acronym>GPL</acronym> License and its code is hosted 
-	at gitorious - <link xlink:href="http://www.gitorious.org/testlink-ga/testlink-code">http://www.gitorious.org/testlink-ga/testlink-code</link>.</para>
+	at gitorious - <ulink url="http://www.gitorious.org/testlink-ga/testlink-code">http://www.gitorious.org/testlink-ga/testlink-code</ulink>.</para>
 	
 </chapter>

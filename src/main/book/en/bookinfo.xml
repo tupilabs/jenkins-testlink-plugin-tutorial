@@ -1,34 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<info version="5.0" xmlns="http://docbook.org/ns/docbook"
-	xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xi="http://www.w3.org/2001/XInclude"
-	xmlns:ns5="http://www.w3.org/2000/svg" xmlns:ns4="http://www.w3.org/1998/Math/MathML"
-	xmlns:ns3="http://www.w3.org/1999/xhtml">
-	<!-- All rights reserved. -->
+<bookinfo>
 
-	<edition>1</edition>
+	<abstract>
+		<para>This book is an Open Source project that provides a better
+			understanding of how integrate Jenkins and TestLink.
+		</para>
+	</abstract>
+
+	<edition>2</edition>
 
 	<author>
-		<personname>Bruno P. Kinoshita</personname>
-		<affiliation>
-				<address><email>brunodepaulak@yahoo.com.br</email></address>
-		</affiliation>
+		<firstname>Bruno</firstname>
+		<othername>P.</othername>
+		<surname>Kinoshita</surname>
+		<email>brunodepaulak@yahoo.com.br</email>
 	</author>
-	
+
 	<author>
-		<personname>César Fernandes de Almeida</personname>
-		<affiliation>
-				<address><email>cesar.fa@gmail.com</email></address>
-		</affiliation>
+		<firstname>César</firstname>
+		<othername>Fernandes</othername>
+		<surname>de Almeida</surname>
+		<email>cesar.fa@gmail.com</email>
 	</author>
-	
+
 	<!--Markup for downstream formats; not necessary to add at the manuscript 
 		phase -->
+
 	<mediaobject role="cover">
 		<imageobject remap="lrg" role="front-large">
-			<imagedata fileref="media/cover.jpg" format="JPG" />
+			<imagedata contentwidth="300px" fileref="../media/cover.jpg"
+				format="JPG" />
 		</imageobject>
 	</mediaobject>
 
-	<xi:include href="abstract.xml" />
-
-</info>
+</bookinfo>
