@@ -14,8 +14,7 @@
 <!ENTITY bibliography SYSTEM "bibliography.xml">
 ]>
 <book>
-
-	<title>Jenkins TestLink Plug-in: The Definitive Guide</title>
+	<title>Jenkins TestLink Plug-in Tutorial</title>
 
 	&bookinfo;
 

@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <bookinfo>
-
 	<abstract>
-		<para>This book is an Open Source project that provides a better
-			understanding of how integrate Jenkins and TestLink.
+		<para>The Jenkins TestLink Plug-in Tutorial is intended to provide 
+		a better understanding on how to use the plug-in to integrate Jenkins 
+		and TestLink. It is an Open Source project, so contributions and 
+		suggestions are welcome.
 		</para>
 	</abstract>
-
-	<edition>2</edition>
 
 	<author>
 		<firstname>Bruno</firstname>
@@ -22,15 +21,5 @@
 		<surname>de Almeida</surname>
 		<email>cesar.fa@gmail.com</email>
 	</author>
-
-	<!--Markup for downstream formats; not necessary to add at the manuscript 
-		phase -->
-
-	<mediaobject role="cover">
-		<imageobject remap="lrg" role="front-large">
-			<imagedata contentwidth="300px" fileref="../media/cover.jpg"
-				format="JPG" />
-		</imageobject>
-	</mediaobject>
 
 </bookinfo>

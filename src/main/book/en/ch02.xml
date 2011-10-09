@@ -1,62 +1,64 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <chapter>
-	<title>An Introduction to <application>TestLink</application></title>
+	<title>An Introduction to TestLink</title>
 	
-	<para><application>TestLink</application> is an open source test management tool written in <acronym>PHP</acronym>. 
-	In order to install <application>TestLink</application> you will need a 
-	<application>Apache</application> or similar http server with <acronym>PHP</acronym> 
-	5 and a database. The databases currently supported by <application>TestLink</application> 
-	out of the box are <application>MySQL</application>, <application>Postgre SQL</application> 
-	and <application>MS SQL</application>, although there are 
-	users that managed to use <application>Oracle</application> too. You can 
-	download it from <ulink url="http://www.teamst.org">http://www.teamst.org</ulink>.</para>
+	<para>TestLink is an open source test management tool written in PHP. In 
+	order to install TestLink you will need a http server with PHP 5 and a 
+	database. The databases currently supported by TestLink out of the box are 
+	MySQL, Postgre SQL and MS SQL, although there are users that managed to use 
+	Oracle too. You can download it from <ulink url="http://www.teamst.org">
+	http://www.teamst.org</ulink>.</para>
 	
 	<para>
 		<mediaobject id="testlink_logo">
-			<imageobject role="html">
-				<imagedata align="center" fileref="../media/testlink_logo.png" contentwidth="200px" format="PNG" />
+			<imageobject>
+				<imagedata 
+				    align="center" 
+				    fileref="../media/testlink_logo.png" 
+				    contentwidth="200px" 
+				    format="PNG" />
 			</imageobject>
 		</mediaobject>
 	</para>
 	
-	<para>In <application>TestLink</application> you have, among other features, 
-	<emphasis>Test Plans</emphasis>, <emphasis>Requirement 
-	management</emphasis>, <emphasis>Baselines</emphasis>, <emphasis>Custom Fields</emphasis>, 
-	<emphasis>Test Suite</emphasis> with <emphasis>Test Cases</emphasis> and 
-	<emphasis>Reporting</emphasis>. For external access, there is a 
-	<acronym>XML-RPC API</acronym> available 
-	(it is not enabled by default). Other two nice features in 
-	<application>TestLink</application> are the 
-	versioning of the some entities, like Test Case and Requirements, 
-	and the ability to import and export your testing data in different file formats.</para>
+	<para>In TestLink you have, among other features, Test Plans, Requirement 
+	management, Baselines, Custom Fields, Test Suite with Test Cases and 
+	Reporting. For external access, there is an XML-RPC API available (it is 
+	not enabled by default). Other two nice features in TestLink are the 
+	versioning of the some entities, like Test Case and Requirements, and the 
+	ability to import and export data in different formats.</para>
 	
-	<para>There are bindings for the <application>TestLink</application> 
-	<acronym>XML-RPC API</acronym> available for other languages such as 
-	Ruby and Java. The <application>Jenkins</application> and 
-	<application>TestLink</application> integration is 
-	done using <application>TestLink Java API</application> - 
-	<ulink url="http://testlinkjavaapi.sourceforge.net">http://testlinkjavaapi.sourceforge.net</ulink>.</para>
+	<para>There are bindings for the TestLink XML-RPC API available for Java, 
+	Perl, PHP, Ruby and other programming languages. The integration between 
+	Jenkins and TestLink is done using TestLink Java API - 
+	<ulink url="http://testlinkjavaapi.sourceforge.net">
+	http://testlinkjavaapi.sourceforge.net</ulink>.</para>
 	
 	<para>
 		<mediaobject id="testlink_001_01">
-			<imageobject role="html">
-				<imagedata align="center" fileref="../media/testlink_001.png" width="100%" contentdept="100%" format="PNG" />
+			<imageobject>
+				<imagedata 
+				    align="center" 
+				    fileref="../media/testlink_001.png" 
+				    width="100%" 
+				    contentdept="100%" 
+				    format="PNG" />
 			</imageobject>
 		</mediaobject>
 	</para>
 	
-	<para>At the moment that this guide is being written the latest stable 
-	version of <application>TestLink</application> is <emphasis>1.9.2</emphasis>, 
-	however versions <emphasis>1.9.3</emphasis> and <emphasis>2.0</emphasis> are already 
-	planned and scheduled. While the <application>Jenkins</application> version is not a compatibility issue for 
-	this integration, the same cannot be said about <application>TestLink</application>. This guide is 
-	intended for <application>Testlink</application> <emphasis>1.9.2</emphasis>. 
-	In case there are other versions available at the moment that you are reading this guide, 
-	you may find issues during your <application>Jenkins</application> Job execution. There is a compatibility 
-	table available in the <ulink url="http://wiki.jenkins-ci.org/display/JENKINS/TestLink+Plugin">plug-in Wiki.</ulink></para>
+	<para>At the moment that this guide is being written the latest version of 
+	TestLink is 1.9.3. While the Jenkins version is not a big issue for this 
+	integration, the same cannot be said about TestLink. This guide is 
+	intended for Testlink 1.9.3 XML-RPC API. In case there are other versions 
+	available at the moment that you are reading this guide, please consult 
+	the  
+	<ulink url="http://wiki.jenkins-ci.org/display/JENKINS/TestLink+Plugin">
+	plug-in Wiki</ulink> for further information on this.</para>
 	
-	<para><application>TestLink</application> is licensed under the 
-	<acronym>GPL</acronym> License and its code is hosted 
-	at gitorious - <ulink url="http://www.gitorious.org/testlink-ga/testlink-code">http://www.gitorious.org/testlink-ga/testlink-code</ulink>.</para>
+	<para>TestLink is licensed under the GPL License and its code is hosted at 
+	gitorious - 
+	<ulink url="http://www.gitorious.org/testlink-ga/testlink-code">
+	http://www.gitorious.org/testlink-ga/testlink-code</ulink>.</para>
 	
 </chapter>

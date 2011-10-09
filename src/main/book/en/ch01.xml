@@ -1,42 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <chapter>
-  <title>An Introduction to <application>Jenkins</application></title>
+  <title>An Introduction to Jenkins</title>
 
-  <para><application>Jenkins</application> (née
-  <application>Hudson</application>) is a <emphasis>continuous
-  integration</emphasis> server written in Java. It can be downloaded from
-  <ulink url="http://www.jenkins-ci.org">http://www.jenkins-ci.org</ulink> as
-  an executable war. It means that you can run it with <programlisting>java -jar jenkins.war</programlisting>.
-  <application>Jenkins</application> comes with an embedded
-  <application>Winstone</application> but you also have the option to deploy
-  the war to an application server like <application>Tomcat</application> or
-  <application>JBoss</application>. <application>Jenkins</application> does
-  not use any database to store is configuration. Everything is saved to
-  <acronym>XML</acronym> files using
-  <application>XStream</application>.</para>
+  <para>Jenkins (née Hudson) is a continuous integration server written in Java. 
+  It can be downloaded from <ulink url="http://www.jenkins-ci.org">
+  http://www.jenkins-ci.org</ulink> as an executable war. It means that you can 
+  run it with <command>java -jar jenkins.war</command>. Jenkins comes with an 
+  embedded Servlet Container (Winstone) but you also have the option to deploy
+  the war to an application server like Tomcat, Jetty, JBoss, etc. Jenkins does
+  not use any database to store its configuration. Jenkins uses XStream to 
+  save data as XML files.</para>
 
-  <para><mediaobject>
+  <para>
+    <mediaobject>
       <imageobject role="html">
-        <imagedata align="center" contentwidth="350px"
-                   fileref="../media/jenkins_logo.png" format="PNG"></imagedata>
+        <imagedata 
+            align="center" 
+            contentwidth="350px" 
+            fileref="../media/jenkins_logo.png" 
+            format="PNG">
+        </imagedata>
       </imageobject>
-    </mediaobject></para>
+    </mediaobject>
+  </para>
 
-  <para>With <application>Jenkins</application> you can create, monitor and
-  schedule <emphasis>Jobs</emphasis>. There are <emphasis>Plug-ins</emphasis>
-  available for almost anything that you may think about, from different
-  <acronym>SCM</acronym> (<application>git</application>,
-  <application>mercury</application>, <application>SVN</application>,
-  <application>CVS</application>) to integrating your builds with
-  <application>Selenium</application>, <application>Gerrit</application>,
-  <application>TestLink</application> and other tools.</para>
+  <para>With Jenkins you can create, monitor and schedule jobs. There are 
+  plug-ins for almost anything that you may think about, from different
+  SCMs (git, mercury, SVN, CVS) to plug-ins for integrating your Jenkins with
+  Selenium, Gerrit, TestLink and other tools.</para>
 
-  <para>Here is a summarized list of <application>Jenkins</application>
-  features that is available in <ulink
-  url="http://wiki.jenkins-ci.org/display/JENKINS/TestLink+Plugin">Jenkins
-  Wiki</ulink>:</para>
+  <para>Here is a summarized list of Jenkins features that is available in 
+  <ulink url="http://wiki.jenkins-ci.org/display/JENKINS/TestLink+Plugin">
+  Jenkins Wiki</ulink>: </para>
 
-  <itemizedlist>
+  <orderedlist>
     <listitem>
       <para>Easy installation</para>
     </listitem>
@@ -76,24 +73,30 @@
     <listitem>
       <para>Plugin Support</para>
     </listitem>
-  </itemizedlist>
+  </orderedlist>
 
-  <para>For this guide you will need to download the latest and greatest
-  <application>Jenkins</application>. At the moment that this guide is being
-  written the current version of the latest and greatest Jenkins is
-  <emphasis>1.413</emphasis>, however it is very unlikely that what you will
-  learn here won't work with other versions of
-  <application>Jenkins</application>. The development team has been doing a
-  great job in compatibility between versions.</para>
+  <para>For this guide you will need to download the latest and greatest 
+  version of Jenkins. At the moment that this guide is being written, the 
+  current version is 1.433. However it is very likely that what you will learn 
+  here will work with newer versions of Jenkins. Jenkins development team does 
+  a great job not only developing cool features, but also keeping backward 
+  compatibility.</para>
 
-  <para><mediaobject>
-      <imageobject role="html">
-        <imagedata align="center" 
-                   fileref="../media/jenkins_001.png" width="100%" contentdept="100%" format="PNG"></imagedata>
+  <para>
+    <mediaobject>
+      <imageobject>
+        <imagedata 
+            align="center" 
+            fileref="../media/jenkins_001.png" 
+            width="100%" 
+            contentdept="100%" 
+            format="PNG">
+        </imagedata>
       </imageobject>
-    </mediaobject></para>
+    </mediaobject>
+  </para>
 
-  <para><application>Jenkins</application> is licensed under
-  <acronym>MIT</acronym> License and its code is hosted at
-  <application>github</application> - <ulink url="http://github.com/jenkinsci">http://github.com/jenkinsci</ulink>.</para>
+  <para>Jenkins is licensed under the MIT License and its code is hosted at 
+  GitHub - <ulink url="http://github.com/jenkinsci">
+  http://github.com/jenkinsci</ulink>.</para>
 </chapter>

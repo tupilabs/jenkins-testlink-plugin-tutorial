@@ -2,21 +2,16 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<inceptionYear>2011 the Jenkins TestLink Plug-in team</inceptionYear>
+	<inceptionYear>2011</inceptionYear>
 	
 	<groupId>br.eti.kinoshita</groupId>
 	<artifactId>jenkins-testlink-plugin-tutorial</artifactId>
 	<name>Jenkins TestLink Plug-in Tutorial</name>
-	<version>0.1</version>
+	<version>0.2-SNAPSHOT</version>
 	<packaging>pom</packaging>
-	<description>enkins TestLink Plug-in Tutorial DocBook project</description>
+	<description>Jenkins TestLink Plug-in Tutorial DocBook project</description>
 
 	<url>http://wiki.jenkins-ci.org/display/JENKINS/TestLink+Plugin</url>
-
-	<organization>
-		<name>Jenkins</name>
-		<url>http://www.jenkins-ci.org</url>
-	</organization>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -26,11 +21,6 @@
 		<system>JIRA</system>
 		<url>http://issues.jenkins-ci.org/browse/JENKINS/component/15754</url>
 	</issueManagement>
-
-	<ciManagement>
-		<system>Jenkins</system>
-		<url>http://ci.jenkins-ci.org/view/Plugins/job/plugins_testlink</url>
-	</ciManagement>
 
 	<developers>
 		<developer>
@@ -79,7 +69,7 @@
 					<highlightSource>1</highlightSource>
 					<!-- paperType>A4</paperType -->
 					<fop1Extensions>1</fop1Extensions>
-					<foCustomization>src/main/book/stylesheets/fo/docbook.xsl</foCustomization>
+					<foCustomization>src/main/book/stylesheets/style.xsl</foCustomization>
 					<targetDirectory>${project.build.directory}/book/en/</targetDirectory>
 					<postProcess>
 						<copy todir="${basedir}/target/book/media">
