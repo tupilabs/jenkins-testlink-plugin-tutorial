@@ -2,3 +2,5 @@
 .classpath
 .settings/
 target/
+test-output
+work

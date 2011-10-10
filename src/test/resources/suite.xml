@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Examples Test Suite" verbose="1" parallel="false" thread-count="2"
+    data-provider-thread-count="3">
+
+    <test name="Examples">
+        <classes>
+            <class name="hudson.plugins.testlink.examples.TestCurrentTime"></class>
+           </classes>
+    </test>
+ 
+</suite>
+
