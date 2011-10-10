@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<chapter>
+<chapter id="chapter.1">
   <title>An Introduction to Jenkins</title>
 
   <para>Jenkins (née Hudson) is a continuous integration server written in Java. 
@@ -77,10 +77,10 @@
 
   <para>For this guide you will need to download the latest and greatest 
   version of Jenkins. At the moment that this guide is being written, the 
-  current version is 1.433. However it is very likely that what you will learn 
-  here will work with newer versions of Jenkins. Jenkins development team does 
-  a great job not only developing cool features, but also keeping backward 
-  compatibility.</para>
+  current version is <emphasis>1.433</emphasis>. However it is very likely that 
+  what you will learn here will work with newer versions of Jenkins. Jenkins 
+  development team does a great job not only developing cool features, but also 
+  keeping backward compatibility between versions.</para>
 
   <para>
     <mediaobject>

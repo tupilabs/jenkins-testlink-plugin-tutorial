@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <bookinfo>
+
+    <productname>Jenkins TestLink Plug-in Tutorial</productname>
+
 	<abstract>
 		<para>The Jenkins TestLink Plug-in Tutorial is intended to provide 
 		a better understanding on how to use the plug-in to integrate Jenkins 

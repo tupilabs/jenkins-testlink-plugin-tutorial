@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <chapter id="chapter.7">
+
 	<title>Strategies for finding Test Results</title>
 	
 	<para>After your automated tests are executed the plug-in has to look for 

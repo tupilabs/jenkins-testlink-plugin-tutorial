@@ -8,8 +8,7 @@
 	<artifactId>jenkins-testlink-plugin-tutorial</artifactId>
 	<name>Jenkins TestLink Plug-in Tutorial</name>
 	<version>0.2-SNAPSHOT</version>
-	<packaging>pom</packaging>
-	<description>Jenkins TestLink Plug-in Tutorial DocBook project</description>
+	<description>Jenkins TestLink Plug-in Tutorial</description>
 
 	<url>http://wiki.jenkins-ci.org/display/JENKINS/TestLink+Plugin</url>
 
@@ -100,6 +99,45 @@
 				</dependencies>
 			</plugin>
 		</plugins>
+		<pluginManagement>
+			<plugins>
+				<!--This plugin's configuration is used to store Eclipse m2e settings only. It has no influence on the Maven build itself.-->
+				<plugin>
+					<groupId>org.eclipse.m2e</groupId>
+					<artifactId>lifecycle-mapping</artifactId>
+					<version>1.0.0</version>
+					<configuration>
+						<lifecycleMappingMetadata>
+							<pluginExecutions>
+								<pluginExecution>
+									<pluginExecutionFilter>
+										<groupId>
+											com.agilejava.docbkx
+										</groupId>
+										<artifactId>
+											docbkx-maven-plugin
+										</artifactId>
+										<versionRange>
+											[2.0.11,)
+										</versionRange>
+										<goals>
+											<goal>
+												generate-eclipse
+											</goal>
+											<goal>generate-pdf</goal>
+											<goal>generate-html</goal>
+										</goals>
+									</pluginExecutionFilter>
+									<action>
+										<ignore></ignore>
+									</action>
+								</pluginExecution>
+							</pluginExecutions>
+						</lifecycleMappingMetadata>
+					</configuration>
+				</plugin>
+			</plugins>
+		</pluginManagement>
 	</build>
 
 	<profiles>

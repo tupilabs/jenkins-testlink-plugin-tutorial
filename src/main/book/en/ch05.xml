@@ -5,17 +5,17 @@
 	
 	<section>
 	
-		<title>Installing <application>Jenkins</application></title>
+		<title>Installing Jenkins</title>
 		
 		<para>Download <emphasis>jenkins.war</emphasis> from 
-		<ulink url="http://www.jenkins-ci.org">http://www.jenkins-ci.org</ulink> to a folder 
-		of your preference. Now go to the command line and execute 
-		<programlisting><![CDATA[java -jar jenkins.war]]></programlisting> 
-		(if you need change the port, use <emphasis>--httpPort=9999</emphasis>).</para>
+		<ulink url="http://www.jenkins-ci.org">http://www.jenkins-ci.org</ulink>. 
+		Now open a terminal and execute	<command>java -jar jenkins.war</command>. 
+		This will initiate Jenkins in port 8080 by default (if you need to 
+		change that port, use <emphasis>--httpPort=9999</emphasis>).</para>
 		
-		<para><application>Jenkins</application> creates a default workspace for you in 
-		<emphasis>~/.jenkins</emphasis> 
-		or uses the folder specified in <emphasis>JENKINS_HOME</emphasis> environment variable.</para>
+		<para>Jenkins creates a default workspace for you at <emphasis>~/.jenkins</emphasis> 
+		or it uses the folder specified in <emphasis>JENKINS_HOME</emphasis> 
+		environment variable.</para>
 	
 		<para>
 			<mediaobject id="jenkins_001_02">
@@ -26,26 +26,24 @@
 		</para>
 	
 		<para>Go to <ulink url="http://localhost:8080">http://localhost:8080</ulink> 
-		to check if your installation is working. We will call the page loaded 
-		when you open <ulink url="http://localhost:8080">http://localhost:8080</ulink> 
-		main screen throughout this guide.</para>
+		to check if your installation is working. We will call this page as	
+		main screen from now on.</para>
 	
 	</section>
 	
 	<section>
 		
-		<title>Installing and configuring <application>Jenkins TestLink Plug-in</application></title>
+		<title>Installing and configuring Jenkins TestLink Plug-in</title>
 		
-		<para>The plug-ins in <application>Jenkins</application> are distributed from a central update 
-		site. Select the option <emphasis>Manage Jenkins</emphasis> in the left menu and look 
-		for the <emphasis>Manage Plugins</emphasis> option. Clicking on 
-		<emphasis>Available</emphasis> will bring you 
-		the list of plug-ins ready to be installed in your 
-		<application>Jenkins</application>.</para>
+		<para>The plug-ins in Jenkins are distributed from a central update 
+		site. Select the option <emphasis>Manage Jenkins</emphasis> in the left 
+		menu and look for the <emphasis>Manage Plugins</emphasis> option. 
+		Clicking on <emphasis>Available</emphasis> will bring you the list of 
+		plug-ins ready to be installed in your Jenkins installation.</para>
 		
 		<para>Just check the checkbox besides the plug-in name on the list 
 		and click on <emphasis>Install</emphasis> to install the plug-in. 
-		<application>Jenkins</application> will download and install the 
+		Jenkins will download and install the 
 		plug-in automatically for you, however you will have to 
 		restart for the plug-in to be enabled.</para>
 		
@@ -65,11 +63,11 @@
 			</mediaobject>
 		</para>
 		
-		<para>After you have already restarted your <application>Jenkins</application>, 
+		<para>After you have already restarted your Jenkins, 
 		go to <emphasis>Manage Jenkins</emphasis> again, <emphasis>Configure System</emphasis> 
-		option and look for the <application>TestLink</application> 
-		section. Fill the <application>TestLink</application> configuration form 
-		with a name for your <application>TestLink</application> installation, 
+		option and look for the TestLink 
+		section. Fill the TestLink configuration form 
+		with a name for your TestLink installation, 
 		the <acronym>URL</acronym> of the <acronym>XML-RPC API</acronym> and your 
 		<emphasis>devKey</emphasis>.</para>
 		
@@ -81,11 +79,11 @@
 			</mediaobject>
 		</para>
 		
-		<para>By default the <application>TestLink</application> 
+		<para>By default the TestLink 
 		<acronym>XML-RPC API</acronym> can be found at 
 		<emphasis>http://&lt;host>:&lt;port>/lib/api/xmlrpc.php</emphasis>. 
 		The <emphasis>devKey</emphasis> can	be obtained by entering 
-		<application>TestLink</application>, clicking on 
+		TestLink, clicking on 
 		<emphasis>My Settings</emphasis> (top menu) 
 		and generating a new <emphasis>devKey</emphasis>, if there is none yet. 
 		If you cannot see the <acronym>API</acronym> interface section in 
@@ -114,8 +112,8 @@
 		<para>For the sake of simplicity, we will point the job workspace to 
 		our Java project folder. In a real-world project it is more likely 
 		that you will have your test project stored in some kind of 
-		<acronym>SCM</acronym>, like <application>SVN</application> or 
-		<application>git</application>. To change the default workspace location, 
+		<acronym>SCM</acronym>, like SVN or 
+		git. To change the default workspace location, 
 		look for <emphasis>Advanced Project Options</emphasis> and expand its 
 		options by clicking on <emphasis>Advanced...</emphasis>. Then mark 
 		<emphasis>Use custom workspace</emphasis> and fill the input text 
@@ -135,7 +133,7 @@
 		<para>Click on <emphasis>Add build step</emphasis> button to expand 
 		its options and then click on <emphasis>Invoke TestLink</emphasis>. 
 		It will show a new form with options to integrate your 
-		<application>Jenkins</application> job with <application>TestLink</application>. 
+		Jenkins job with TestLink. 
 		Fill this form with the following information created in 
 		<xref linkend="chapter.4" />.</para>
 		
@@ -144,7 +142,7 @@
 		<para>
 			<itemizedlist>
 				<listitem>
-					<para><application>TestLink</application> version: select the version 
+					<para>TestLink version: select the version 
 			that you created in the global configuration.</para>
 				</listitem>
 				<listitem>
@@ -202,7 +200,7 @@
 		
 			<title>TestLink version</title>
 			
-			<para>This is the name of your <application>TestLink</application> 
+			<para>This is the name of your TestLink 
 			installation in Jenkins global configuration.</para>
 			
 		</section>
@@ -212,7 +210,7 @@
 			<title>Test Project name</title>
 			
 			<para>This is the name of your <emphasis>Test Project</emphasis> 
-			in <application>TestLink</application>.</para>
+			in TestLink.</para>
 			
 		</section>
 		
@@ -221,7 +219,7 @@
 			<title>Test Plan name</title>
 			
 			<para>This is the name of your <emphasis>Test Plan</emphasis> 
-			in <application>TestLink</application>.</para>
+			in TestLink.</para>
 			
 		</section>
 		
@@ -230,7 +228,7 @@
 			<title>Build name</title>
 			
 			<para>This is the name of your <emphasis>Build</emphasis> 
-			in <application>TestLink</application>. You can use environment 
+			in TestLink. You can use environment 
 			variables in this field following the pattern ${VARIABLE_NAME}.</para>
 			
 		</section>
@@ -240,7 +238,7 @@
 			<title>Custom fields</title>
 			
 			<para>This is a comma separated list of <emphasis>Custom Fields</emphasis> 
-			in <application>TestLink</application>.</para>
+			in TestLink.</para>
 			
 		</section>
 		
@@ -260,7 +258,7 @@
 			<title>Iterative test command</title>
 			
 			<para>This command is executed for each automated test case 
-			within your Test Plan in <application>TestLink</application>. 
+			within your Test Plan in TestLink. 
 			You can use environment variables in this field.</para>
 			
 		</section>
@@ -271,7 +269,7 @@
 			
 			<para>This is the name of the custom field that the plug-in will 
 			use to match a <emphasis>Test Result</emphasis> with an automated test case from 
-			<application>TestLink</application>. The way that this field is 
+			TestLink. The way that this field is 
 			used when the plug-in is scanning the test results depends on the 
 			<emphasis>Test Strategy</emphasis>.</para>
 			
@@ -279,13 +277,13 @@
 		
 		<section>
 		
-			<title><application>JUnit</application>, <application>TestNG</application> and 
+			<title>JUnit, TestNG and 
 			<acronym>TAP</acronym> report files patterns.</title>
 			
 			<para>The plug-in uses these patterns to find test results of your 
 			tests execution (single test command or iterative). You can use multiple 
 			patterns at once, but it may lead to inconsistencies in 
-			your test results in <application>TestLink</application>.</para>
+			your test results in TestLink.</para>
 			
 		</section>
 		
@@ -294,7 +292,7 @@
 			<title>Transactional execution?</title>
 			
 			<para>If this option is marked and any test fails, all remaining 
-			tests will be marked as <emphasis>Blocked</emphasis> in <application>TestLink</application>.</para>
+			tests will be marked as <emphasis>Blocked</emphasis> in TestLink.</para>
 			
 		</section>
 		
@@ -302,14 +300,14 @@
 		
 			<title>Environment variables</title>
 			
-			<para>The plug-in retrieves all the information from <application>TestLink</application> for your 
+			<para>The plug-in retrieves all the information from TestLink for your 
 			Test Project, Test Plan, Build and automated Test Cases. You can use any 
-			of this information to execute your tests. <application>Jenkins</application> 
+			of this information to execute your tests. Jenkins 
 			itself provides the <emphasis>Environment Variables</emphasis>, plus 
 			<emphasis>Build Environment Variables</emphasis> (such as 
 			<emphasis>BUILD_ID</emphasis>, which holds the date time of your 
 			job). The plug-in injects the information retrieved from 
-			<application>TestLink</application> as environment variables. </para>
+			TestLink as environment variables. </para>
 			
 			<para>This way you can use the value of the <emphasis>Java class</emphasis> 
 			custom field value that you created in <xref linkend="chapter.4" /> 
@@ -321,13 +319,13 @@
 			
 			<para>As you can see, our test command uses the <emphasis>Java class</emphasis> 
 			custom field value to specify the name of the test to 
-			<application>Maven</application> (<application>Maven Surefire Plug-in, actually</application>). 
+			Maven (Maven Surefire Plug-in, actually). 
 			Below you will find a list with the information that the plug-in 
 			makes available for your job configuration. As custom fields names 
 			may vary, the strategy used is capitalize the custom field name, 
 			replace spaces with <emphasis>_</emphasis> and append it to 
 			<emphasis>TESTLINK_TESTCASE_</emphasis>, which represents 
-			information of a Test Case in <application>TestLink</application>.</para>
+			information of a Test Case in TestLink.</para>
 			
 			<para>
 				<itemizedlist>

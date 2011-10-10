@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <chapter id="chapter.8">
+
 	<title>Advantages of using <application>Jenkins TestLink Plug-in</application></title>
 	
 	<para>The plug-in is not intended to be a test automation 
