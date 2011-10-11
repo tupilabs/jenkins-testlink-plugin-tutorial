@@ -12,7 +12,7 @@
 		<emphasis>testlink-1.9.3.tar.gz</emphasis> from 
 		<ulink url="http://www.teamst.org">http://www.teamst.org</ulink>. 
 		Decompress it with <command>tar -zxvf testlink-1.9.3.tar.gz</command>. 
-		Move the directory created to your http server root directory and open 
+		Move the directory created to your HTTP server root directory and open 
 		<ulink url="http://localhost/testlink-1.9.3">
 		http://localhost/testlink-1.9.3</ulink> in your browser.</para>
 		
@@ -100,7 +100,7 @@
 		with user admin and password admin.</para>
 		
 		<para>By default, the XML-RPC comes disabled in TestLink. Let's enable 
-		it by editting config.inc.php, located in TestLink root folder.</para>
+		it by editing config.inc.php, located in TestLink root folder.</para>
 		
 		<para>
 		  <command>$tlCfg->api->enabled = TRUE;</command>
@@ -110,7 +110,7 @@
 		database are ordered by its ID. This way, the order of attachments will 
 		be preserved in TestLink. We could use the date that the attachment was 
 		inserted in database, however the precision of the date_added column is 
-		in secods, what could lead to inconsistencies in the way that 
+		in seconds, what could lead to inconsistencies in the way that 
 		attachments are displayed in TestLink.</para>
 		
 		<para>

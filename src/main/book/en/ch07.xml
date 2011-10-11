@@ -1,59 +1,138 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <chapter id="chapter.7">
 
-	<title>Strategies for finding Test Results</title>
+	<title>Strategies to find Test Results</title>
 	
 	<para>After your automated tests are executed the plug-in has to look for 
 	<emphasis>Test Results</emphasis>. This way it will know whether an 
-	automated test was executed correctly or not and then update the test status 
-	in <application>TestLink</application>.</para>
+	automated test was executed correctly or not and then it can update the 
+	test execution status in TestLink.</para>
 	
-	<para><application>Jenkins TestLink Plug-in</application> currently has 
-	three strategies for finding Test Results: <emphasis>TAP</emphasis>, 
-	<emphasis>TestNG</emphasis> and <emphasis>JUnit</emphasis>. All these three 
-	strategies uses a key custom field to associate a test result with an 
-	automated test case.</para>
+	<para>Jenkins TestLink Plug-in uses three strategies to find Test Results: 
+	<emphasis>TAP</emphasis>, <emphasis>TestNG</emphasis> and 
+	<emphasis>JUnit</emphasis>. All these strategies use a key custom field to 
+	associate a test result in Jenkins with an automated test case in 
+	TestLink.</para>
 	
 	<section>
 	
-		<title><application>JUnit</application></title>
+		<title>JUnit</title>
+    
+        <para>The plug-in scans the JUnit test results twice. The first time 
+        it matches the key custom field value against the JUnit suite name, and 
+        in its second turn it matches the key custom field value against the 
+        JUnit <emphasis>class name or test name</emphasis>.</para>
+        
+        <para>The reason why the plug-in needs to use either the class or the 
+        test name is that the JUnit format is used by many different tools, 
+        without having a de facto DTD or XML Schema document. First the plug-in 
+        tries to use the class name. If it is empty, the plug-in uses the test 
+        name.</para>
 
-		<para>For <application>JUnit</application>, the plug-in uses the name 
-		of the test suite. If the test suite name is the same as the value of 
-		the key custom field of a test case, then the plug-in checks if failures or 
-		errors attributes of the testsuite are greater than 0 (zero). 
-		If so, the test case is updated with the status failed. 
-		Otherwise it is updated with passed.</para>
+        <para>
+            <programlisting language="xml">
+<![CDATA[<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite failures="1" time="0.078" errors="0" skipped="0" tests="1" name="A Suite">
+  <testcase time="0" classname="tcA" name="testVoid">
+    <failure type="junit.framework.AssertionFailedError" message="null">junit....</failure>
+  </testcase>
+  <testcase time="0" classname="tcB" name="testVoid" />
+  <testcase time="0" classname="tcC" name="testVoid" />
+  <testcase time="0" name="nameA" />
+  <testcase time="0" name="nameB" />
+</testsuite>]]>
+            </programlisting>
+        </para>
+
+		<para>In the example above, we have a test suite which failed, and five 
+		test cases, where only one failed. Let's suppose you created this test 
+		suite to execute an automated test case from TestLink. This would mean 
+		that you have a test case in TestLink with a custom field which value 
+		is <emphasis>A Suite</emphasis> (we assume you are using this custom 
+		field as key in the job configuration). The plug-in, after scanning the 
+		test results, it will update your test execution status to 
+		<emphasis>Failed</emphasis> in TestLink, because the test suite has 
+		failed.</para>
+		
+		<para>Now, suppose you created many test cases for your automated 
+		test cases from TestLink, and tcB is the value of your key custom 
+		field in TestLink. Then the plug-in will update the test case execution 
+		status to <emphasis>Passed</emphasis>, as this test case hasn't failed.
+		</para>
 	
 	</section>
 	
 	<section>
 	
-		<title><application>TestNG</application></title>
+		<title>TestNG</title>
 
-		<para>For <application>TestNG</application>, the plug-in uses the 
-		class name of the test as key. Usually a <application>TestNG</application> 
-		<acronym>XML</acronym> report contains a suite with many tests. 
-		The plug-in looks for the name of the classes of the tests. If a 
-		<application>TestNG</application> class name is the same as the value 
-		of the key custom field of a test case, then the plug-in checks the 
-		status of the methods of the class. If a class contains a method that 
-		failed, then the test case is updated with the status failed. 
-		Otherwise it is updated with passed.</para>
+        <para>The strategy used for TestNG is quite similar to the JUnit one. 
+        The plug-in scans the test results twice, also matching the key custom 
+        field value against the TestNG suite name and then against each TestNG 
+        class name.</para>
+
+		<para>
+		  <programlisting language="xml">
+<![CDATA[<testng-results>
+  <reporter-output>
+  </reporter-output>
+  <suite name="Command line suite" duration-ms="0" started-at="2010-11-17T13:31:41Z" finished-at="2010-11-17T13:31:41Z">
+    <groups>
+    </groups>
+    <test name="Command line test" duration-ms="0" started-at="2010-11-17T13:31:41Z" finished-at="2010-11-17T13:31:41Z">
+      <class name="br.eti.kinoshita.Test">
+        <test-method status="FAIL" signature="testVoid()" name="testVoid" duration-ms="0" started-at="2010-11-17T13:31:41Z" finished-at="2010-11-17T13:31:41Z">
+        </test-method>
+      </class>
+    </test>
+  </suite>
+</testng-results>]]>
+		  </programlisting>
+		</para>
+		
+		<para>In the above example, we have a test suite named <emphasis>
+		Command line suite</emphasis>, and a class which name is <emphasis>
+		br.eti.kinoshita.Test</emphasis>. You could have a key custom field 
+		in TestLink which value was the test suite name or the class name. 
+		In this case, both situations would lead to the test execution status 
+		in TestLink being updated to <emphasis>Failed</emphasis>. The TestNG 
+		test suite status is defined by its tests status, while the class 
+		status is defined by its status attribute.</para>
 	
 	</section>
 	
 	<section>
 	
-		<title><acronym>TAP</acronym></title>
+		<title>TAP - Test Anything Protocol</title>
 
-		<para>For <acronym>TAP</acronym>, the plug-in uses the <acronym>TAP</acronym> 
-		file name as key. If the <acronym>TAP</acronym> file name is the same 
-		as the value of the key custom field of a test case, 
-		then the plug-in checks whether the <acronym>TAP</acronym> file 
-		contains errors (not ok). If so, the test case is updated in 
-		<application>TestLink</application> with the status failed. 
-		Otherwise it is updated with passed.</para>
+		<para>Lastly, we have TAP. Here the plug-in simply utilizes the TAP 
+		file name as option to match it against the key custom field value. If 
+		the TAP file contains any <emphasis>Bail out!</emphasis>, 
+		<emphasis>not ok</emphasis> or <emphasis>TODO directive</emphasis>, 
+		then the test execution status is updated to <emphasis>
+		Failed</emphasis> in TestLink. If the TAP file contains any 
+		<emphasis>SKIP directive</emphasis> then the plug-in updates the test 
+		execution status to <emphasis>Blocked</emphasis>. Otherwise, the plug-in 
+		considers that the test must be marked as <emphasis>Passed</emphasis>.
+		</para>
+		
+		<para>
+		  <programlisting>
+<![CDATA[1..3
+ok 1 testOk
+ok 2
+not ok 3]]>
+		  </programlisting>
+		</para>
+		
+		<para>The example above shows a <emphasis>TAP Stream</emphasis> (that 
+		was stored in a file), which has three test results, and one of the 
+		failed. Hence the test execution status will be updated as 
+		<emphasis>Failed</emphasis> in TestLink.</para>
+		
+		<para>Using TAP, you can define the Platform (defined in TestLink) that 
+		you used for your tests or extra attachments to be uploaded to 
+		TestLink. These topics are covered in <xref linkend="chapter.9" />.</para>
 	
 	</section>
 	

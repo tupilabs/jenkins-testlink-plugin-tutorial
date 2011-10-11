@@ -3,7 +3,7 @@
 	<title>An Introduction to TestLink</title>
 	
 	<para>TestLink is an open source test management tool written in PHP. In 
-	order to install TestLink you will need a http server with PHP 5 and a 
+	order to install TestLink you will need a HTTP server with PHP 5 and a 
 	database. The databases currently supported by TestLink out of the box are 
 	MySQL, Postgre SQL and MS SQL, although there are users that managed to use 
 	Oracle too. You can download it from <ulink url="http://www.teamst.org">
