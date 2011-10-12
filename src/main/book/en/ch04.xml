@@ -97,7 +97,8 @@
 		</para>
 		
 		<para>If everything worked out correctly you should be asked to log in 
-		with user admin and password admin.</para>
+		with user admin and password admin. The examples in this tutorial 
+		require you to have a user with administrator rights in TestLink.</para>
 		
 		<para>By default, the XML-RPC comes disabled in TestLink. Let's enable 
 		it by editing config.inc.php, located in TestLink root folder.</para>

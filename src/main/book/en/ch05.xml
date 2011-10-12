@@ -32,7 +32,8 @@
 	
 		<para>Go to <ulink url="http://localhost:8080">http://localhost:8080</ulink> 
 		to check if your installation is working. We will call this page as	
-		main screen from now on.</para>
+		main screen from now on. The examples in this tutorial require you 
+		to have administrator rights in Jenkins.</para>
 	
 	</section>
 	
@@ -157,7 +158,7 @@
 		<para>Configure your job with the following settings.</para>
 		
 		<para>
-		  <table frame="all">
+		  <table frame="all"><title>Jenkins TestLink Plug-in settings explanation</title>
 		      <tgroup cols="2" align="left" colsep="1" rowsep="1">
 		          <colspec colname="c1" />
 		          <colspec colname="c2" />

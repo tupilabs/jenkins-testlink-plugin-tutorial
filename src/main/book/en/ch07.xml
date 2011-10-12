@@ -18,16 +18,25 @@
 	
 		<title>JUnit</title>
     
-        <para>The plug-in scans the JUnit test results twice. The first time 
+        <para>TestLink plug-in scans the JUnit test results twice. The first time 
         it matches the key custom field value against the JUnit suite name, and 
         in its second turn it matches the key custom field value against the 
         JUnit <emphasis>class name or test name</emphasis>.</para>
         
-        <para>The reason why the plug-in needs to use either the class or the 
-        test name is that the JUnit format is used by many different tools, 
-        without having a de facto DTD or XML Schema document. First the plug-in 
-        tries to use the class name. If it is empty, the plug-in uses the test 
-        name.</para>
+        <para>Every time the plug-in finds a pair that matches (be it in a 
+        JUnit suite name or a JUnit class name or test name) it looks for the 
+        test result status. In case of a test suite, if it has any errors or 
+        failures, then the status is set to <emphasis>Failed</emphasis>, 
+        otherwise the status is set to <emphasis>Passed</emphasis>.</para>
+        
+        <para>The reason why TestLink plug-in needs to use either JUnit XML 
+        element &lt;testcase>’s attribute <emphasis>classname</emphasis> or 
+        the attribute <emphasis>testname</emphasis> is that the JUnit format is 
+        used by many different tools, without having a de facto DTD or XML 
+        Schema document. First the plug-in tries to use the JUnit XML element 
+        &lt;testcase>'s attribute <emphasis>classname</emphasis>. If it is 
+        empty, JUnit XML element &lt;testcase>'s attribute 
+        <emphasis>testname</emphasis>.</para>
 
         <para>
             <programlisting language="xml">
@@ -70,6 +79,12 @@
         The plug-in scans the test results twice, also matching the key custom 
         field value against the TestNG suite name and then against each TestNG 
         class name.</para>
+        
+        <para>Every time the plug-in finds a pair that matches (be it in a 
+        TestNG suite name or a TestNG class name or test name) it looks for the 
+        test result status. In case of a test suite, if its has any failures, 
+        then the status is set to <emphasis>Failed</emphasis>, otherwise 
+        the status is set to <emphasis>Passed</emphasis>.</para>
 
 		<para>
 		  <programlisting language="xml">
