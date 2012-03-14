@@ -7,7 +7,7 @@
 	<groupId>br.eti.kinoshita</groupId>
 	<artifactId>jenkins-testlink-plugin-tutorial</artifactId>
 	<name>Jenkins TestLink Plug-in Tutorial</name>
-	<version>0.2-SNAPSHOT</version>
+	<version>0.3-SNAPSHOT</version>
 	<description>Jenkins TestLink Plug-in Tutorial</description>
 
 	<url>http://wiki.jenkins-ci.org/display/JENKINS/TestLink+Plugin</url>

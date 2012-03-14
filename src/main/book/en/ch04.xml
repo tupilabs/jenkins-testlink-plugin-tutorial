@@ -291,7 +291,7 @@
 		information on this screen for the automation are the execution type 
 		and the Java class (custom field created in the previous step). In 
 		execution type select Automated and for Java class fill with the 
-		java class hudson.plugins.testlink.examples.TestCurrentTime (present in 
+		java class jenkins.plugins.testlink.examples.TestCurrentTime (present in 
 		the example project).</para>
 		
 		<para>

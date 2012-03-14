@@ -5,7 +5,7 @@
 
     <test name="Examples">
         <classes>
-            <class name="hudson.plugins.testlink.examples.TestCurrentTime"></class>
+            <class name="jenkins.plugins.testlink.examples.TestCurrentTime"></class>
            </classes>
     </test>
  
