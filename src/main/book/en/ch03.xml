@@ -11,11 +11,11 @@
 	
 	<para>This way, while Jenkins handles the execution of jobs and tasks such 
 	as downloading source code from an SCM, TestLink maintains the structure of 
-	your tests, as well as other assets as Test Plan, Custom Fields, Reports 
+	your tests, as well as other assets such as Test Plan, Custom Fields, Reports 
 	and Baselines.</para>
 	
 	<para>We will see how to configure our envinronment for this integration 
-	throughout the next chapters. While it is good to have a good written 
+	throughout the next chapters. While it is good to have a written 
 	explanation on how this integration works, probably it is a lot easier to 
 	understand how it works with a hands-on. The rest of this guide explains 
 	how to configure Jenkins and TestLink to run automated tests from a sample  

@@ -75,9 +75,9 @@
     </listitem>
   </orderedlist>
 
-  <para>For this guide you will need to download the latest and greatest 
-  version of Jenkins. At the moment that this guide is being written, the 
-  current version is <emphasis>1.433</emphasis>. However it is very likely that 
+  <para>For this guide we suggest you to use the LTS (long term support) version 
+  of Jenkins. At the moment that this guide is being written, the 
+  current version is <emphasis>1.424.6</emphasis>. However it is very likely that 
   what you will learn here will work with newer versions of Jenkins. Jenkins 
   development team does a great job not only developing cool features, but also 
   keeping backward compatibility between versions.</para>

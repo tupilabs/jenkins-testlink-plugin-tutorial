@@ -9,11 +9,11 @@
 	</emphasis>.</para>
 	
 	<para>
-		<mediaobject id="jenkins_008">
+		<mediaobject id="jenkins_011">
 			<imageobject>
 				<imagedata 
 				    align="center" 
-				    fileref="../media/jenkins_008.png" 
+				    fileref="../media/jenkins_011.png" 
 				    width="100%" 
 				    contentdept="100%" 
 				    format="PNG" />
@@ -26,11 +26,11 @@
 	screen must appear, showing a graph with the test results.</para>
 	
 	<para>
-		<mediaobject id="jenkins_009">
+		<mediaobject id="jenkins_012">
 			<imageobject>
 				<imagedata 
 				    align="center" 
-				    fileref="../media/jenkins_009.png" 
+				    fileref="../media/jenkins_012.png" 
 				    width="100%" 
 				    contentdept="100%" 
 				    format="PNG" />
@@ -43,11 +43,11 @@
 	<emphasis>Build History</emphasis>.</para>
 	
 	<para>
-		<mediaobject id="jenkins_010">
+		<mediaobject id="jenkins_013">
 			<imageobject>
 				<imagedata 
 				    align="center" 
-				    fileref="../media/jenkins_010.png" 
+				    fileref="../media/jenkins_013.png" 
 				    width="100%" 
 				    contentdept="100%" 
 				    format="PNG" />
@@ -56,11 +56,11 @@
 	</para>
 	
 	<para>
-		<mediaobject id="jenkins_011">
+		<mediaobject id="jenkins_014">
 			<imageobject>
 				<imagedata 
 				    align="center" 
-				    fileref="../media/jenkins_011.png" 
+				    fileref="../media/jenkins_014.png" 
 				    width="100%" 
 				    contentdept="100%" 
 				    format="PNG" />
