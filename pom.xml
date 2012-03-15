@@ -4,7 +4,7 @@
 
 	<inceptionYear>2011</inceptionYear>
 	
-	<groupId>br.eti.kinoshita</groupId>
+	<groupId>com.tupilabs</groupId>
 	<artifactId>jenkins-testlink-plugin-tutorial</artifactId>
 	<name>Jenkins TestLink Plug-in Tutorial</name>
 	<version>0.3-SNAPSHOT</version>
