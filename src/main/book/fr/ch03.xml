@@ -38,7 +38,7 @@
 	well as uploading any attachments defined by you. This integration is 
 	achieved with <application>Jenkins TestLink Plugin</application>.</para>
 	
-	<para>We will see how to configure our envinronment for this integration 
+	<para>We will see how to configure our environment for this integration 
 	throughout the next chapters. While it is good to have a good written 
 	explanation on how this integration works, probably it is a lot easier 
 	to understand how it works with a hands-on. The rest of this guide 
@@ -47,8 +47,8 @@
 	a sample test project. This test project is a Java project that uses 
 	<application>Maven</application> and <application>TestNG</application>, you 
 	can download it from 
-	<ulink url="https://github.com/kinow/jenkins-testlink-plugin-the-definitive-guide/blob/master/sample-test-project.tar.gz?raw=true">
-	https://github.com/kinow/jenkins-testlink-plugin-the-definitive-guide/blob/master/sample-test-project.tar.gz?raw=true</ulink>.</para>
+	<ulink url="https://github.com/tupilabs/jenkins-testlink-plugin-tutorial">
+	https://github.com/tupilabs/jenkins-testlink-plugin-tutorial</ulink>.</para>
 	
 	<para><application>Jenkins TestLink Plug-in</application> is licensed under the 
 	<acronym>MIT</acronym> License and its 
