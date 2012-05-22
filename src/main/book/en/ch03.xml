@@ -14,15 +14,15 @@
 	your tests, as well as other assets such as Test Plan, Custom Fields, Reports 
 	and Baselines.</para>
 	
-	<para>We will see how to configure our envinronment for this integration 
+	<para>We will see how to configure our environment for this integration 
 	throughout the next chapters. While it is good to have a written 
 	explanation on how this integration works, probably it is a lot easier to 
 	understand how it works with a hands-on. The rest of this guide explains 
 	how to configure Jenkins and TestLink to run automated tests from a sample  
 	test project. This test project is a Java project that uses Maven and  
 	TestNG and you can download the source code from 
-	<ulink url="https://github.com/kinow/jenkins-testlink-plugin-tutorial">
-	https://github.com/kinow/jenkins-testlink-plugin-tutorial</ulink> (as well 
+	<ulink url="https://github.com/tupilabs/jenkins-testlink-plugin-tutorial">
+	https://github.com/tupilabs/jenkins-testlink-plugin-tutorial</ulink> (as well 
 	as the DocBook source for this book).</para>
 	
 	<para>The current version of Jenkins TestLink Plug-in while this book is 
