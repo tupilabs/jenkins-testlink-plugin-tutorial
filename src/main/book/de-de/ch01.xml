@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<chapter id="chapter.1">
+  <title>Einführung in Jenkins</title>
+
+  <para>Jenkins (vormals Hudson) ist ein Continuous Integration Server (Dienst 
+  zur fortlaufenden Integration einer Anwendung) geschrieben in der
+  Programmiersprache Java. 
+  Dieser kann als ausführbares Webarchiv (war-Datei) heruntergeladen werden
+  unter <ulink url="http://www.jenkins-ci.org">
+  http://www.jenkins-ci.org</ulink>. Gestartet wird es durch den Befehl
+  <command>java -jar jenkins.war</command>. Jenkins enthält einen Servlet
+  Container (Winstone). Es gibt auch die Möglichkeit es in anderen Anwendungsdiensten
+  wie Tomcat, Jetty, JBoss, etc. zu starten. Jenkins benutzt keinen Datenbankdienst zur
+  persistenten Speicherung der Konfiguration. Jenkins nutzt XStream, um Daten in
+  XML-Dateien zu persistieren.</para>
+
+  <para>
+    <mediaobject>
+      <imageobject role="html">
+        <imagedata 
+            align="center" 
+            contentwidth="350px" 
+            fileref="../media/jenkins_logo.png" 
+            format="PNG">
+        </imagedata>
+      </imageobject>
+    </mediaobject>
+  </para>
+
+  <para>With Jenkins you can create, monitor and schedule jobs. There are 
+  plug-ins for almost anything that you may think about, from different
+  SCMs (git, mercury, SVN, CVS) to plug-ins for integrating your Jenkins with
+  Selenium, Gerrit, TestLink and other tools.</para>
+
+  <para>Here is a summarized list of Jenkins features that is available in 
+  <ulink url="http://wiki.jenkins-ci.org/display/JENKINS/TestLink+Plugin">
+  Jenkins Wiki</ulink>: </para>
+
+  <orderedlist>
+    <listitem>
+      <para>Easy installation</para>
+    </listitem>
+
+    <listitem>
+      <para>Easy configuration</para>
+    </listitem>
+
+    <listitem>
+      <para>Change set support</para>
+    </listitem>
+
+    <listitem>
+      <para>Permanent links</para>
+    </listitem>
+
+    <listitem>
+      <para>RSS/E-mail/IM Integration</para>
+    </listitem>
+
+    <listitem>
+      <para>After-the-fact-tagging</para>
+    </listitem>
+
+    <listitem>
+      <para>JUnit/TestNG test reporting</para>
+    </listitem>
+
+    <listitem>
+      <para>Distributed builds</para>
+    </listitem>
+
+    <listitem>
+      <para>File fingerprinting</para>
+    </listitem>
+
+    <listitem>
+      <para>Plugin Support</para>
+    </listitem>
+  </orderedlist>
+
+  <para>For this guide we suggest you to use the LTS (long term support) version 
+  of Jenkins. At the moment that this guide is being written, the 
+  current version is <emphasis>1.424.6</emphasis>. However it is very likely that 
+  what you will learn here will work with newer versions of Jenkins. Jenkins 
+  development team does a great job not only developing cool features, but also 
+  keeping backward compatibility between versions.</para>
+
+  <para>
+    <mediaobject>
+      <imageobject>
+        <imagedata 
+            align="center" 
+            fileref="../media/jenkins_001.png" 
+            width="100%" 
+            contentdept="100%" 
+            format="PNG">
+        </imagedata>
+      </imageobject>
+    </mediaobject>
+  </para>
+
+  <para>Jenkins is licensed under the MIT License and its code is hosted at 
+  GitHub - <ulink url="http://github.com/jenkinsci">
+  http://github.com/jenkinsci</ulink>.</para>
+</chapter>

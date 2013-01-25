@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<chapter id="chapter.3">
+	<title>Jenkins and TestLink Integration</title>
+	
+	<para>The integration between Jenkins and TestLink can be achieved with 
+	Jenkins TestLink Plug-in. The plug-in resides in Jenkins, being able to 
+	use some of its nice features like executing multiple jobs, scheduling 
+	jobs, distributed execution and a plethora of plug-ins. To retrieve the 
+	data from TestLink for tests, as well as to report the test case execution 
+	status to TestLink, the plug-in uses TestLink XML-RPC API.</para>
+	
+	<para>This way, while Jenkins handles the execution of jobs and tasks such 
+	as downloading source code from an SCM, TestLink maintains the structure of 
+	your tests, as well as other assets such as Test Plan, Custom Fields, Reports 
+	and Baselines.</para>
+	
+	<para>We will see how to configure our environment for this integration 
+	throughout the next chapters. While it is good to have a written 
+	explanation on how this integration works, probably it is a lot easier to 
+	understand how it works with a hands-on. The rest of this guide explains 
+	how to configure Jenkins and TestLink to run automated tests from a sample  
+	test project. This test project is a Java project that uses Maven and  
+	TestNG and you can download the source code from 
+	<ulink url="https://github.com/tupilabs/jenkins-testlink-plugin-tutorial">
+	https://github.com/tupilabs/jenkins-testlink-plugin-tutorial</ulink> (as well 
+	as the DocBook source for this book).</para>
+	
+	<para>The current version of Jenkins TestLink Plug-in while this book is 
+	being written is <emphasis>3.0.2</emphasis>.</para>
+	
+	<para>Jenkins TestLink Plug-in is licensed under the MIT License and its 
+	code is stored in github - 
+	<ulink url="http://github.com/jenkinsci/testlink-plugin">
+	http://github.com/jenkinsci/testlink-plugin</ulink>.</para>
+	
+</chapter>

@@ -31,6 +31,15 @@
 				<role>Developer Author</role>
 			</roles>
 		</developer>
+        <developer>
+            <id>omerkel</id>
+            <name>Oliver Merkel</name>
+            <email>Merkel.Oliver@web.de</email>
+            <timezone>+2</timezone>
+            <roles>
+                <role>Developer Author</role>
+            </roles>
+        </developer>
 	</developers>
 
 	<scm>
@@ -249,6 +258,42 @@
 			</build>
 		</profile>
 	
+		<profile>
+			<id>de-de</id>
+			<build>
+				<plugins>
+					<plugin>
+						<groupId>com.agilejava.docbkx</groupId>
+						<artifactId>docbkx-maven-plugin</artifactId>
+						<version>2.0.11</version>
+						
+						<configuration>
+							<sourceDirectory>${basedir}/src/main/book/de-de/</sourceDirectory>
+							<includes>book.xml</includes>
+							<generatedSourceDirectory>${project.build.directory}/book/generated/de-de</generatedSourceDirectory>
+							<xincludeSupported>true</xincludeSupported>
+							<highlightSource>1</highlightSource>
+							<paperType>A4</paperType>
+							<fop1Extensions>1</fop1Extensions>
+							<foCustomization>src/main/book/stylesheets/fo/docbook.xsl</foCustomization>
+							<targetDirectory>${project.build.directory}/book/de-de/</targetDirectory>
+							<postProcess>
+								<copy todir="${basedir}/target/book/de-de/media">
+									<fileset dir="${basedir}/src/main/book/media/">
+										<include name="**/*.css" />
+										<include name="**/*.png" />
+										<include name="**/*.gif" />
+										<include name="**/*.jpg" />
+									</fileset>
+								</copy>
+							</postProcess>
+						</configuration>
+						
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
+
 	</profiles>
 
 	<dependencies>

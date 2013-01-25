@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<chapter id="chapter.9">
+
+	<title>Appendix</title>
+	
+	<section>
+		
+		<title>Adding attachments to your test results</title>
+		
+		<para>Each test result file is automagically attached to its automated 
+		test case in TestLink. That is the default behavior in the plug-in. 
+		You can extend it, only if you are using TAP. You will have to create a 
+		<emphasis>YAMLish</emphasis> following the example below (it is 
+		important that you encode the file content in Base64).</para>
+		
+		<para>
+		  <programlisting>
+<![CDATA[1..2
+ok 1
+not ok 2 - br.eti.kinoshita.selenium.TestListVeterinarians#testGoogle
+  ---
+  extensions:
+	  Files:
+	      /tmp/screenshot3562328890173159732.png:
+	        File-Location: /tmp/screenshot3562328890173159732.png
+	        File-Title: screenshot3562328890173159732.png
+	        File-Description: Main page
+	        File-Size: 114542
+	        File-Name: screenshot3562328890173159732.png
+	        File-Content: "iVBORw0KGgoAAAANSUhEUgAAA+IAAAJqCAYAAACvjvpKAAAgAElEQVR4nOy9d1RU5/r3ff543+dZ\r\
+                \n613v8zy/95RfjjkmFmwgVXrvvffee1PBjtKbCoJ0qaIodqMYe8EWwRo1atQkRmOixkTFAkYFvu8f\r\
+                ...
+                ...
+            File-Type: image/png
+]]>
+		  </programlisting>
+		</para>
+		
+		<para>An issue that wasn't solved yet is that if you are running your 
+		job in a distributed environment, then the plug-in won't be able to find 
+		the attachments for your test result.</para>
+		
+	</section>
+	
+	<section>
+	
+	   <title>Using Platforms</title>
+	   
+	   <para>TestLink has a very nice feature, Platforms. Useful specially if 
+	   you have tests that run is some specific environment and you use some 
+	   logic (like pairwise) to choose what is going to be tested.</para>
+	   
+	   <para>As well as attachments, the only way to use Platforms while 
+	   integrating Jenkins and TestLink is using TAP. You have to create a 
+	   <emphasis>YAMLish</emphasis> entry like the following.</para>
+	   
+	   <para>
+	   <programlisting>
+<![CDATA[1..3
+ok 1
+ok 2
+  ---
+  extensions: 
+    TestLink: 
+      Platform: EC1
+  ...
+ok 3]]>
+	   </programlisting>
+	   </para>
+	   
+	   <para>As you can see above, the TAP Stream has the platform EC1. The 
+	   plug-in scans a TAP Stream looking for this entry structure in each test 
+	   result and in the test plan.</para>
+	
+	</section>
+	
+	<section>
+	
+		<title>Plug-in behavior in distributed environments</title>
+	
+		<para>The calls to TestLink are executed in the master, as well as the 
+		graph generating and some Jelly back end code. The rest, what includes 
+		executing Build Steps and looking for and parsing test results is 
+		executed in the slave, if present.</para>
+	
+	</section>
+	
+	<section>
+	
+		<title>How to use the plug-in with SSL or basic authentication?</title>
+		
+		<para>In the global configuration of the plug-in, there is a 
+		<emphasis>Advanced</emphasis> button. Click on it and an extra option 
+		will be shown, <emphasis>TestLink Java API Properties</emphasis>.</para>
+		
+		<para>Click on the help icon on the right to see which options you can 
+		enable. They are used by <ulink url="http://testlinkjavaapi.sf.net">
+		testlink-java-api</ulink> to set properties in the connection.</para>
+		
+		<para>Among the properties, you may have to set xmlrpc.basicUsername 
+		and xmlrpc.basicPassword with the credentials used for basic 
+		authentication.</para>
+		
+		<para>For SSL, there are guides available in the Internet showing how 
+		to add a certificate to the Java key store and proceed with a SSL 
+		connection.</para>
+	
+	</section>
+	
+</chapter>

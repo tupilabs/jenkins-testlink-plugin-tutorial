@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<chapter id="chapter.8">
+
+	<title>Advantages of using Jenkins TestLink Plug-in</title>
+	
+	<para>The plug-in is not intended to be a test automation solution, though 
+	it helps you to automate your tests. It is not intended to manage your 
+	automated tests either, as this can be done in TestLink. The purpose of 
+	the plug-in is integrate Jenkins, a continuous integration server, 
+	and TestLink, a test management tool.</para>
+	
+	<para>There are three clear advantages in using this approach. First, 
+	if you are already using Jenkins as continuous integration server and 
+	TestLink as test management tool, then you won't have another tool to worry 
+	about. Simply install the plug-in and then DevOps will keep working in 
+	Jenkins, testers will keep working in TestLink and your boss will be more 
+	than happy to know that he won't need to buy another tool and training for 
+	an automated tests management tool.</para>
+	
+	<para>Secondly, it is language independent. You can run tests in PHP, Perl, 
+	Python, Java, Lua and even in C or C++. The only limitation here is that 
+	you have to output your test results either in JUnit, TestNG or TAP.</para>
+	
+	<para>And lastly, it is free. The plug-in team members are contributors of 
+	TestLink and maintainers of the TestLink Java API. We try to fix 
+	the issues in <ulink url="http://issues.jenkins-ci.org">Jenkins' JIRA</ulink> 
+	as fast as they can. So if you use the plug-in, send us your feedback, 
+	write in the plug-in Wiki about your case or buy us a beer.</para>
+	
+</chapter>

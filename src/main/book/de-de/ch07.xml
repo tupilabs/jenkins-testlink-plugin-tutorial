@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<chapter id="chapter.7">
+
+	<title>Result Seeking Strategies</title>
+	
+	<para>After your automated tests are executed the plug-in has to look for 
+	<emphasis>Test Results</emphasis>. This way it will know whether an 
+	automated test was executed correctly or not and then it can update the 
+	test execution status in TestLink.</para>
+	
+	<para>Jenkins TestLink Plug-in supports three different formats of results: 
+	<emphasis>JUnit</emphasis>, <emphasis>TestNG</emphasis> and 
+	<emphasis>TAP</emphasis>.</para>
+	
+	<section>
+	
+		<title>JUnit</title>
+		
+		<para>
+            <programlisting language="xml">
+<![CDATA[<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite failures="1" time="0.078" errors="0" skipped="0" tests="1" name="A Suite">
+  <testcase time="0" classname="tcA" name="testVoid">
+    <failure type="junit.framework.AssertionFailedError" message="null">junit....</failure>
+  </testcase>
+  <testcase time="0" classname="tcB" name="testVoid" />
+  <testcase time="0" classname="tcC" name="testVoid" />
+  <testcase time="0" name="nameA" />
+  <testcase time="0" name="nameB" />
+</testsuite>]]>
+            </programlisting>
+        </para>
+    
+        <section>
+        
+            <title>JUnit case name</title>
+        
+            <para>This strategy matches the case name with the key custom field 
+            value.</para>
+        
+        </section>
+        
+        <section>
+        
+            <title>JUnit class name</title>
+        
+            <para>This strategy matches the case class name with the key custom field 
+            value.</para>
+        
+        </section>
+        
+        <section>
+        
+            <title>JUnit method name</title>
+        
+            <para>This strategy matches &lt;package&gt;.&lt;classname&gt;#&lt;methodname&gt; with the key custom field 
+            value (e.g.: com.example.MyClass#testSomething)</para>
+        
+        </section>
+        
+        <section>
+        
+            <title>JUnit suite name</title>
+        
+            <para>This strategy matches the suite name with the key custom field 
+            value.</para>
+        
+        </section>
+        
+	</section>
+	
+	<section>
+	
+		<title>TestNG</title>
+
+		<para>
+		  <programlisting language="xml">
+<![CDATA[<testng-results>
+  <reporter-output>
+  </reporter-output>
+  <suite name="Command line suite" 
+    duration-ms="0" 
+    started-at="2010-11-17T13:31:41Z" 
+    finished-at="2010-11-17T13:31:41Z">
+    <groups>
+    </groups>
+    <test name="Command line test" 
+        duration-ms="0" 
+        started-at="2010-11-17T13:31:41Z" 
+        finished-at="2010-11-17T13:31:41Z">
+      <class name="br.eti.kinoshita.Test">
+        <test-method status="FAIL" 
+            signature="testVoid()" 
+            name="testVoid" 
+            duration-ms="0" 
+            started-at="2010-11-17T13:31:41Z" 
+            finished-at="2010-11-17T13:31:41Z">
+        </test-method>
+      </class>
+    </test>
+  </suite>
+</testng-results>]]>
+		  </programlisting>
+		</para>
+		
+		<section>
+        
+            <title>TestNG class name</title>
+        
+            <para>This strategy matches the class name with the key custom field 
+            value.</para>
+        
+        </section>
+        
+        <section>
+        
+            <title>TestNG method name</title>
+        
+            <para>This strategy matches &lt;package&gt;.&lt;classname&gt;#&lt;methodname&gt; with the key custom field 
+            value (e.g.: com.example.MyClass#testSomething)</para>
+        
+        </section>
+        
+        <section>
+        
+            <title>TestNG suite name</title>
+        
+            <para>This strategy matches the suite name with the key custom field 
+            value.</para>
+        
+        </section>
+		
+	</section>
+	
+	<section>
+	
+		<title>TAP - Test Anything Protocol</title>
+
+        <para>Using TAP, you can define the Platform (defined in TestLink) that 
+        you used for your tests or extra attachments to be uploaded to 
+        TestLink. These topics are covered in <xref linkend="chapter.9" />.</para>
+
+		<para>
+		  <programlisting>
+<![CDATA[1..3
+ok 1 testOk
+ok 2
+not ok 3]]>
+		  </programlisting>
+		</para>
+		
+		<section>
+        
+            <title>TAP file name</title>
+        
+            <para>This strategy matches the TAP Stream file name with the key custom field 
+            value.</para>
+        
+        </section>
+		
+	</section>
+	
+</chapter>
