@@ -27,30 +27,30 @@
     </mediaobject>
   </para>
 
-  <para>With Jenkins you can create, monitor and schedule jobs. There are 
-  plug-ins for almost anything that you may think about, from different
-  SCMs (git, mercury, SVN, CVS) to plug-ins for integrating your Jenkins with
-  Selenium, Gerrit, TestLink and other tools.</para>
+  <para>Jenkins dient zur Erzeugung, Überwachung und zeitlichen Einteilung von Aufgaben.
+  Es gibt Plug-ins für verschiedenste Aufgaben von Zugriffsverwaltungen auf unterschiedliche
+  Quellcode-Managementsysteme (SCMs wie etwa git, mercury, SVN, CVS) bis zu Plug-ins zur
+  Anbindung von Jenkins an Werkzeuge wie Selenium, Gerrit, TestLink und weiteren.</para>
 
-  <para>Here is a summarized list of Jenkins features that is available in 
+  <para>Als typische Eigenschaften und Fähigkeiten von Jenkins findet man im 
   <ulink url="http://wiki.jenkins-ci.org/display/JENKINS/TestLink+Plugin">
   Jenkins Wiki</ulink>: </para>
 
   <orderedlist>
     <listitem>
-      <para>Easy installation</para>
+      <para>Einfache Installation</para>
     </listitem>
 
     <listitem>
-      <para>Easy configuration</para>
+      <para>Einfache Konfiguration</para>
     </listitem>
 
     <listitem>
-      <para>Change set support</para>
+      <para>Unterstützung von Änderungsüberwachungen</para>
     </listitem>
 
     <listitem>
-      <para>Permanent links</para>
+      <para>Permanente Links</para>
     </listitem>
 
     <listitem>
@@ -58,32 +58,32 @@
     </listitem>
 
     <listitem>
-      <para>After-the-fact-tagging</para>
+      <para>After-the-fact-tagging (nachträgliches Tagging)</para>
     </listitem>
 
     <listitem>
-      <para>JUnit/TestNG test reporting</para>
+      <para>JUnit/TestNG Test-Berichtserstattung</para>
     </listitem>
 
     <listitem>
-      <para>Distributed builds</para>
+      <para>Verteiltes Bauen</para>
     </listitem>
 
     <listitem>
-      <para>File fingerprinting</para>
+      <para>Datei-Fingerprinting</para>
     </listitem>
 
     <listitem>
-      <para>Plugin Support</para>
+      <para>Plugin-Unterstützung</para>
     </listitem>
   </orderedlist>
 
-  <para>For this guide we suggest you to use the LTS (long term support) version 
-  of Jenkins. At the moment that this guide is being written, the 
-  current version is <emphasis>1.424.6</emphasis>. However it is very likely that 
-  what you will learn here will work with newer versions of Jenkins. Jenkins 
-  development team does a great job not only developing cool features, but also 
-  keeping backward compatibility between versions.</para>
+  <para>In diesem Tutorium nehmen wir an, dass die LTS-Version (long term support, langzeitliche Unterstützungsversion)
+  von Jenkins verwendet wird. Im Moment der Entstehung des Tutoriums ist die aktuelle Versionsnummer
+  <emphasis>1.424.6</emphasis>. Dennoch ist es sehr wahrscheinlich, dass das hier Erlernte auf neuere
+  Versionen von Jenkins übertragbar ist. Das Jenkins-Entwicklungsteam erweitert hier nicht nur die bestehenden
+  Fähigkeiten in großem Ausmaß, sondern zielt auch darauf ab, Rückwärtskompatibilität zu vorherigen Versionen
+  zu gewährleisten.</para>
 
   <para>
     <mediaobject>
@@ -99,7 +99,7 @@
     </mediaobject>
   </para>
 
-  <para>Jenkins is licensed under the MIT License and its code is hosted at 
+  <para>Jenkins ist lizensiert unter der MIT-Lizenz und zugehörige Quelltexte werden verwaltet unter 
   GitHub - <ulink url="http://github.com/jenkinsci">
   http://github.com/jenkinsci</ulink>.</para>
 </chapter>
