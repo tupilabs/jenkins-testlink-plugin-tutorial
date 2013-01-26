@@ -34,7 +34,7 @@
 
   <para>Als typische Eigenschaften und Fähigkeiten von Jenkins findet man im 
   <ulink url="http://wiki.jenkins-ci.org/display/JENKINS/TestLink+Plugin">
-  Jenkins Wiki</ulink>: </para>
+  Jenkins-Wiki</ulink>: </para>
 
   <orderedlist>
     <listitem>
@@ -54,7 +54,7 @@
     </listitem>
 
     <listitem>
-      <para>RSS/E-mail/IM Integration</para>
+      <para>RSS/E-mail/IM-Integration</para>
     </listitem>
 
     <listitem>
@@ -62,7 +62,7 @@
     </listitem>
 
     <listitem>
-      <para>JUnit/TestNG Test-Berichtserstattung</para>
+      <para>JUnit/TestNG-Test-Berichtserstattung</para>
     </listitem>
 
     <listitem>
