@@ -1,427 +1,441 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <chapter id="chapter.4">
-	
-	<title>TestLink Configuration</title>
-	
-	<section>
 
-		<title>Installing TestLink</title>
-	
-		<para>In this part of the tutorial we will show how to install and 
-		configure TestLink. Let's start by downloading 
-		<emphasis>testlink-1.9.3.tar.gz</emphasis> from 
-		<ulink url="http://www.teamst.org">http://www.teamst.org</ulink>. 
-		Decompress it with <command>tar -zxvf testlink-1.9.3.tar.gz</command>. 
-		Move the directory created to your HTTP server root directory and open 
-		<ulink url="http://localhost/testlink-1.9.3">
-		http://localhost/testlink-1.9.3</ulink> in your browser.</para>
-		
-		<para>
-			<mediaobject id="testlink_002">
-				<imageobject>
-					<imagedata 
-					   align="center" 
-					   fileref="../media/testlink_002.png" 
-					   width="100%" 
-                       contentdept="100%" 
-					   format="PNG" />
-				</imageobject>
-			</mediaobject>
-		</para>
-		
-		<para>
-			<mediaobject id="testlink_003">
-				<imageobject>
-					<imagedata 
-					   align="center" 
-					   fileref="../media/testlink_003.png" 
-					   width="100%" 
-                       contentdept="100%" 
-					   format="PNG" />
-				</imageobject>
-			</mediaobject>
-		</para>
-		
-		<para>Now the installation wizard will guide you through the rest of  
-		the installation. But before going on, we need to create a database in 
-		MySQL.</para>
-		
-		<para><command>mysql> create database testlink;</command></para>
-		
-		<para>The next step is to create a user that TestLink will use to 
-		access the database.</para>
-		
-		<para>
-		<command>mysql> grant all privileges on testlink.* to 'testlink' identified by 'testlink';</command>
-		</para>
-		
-		<para><command>mysql> flush privileges;</command></para>
-		
-		<para>
-			<mediaobject id="testlink_004">
-				<imageobject>
-					<imagedata 
-					   align="center" 
-					   fileref="../media/testlink_004.png" 
-					   width="100%" 
-                       contentdept="100%"  
-					   format="PNG" />
-				</imageobject>
-			</mediaobject>
-		</para>
-		
-		<para>
-			<mediaobject id="testlink_005">
-				<imageobject>
-					<imagedata 
-					   align="center" 
-					   fileref="../media/testlink_005.png" 
-					   width="100%" 
-                       contentdept="100%"  
-					   format="PNG" />
-				</imageobject>
-			</mediaobject>
-		</para>
-		
-		<para>
-			<mediaobject id="testlink_006">
-				<imageobject>
-					<imagedata 
-					   align="center" 
-					   fileref="../media/testlink_006.png" 
-					   width="100%" 
-                       contentdept="100%"  
-					   format="PNG" />
-				</imageobject>
-			</mediaobject>
-		</para>
-		
-		<para>If everything worked out correctly you should be asked to log in 
-		with user admin and password admin. The examples in this tutorial 
-		require you to have a user with administrator rights in TestLink.</para>
-		
-		<para>By default, the XML-RPC comes disabled in TestLink. Let's enable 
-		it by editing config.inc.php, located in TestLink root folder.</para>
-		
-		<para>
-		  <command>$tlCfg->api->enabled = TRUE;</command>
-		</para>
-		
-		<para>Finally, let's make sure that the attachments retrieved from the 
-		database are ordered by its ID. This way, the order of attachments will 
-		be preserved in TestLink. We could use the date that the attachment was 
-		inserted in database, however the precision of the date_added column is 
-		in seconds, what could lead to inconsistencies in the way that 
-		attachments are displayed in TestLink.</para>
-		
-		<para>
-		  <command>$g_attachments->order_by = " ORDER BY id ASC ";</command>
-		</para>
-		 
-	</section>
-	
-	<section>
-		
-		<title>Creating a Test Project</title>
-		
-		<para>When you log in by the first time in TestLink it is showed to you 
-		a form to create a Test Project. After creating a test project you will 
-		be able to create test plans, requirements, specify and execute your 
-		tests.</para>
-		
-		<para>
-			<mediaobject id="testlink_007">
-				<imageobject>
-					<imagedata 
-					   align="center" 
-					   fileref="../media/testlink_007.png" 
-					   width="100%" 
-                       contentdept="100%" 
-					   format="PNG" />
-				</imageobject>
-			</mediaobject>
-		</para>
-		
-		<para>Create a test project with name My first project, prefix MFP and 
-		make sure the following options are checked: Enable Requirements 
-		feature, Enable Testing Priority, Enable Test Automation (API keys), 
-		Enable Inventory, Active and Public. Click on Create button.</para>
-		
-		<para>
-			<mediaobject id="testlink_008">
-				<imageobject>
-					<imagedata 
-					   align="center" 
-					   fileref="../media/testlink_008.png" 
-					   width="100%" 
-                       contentdept="100%" 
-					   format="PNG" />
-				</imageobject>
-			</mediaobject>
-		</para>
-		
-		<para>If the following screen is not displayed, review your previous 
-		steps or consult TestLink documentation for further assistance.</para>
-		
-		<para>
-			<mediaobject id="testlink_009">
-				<imageobject>
-					<imagedata 
-					   align="center" 
-					   fileref="../media/testlink_009.png" 
-					   width="100%" 
-                       contentdept="100%" 
-					   format="PNG" />
-				</imageobject>
-			</mediaobject>
-		</para>
-		
-	</section>
-	
-	<section>
-	
-		<title>Creating and assigning a Custom Field</title>
-	
-		<para>Click on the Project item of the top menu to be redirected to the 
-		main screen. Now we will create the custom field used for automation. 
-		The plug-in uses this custom field's value to link a test case in 
-		TestLink with a test result from your Jenkins build.</para>
-		
-		<para>Click on Define Custom Fields under the Test Project options box. 
-		Now create a custom field using the name Java Class, label 
-		Java Class, available for Test Case, type string, enable on	Test Spec 
-		Design and display on test execution No. The plug-in retrieves the 
-		custom fields by its name and not by the value in its label.</para>
-		
-		<para>
-			<mediaobject id="testlink_010">
-				<imageobject>
-					<imagedata 
-					   align="center" 
-					   fileref="../media/testlink_010.png" 
-					   width="100%" 
-                       contentdept="100%" 
-					   format="PNG" />
-				</imageobject>
-			</mediaobject>
-		</para>
-		
-		<para>
-			<mediaobject id="testlink_011">
-				<imageobject>
-					<imagedata 
-					   align="center" 
-					   fileref="../media/testlink_011.png" 
-					   width="100%" 
-                       contentdept="100%" 
-					   format="PNG" />
-				</imageobject>
-			</mediaobject>
-		</para>
-		
-		<para>The last step now is to assign this custom field to be used in 
-		our test project. Go back to the main screen and click on Assign Custom 
-		Fields. It will take you to a screen with the list of the available 
-		custom fields. Select the Java Class custom field and click on the 
-		Assign button.</para>
-		
-		<para>
-			<mediaobject id="testlink_012">
-				<imageobject>
-					<imagedata 
-					   align="center" 
-					   fileref="../media/testlink_012.png" 
-					   width="100%" 
-                       contentdept="100%" 
-					   format="PNG" />
-				</imageobject>
-			</mediaobject>
-		</para>
-	
-	</section>
-	
-	<section>
-	
-		<title>Specifying Test Suite and Test Cases</title>
-		
-		<para>For those who work with tests this part may be slightly easier 
-		than the previous sections. What we are going to do now is to create a 
-		test suite and some test cases. In TestLink your test cases are kept 
-		under a test suite which is, by its turn, under a test project.</para>
-		
-		<para>Back to the main screen, in the top menu you will see the option 
-		Test Specification. Click on this option. The test specification 
-		screen is quite simple. On the left you have the navigator, with the 
-		settings, filter and the tree of test suites and test cases. Start 
-		clicking on your test project to see the test suite operations 
-		available.</para>
-		
-		<para>
-			<mediaobject id="testlink_013">
-				<imageobject>
-					<imagedata 
-					   align="center" 
-					   fileref="../media/testlink_013.png" 
-					   width="100%" 
-                       contentdept="100%" 
-					   format="PNG" />
-				</imageobject>
-			</mediaobject>
-		</para>
-		
-		<para>Create a test suite with any name that you want. This field is 
-		not important for this tutorial. Once created, your test suite will be  
-		displayed in the tree on the left. Now click on the test suite in the 
-		tree to see the available test case operations.</para>
-		
-		<para>
-			<mediaobject id="testlink_014">
-				<imageobject>
-					<imagedata 
-					   align="center" 
-					   fileref="../media/testlink_014.png" 
-					   width="100%" 
-                       contentdept="100%" 
-					   format="PNG" />
-				</imageobject>
-			</mediaobject>
-		</para>
-		
-		<para>Create a test case with any title or summary. The important 
-		information on this screen for the automation are the execution type 
-		and the Java class (custom field created in the previous step). In 
-		execution type select Automated and for Java class fill with the 
-		java class jenkins.plugins.testlink.examples.TestCurrentTime (present in 
-		the example project).</para>
-		
-		<para>
-			<mediaobject id="testlink_015">
-				<imageobject>
-					<imagedata 
-					   align="center" 
-					   fileref="../media/testlink_015.png" 
-					   width="100%" 
-                       contentdept="100%" 
-					   format="PNG" />
-				</imageobject>
-			</mediaobject>
-		</para>
-		
-		<para>
-			<mediaobject id="testlink_016">
-				<imageobject>
-					<imagedata 
-					   align="center" 
-					   fileref="../media/testlink_016.png" 
-					   width="100%" 
-                       contentdept="100%" 
-					   format="PNG" />
-				</imageobject>
-			</mediaobject>
-		</para>
-		
-		<para>
-			<mediaobject id="testlink_017">
-				<imageobject>
-					<imagedata 
-					   align="center" 
-					   fileref="../media/testlink_017.png" 
-					   width="100%" 
-                       contentdept="100%" 
-					   format="PNG" />
-				</imageobject>
-			</mediaobject>
-		</para>
-		
-		<para>
-			<mediaobject id="testlink_018">
-				<imageobject>
-					<imagedata 
-					   align="center" 
-					   fileref="../media/testlink_018.png" 
-					   width="100%" 
-                       contentdept="100%" 
-					   format="PNG" />
-				</imageobject>
-			</mediaobject>
-		</para>
-	
-	</section>
-	
-	<section>
-	
-		<title>Create a Test Plan and add the Test Cases</title>
-	
-		<para>This is the last step for the TestLink configuration. However 
-		before we start this step, there is an important concept in TestLink: 
-		Builds.</para>
-		
-		<para>In TestLink, you create a test plan outlining how you will test 
-		your application under test. Once you have a test plan you can start to 
-		add test cases to your test plan, and then execute the test plan.</para>
-		
-		<para>A build in TestLink can be seen as the  execution of a test plan.  
-		Once the test plan is executed you are not allowed to edit the test 
-		cases of this test plan (it wouldn't be right to change the scope or  
-		exit criteria of a test case after it had already been executed).</para>
-	
-		<para>Go back to the main screen and click on the Test Plan Management 
-		option available under the Test Plan box on the right of the scren. 
-		Create a test plan with the name My first test plan, any description 
-		and make sure that Active and Public are checked.</para>
-		
-		<para>
-			<mediaobject id="testlink_019">
-				<imageobject>
-					<imagedata 
-					   align="center" 
-					   fileref="../media/testlink_019.png" 
-					   width="100%" 
-                       contentdept="100%" 
-					   format="PNG" />
-				</imageobject>
-			</mediaobject>
-		</para>
-		
-		<para>
-			<mediaobject id="testlink_020">
-				<imageobject>
-					<imagedata 
-					   align="center" 
-					   fileref="../media/testlink_020.png" 
-					   width="100%" 
-                       contentdept="100%" 
-					   format="PNG" />
-				</imageobject>
-			</mediaobject>
-		</para>
-	
-		<para>In the last box on the right of the screen, click on Add / Remove 
-		Test Cases and add the test case that you created to your test plan.</para>
-	
-		<para>
-			<mediaobject id="testlink_021">
-				<imageobject>
-					<imagedata 
-					   align="center" 
-					   fileref="../media/testlink_021.png" 
-					   width="100%" 
-                       contentdept="100%" 
-					   format="PNG" />
-				</imageobject>
-			</mediaobject>
-		</para>
-	
-		<para>Create a Build in TestLink is optional, as the plug-in 
-		automatically creates a new build if there is none with the name that 
-		you provided in the Jenkins job configuration page. When you go back 
-		to your test plan, you should see more options available in the Test 
-		Plan box and two other boxes: Test Execution and Test Plan contents, 
-		as well as other options available in the top menu.</para>
-		
-		<para>We are done with TestLink for now, the next step is to configure 
-		Jenkins.</para>
-	
-	</section>
-	
+    <title>TestLink-Konfiguration</title>
+
+    <section>
+
+        <title>Installation von TestLink</title>
+
+        <para>Dieser Teil des Tutoriums zeigt die Installation und
+        Konfiguration von TestLink. Zuerst sollte 
+        <emphasis>testlink-1.9.3.tar.gz</emphasis> heruntergeladen werden von
+        <ulink url="http://www.teamst.org">http://www.teamst.org</ulink>.
+        Dies ist zu entpacken mittels
+        <command>tar -zxvf testlink-1.9.3.tar.gz</command>.
+        Das entpackte Verzeichnis ist zum HTTP-Server-Hauptverzeichnis zu
+        bewegen (bzw. in der HTTP-Server-Konfiguration zugreifbar einzutragen),
+        so dass es mit der URL
+        <ulink url="http://localhost/testlink-1.9.3">
+        http://localhost/testlink-1.9.3</ulink> erreichbar im Browser ist.
+        Bei Konfigurationsfragen zum verwendeten HTTP-Server sei hier auf die
+        zugehörige Dokumentation verwiesen.</para>
+
+        <para>
+            <mediaobject id="testlink_002">
+                <imageobject>
+                    <imagedata
+                       align="center"
+                       fileref="../media/testlink_002.png"
+                       width="100%"
+                       contentdept="100%"
+                       format="PNG" />
+                </imageobject>
+            </mediaobject>
+        </para>
+
+        <para>
+            <mediaobject id="testlink_003">
+                <imageobject>
+                    <imagedata
+                       align="center"
+                       fileref="../media/testlink_003.png"
+                       width="100%"
+                       contentdept="100%"
+                       format="PNG" />
+                </imageobject>
+            </mediaobject>
+        </para>
+
+        <para>Im Browser wird dabei eine geführte Installationshilfe den Rest der
+        Installation begleiten. Bevor diese Schritte jedoch durchführbar sind, muss
+        eine zugehörige MySQL-Datenbank erzeugt werden (Zugehörige Hilfe in der
+        MySQL-Dokumentation).</para>
+
+        <para><command>mysql> create database testlink;</command></para>
+
+        <para>Im nächsten Schritt muss ein Benutzer in MySQL erzeugt werden, der
+        von TestLink zum Zugriff auf die Datenbank verwendet.</para>
+
+        <para>
+        <command>mysql> grant all privileges on testlink.* to 'testlink' identified by 'testlink';</command>
+        </para>
+
+        <para><command>mysql> flush privileges;</command></para>
+
+        <para>
+            <mediaobject id="testlink_004">
+                <imageobject>
+                    <imagedata
+                       align="center"
+                       fileref="../media/testlink_004.png"
+                       width="100%"
+                       contentdept="100%"
+                       format="PNG" />
+                </imageobject>
+            </mediaobject>
+        </para>
+
+        <para>
+            <mediaobject id="testlink_005">
+                <imageobject>
+                    <imagedata
+                       align="center"
+                       fileref="../media/testlink_005.png"
+                       width="100%"
+                       contentdept="100%"
+                       format="PNG" />
+                </imageobject>
+            </mediaobject>
+        </para>
+
+        <para>
+            <mediaobject id="testlink_006">
+                <imageobject>
+                    <imagedata
+                       align="center"
+                       fileref="../media/testlink_006.png"
+                       width="100%"
+                       contentdept="100%"
+                       format="PNG" />
+                </imageobject>
+            </mediaobject>
+        </para>
+
+        <para>Im Gutfall wird daraufhin ein Login als Benutzer admin und Passwort
+        admin abgefragt. Die Beispiele in diesem Tutorium gehen davon aus, dass
+        für Zugriffe auf TestLink ein Benutzer mit vollen administrativen Rechten
+        in TestLink eingerichtet ist und verwendet wird.</para>
+
+        <para>Standardmäßig ist die XML-RPC-Schnittstelle in TestLink deaktiviert.
+        Diese wird durch Editieren der Datei config.inc.php des Hauptverzeichnisses
+        von TestLink eingeschaltet.</para>
+
+        <para>
+          <command>$tlCfg->api->enabled = TRUE;</command>
+        </para>
+
+        <para>Abschließend ist die Option zu editieren, dass empfangene Anhänge
+        aus Datenbankschnittstellen nach ID geordnet sind. Auf diese
+        Weise wird die Ordnung von Anhängen in TestLink beibehalten.
+        Alternativ ist die Sortierung von Anhängen entsprechend des
+        Einfügedatums auswählbar. Die Genauigkeit (Zeitliche Auflösung) der
+        Spalte date_added ist hierbei in Sekunden. Das kann jedoch zu Inkonsistenzen
+        in der Darstellung in TestLink führen und wird nicht empfohlen.</para>
+
+        <para>
+          <command>$g_attachments->order_by = " ORDER BY id ASC ";</command>
+        </para>
+
+    </section>
+
+    <section>
+
+        <title>Erzeugung eines Testprojektes</title>
+
+        <para>Beim ersten Anmeldevorgang in TestLink wird ein Formular zur
+        Erzeugung eines Testprojektes angezeigt. Nach Abschluss der Projekterzeugung
+        besteht die Möglichkeit, Testpläne, Anforderungen, Testspezifikationen und
+        Ausführungsdaten zu Tests anzulegen.</para>
+
+        <para>
+            <mediaobject id="testlink_007">
+                <imageobject>
+                    <imagedata
+                       align="center"
+                       fileref="../media/testlink_007.png"
+                       width="100%"
+                       contentdept="100%"
+                       format="PNG" />
+                </imageobject>
+            </mediaobject>
+        </para>
+
+        <para>Erzeugen Sie ein Testprojekt namens My first project, Präfix MFP und
+        stellen Sie die Aktivierung folgender Optionen sicher: Enable Requirements
+        feature, Enable Testing Priority, Enable Test Automation (API keys),
+        Enable Inventory, Active and Public. Drücken Sie den Create-Schaltknopf.</para>
+
+        <para>
+            <mediaobject id="testlink_008">
+                <imageobject>
+                    <imagedata
+                       align="center"
+                       fileref="../media/testlink_008.png"
+                       width="100%"
+                       contentdept="100%"
+                       format="PNG" />
+                </imageobject>
+            </mediaobject>
+        </para>
+
+        <para>Wird die folgende Übersicht nicht angezeigt, prüfen Sie bitte die
+        vorherigen Schritte nochmals oder Sie sollten als weitere Hilfe die
+        TestLink-Dokumentation heranziehen.</para>
+
+        <para>
+            <mediaobject id="testlink_009">
+                <imageobject>
+                    <imagedata
+                       align="center"
+                       fileref="../media/testlink_009.png"
+                       width="100%"
+                       contentdept="100%"
+                       format="PNG" />
+                </imageobject>
+            </mediaobject>
+        </para>
+
+    </section>
+
+    <section>
+
+        <title>Erzeugen und Zuweisen eines Custom Field</title>
+
+        <para>Drücken Sie auf den Project-Eintrag der oberen Menü-Zeile, um zur
+        Hauptübersicht zu gelangen. Als nächstes soll ein Custom Field für die
+        automatisierten Tests angelegt werden.
+        Das Plug-in nutzt den Wert des Custom Fields zur Verbindung eines
+        Testfalls in TestLink mit dem Testergebnis des ausgeführten Jenkins-Jobs.</para>
+
+        <para>Wählen Sie Define Custom Fields in der Auswahl der Test-Projekt-Optionsbox.
+        Zur Anzeige dieser Auswahloption muss der angemeldete TestLink-Nutzer
+        entsprechende Adminstrationrechte besitzen. Erzeugen Sie ein Custom Field
+        namens Java Class, dem Label Java Class, Available for Test Case,
+        Typ String, Enable on Test Spec Design und Display on test execution No als
+        Einträge in der Eingabemaske. Das Plug-in greift auf das
+        Custom Field über dessen Name und nicht über den Wert im Label zu.</para>
+
+        <para>
+            <mediaobject id="testlink_010">
+                <imageobject>
+                    <imagedata
+                       align="center"
+                       fileref="../media/testlink_010.png"
+                       width="100%"
+                       contentdept="100%"
+                       format="PNG" />
+                </imageobject>
+            </mediaobject>
+        </para>
+
+        <para>
+            <mediaobject id="testlink_011">
+                <imageobject>
+                    <imagedata
+                       align="center"
+                       fileref="../media/testlink_011.png"
+                       width="100%"
+                       contentdept="100%"
+                       format="PNG" />
+                </imageobject>
+            </mediaobject>
+        </para>
+
+        <para>Als letzter Schritt geschieht die Zuweisung des Custom Field im
+        Testprojekt.
+        Zurück in der Hauptübersicht wählen Sie den Eintrag Assign Custom
+        Fields. Dadurch wird eine Liste der verfügbaren Custom Fields angezeigt.
+        Nach Auswahl des Java Class Custom Field muss der Assign-Knopf
+        gedrückt werden.</para>
+
+        <para>
+            <mediaobject id="testlink_012">
+                <imageobject>
+                    <imagedata
+                       align="center"
+                       fileref="../media/testlink_012.png"
+                       width="100%"
+                       contentdept="100%"
+                       format="PNG" />
+                </imageobject>
+            </mediaobject>
+        </para>
+
+    </section>
+
+    <section>
+
+        <title>Festlegung der Testsammlung und der Testfälle</title>
+
+        <para>For those who work with tests this part may be slightly easier
+        than the previous sections. What we are going to do now is to create a
+        test suite and some test cases. In TestLink your test cases are kept
+        under a test suite which is, by its turn, under a test project.</para>
+
+        <para>Back to the main screen, in the top menu you will see the option
+        Test Specification. Click on this option. The test specification
+        screen is quite simple. On the left you have the navigator, with the
+        settings, filter and the tree of test suites and test cases. Start
+        clicking on your test project to see the test suite operations
+        available.</para>
+
+        <para>
+            <mediaobject id="testlink_013">
+                <imageobject>
+                    <imagedata
+                       align="center"
+                       fileref="../media/testlink_013.png"
+                       width="100%"
+                       contentdept="100%"
+                       format="PNG" />
+                </imageobject>
+            </mediaobject>
+        </para>
+
+        <para>Create a test suite with any name that you want. This field is
+        not important for this tutorial. Once created, your test suite will be
+        displayed in the tree on the left. Now click on the test suite in the
+        tree to see the available test case operations.</para>
+
+        <para>
+            <mediaobject id="testlink_014">
+                <imageobject>
+                    <imagedata
+                       align="center"
+                       fileref="../media/testlink_014.png"
+                       width="100%"
+                       contentdept="100%"
+                       format="PNG" />
+                </imageobject>
+            </mediaobject>
+        </para>
+
+        <para>Create a test case with any title or summary. The important
+        information on this screen for the automation are the execution type
+        and the Java class (custom field created in the previous step). In
+        execution type select Automated and for Java class fill with the
+        java class jenkins.plugins.testlink.examples.TestCurrentTime (present in
+        the example project).</para>
+
+        <para>
+            <mediaobject id="testlink_015">
+                <imageobject>
+                    <imagedata
+                       align="center"
+                       fileref="../media/testlink_015.png"
+                       width="100%"
+                       contentdept="100%"
+                       format="PNG" />
+                </imageobject>
+            </mediaobject>
+        </para>
+
+        <para>
+            <mediaobject id="testlink_016">
+                <imageobject>
+                    <imagedata
+                       align="center"
+                       fileref="../media/testlink_016.png"
+                       width="100%"
+                       contentdept="100%"
+                       format="PNG" />
+                </imageobject>
+            </mediaobject>
+        </para>
+
+        <para>
+            <mediaobject id="testlink_017">
+                <imageobject>
+                    <imagedata
+                       align="center"
+                       fileref="../media/testlink_017.png"
+                       width="100%"
+                       contentdept="100%"
+                       format="PNG" />
+                </imageobject>
+            </mediaobject>
+        </para>
+
+        <para>
+            <mediaobject id="testlink_018">
+                <imageobject>
+                    <imagedata
+                       align="center"
+                       fileref="../media/testlink_018.png"
+                       width="100%"
+                       contentdept="100%"
+                       format="PNG" />
+                </imageobject>
+            </mediaobject>
+        </para>
+
+    </section>
+
+    <section>
+
+        <title>Create a Test Plan and add the Test Cases</title>
+
+        <para>This is the last step for the TestLink configuration. However
+        before we start this step, there is an important concept in TestLink:
+        Builds.</para>
+
+        <para>In TestLink, you create a test plan outlining how you will test
+        your application under test. Once you have a test plan you can start to
+        add test cases to your test plan, and then execute the test plan.</para>
+
+        <para>A build in TestLink can be seen as the  execution of a test plan.
+        Once the test plan is executed you are not allowed to edit the test
+        cases of this test plan (it wouldn't be right to change the scope or
+        exit criteria of a test case after it had already been executed).</para>
+
+        <para>Go back to the main screen and click on the Test Plan Management
+        option available under the Test Plan box on the right of the scren.
+        Create a test plan with the name My first test plan, any description
+        and make sure that Active and Public are checked.</para>
+
+        <para>
+            <mediaobject id="testlink_019">
+                <imageobject>
+                    <imagedata
+                       align="center"
+                       fileref="../media/testlink_019.png"
+                       width="100%"
+                       contentdept="100%"
+                       format="PNG" />
+                </imageobject>
+            </mediaobject>
+        </para>
+
+        <para>
+            <mediaobject id="testlink_020">
+                <imageobject>
+                    <imagedata
+                       align="center"
+                       fileref="../media/testlink_020.png"
+                       width="100%"
+                       contentdept="100%"
+                       format="PNG" />
+                </imageobject>
+            </mediaobject>
+        </para>
+
+        <para>In the last box on the right of the screen, click on Add / Remove
+        Test Cases and add the test case that you created to your test plan.</para>
+
+        <para>
+            <mediaobject id="testlink_021">
+                <imageobject>
+                    <imagedata
+                       align="center"
+                       fileref="../media/testlink_021.png"
+                       width="100%"
+                       contentdept="100%"
+                       format="PNG" />
+                </imageobject>
+            </mediaobject>
+        </para>
+
+        <para>Create a Build in TestLink is optional, as the plug-in
+        automatically creates a new build if there is none with the name that
+        you provided in the Jenkins job configuration page. When you go back
+        to your test plan, you should see more options available in the Test
+        Plan box and two other boxes: Test Execution and Test Plan contents,
+        as well as other options available in the top menu.</para>
+
+        <para>We are done with TestLink for now, the next step is to configure
+        Jenkins.</para>
+
+    </section>
+
 </chapter>
