@@ -258,17 +258,18 @@
 
         <title>Festlegung der Testsammlung und der Testfälle</title>
 
-        <para>For those who work with tests this part may be slightly easier
-        than the previous sections. What we are going to do now is to create a
-        test suite and some test cases. In TestLink your test cases are kept
-        under a test suite which is, by its turn, under a test project.</para>
+        <para>Dieser Abschnitt ist einfacher zu verstehen, wenn man mit der
+        Terminologie von Testumgebungen vertraut ist. Ziel ist es, als weiteren
+        Schritt eine Testsammlung und einige Testfälle zu erstellen. In
+        TestLink werden Testfälle in einer Testsammlung zusammengefasst. Diese
+        sind dann Bestandteil eines Testprojektes.</para>
 
-        <para>Back to the main screen, in the top menu you will see the option
-        Test Specification. Click on this option. The test specification
-        screen is quite simple. On the left you have the navigator, with the
-        settings, filter and the tree of test suites and test cases. Start
-        clicking on your test project to see the test suite operations
-        available.</para>
+        <para>In der oberen Menüzeile der Hauptübersicht gibt es den Eintrag
+        Test Specification. Nach Auswahl dieser Test-Spezifikation wird links
+        eine Navigation mit Einstellungen, den Filteroptionen und einer Baumübersicht
+        der Testsammlungen und Testfälle dargestellt. Durch Auswahl des eigenen
+        Testprojektes werden die Bearbeitungsmöglichkeiten der Testsammlungen
+        angezeigt.</para>
 
         <para>
             <mediaobject id="testlink_013">
@@ -283,10 +284,11 @@
             </mediaobject>
         </para>
 
-        <para>Create a test suite with any name that you want. This field is
-        not important for this tutorial. Once created, your test suite will be
-        displayed in the tree on the left. Now click on the test suite in the
-        tree to see the available test case operations.</para>
+        <para>Die Testsammlung kann mit beliebigem Namen erstellt werden. Für das
+        Tutorium ist dieser Name im Feldeintrag nicht entscheident. Einmal angelegt,
+        wird die Testsammlung in der Baumübersicht links angezeigt. Durch Auswahl der
+        Testsammlung werden die Bearbeitungsmöglichkeiten der einzelnen Testfälle
+        angezeigt.</para>
 
         <para>
             <mediaobject id="testlink_014">
@@ -301,12 +303,12 @@
             </mediaobject>
         </para>
 
-        <para>Create a test case with any title or summary. The important
-        information on this screen for the automation are the execution type
-        and the Java class (custom field created in the previous step). In
-        execution type select Automated and for Java class fill with the
-        java class jenkins.plugins.testlink.examples.TestCurrentTime (present in
-        the example project).</para>
+        <para>Erstellen Sie einen Testfall beliebigen Titels und beliebiger Beschreibung.
+        Notwendige Einstellungen zur Automatisierung sind der Ausführungstyp und die
+        Java-Klasse (als Custom Field im vorherigen Schritt bereits angelegt).
+        Als Ausführungstyp wählen Sie Automated und für die Java-Klasse tragen Sie
+        jenkins.plugins.testlink.examples.TestCurrentTime ein. Diese ist im
+        Beispielprojekt enthalten.</para>
 
         <para>
             <mediaobject id="testlink_015">
@@ -364,17 +366,17 @@
 
     <section>
 
-        <title>Create a Test Plan and add the Test Cases</title>
+        <title>Erstellen eines Testplans und das Hinzufügen von Testfällen</title>
 
-        <para>This is the last step for the TestLink configuration. However
-        before we start this step, there is an important concept in TestLink:
-        Builds.</para>
+        <para>Dies ist der letzte Schritt der TestLink-Konfiguration. Bevor
+        dieser Abschnitt erläutert wird, soll zuvor auf das wichtige Konzept
+        sogenannter Builds in TestLink eingegangen werden.</para>
 
-        <para>In TestLink, you create a test plan outlining how you will test
-        your application under test. Once you have a test plan you can start to
-        add test cases to your test plan, and then execute the test plan.</para>
+        <para>Der Testplan in TestLink beschreibt, wie der konkrete
+        Applikationstest durchgeführt wird. Testfälle werden dem
+        Testplan zugefügt, um diesen Testplan dann ausführen zu können.</para>
 
-        <para>A build in TestLink can be seen as the  execution of a test plan.
+        <para>A build in TestLink can be seen as the execution of a test plan.
         Once the test plan is executed you are not allowed to edit the test
         cases of this test plan (it wouldn't be right to change the scope or
         exit criteria of a test case after it had already been executed).</para>
