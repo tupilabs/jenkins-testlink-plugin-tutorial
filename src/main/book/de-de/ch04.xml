@@ -376,15 +376,19 @@
         Applikationstest durchgeführt wird. Testfälle werden dem
         Testplan zugefügt, um diesen Testplan dann ausführen zu können.</para>
 
-        <para>A build in TestLink can be seen as the execution of a test plan.
-        Once the test plan is executed you are not allowed to edit the test
-        cases of this test plan (it wouldn't be right to change the scope or
-        exit criteria of a test case after it had already been executed).</para>
+        <para>Ein Build kann innerhalb von TestLink als konkrete
+        Ausführungsinstanz eines Testplans angesehen werden.
+        Sobald ein Testplan zur Ausführung kommt, ist es nicht mehr möglich,
+        die zugehörigen Testfälle inhaltlich zu verändert.
+        Eine Nachverfolgung oder Reproduktion des Tests wäre bei Durchführung
+        weiterer Änderungen etwa der Rahmenbedingungen oder Abnahmekriterien
+        eines Testfalles nicht mehr gewährt, wenn dieser zuvor bereits lief.</para>
 
-        <para>Go back to the main screen and click on the Test Plan Management
-        option available under the Test Plan box on the right of the scren.
-        Create a test plan with the name My first test plan, any description
-        and make sure that Active and Public are checked.</para>
+        <para>Wählen Sie in der Hauptübersicht den Eintrag Test Plan Management
+        innerhalb des Abschnitts Test Plan in der rechten Seite der Ansicht.
+        Erstellen Sie einen Testplan des Namens My first test plan mit beliebiger
+        Beschreibung, aber stellen sicher, dass die Auswahl Active und Public aktiv
+        sind.</para>
 
         <para>
             <mediaobject id="testlink_019">
@@ -412,8 +416,9 @@
             </mediaobject>
         </para>
 
-        <para>In the last box on the right of the screen, click on Add / Remove
-        Test Cases and add the test case that you created to your test plan.</para>
+        <para>Im untersten Auswahlmenü der Test Plan Contents (Testplaninhalte)
+        wählen Sie Add / Remove Test Cases und fügen den selbsterstellten
+        Testfall dem Testplan hinzu.</para>
 
         <para>
             <mediaobject id="testlink_021">
@@ -428,15 +433,18 @@
             </mediaobject>
         </para>
 
-        <para>Create a Build in TestLink is optional, as the plug-in
-        automatically creates a new build if there is none with the name that
-        you provided in the Jenkins job configuration page. When you go back
-        to your test plan, you should see more options available in the Test
-        Plan box and two other boxes: Test Execution and Test Plan contents,
-        as well as other options available in the top menu.</para>
+        <para>Das Anlegen eines Build in TestLink ist hier optional, da das
+        Plug-in automatisch einen neuen Build anlegt, falls keiner vorhanden
+        ist, der mit den Angaben der Konfigurationsseite des Jobs in Jenkins
+        übereinstimmt. Im Abschnitt Test Plan der Hauptübersicht auf der
+        rechten Seite sind weitere Eisnstellungsmöglichkeiten zum erstellten
+        Testplan gegeben. Zusätzlich gibt es Abschnitte zur Testausführung
+        (Test Execution) und der Inhaltsgestaltung von Testplänen (Test Plan
+        Contents) wie auch weitere zusätzliche Optionen in der
+        Hauptübersicht.</para>
 
-        <para>We are done with TestLink for now, the next step is to configure
-        Jenkins.</para>
+        <para>Damit sind die Einstellungen in TestLink vorerst abgeschlossen.
+        Im nächsten Schritt ist Jenkins zu konfigurieren.</para>
 
     </section>
 
