@@ -78,7 +78,7 @@
     </listitem>
   </orderedlist>
 
-  <para>In diesem Tutorium nehmen wir an, dass die LTS-Version (long term support, langzeitliche Unterstützungsversion)
+  <para>In diesem Tutorium nehmen wir an, dass die LTS-Version (long term support, Langzeitunterstützung)
   von Jenkins verwendet wird. Im Moment der Entstehung des Tutoriums ist die aktuelle Versionsnummer
   <emphasis>1.424.6</emphasis>. Dennoch ist es sehr wahrscheinlich, dass das hier Erlernte auf neuere
   Versionen von Jenkins übertragbar ist. Das Jenkins-Entwicklungsteam erweitert hier nicht nur die bestehenden
