@@ -68,9 +68,9 @@
         </mediaobject>
     </para>
 
-    <para>Everything seems to be right in Jenkins, let's go back to TestLink
-    and click on <emphasis>Test execution</emphasis> option in the top menu. It
-    will bring a screen showing the result of your test execution.</para>
+    <para>Einstellungen in Jenkins sind hiermit vollständig. Zurück in TestLink
+    wird die <emphasis>Test execution</emphasis>-Option im Hauptmenue gewählt.
+    Hier werden die Ergebnisse der Testausführung angezeigt.</para>
 
     <para>
         <mediaobject id="testlink_022">
@@ -85,11 +85,12 @@
         </mediaobject>
     </para>
 
-    <para>You can see more information about the execution of your tests by
-    clicking over it on the left tree. Notice that by default the plug-in
-    uploads the test result file. In this case, as we are using TestNG, it
-    uploaded <emphasis>testng-results.xml</emphasis>. It is useful as you can
-    see what happened in your tests, e.g.: an exception stack trace.</para>
+    <para>Im linken Menuebaum kann man die Auswahl treffen, um genauere
+    Informationen zu den Tests zu erhalten. Zu beachten ist, dass das Plugin
+    die Ergebnisdatei hochläd. Im Fall, dass TestNG genutzt wird, findet sich
+    hier die Datei <emphasis>testng-results.xml</emphasis>. Dies kann helfen,
+    direkt zu erfahren, was in den Testläufen geschah. Etwa wenn ein
+    Exception-Stack-Trace analysiert werden muss.</para>
 
     <para>
         <mediaobject id="testlink_023">
@@ -104,8 +105,8 @@
         </mediaobject>
     </para>
 
-    <para>Explore the reports available in TestLink to see the results of your
-    tests by different perspectives.</para>
+    <para>Die verfügbaren Berichte in TestLink zeigen die Testergebnisse aus
+    unterschiedlichen Perspektiven.</para>
 
     <para>
         <mediaobject id="testlink_024">
