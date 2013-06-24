@@ -1,0 +1,526 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<chapter id="chapter.5">
+
+    <title>Jenkins-Konfiguration</title>
+
+    <section>
+
+        <title>Installation von Jenkins</title>
+
+        <para>Die Datei <emphasis>jenkins.war</emphasis> ist erhältlich unter
+        <ulink url="http://www.jenkins-ci.org">http://www.jenkins-ci.org</ulink>.
+        Von der Kommandozeile wird diese mit <command>java -jar jenkins.war</command>
+        gestartet. Jenkins nutzt dabei standardmäßig den Port 8080 (wenn dieser
+        gewechselt werden soll, kann etwa der Parameter
+        <emphasis>--httpPort=9999</emphasis>) angegeben werden.</para>
+
+        <para>Jenkins erzeugt in Standardeinstellungen seinen Arbeitsbereich
+        unter <emphasis>~/.jenkins</emphasis> oder verwendet den in der
+        Umgebungsvariablen <emphasis>JENKINS_HOME</emphasis> angegebenen
+        Pfad.</para>
+
+        <para>
+            <mediaobject id="jenkins_001_02">
+                <imageobject>
+                    <imagedata
+                       align="center"
+                       fileref="../media/jenkins_001.png"
+                       width="100%"
+                       contentdept="100%"
+                       format="PNG" />
+                </imageobject>
+            </mediaobject>
+        </para>
+
+        <para>Unter <ulink url="http://localhost:8080">http://localhost:8080</ulink>
+        kann geprüft werden, ob die Jenkins-Oberfläche verfügbar ist.
+        Die dort angezeigte Seite wir im weiteren kurz als Hauptseite bezeichnet.
+        Es wird im Tutorium davon ausgegangen, dass der von Ihnen verwendete
+        Benutzer Administrationsrechte in Jenkins besitzt.</para>
+
+    </section>
+
+    <section>
+
+        <title>Installation und Konfiguration des Jenkins-TestLink-Plug-ins</title>
+
+        <para>Als Verteilsystem von Plug-ins kann in Jenkins eine zentrale Update-Site
+        genutzt werden. Die zugehörige Auswahl findet man im Menü links unter
+        <emphasis>Manage Jenkins</emphasis>. Daraufhin bietet sich die 
+        <emphasis>Manage-Plugins</emphasis>-Option.
+        Anklicken von <emphasis>Available</emphasis> erneuert die Liste der
+        Plug-ins, die dann in der Jenkins-Installation installierbar sind.</para>
+
+        <para>Wählt man die zum gelisteten Plug-in zugehörige Check-Box
+        gefolgt von <emphasis>Install</emphasis>, so wird das Plug-in installiert.
+        Jenkins wird das Plug-in damit automatisch herunterladen und installieren.
+        Nach Neustart von Jenkins kann das Plug-in genutzt werden.</para>
+
+        <para>
+            <mediaobject id="jenkins_002">
+                <imageobject>
+                    <imagedata
+                       align="center"
+                       fileref="../media/jenkins_002.png"
+                       width="100%"
+                       contentdept="100%"
+                       format="PNG" />
+                </imageobject>
+            </mediaobject>
+        </para>
+
+        <para>
+            <mediaobject id="jenkins_003">
+                <imageobject>
+                    <imagedata
+                       align="center"
+                       fileref="../media/jenkins_003.png"
+                       width="100%"
+                       contentdept="100%"
+                       format="PNG" />
+                </imageobject>
+            </mediaobject>
+        </para>
+
+        <para>Nach dem Jenkins-Neustart, wählen Sie erneut <emphasis>Manage Jenkins</emphasis>.
+        Diesmal ist die <emphasis>Configure-System</emphasis>-Option zu wählen, worauf ein
+        Abschnitt TestLink zur Verfügung steht. Im Formular der TestLink-Konfiguration ist der
+        Name der TestLink-Installation, die zugehörige URL der XML-RPC-API und der
+        <emphasis>devKey</emphasis> einzutragen.</para>
+
+        <para>
+            <mediaobject id="jenkins_004">
+                <imageobject>
+                    <imagedata
+                       align="center"
+                       fileref="../media/jenkins_004.png"
+                       width="100%"
+                       contentdept="100%"
+                       format="PNG" />
+                </imageobject>
+            </mediaobject>
+        </para>
+
+        <para>Der Standard für die TestLink-XML-RPC-API-URL ist
+        <emphasis>http://&lt;host>:&lt;port>/lib/api/xmlrpc.php</emphasis>.
+        Den <emphasis>devKey</emphasis> erhält man in TestLink unter
+        <emphasis>My Settings</emphasis> vom Hauptmenü aus und kann dort einen
+        neuen <emphasis>devKey</emphasis> generieren, wenn noch keiner angezeigt wird.
+        Sollte der Abschnitt zur API unter <emphasis>My Settings</emphasis> nicht
+        angezeigt werden, ist es wahrscheinlich, dass diese nicht aktiviert ist.
+        Hinweise zur Aktivierung befinden sich in <xref linkend="chapter.4" />.</para>
+
+    </section>
+
+    <section>
+
+        <title>Erstellung eines Jenkins-Jobs</title>
+
+        <para>Zur Erstellung muss lediglich die Option <emphasis>New Job</emphasis>
+        ausgewählt und ein zugehöriger Name vergeben werden. Wählen Sie die Option
+        <emphasis>Free-style project</emphasis>.</para>
+
+        <para>
+            <mediaobject id="jenkins_005">
+                <imageobject>
+                    <imagedata
+                       align="center"
+                       fileref="../media/jenkins_005.png"
+                       width="100%"
+                       contentdept="100%"
+                       format="PNG" />
+                </imageobject>
+            </mediaobject>
+        </para>
+
+        <para>Der Job soll git nutzen, um Daten des Test-Automatisierungsprojekts zu
+        erhalten. Dieses wurde bereits erwähnt in <xref linkend="chapter.3" /> und kann
+        unter <ulink url="https://github.com/kinow/jenkins-testlink-plugin-tutorial">
+        https://github.com/kinow/jenkins-testlink-plugin-tutorial</ulink> gefunden werden.
+        In eigenen Projekten ist es wahrscheinlicher ein eigenverwaltetes SCM (SVN,
+        Git, CVS, etc) für ihr Test-Automatisierungsprojekt einzutragen.</para>
+
+        <para>
+            <mediaobject id="jenkins_006">
+                <imageobject>
+                    <imagedata
+                       align="center"
+                       fileref="../media/jenkins_006.png"
+                       width="100%"
+                       contentdept="100%"
+                       format="PNG" />
+                </imageobject>
+            </mediaobject>
+        </para>
+
+        <para>Nach Auswahl <emphasis>Add build step</emphasis> werden weitere Optionen
+        angezeigt. Wählen Sie dort <emphasis>Invoke TestLink</emphasis>. Es wird ein
+        Fomular angeboten, um den Jenkins-Job an TestLink anzubinden. Die
+        Plug-in-Konfiguration gliedert sich in drei Bereiche:
+        <emphasis>TestLink Configuration</emphasis>,
+        <emphasis>Test Execution</emphasis> und
+        <emphasis>Result Seeking Strategy</emphasis>. Diese werden mit den Konfigurationsdaten
+        ausgefüllt, die in TestLink zuvor wie in <xref linkend="chapter.4" /> angelegt wurden.</para>
+
+        <section>
+
+          <title>TestLink-Konfiguration</title>
+
+          <para>Dieser Abschnitt behandelt die Einstellungen des Plug-ins,
+          um eine Verbindung und den Datenaustausch für automatische Tests
+          zu TestLink zu ermöglichen.</para>
+
+          <para>Nutzen Sie die folgenden Einstellungen:</para>
+
+          <para>
+              <table frame="all"><title>Erklärung zu TestLink-Konfigurationseinstellungen</title>
+                  <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                      <colspec colname="c1" />
+                      <colspec colname="c2" />
+                      <tbody>
+                          <row>
+                              <entry>TestLink Version</entry>
+                              <entry>Wählen Sie hier die Version der globalen Einstellungen</entry>
+                          </row>
+                          <row>
+                              <entry>Test Project Name</entry>
+                              <entry>My first project</entry>
+                          </row>
+                          <row>
+                              <entry>Test Plan Name</entry>
+                              <entry>My first test plan</entry>
+                          </row>
+                          <row>
+                              <entry>Build Name</entry>
+                              <entry>examples-$BUILD_NUMBER</entry>
+                          </row>
+                          <row>
+                              <entry>Custom Fields</entry>
+                              <entry>Java Class</entry>
+                          </row>
+                      </tbody>
+                  </tgroup>
+              </table>
+            </para>
+
+          <para>
+            <mediaobject id="jenkins_007">
+                <imageobject>
+                    <imagedata
+                       align="center"
+                       fileref="../media/jenkins_007.png"
+                       width="100%"
+                       contentdept="100%"
+                       format="PNG" />
+                </imageobject>
+            </mediaobject>
+          </para>
+
+        </section>
+
+        <section>
+
+          <title>Testausführung</title>
+
+          <para>Dieser Abschnitt enthält die Einstellungen zur Ausführung
+          automatisierter Tests. Hier können  <emphasis>Single Build Steps</emphasis>
+          hinzugefügt werden, die einmal pro Build laufen, oder
+          <emphasis>Iterative Build Steps</emphasis>, die jeweils pro
+          in TestLink beschriebenen automatisierten Einzeltest ausgeführt werden.</para>
+
+          <para>Es gibt einen erweiterten Abschnitt, der standardmäßig verborgen ist und
+          weitere Einstellmöglichkeiten enthält.</para>
+
+          <para>Benutzen sie folgende Einstellungen:</para>
+
+          <para>
+              <table frame="all"><title>Erklärung der Einstellungen zur Testausführung</title>
+                  <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                      <colspec colname="c1" />
+                      <colspec colname="c2" />
+                      <tbody>
+                          <row>
+                              <entry>Single Build Steps</entry>
+                              <entry>Fügen Sie einen <emphasis>Invoke top-level
+                              Maven targets</emphasis> Build-Step hinzu und tragen unter Goals
+                              <command>test -DsuiteXmlFiles=suite.xml</command> ein</entry>
+                          </row>
+                          <row>
+                              <entry>Iterative Test Build Steps</entry>
+                              <entry>Diese Einstellung nicht verändern</entry>
+                          </row>
+                      </tbody>
+                  </tgroup>
+              </table>
+          </para>
+
+          <para>
+            <mediaobject id="jenkins_008">
+                <imageobject>
+                    <imagedata
+                       align="center"
+                       fileref="../media/jenkins_008.png"
+                       width="100%"
+                       contentdept="100%"
+                       format="PNG" />
+                </imageobject>
+            </mediaobject>
+          </para>
+
+        </section>
+
+        <section>
+
+          <title>Suchstrategien zu Testergebnissen</title>
+
+          <para>Abschließend wird die
+          <emphasis>Result Seeking Strategy</emphasis> (Suchstrategien zu
+          Testergebnissen) eingestellt. Das Plug-in setzt mehrere
+          Suchstrategiemuster um, mit denen die Testergebnisse eingelesen
+          werden. Abhängig von den Einstellungen werden damit die Testergebnisse
+          aufgefunden, eingelesen und eine Aktualisierung der Testergebnisse in
+          TestLink ermöglicht.</para>
+
+          <para>Pro Strategie gibt es unterschiedliche Einstellungen. Man kann mehr
+          als eine Strategie zeitgleich nutzen, sollte aber ggf. Sorge tragen, dass
+          der gleiche Test damit mehrfach verarbeitet werden könnte.</para>
+
+          <para>Benutzen Sie folgende Einstellungen:</para>
+
+          <para>
+              <table frame="all"><title>Erklärung zu Suchstrategien von Testergebnissen</title>
+                  <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                      <colspec colname="c1" />
+                      <colspec colname="c2" />
+                      <tbody>
+                          <row>
+                              <entry>Test Result Seeking Strategies</entry>
+                              <entry>Wählen Sie die <emphasis>TestNG class name</emphasis>-Strategie.</entry>
+                          </row>
+                          <row>
+                              <entry>Include pattern</entry>
+                              <entry>target/**/testng-results.xml</entry>
+                          </row>
+                          <row>
+                              <entry>Key Custom Field</entry>
+                              <entry>Java Class</entry>
+                          </row>
+                          <row>
+                              <entry>Attach TestNG XML</entry>
+                              <entry>Diese Einstellung unverändert lassen</entry>
+                          </row>
+                          <row>
+                              <entry>Mark skipped test as Blocked</entry>
+                              <entry>Diese Einstellung unverändert lassen</entry>
+                          </row>
+                      </tbody>
+                  </tgroup>
+              </table>
+          </para>
+
+          <para>
+            <mediaobject id="jenkins_009">
+                <imageobject>
+                    <imagedata
+                       align="center"
+                       fileref="../media/jenkins_009.png"
+                       width="100%"
+                       contentdept="100%"
+                       format="PNG" />
+                </imageobject>
+            </mediaobject>
+          </para>
+
+        </section>
+
+        <para>Speichern Sie den bearbeiteten Jenkins-Job.</para>
+
+    </section>
+
+    <section>
+
+        <title>Erklärung der Job-Konfigurationparameter</title>
+
+        <para>
+            <mediaobject id="jenkins_010">
+                <imageobject>
+                    <imagedata
+                       align="center"
+                       fileref="../media/jenkins_010.png"
+                       width="100%"
+                       contentdept="100%"
+                       format="PNG" />
+                </imageobject>
+            </mediaobject>
+        </para>
+
+        <section>
+
+            <title>TestLink-Version</title>
+
+            <para>Dies ist der Name der TestLink-Installation in den Jenkins-Globaleinstellungen.</para>
+
+        </section>
+
+        <section>
+
+            <title>Test-Project-Name</title>
+
+            <para>Dies ist der Name des <emphasis>Test Project</emphasis>s
+            in TestLink. Hier sind Umgebungsvariablen nutzbar.</para>
+
+        </section>
+
+        <section>
+
+            <title>Test-Plan-Name</title>
+
+            <para>Dies ist der Name des <emphasis>Test Plan</emphasis>s
+            in TestLink. Hier sind Umgebungsvariablen nutzbar.</para>
+
+        </section>
+
+        <section>
+
+            <title>Build-Name</title>
+
+            <para>Dies ist der Name des <emphasis>Build</emphasis>s
+            in TestLink. Hier sind Umgebungsvariablen nutzbar.</para>
+
+        </section>
+
+        <section>
+
+            <title>Single-Build-Steps</title>
+
+            <para>Diese Build-Steps werden pro Jenkins-Job-Ausführung einmal durchlaufen.</para>
+
+        </section>
+
+        <section>
+
+            <title>Iterative-Test-Build-Steps</title>
+
+            <para>Diese Build-Steps werden wiederholt für jeden in TestLink beschriebenen
+            Testfall durchgeführt. Für diese Build-Steps sind einige Umgebungsvariablen
+            verfügbar. Hierauf wird später genauer eingegangen.</para>
+
+        </section>
+
+        <section>
+
+          <title>Test-Result-Seeking-Strategies</title>
+
+          <para>Die Test-Result-Seeking-Strategies (Suchstrategien zu
+          Testergebnissen) beschreiben wie Testergebnisse aufgefunden, eingelesen und
+          die Testergebnisse in TestLink aktualisiert werden.</para>
+
+        </section>
+
+        <section>
+
+            <title>Include-Pattern</title>
+
+            <para>Das Plug-in benutzt dieses Muster, um Testergebnisse der
+            Testausführung (Einzeltests nud auch iterative Tests) zu finden.
+            Es wersen Ant-ähnliche Ausdrücke unterstützt wie
+            TEST*.xml oder target/**/testng*.xml.</para>
+
+        </section>
+
+        <section>
+
+          <title>Key-Custom-Field</title>
+
+          <para>Das Custom-Field wird im Plug-in genutzt, um einen Testfall in
+          TestLink mit dem Testergebnis zu verbinden. Das Custom-Field muss
+          in der Liste der Custom-Fields in TestLink engelegt worden sein.</para>
+
+        </section>
+
+        <section>
+
+          <title>Attach TestNG XML</title>
+
+          <para>Wurde diese Option ausgewählt, so nutzt das Plug-in eine
+          TestNG-XML-Datei bei der Anbindung an TestLink.</para>
+
+        </section>
+
+        <section>
+
+          <title>Mark skipped test as Blocked</title>
+
+          <para>Standardmäßig in TestNG werden übersprungene Tests nicht in
+          TestLink aktualisiert. Sie werden als Not Run in TestLink gezeigt.
+          Ist die Option gewählt, wird das Plug-in den Testfall in TestLink als
+          Blocked markieren.</para>
+
+        </section>
+
+        <section>
+
+            <title>Umgebungsvariablen</title>
+
+            <para>Das Plug-in greift auf die in TestLink enthaltenen Informationen
+            des Testprojektes, des Testplans, des Builds und automatisierter
+            Testfälle zu. Diese Informationen können dann in der Testausführung
+            verwendet werden. Jenkins selbst stellt auch <emphasis>Environment
+            Variables</emphasis> (Umgebungsvariablen) und <emphasis>Build
+            Environment Variables</emphasis> (wie etwa die
+            <emphasis>BUILD_ID</emphasis>) zur Verfügung.</para>
+
+            <para>Das Plug-in stellt die aus TestLink erhaltenen Informationen
+            als zusätzliche Umgebungsvariablen dar. Auf diese Weise kann dann
+            auch der Wert des <emphasis>Java class</emphasis> Custom-Field, das
+            in <xref linkend="chapter.4" /> angelegt wurde, in einem beliebigen
+            Build-Step genutzt werden. Einen Test mit Maven auszuführen, und dabei
+            eine dieser Umgebungsvariablen zu nutzen, kann wie folgt geschehen.</para>
+
+            <para>
+                <command>mvn test -Dtest=$TESTLINK_TESTCASE_JAVA_CLASS</command>
+            </para>
+
+            <para>Das Test-Kommando benutzt den Wert des
+            <emphasis>Java class</emphasis> Custom-Fields, um den Namen des Tests
+            an Maven (eigentlich an das Maven Surefire Plug-in) weiterzugeben.
+            Nachfolgend wird eine Übersicht der Informationen gegeben, die das Plug-in
+            verfügbar macht. Namen eines Custom-Fields unterscheiden sich
+            einstellungsabhängig. Dabei wird der Custom-Field-Name vollständig in Großschrift
+            und Leerzeichen als Unterstrich <emphasis>_</emphasis> der Zeichenkette
+            <emphasis>TESTLINK_TESTCASE_</emphasis> angehängt, wie im Beispiel gezeigt.</para>
+
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>TESTLINK_TESTCASE_ID</para>
+                    </listitem>
+                    <listitem>
+                        <para>TESTLINK_TESTCASE_NAME</para>
+                    </listitem>
+                    <listitem>
+                        <para>TESTLINK_TESTCASE_TESTPROJECTID</para>
+                    </listitem>
+                    <listitem>
+                        <para>TESTLINK_TESTCASE_AUTHOR</para>
+                    </listitem>
+                    <listitem>
+                        <para>TESTLINK_TESTCASE_SUMMARY</para>
+                    </listitem>
+                    <listitem>
+                        <para>TESTLINK_BUILD_NAME</para>
+                    </listitem>
+                    <listitem>
+                        <para>TESTLINK_TESTPLAN_NAME</para>
+                    </listitem>
+                    <listitem>
+                        <para>TESTLINK_TESTCASE_$CUSTOM_FIELD_NAME</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+
+        </section>
+
+    </section>
+
+</chapter>

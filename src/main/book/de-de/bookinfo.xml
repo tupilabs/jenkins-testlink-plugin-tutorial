@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bookinfo>
+
+    <productname>Jenkins TestLink Plug-in Tutorium</productname>
+
+    <abstract>
+        <para>Das Jenkins TestLink Plug-in Tutorium dient dem Aufbau eines
+        besseren Verständnisses über die Nutzung und Integration des Plug-ins
+        in Jenkins und TestLink. Es ist ein quelloffenes Projekt. Eine
+        Beteiligung sowie Verbesserungsvorschläge sind erwünscht und willkommen.
+        </para>
+    </abstract>
+
+    <author>
+        <firstname>Bruno</firstname>
+        <othername>P.</othername>
+        <surname>Kinoshita</surname>
+        <email>brunodepaulak@yahoo.com.br</email>
+    </author>
+
+    <author>
+        <firstname>César</firstname>
+        <othername>Fernandes</othername>
+        <surname>de Almeida</surname>
+        <email>cesar.fa@gmail.com</email>
+    </author>
+
+    <othercredit>
+        <firstname>Flóreal</firstname>
+        <surname>Toumikian</surname>
+        <contrib>Französische Übersetzung</contrib>
+    </othercredit>
+    
+    <othercredit>
+        <firstname>Olivier</firstname>
+        <surname>Renault</surname>
+        <contrib>Französische Übersetzung</contrib>
+    </othercredit>
+    
+    <othercredit>
+        <firstname>Oliver</firstname>
+        <surname>Merkel</surname>
+        <email>Merkel.Oliver@web.de</email>
+        <contrib>Lektorat, Durchsicht und Korrektur / Didaktische Vorschläge zu Inhalten / Deutsche Übersetzung</contrib>
+    </othercredit>
+    
+    <pubsnumber>3</pubsnumber>
+
+</bookinfo>

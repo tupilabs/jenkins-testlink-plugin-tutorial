@@ -155,7 +155,7 @@
 		TestLink. The plug-in configuration screen contains three sections: 
 		<emphasis>TestLink Configuration</emphasis>, 
 		<emphasis>Test Execution</emphasis> and 
-		<emphasis>Result Seeking Strategy</emphasis>. to fill this form, we will 
+		<emphasis>Result Seeking Strategy</emphasis>. To fill this form, we will 
 		use the configuration created in TestLink throughout <xref linkend="chapter.4" />.</para>
 		
 		<section>
