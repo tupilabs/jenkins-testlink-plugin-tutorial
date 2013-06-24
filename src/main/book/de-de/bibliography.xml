@@ -1,53 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <bibliography>
-	<title>Bibliography</title>
-	
-	<biblioentry>
-		<abbrev>JenkinsTestLink</abbrev>
-		<title><ulink url="http://wiki.jenkins-ci.org/display/JENKINS/TestLink+Plugin">Jenkins TestLink Plug-in</ulink></title>
-		<copyright><year>2011</year><holder>The Jenkins TestLink Plug-in team</holder></copyright>
-	</biblioentry>
-	
-	<biblioentry>
-		<abbrev>JenkinsCI</abbrev>
-		<title><ulink url="http://www.jenkins-ci.org/">Jenkins-CI</ulink></title>
-		<copyright><year>2011</year><holder>Jenkins-CI</holder></copyright>
-	</biblioentry>
-	
-	<biblioentry>
-		<abbrev>TestLink</abbrev>
-		<title><ulink url="http://www.teamst.org/">TestLink</ulink></title>
-		<copyright><year>2011</year><holder>TestLink Community</holder></copyright>
-	</biblioentry>
-	
-	<biblioentry>
-		<abbrev>TestNG</abbrev>
-		<title><ulink url="http://www.testng.org/">TestNG</ulink></title>
-		<copyright><year>2011</year><holder>TestNG</holder></copyright>
-	</biblioentry>
-	
-	<biblioentry>
-		<abbrev>JUnit</abbrev>
-		<title><ulink url="http://www.junit.org/">JUnit</ulink></title>
-		<copyright><year>2011</year><holder>JUnit</holder></copyright>
-	</biblioentry>
-	
-	<biblioentry>
-		<abbrev>TAP</abbrev>
-		<title><ulink url="http://testanything.org/">Test Anything Protocol Website</ulink></title>
-		<copyright><year>2011</year><holder>Test Anything Protocol Community</holder></copyright>
-	</biblioentry>
-	
-	<biblioentry>
-		<abbrev>TAPWikipedia</abbrev>
-		<title><ulink url="http://en.wikipedia.org/wiki/Test_Anything_Protocol">Test Anything Protocol article in Wikipedia</ulink></title>
-		<copyright><year>2011</year><holder>Wikipedia</holder></copyright>
-	</biblioentry>
-	
-	<biblioentry>
-		<abbrev>YAMLorg</abbrev>
-		<title><ulink url="http://www.yaml.org">YAML.org</ulink></title>
-		<copyright><year>2011</year><holder>YAML.org</holder></copyright>
-	</biblioentry>
+  <title>Quellenverzeichnis</title>
+
+  <biblioentry>
+    <abbrev>JenkinsTestLink</abbrev>
+    <title><ulink url="http://wiki.jenkins-ci.org/display/JENKINS/TestLink+Plugin">Jenkins TestLink Plug-in</ulink></title>
+    <copyright><year>2011</year><holder>The Jenkins TestLink Plug-in team</holder></copyright>
+  </biblioentry>
+
+  <biblioentry>
+    <abbrev>JenkinsCI</abbrev>
+    <title><ulink url="http://www.jenkins-ci.org/">Jenkins-CI</ulink></title>
+    <copyright><year>2011</year><holder>Jenkins-CI</holder></copyright>
+  </biblioentry>
+
+  <biblioentry>
+    <abbrev>TestLink</abbrev>
+    <title><ulink url="http://www.teamst.org/">TestLink</ulink></title>
+    <copyright><year>2011</year><holder>TestLink Community</holder></copyright>
+  </biblioentry>
+
+  <biblioentry>
+    <abbrev>TestNG</abbrev>
+    <title><ulink url="http://www.testng.org/">TestNG</ulink></title>
+    <copyright><year>2011</year><holder>TestNG</holder></copyright>
+  </biblioentry>
+
+  <biblioentry>
+    <abbrev>JUnit</abbrev>
+    <title><ulink url="http://www.junit.org/">JUnit</ulink></title>
+    <copyright><year>2011</year><holder>JUnit</holder></copyright>
+  </biblioentry>
+
+  <biblioentry>
+    <abbrev>TAP</abbrev>
+    <title><ulink url="http://testanything.org/">Test Anything Protocol Website</ulink></title>
+    <copyright><year>2011</year><holder>Test Anything Protocol Community</holder></copyright>
+  </biblioentry>
+
+  <biblioentry>
+    <abbrev>TAPWikipedia</abbrev>
+    <title><ulink url="http://en.wikipedia.org/wiki/Test_Anything_Protocol">Test Anything Protocol article in Wikipedia</ulink></title>
+    <copyright><year>2011</year><holder>Wikipedia</holder></copyright>
+  </biblioentry>
+
+  <biblioentry>
+    <abbrev>YAMLorg</abbrev>
+    <title><ulink url="http://www.yaml.org">YAML.org</ulink></title>
+    <copyright><year>2011</year><holder>YAML.org</holder></copyright>
+  </biblioentry>
 
 </bibliography>
