@@ -1,20 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <chapter id="chapter.4">
 
-    <title>TestLink Configuration</title>
+    <title>TestLink-Konfiguration</title>
 
     <section>
 
-        <title>Installing TestLink</title>
+        <title>Installation von TestLink</title>
 
-        <para>In this part of the tutorial we will show how to install and
-        configure TestLink. Let's start by downloading
-        <emphasis>testlink-1.9.3.tar.gz</emphasis> from
+        <para>Dieser Teil des Tutoriums zeigt die Installation und
+        Konfiguration von TestLink. Zuerst sollte 
+        <emphasis>testlink-1.9.3.tar.gz</emphasis> heruntergeladen werden von
         <ulink url="http://www.teamst.org">http://www.teamst.org</ulink>.
-        Decompress it with <command>tar -zxvf testlink-1.9.3.tar.gz</command>.
-        Move the directory created to your HTTP server root directory and open
+        Dies ist zu entpacken mittels
+        <command>tar -zxvf testlink-1.9.3.tar.gz</command>.
+        Das entpackte Verzeichnis ist zum HTTP-Server-Hauptverzeichnis zu
+        bewegen (bzw. in der HTTP-Server-Konfiguration zugreifbar einzutragen),
+        so dass es mit der URL
         <ulink url="http://localhost/testlink-1.9.3">
-        http://localhost/testlink-1.9.3</ulink> in your browser.</para>
+        http://localhost/testlink-1.9.3</ulink> erreichbar im Browser ist.
+        Bei Konfigurationsfragen zum verwendeten HTTP-Server sei hier auf die
+        zugehörige Dokumentation verwiesen.</para>
 
         <para>
             <mediaobject id="testlink_002">
@@ -42,14 +47,15 @@
             </mediaobject>
         </para>
 
-        <para>Now the installation wizard will guide you through the rest of
-        the installation. But before going on, we need to create a database in
-        MySQL.</para>
+        <para>Im Browser wird dabei eine geführte Installationshilfe den Rest der
+        Installation begleiten. Bevor diese Schritte jedoch durchführbar sind, muss
+        eine zugehörige MySQL-Datenbank erzeugt werden (Zugehörige Hilfe in der
+        MySQL-Dokumentation).</para>
 
         <para><command>mysql> create database testlink;</command></para>
 
-        <para>The next step is to create a user that TestLink will use to
-        access the database.</para>
+        <para>Im nächsten Schritt muss ein Benutzer in MySQL erzeugt werden, der
+        von TestLink zum Zugriff auf die Datenbank verwendet.</para>
 
         <para>
         <command>mysql> grant all privileges on testlink.* to 'testlink' identified by 'testlink';</command>
@@ -96,23 +102,26 @@
             </mediaobject>
         </para>
 
-        <para>If everything worked out correctly you should be asked to log in
-        with user admin and password admin. The examples in this tutorial
-        require you to have a user with administrator rights in TestLink.</para>
+        <para>Im Gutfall wird daraufhin ein Login als Benutzer admin und Passwort
+        admin abgefragt. Die Beispiele in diesem Tutorium gehen davon aus, dass
+        für Zugriffe auf TestLink ein Benutzer mit vollen administrativen Rechten
+        in TestLink eingerichtet ist und verwendet wird.</para>
 
-        <para>By default, the XML-RPC comes disabled in TestLink. Let's enable
-        it by editing config.inc.php, located in TestLink root folder.</para>
+        <para>Standardmäßig ist die XML-RPC-Schnittstelle in TestLink deaktiviert.
+        Diese wird durch Editieren der Datei config.inc.php des Hauptverzeichnisses
+        von TestLink eingeschaltet.</para>
 
         <para>
           <command>$tlCfg->api->enabled = TRUE;</command>
         </para>
 
-        <para>Finally, let's make sure that the attachments retrieved from the
-        database are ordered by its ID. This way, the order of attachments will
-        be preserved in TestLink. We could use the date that the attachment was
-        inserted in database, however the precision of the date_added column is
-        in seconds, what could lead to inconsistencies in the way that
-        attachments are displayed in TestLink.</para>
+        <para>Abschließend ist die Option zu editieren, dass empfangene Anhänge
+        aus Datenbankschnittstellen nach ID geordnet sind. Auf diese
+        Weise wird die Ordnung von Anhängen in TestLink beibehalten.
+        Alternativ ist die Sortierung von Anhängen entsprechend des
+        Einfügedatums auswählbar. Die Genauigkeit (Zeitliche Auflösung) der
+        Spalte date_added ist hierbei in Sekunden. Das kann jedoch zu Inkonsistenzen
+        in der Darstellung in TestLink führen und wird nicht empfohlen.</para>
 
         <para>
           <command>$g_attachments->order_by = " ORDER BY id ASC ";</command>
@@ -122,12 +131,12 @@
 
     <section>
 
-        <title>Creating a Test Project</title>
+        <title>Erzeugung eines Testprojektes</title>
 
-        <para>When you log in by the first time in TestLink it is showed to you
-        a form to create a Test Project. After creating a test project you will
-        be able to create test plans, requirements, specify and execute your
-        tests.</para>
+        <para>Beim ersten Anmeldevorgang in TestLink wird ein Formular zur
+        Erzeugung eines Testprojektes angezeigt. Nach Abschluss der Projekterzeugung
+        besteht die Möglichkeit, Testpläne, Anforderungen, Testspezifikationen und
+        Ausführungsdaten zu Tests anzulegen.</para>
 
         <para>
             <mediaobject id="testlink_007">
@@ -142,10 +151,10 @@
             </mediaobject>
         </para>
 
-        <para>Create a test project with name My first project, prefix MFP and
-        make sure the following options are checked: Enable Requirements
+        <para>Erzeugen Sie ein Testprojekt namens My first project, Präfix MFP und
+        stellen Sie die Aktivierung folgender Optionen sicher: Enable Requirements
         feature, Enable Testing Priority, Enable Test Automation (API keys),
-        Enable Inventory, Active and Public. Click on Create button.</para>
+        Enable Inventory, Active and Public. Drücken Sie den Create-Schaltknopf.</para>
 
         <para>
             <mediaobject id="testlink_008">
@@ -160,8 +169,9 @@
             </mediaobject>
         </para>
 
-        <para>If the following screen is not displayed, review your previous
-        steps or consult TestLink documentation for further assistance.</para>
+        <para>Wird die folgende Übersicht nicht angezeigt, prüfen Sie bitte die
+        vorherigen Schritte nochmals oder Sie sollten als weitere Hilfe die
+        TestLink-Dokumentation heranziehen.</para>
 
         <para>
             <mediaobject id="testlink_009">
@@ -180,18 +190,21 @@
 
     <section>
 
-        <title>Creating and assigning a Custom Field</title>
+        <title>Erzeugen und Zuweisen eines Custom Field</title>
 
-        <para>Click on the Project item of the top menu to be redirected to the
-        main screen. Now we will create the custom field used for automation.
-        The plug-in uses this custom field's value to link a test case in
-        TestLink with a test result from your Jenkins build.</para>
+        <para>Drücken Sie auf den Project-Eintrag der oberen Menü-Zeile, um zur
+        Hauptübersicht zu gelangen. Als nächstes soll ein Custom Field für die
+        automatisierten Tests angelegt werden.
+        Das Plug-in nutzt den Wert des Custom Fields zur Verbindung eines
+        Testfalls in TestLink mit dem Testergebnis des ausgeführten Jenkins-Jobs.</para>
 
-        <para>Click on Define Custom Fields under the Test Project options box.
-        Now create a custom field using the name Java Class, label
-        Java Class, available for Test Case, type string, enable on Test Spec
-        Design and display on test execution No. The plug-in retrieves the
-        custom fields by its name and not by the value in its label.</para>
+        <para>Wählen Sie Define Custom Fields in der Auswahl der Test-Projekt-Optionsbox.
+        Zur Anzeige dieser Auswahloption muss der angemeldete TestLink-Nutzer
+        entsprechende Adminstrationrechte besitzen. Erzeugen Sie ein Custom Field
+        namens Java Class, dem Label Java Class, Available for Test Case,
+        Typ String, Enable on Test Spec Design und Display on test execution No als
+        Einträge in der Eingabemaske. Das Plug-in greift auf das
+        Custom Field über dessen Name und nicht über den Wert im Label zu.</para>
 
         <para>
             <mediaobject id="testlink_010">
@@ -219,11 +232,12 @@
             </mediaobject>
         </para>
 
-        <para>The last step now is to assign this custom field to be used in
-        our test project. Go back to the main screen and click on Assign Custom
-        Fields. It will take you to a screen with the list of the available
-        custom fields. Select the Java Class custom field and click on the
-        Assign button.</para>
+        <para>Als letzter Schritt geschieht die Zuweisung des Custom Field im
+        Testprojekt.
+        Zurück in der Hauptübersicht wählen Sie den Eintrag Assign Custom
+        Fields. Dadurch wird eine Liste der verfügbaren Custom Fields angezeigt.
+        Nach Auswahl des Java Class Custom Field muss der Assign-Knopf
+        gedrückt werden.</para>
 
         <para>
             <mediaobject id="testlink_012">
@@ -242,19 +256,20 @@
 
     <section>
 
-        <title>Specifying Test Suite and Test Cases</title>
+        <title>Festlegung der Testsammlung und der Testfälle</title>
 
-        <para>For those who work with tests this part may be slightly easier
-        than the previous sections. What we are going to do now is to create a
-        test suite and some test cases. In TestLink your test cases are kept
-        under a test suite which is, by its turn, under a test project.</para>
+        <para>Dieser Abschnitt ist einfacher zu verstehen, wenn man mit der
+        Terminologie von Testumgebungen vertraut ist. Ziel ist es, als weiteren
+        Schritt eine Testsammlung und einige Testfälle zu erstellen. In
+        TestLink werden Testfälle in einer Testsammlung zusammengefasst. Diese
+        sind dann Bestandteil eines Testprojektes.</para>
 
-        <para>Back to the main screen, in the top menu you will see the option
-        Test Specification. Click on this option. The test specification
-        screen is quite simple. On the left you have the navigator, with the
-        settings, filter and the tree of test suites and test cases. Start
-        clicking on your test project to see the test suite operations
-        available.</para>
+        <para>In der oberen Menüzeile der Hauptübersicht gibt es den Eintrag
+        Test Specification. Nach Auswahl dieser Test-Spezifikation wird links
+        eine Navigation mit Einstellungen, den Filteroptionen und einer Baumübersicht
+        der Testsammlungen und Testfälle dargestellt. Durch Auswahl des eigenen
+        Testprojektes werden die Bearbeitungsmöglichkeiten der Testsammlungen
+        angezeigt.</para>
 
         <para>
             <mediaobject id="testlink_013">
@@ -269,10 +284,11 @@
             </mediaobject>
         </para>
 
-        <para>Create a test suite with any name that you want. This field is
-        not important for this tutorial. Once created, your test suite will be
-        displayed in the tree on the left. Now click on the test suite in the
-        tree to see the available test case operations.</para>
+        <para>Die Testsammlung kann mit beliebigem Namen erstellt werden. Für das
+        Tutorium ist dieser Name im Feldeintrag nicht entscheident. Einmal angelegt,
+        wird die Testsammlung in der Baumübersicht links angezeigt. Durch Auswahl der
+        Testsammlung werden die Bearbeitungsmöglichkeiten der einzelnen Testfälle
+        angezeigt.</para>
 
         <para>
             <mediaobject id="testlink_014">
@@ -287,12 +303,12 @@
             </mediaobject>
         </para>
 
-        <para>Create a test case with any title or summary. The important
-        information on this screen for the automation are the execution type
-        and the Java class (custom field created in the previous step). In
-        execution type select Automated and for Java class fill with the
-        java class jenkins.plugins.testlink.examples.TestCurrentTime (present in
-        the example project).</para>
+        <para>Erstellen Sie einen Testfall beliebigen Titels und beliebiger Beschreibung.
+        Notwendige Einstellungen zur Automatisierung sind der Ausführungstyp und die
+        Java-Klasse (als Custom Field im vorherigen Schritt bereits angelegt).
+        Als Ausführungstyp wählen Sie Automated und für die Java-Klasse tragen Sie
+        jenkins.plugins.testlink.examples.TestCurrentTime ein. Diese ist im
+        Beispielprojekt enthalten.</para>
 
         <para>
             <mediaobject id="testlink_015">
@@ -350,25 +366,29 @@
 
     <section>
 
-        <title>Create a Test Plan and add the Test Cases</title>
+        <title>Erstellen eines Testplans und das Hinzufügen von Testfällen</title>
 
-        <para>This is the last step for the TestLink configuration. However
-        before we start this step, there is an important concept in TestLink:
-        Builds.</para>
+        <para>Dies ist der letzte Schritt der TestLink-Konfiguration. Bevor
+        dieser Abschnitt erläutert wird, soll zuvor auf das wichtige Konzept
+        sogenannter Builds in TestLink eingegangen werden.</para>
 
-        <para>In TestLink, you create a test plan outlining how you will test
-        your application under test. Once you have a test plan you can start to
-        add test cases to your test plan, and then execute the test plan.</para>
+        <para>Der Testplan in TestLink beschreibt, wie der konkrete
+        Applikationstest durchgeführt wird. Testfälle werden dem
+        Testplan zugefügt, um diesen Testplan dann ausführen zu können.</para>
 
-        <para>A build in TestLink can be seen as the execution of a test plan.
-        Once the test plan is executed you are not allowed to edit the test
-        cases of this test plan (it wouldn't be right to change the scope or
-        exit criteria of a test case after it had already been executed).</para>
+        <para>Ein Build kann innerhalb von TestLink als konkrete
+        Ausführungsinstanz eines Testplans angesehen werden.
+        Sobald ein Testplan zur Ausführung kommt, ist es nicht mehr möglich,
+        die zugehörigen Testfälle inhaltlich zu verändert.
+        Eine Nachverfolgung oder Reproduktion des Tests wäre bei Durchführung
+        weiterer Änderungen etwa der Rahmenbedingungen oder Abnahmekriterien
+        eines Testfalles nicht mehr gewährt, wenn dieser zuvor bereits lief.</para>
 
-        <para>Go back to the main screen and click on the Test Plan Management
-        option available under the Test Plan box on the right of the screen.
-        Create a test plan with the name My first test plan, any description
-        and make sure that Active and Public are checked.</para>
+        <para>Wählen Sie in der Hauptübersicht den Eintrag Test Plan Management
+        innerhalb des Abschnitts Test Plan in der rechten Seite der Ansicht.
+        Erstellen Sie einen Testplan des Namens My first test plan mit beliebiger
+        Beschreibung, aber stellen sicher, dass die Auswahl Active und Public aktiv
+        sind.</para>
 
         <para>
             <mediaobject id="testlink_019">
@@ -396,8 +416,9 @@
             </mediaobject>
         </para>
 
-        <para>In the last box on the right of the screen, click on Add / Remove
-        Test Cases and add the test case that you created to your test plan.</para>
+        <para>Im untersten Auswahlmenü der Test Plan Contents (Testplaninhalte)
+        wählen Sie Add / Remove Test Cases und fügen den selbsterstellten
+        Testfall dem Testplan hinzu.</para>
 
         <para>
             <mediaobject id="testlink_021">
@@ -412,15 +433,18 @@
             </mediaobject>
         </para>
 
-        <para>Create a Build in TestLink is optional, as the plug-in
-        automatically creates a new build if there is none with the name that
-        you provided in the Jenkins job configuration page. When you go back
-        to your test plan, you should see more options available in the Test
-        Plan box and two other boxes: Test Execution and Test Plan contents,
-        as well as other options available in the top menu.</para>
+        <para>Das Anlegen eines Build in TestLink ist hier optional, da das
+        Plug-in automatisch einen neuen Build anlegt, falls keiner vorhanden
+        ist, der mit den Angaben der Konfigurationsseite des Jobs in Jenkins
+        übereinstimmt. Im Abschnitt Test Plan der Hauptübersicht auf der
+        rechten Seite sind weitere Eisnstellungsmöglichkeiten zum erstellten
+        Testplan gegeben. Zusätzlich gibt es Abschnitte zur Testausführung
+        (Test Execution) und der Inhaltsgestaltung von Testplänen (Test Plan
+        Contents) wie auch weitere zusätzliche Optionen in der
+        Hauptübersicht.</para>
 
-        <para>We are done with TestLink for now, the next step is to configure
-        Jenkins.</para>
+        <para>Damit sind die Einstellungen in TestLink vorerst abgeschlossen.
+        Im nächsten Schritt ist Jenkins zu konfigurieren.</para>
 
     </section>
 

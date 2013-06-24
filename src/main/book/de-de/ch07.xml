@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<chapter id="chapter.7">
+
+  <title>Ergebnis-Suchstrategien</title>
+
+  <para>Nach Durchlauf der automatischen Tests sucht das Plugin
+  nach <emphasis>Testergebnissen</emphasis>. So wird ermittelt, ob ein
+  automatischer Test korrekt oder nicht ausgeführt wurde und kann dann
+  denn Test-Ausführungsstatus in TestLink entsprechend setzen.</para>
+
+  <para>Das Jenkins-TestLink-Plug-in unterstützt drei unterschiedliche
+  Ergebnisformate:
+  <emphasis>JUnit</emphasis>, <emphasis>TestNG</emphasis> und
+  <emphasis>TAP</emphasis>.</para>
+
+  <section>
+
+    <title>JUnit</title>
+
+    <para>
+            <programlisting language="xml">
+<![CDATA[<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite failures="1" time="0.078" errors="0" skipped="0"
+           tests="1" name="A Suite">
+  <testcase time="0" classname="tcA" name="testVoid">
+    <failure type="junit.framework.AssertionFailedError"
+             message="null">junit....</failure>
+  </testcase>
+  <testcase time="0" classname="tcB" name="testVoid" />
+  <testcase time="0" classname="tcC" name="testVoid" />
+  <testcase time="0" name="nameA" />
+  <testcase time="0" name="nameB" />
+</testsuite>]]>
+            </programlisting>
+        </para>
+
+        <section>
+
+            <title>JUnit case name</title>
+
+            <para>Diese Strategie bildet den Namen des Testfalls auf den Wert des Key-Custom-Field ab.</para>
+
+        </section>
+
+        <section>
+
+            <title>JUnit class name</title>
+
+            <para>Diese Strategie bildet den Namen der Testklasse auf den Wert des Key-Custom-Field ab.</para>
+
+        </section>
+
+        <section>
+
+            <title>JUnit method name</title>
+
+            <para>Diese Strategie bildet den Ausdruck &lt;package&gt;.&lt;classname&gt;#&lt;methodname&gt;
+            auf den Wert des Key-Custom-Field ab (beispielsweise com.example.MyClass#testSomething).</para>
+
+        </section>
+
+        <section>
+
+            <title>JUnit suite name</title>
+
+            <para>Diese Strategie bildet den Namen der Testsuite auf den Wert des Key-Custom-Field ab.</para>
+
+        </section>
+
+  </section>
+
+  <section>
+
+    <title>TestNG</title>
+
+    <para>
+      <programlisting language="xml">
+<![CDATA[<testng-results>
+  <reporter-output>
+  </reporter-output>
+  <suite name="Command line suite"
+    duration-ms="0"
+    started-at="2010-11-17T13:31:41Z"
+    finished-at="2010-11-17T13:31:41Z">
+    <groups>
+    </groups>
+    <test name="Command line test"
+        duration-ms="0"
+        started-at="2010-11-17T13:31:41Z"
+        finished-at="2010-11-17T13:31:41Z">
+      <class name="br.eti.kinoshita.Test">
+        <test-method status="FAIL"
+            signature="testVoid()"
+            name="testVoid"
+            duration-ms="0"
+            started-at="2010-11-17T13:31:41Z"
+            finished-at="2010-11-17T13:31:41Z">
+        </test-method>
+      </class>
+    </test>
+  </suite>
+</testng-results>]]>
+      </programlisting>
+    </para>
+
+    <section>
+
+            <title>TestNG class name</title>
+
+            <para>Diese Strategie bildet den Namen der Testklasse auf den Wert des Key-Custom-Field ab.</para>
+
+        </section>
+
+        <section>
+
+            <title>TestNG method name</title>
+
+            <para>Diese Strategie bildet den Ausdruck &lt;package&gt;.&lt;classname&gt;#&lt;methodname&gt;
+            auf den Wert des Key-Custom-Field ab (beispielsweise com.example.MyClass#testSomething).</para>
+
+        </section>
+
+        <section>
+
+            <title>TestNG suite name</title>
+
+            <para>Diese Strategie bildet den Namen der Testsuite auf den Wert des Key-Custom-Field ab.</para>
+
+        </section>
+
+  </section>
+
+  <section>
+
+    <title>TAP - Test Anything Protocol</title>
+
+        <para>Bei der Benutzung von TAP kann die Plattform (festgelegt in TestLink) angegeben werden, die
+        für die Tests genutzt wird. Auch können zusätzliche Anhänge angegeben werden, die dann in TestLink
+        hochgeladen werden. Zugehörige Informationen finden sich in <xref linkend="chapter.9" />.</para>
+
+    <para>
+      <programlisting>
+<![CDATA[1..3
+ok 1 testOk
+ok 2
+not ok 3]]>
+      </programlisting>
+    </para>
+
+    <section>
+
+            <title>TAP file name</title>
+
+            <para>Diese Strategie bildet die TAP-Stream-Datei auf den Wert des Key-Custom-Field ab.</para>
+
+        </section>
+
+  </section>
+
+</chapter>

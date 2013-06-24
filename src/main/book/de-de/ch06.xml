@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<chapter id="chapter.6">
+
+    <title>Ausführung automatisierter Testfälle</title>
+
+    <para>Nachdem damit die Konfiguration abgeschlossen ist, soll die Ausführung
+    automatisierter Tests geschehen. Vom Jenkins-Hauptmenü aus ist der angelegte
+    Job auszuwählen und über <emphasis>Jetzt bauen / Build Now</emphasis> zu
+    starten.</para>
+
+    <para>
+        <mediaobject id="jenkins_011">
+            <imageobject>
+                <imagedata
+                    align="center"
+                    fileref="../media/jenkins_011.png"
+                    width="100%"
+                    contentdept="100%"
+                    format="PNG" />
+            </imageobject>
+        </mediaobject>
+    </para>
+
+    <para>Sobald die Ausführung abgeschlossen ist, kann die Anzeige mit der
+    Taste F5 oder durch drücken den Build-Namens aktualisiert werden. Dadurch
+    erscheint ein Diagramm mit Anzeige der Testergebnisse wie folgt:</para>
+
+    <para>
+        <mediaobject id="jenkins_012">
+            <imageobject>
+                <imagedata
+                    align="center"
+                    fileref="../media/jenkins_012.png"
+                    width="100%"
+                    contentdept="100%"
+                    format="PNG" />
+            </imageobject>
+        </mediaobject>
+    </para>
+
+    <para>Nähere Information zu den Tests sind über
+    <emphasis>Test Results</emphasis> oder im Build unter
+    <emphasis>Build-Verlauf / Build History</emphasis> verfügbar.</para>
+
+    <para>
+        <mediaobject id="jenkins_013">
+            <imageobject>
+                <imagedata
+                    align="center"
+                    fileref="../media/jenkins_013.png"
+                    width="100%"
+                    contentdept="100%"
+                    format="PNG" />
+            </imageobject>
+        </mediaobject>
+    </para>
+
+    <para>
+        <mediaobject id="jenkins_014">
+            <imageobject>
+                <imagedata
+                    align="center"
+                    fileref="../media/jenkins_014.png"
+                    width="100%"
+                    contentdept="100%"
+                    format="PNG" />
+            </imageobject>
+        </mediaobject>
+    </para>
+
+    <para>Einstellungen in Jenkins sind hiermit vollständig. Zurück in TestLink
+    wird die <emphasis>Test execution</emphasis>-Option im Hauptmenue gewählt.
+    Hier werden die Ergebnisse der Testausführung angezeigt.</para>
+
+    <para>
+        <mediaobject id="testlink_022">
+            <imageobject>
+                <imagedata
+                    align="center"
+                    fileref="../media/testlink_022.png"
+                    width="100%"
+                    contentdept="100%"
+                    format="PNG" />
+            </imageobject>
+        </mediaobject>
+    </para>
+
+    <para>Im linken Menuebaum kann man die Auswahl treffen, um genauere
+    Informationen zu den Tests zu erhalten. Zu beachten ist, dass das Plugin
+    die Ergebnisdatei hochläd. Im Fall, dass TestNG genutzt wird, findet sich
+    hier die Datei <emphasis>testng-results.xml</emphasis>. Dies kann helfen,
+    direkt zu erfahren, was in den Testläufen geschah. Etwa wenn ein
+    Exception-Stack-Trace analysiert werden muss.</para>
+
+    <para>
+        <mediaobject id="testlink_023">
+            <imageobject>
+                <imagedata
+                    align="center"
+                    fileref="../media/testlink_023.png"
+                    width="100%"
+                    contentdept="100%"
+                    format="PNG" />
+            </imageobject>
+        </mediaobject>
+    </para>
+
+    <para>Die verfügbaren Berichte in TestLink zeigen die Testergebnisse aus
+    unterschiedlichen Perspektiven.</para>
+
+    <para>
+        <mediaobject id="testlink_024">
+            <imageobject>
+                <imagedata
+                    align="center"
+                    fileref="../media/testlink_024.png"
+                    width="100%"
+                    contentdept="100%"
+                    format="PNG" />
+            </imageobject>
+        </mediaobject>
+    </para>
+
+</chapter>

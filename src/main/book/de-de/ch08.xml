@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<chapter id="chapter.8">
+
+  <title>Vorteile der Nutzung des Jenkins TestLink Plug-in</title>
+
+  <para>Es ist kein Entwurfsziel des Plug-ins, eine Testautomatisierungslösung
+  umzusetzen, obgleich es Unterstützung für automatisertes Testen anbietet.
+  Es bietet auch keine Verwaltungsmöglichkeiten von automatisierten Tests an,
+  die stattdessen in diesem Umfeld in TestLink durchgeführt werden. Der Zweck
+  des Plug-ins besteht in der Integration von Jenkins als
+  Continuous-Integration-Server und TestLink als Test-Management-Lösung.</para>
+
+  <para>Es gibt drei klare Vorteile dieses Ansatzes. Zuerst werden neben
+  Jenkins als etablierte Lösung für einen Continuous-Integration-Server und
+  TestLink als Test-Management-Lösung keine weiteren Werkzeuge in die
+  bestehende Architektur eingeführt. Es ist einfach ein Plug-in zu installieren
+  und die DevOps werden weiter in einer Jenkins-Umgebung arbeiten, während
+  Tester weiter in TestLink arbeiten können. Vorgesetzte können begeistert sein,
+  nicht über Budget- und umfangreiche Trainingsbelastung zu
+  automatisierten Test-Management-Lösungen nachdenken zu müssen.</para>
+
+  <para>Weiterer Punkt ist die Sprachunabhängigkeit. Testimplementierungen können
+  in PHP, Perl, Python, Java, Lua und selbst in C oder C++ (oder anderen Sprachen)
+  geschehen. Einzige Vorgabe ist, dass nach der Testausführung die Testergebnisse
+  in JUnit-, TestNG- oder TAP-konformer Weise verfügbar sind.</para>
+
+  <para>Abschließend kann aufgeführt werden, dass es sich um eine freie Lösung handelt.
+  Zu den Mitgliedern des Plug-in-Entwicklungsteams gehören auch Contributors des
+  TestLink-Projektes und Maintainer des TestLink-Java-API-Projektes.
+  Es wird angestrebt, bekannte berichtete Herausforderungen unter
+  <ulink url="http://issues.jenkins-ci.org">Jenkins' JIRA</ulink> zeitnahe anzugehen.
+  Sobald Sie daher das Plug-in in Ihren Projekten einsetzen, sind uns jegliche Art der
+  Rückmeldung und eigene Erfahrungswerte willkommen. Teilen Sie Ihre Erfahrung im
+  Plug-in-Wiki mit uns oder laden Sie uns zu einem gemeinsamen Erfahrungs- und
+  Ideenaustausch auf einen Krug Bier ein.</para>
+
+</chapter>

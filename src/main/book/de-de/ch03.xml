@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<chapter id="chapter.3">
+    <title>Jenkins- und TestLink-Integration</title>
+
+    <para>Die Anbindung von Jenkins und TestLink kann mittels
+    Jenkins-TestLink-Plug-in geschehen. Das Plug-in wird in Jenkins eingebunden,
+    und ist hierdurch in der Lage, weitere Fähigkeiten davon zu nutzen wie das
+    Ausführen weiterer Aufgaben, zeitliche Festlegung der Aufgaben, verteilte
+    Ausführung und eine Menge weiterer Plug-ins. Um die Daten aus TestLink für
+    die Testausführung zu erhalten und Berichte der Testergebnisse an TestLink
+    weiterzureichen, verwendet das Plug-in die TestLink-XML-RPC-API.</para>
+
+    <para>Während Jenkins die Testausführung und Aufgaben behandelt, wie etwa
+    die Nutzung von Quelltexten aus einem SCM, verwaltet TestLink die Struktur
+    der Tests, Test-Pläne, sogenannte Custom-Fields, Berichte und
+    Versionszugehörigkeiten von Buildergebnissen.</para>
+
+    <para>Die folgenden Kapitel beschäftigen sich mit der Konfiguration
+    unserer Umgebung bei der Integration. Trotz der geschriebenen Form über die
+    Schritte der Integration ist dabei die praktische Erfahrung und Durchführung
+    zum besseren Verständnis empfehlenswert. Das weitere Tutorium erklärt dabei
+    die Konfiguration von Jenkins und TestLink, um automatisierte Tests eines
+    Beispielprojektes auszuführen. Das Testprojekt ist in Java implementiert und
+    nutzt Maven und TestNG. Die Quelltexte sind erhältlich unter
+    <ulink url="https://github.com/tupilabs/jenkins-testlink-plugin-tutorial">
+    https://github.com/tupilabs/jenkins-testlink-plugin-tutorial</ulink> (dies
+    schließt die DocBook-Quellen dieses Buches ein).</para>
+
+    <para>Die aktuellste Version des Jenkins-TestLink-Plug-Ins, während dieses
+    Tutorium geschrieben wurde, ist <emphasis>3.0.2</emphasis>.</para>
+
+    <para>Jenkins TestLink Plug-in ist lizensiert unter der MIT-Lizenz und die
+    Quelltexte befinden sich in Github -
+    <ulink url="http://github.com/jenkinsci/testlink-plugin">
+    http://github.com/jenkinsci/testlink-plugin</ulink>.</para>
+
+</chapter>
