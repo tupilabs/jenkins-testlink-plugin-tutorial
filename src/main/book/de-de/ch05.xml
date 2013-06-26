@@ -387,10 +387,10 @@
             <para>Dies ist der Name des <emphasis>Build</emphasis>s
             in TestLink. Hier sind Umgebungsvariablen nutzbar.</para>
 
-            <para>Die Festlegung des Build-Namens sollte abgestimmt mit dem 
+            <para>Die Festlegung des Build-Namens sollte abgestimmt mit den
             zu Grunde liegenden Konzepten und Arbeitsabläufen des Testprozesses
             gewählt sein. Zu beachten - wie im vorherigen Kapitel erwähnt - ist,
-            dass das Anlegen eines Build in TestLink optional ist, da das
+            dass das Anlegen eines Builds in TestLink optional ist, da das
             Plug-in automatisch einen neuen Build anlegt, falls keiner
             vorhanden ist, der mit den Werten zu den Angaben der
             Konfigurationsseite des Jobs in Jenkins übereinstimmt.</para>
