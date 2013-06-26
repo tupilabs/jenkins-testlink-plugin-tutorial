@@ -387,6 +387,34 @@
             <para>Dies ist der Name des <emphasis>Build</emphasis>s
             in TestLink. Hier sind Umgebungsvariablen nutzbar.</para>
 
+            <para>Die Festlegung des Build-Namens sollte abgestimmt mit den
+            zu Grunde liegenden Konzepten und Arbeitsabläufen des Testprozesses
+            gewählt sein. Zu beachten - wie im vorherigen Kapitel erwähnt - ist,
+            dass das Anlegen eines Builds in TestLink optional ist, da das
+            Plug-in automatisch einen neuen Build anlegt, falls keiner
+            vorhanden ist, der mit den Werten zu den Angaben der
+            Konfigurationsseite des Jobs in Jenkins übereinstimmt.</para>
+
+            <para>Als bekanntes Verhalten in TestLink gilt, dass es erhebliche
+            Performanzeinbußen gibt und sich das zum Projekt gehörige
+            TestLink-Webinterface schwerfällig bis unreaktiv zeigt, sobald eine
+            höhere Anzahl von TestLink-Builds mit Status offen existiert.</para>
+
+            <para> Sollten so Umgebungsvariablen im Feld des Build-Namens in
+            Jenkins genutzt werden, deren Wert öfter wechselt (wie etwa die
+            Jenkins-Build-Nummer, die aktuelle Zeit oder das Datum), wird eine
+            steigende Anzahl an TestLink-Builds mit entsprechender Häufigkeit
+            in TestLink auftreten.</para>
+
+            <para>Als erste Empfehlung sollte Ihr Prozess absichern, dass die
+            Anzahl offener Builds in TestLink auf einen akzeptablen Rahmen
+            begrenzt ist. Selbst wenn dies bedeuten sollte, händisch Builds
+            in TestLink schließen zu müssen. Zu beachten ist, dass dies speziell
+            in großen Testprojekten heißt, dass diese Strategie allgemein
+            nicht skaliert. Weitere Empfehlung könnte sein, einfach die Nutzung
+            von häufig veränderlichen Umgebungsvariablen zu unterbinden oder
+            einzuschränken, so dass sämtliche oder die meisten neu erstellten
+            offenen Builds verhindert werden.</para>
         </section>
 
         <section>

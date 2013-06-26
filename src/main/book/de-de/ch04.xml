@@ -435,7 +435,7 @@
 
         <para>Das Anlegen eines Build in TestLink ist hier optional, da das
         Plug-in automatisch einen neuen Build anlegt, falls keiner vorhanden
-        ist, der mit den Angaben der Konfigurationsseite des Jobs in Jenkins
+        ist, der mit den Werten zu den Angaben der Konfigurationsseite des Jobs in Jenkins
         übereinstimmt. Im Abschnitt Test Plan der Hauptübersicht auf der
         rechten Seite sind weitere Eisnstellungsmöglichkeiten zum erstellten
         Testplan gegeben. Zusätzlich gibt es Abschnitte zur Testausführung
