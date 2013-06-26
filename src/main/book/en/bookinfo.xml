@@ -1,49 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <bookinfo>
 
-    <productname>Jenkins TestLink Plug-in Tutorial</productname>
+  <productname>Jenkins TestLink Plug-in Tutorial</productname>
 
-	<abstract>
-		<para>The Jenkins TestLink Plug-in Tutorial is intended to provide 
-		a better understanding on how to use the plug-in to integrate Jenkins 
-		and TestLink. It is an Open Source project, so contributions and 
-		suggestions are welcome.
-		</para>
-	</abstract>
+  <abstract>
+    <para>The Jenkins TestLink Plug-in Tutorial is intended to provide
+    a better understanding on how to use the plug-in to integrate Jenkins
+    and TestLink. It is an Open Source project, so contributions and
+    suggestions are welcome.
+    </para>
+  </abstract>
 
-	<author>
-		<firstname>Bruno</firstname>
-		<othername>P.</othername>
-		<surname>Kinoshita</surname>
-		<email>brunodepaulak@yahoo.com.br</email>
-	</author>
+  <author>
+    <firstname>Bruno</firstname>
+    <othername>P.</othername>
+    <surname>Kinoshita</surname>
+    <email>brunodepaulak@yahoo.com.br</email>
+  </author>
 
-	<author>
-		<firstname>César</firstname>
-		<othername>Fernandes</othername>
-		<surname>de Almeida</surname>
-		<email>cesar.fa@gmail.com</email>
-	</author>
+  <author>
+    <firstname>César</firstname>
+    <othername>Fernandes</othername>
+    <surname>de Almeida</surname>
+    <email>cesar.fa@gmail.com</email>
+  </author>
 
-    <othercredit>
-        <firstname>Flóreal</firstname>
-        <surname>Toumikian</surname>
-        <contrib>French Translation.</contrib>
-    </othercredit>
-    
-    <othercredit>
-        <firstname>Olivier</firstname>
-        <surname>Renault</surname>
-        <contrib>French Translation</contrib>
-    </othercredit>
-    
-    <othercredit>
-        <firstname>Oliver</firstname>
-        <surname>Merkel</surname>
-        <contrib>Review and suggestions on how explain different topics of this 
-        tutorial</contrib>
-    </othercredit>
-    
-    <pubsnumber>3</pubsnumber>
+  <othercredit>
+    <firstname>Flóreal</firstname>
+    <surname>Toumikian</surname>
+    <contrib>French Translation.</contrib>
+  </othercredit>
+
+  <othercredit>
+    <firstname>Olivier</firstname>
+    <surname>Renault</surname>
+    <contrib>French Translation</contrib>
+  </othercredit>
+
+  <othercredit>
+    <firstname>Oliver</firstname>
+    <surname>Merkel</surname>
+    <contrib>Review and authorship on parts of this
+      tutorial. German translation.</contrib>
+  </othercredit>
+
+  <pubsnumber>3</pubsnumber>
 
 </bookinfo>
